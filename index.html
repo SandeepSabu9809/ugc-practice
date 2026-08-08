@@ -530,7 +530,7 @@
   // Official @google/genai Client Call using gemini-1.5-flash
   async function generateAIDeepDive(q, containerEl) {
   
-  const apiKey = GROQ_API_KEY;
+  const apiKey = window.GROQ_API_KEY;
 
   containerEl.innerHTML = `<em>✨ Connecting to Groq... Generating AI Deep Dive Explanation...</em>`;
 
