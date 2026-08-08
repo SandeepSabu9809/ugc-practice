@@ -683,7 +683,7 @@
         <div class="question-title">Q${q.question_number}. ${q.question_text}</div>
         ${optionsHTML}
         <div class="explanation-box" id="exp-${index}">
-          <strong>Explanation:</strong>\n${q.explanation}
+          <strong>Explanation:</strong>\n${formatMarkdown(q.explanation)}
           <div class="button-group">
             <button class="speak-btn" id="speak-exp-btn-${index}">🔊 Read Explanation</button>
             <button class="deep-dive-btn" id="deep-dive-btn-${index}">🤖 AI Deep Dive</button>
