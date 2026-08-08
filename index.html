@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Question Bank - UGC NET Computer Science</title>
+  <!-- Confetti library for Party Popper effect -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  
+ 
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px auto;
+      max-width: 800px;
+      color: #333;
+      background-color: #f9f9f9;
+      overflow-x: hidden;
+    }
+    .container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      position: relative;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+    
+    /* API Key Banner */
+    .api-key-section {
+      background: #eebefa;
+      border: 1px solid #ae3ec9;
+      padding: 12px 15px;
+      border-radius: 6px;
+      margin-bottom: 20px;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .api-key-section label {
+      font-weight: bold;
+      color: #3b224c;
+      font-size: 0.9em;
+    }
+    .api-key-section input {
+      flex: 1;
+      padding: 6px 10px;
+      border: 1px solid #ced4da;
+      border-radius: 4px;
+      min-width: 220px;
+    }
+    .api-key-section button {
+      background: #ae3ec9;
+      color: #fff;
+      border: none;
+      padding: 6px 14px;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .api-key-section button:hover {
+      background: #9c36b5;
+    }
+
+    /* Filter Bar Styles */
+    .filter-section {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 25px;
+      background: #f1f3f5;
+      padding: 15px;
+      border-radius: 6px;
+      flex-wrap: wrap;
+    }
+    .filter-group {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      min-width: 200px;
+    }
+    .filter-group label {
+      font-weight: bold;
+      font-size: 0.9em;
+      margin-bottom: 5px;
+      color: #495057;
+    }
+    .filter-group select {
+      padding: 8px 12px;
+      border: 1px solid #ced4da;
+      border-radius: 4px;
+      font-size: 0.95em;
+      background: #fff;
+      cursor: pointer;
+    }
+
+    .unit-badge {
+      display: inline-block;
+      background: #e9ecef;
+      color: #495057;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 0.85em;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+    .question-card {
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 20px;
+      margin-bottom: 25px;
+      position: relative;
+    }
+    
+    /* Button Base Styles */
+    .speak-btn, .deep-dive-btn {
+      background: #e7f5ff;
+      color: #1c7ed6;
+      border: 1px solid #74c0fc;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 0.82em;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .speak-btn:hover, .deep-dive-btn:hover {
+      background: #d0ebff;
+    }
+    .speak-btn.speaking {
+      background: #ffe3e3;
+      color: #e03131;
+      border-color: #ff8787;
+    }
+
+    .deep-dive-btn {
+      background: #f3d9fa;
+      color: #862e9c;
+      border-color: #e599f7;
+    }
+    .deep-dive-btn:hover {
+      background: #eebefa;
+    }
+
+    .speak-q-btn {
+      float: right;
+    }
+
+    .button-group {
+      margin-top: 10px;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .question-title {
+      font-weight: bold;
+      white-space: pre-line;
+      margin-bottom: 12px;
+      clear: both;
+    }
+    .options {
+      margin-left: 10px;
+      margin-bottom: 15px;
+    }
+    .option-item {
+      padding: 10px 14px;
+      margin-bottom: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+    }
+    .option-item:hover {
+      background-color: #f0f0f0;
+      transform: translateX(3px);
+    }
+
+    /* Correct Answer Styling & Animation */
+    .option-item.correct {
+      background-color: #d4edda;
+      border-color: #28a745;
+      color: #155724;
+      font-weight: bold;
+      animation: correctPulse 0.5s ease-in-out;
+    }
+
+    @keyframes correctPulse {
+      0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(40, 167, 69, 0);
+      }
+      50% {
+        transform: scale(1.03);
+        box-shadow: 0 0 14px rgba(40, 167, 69, 0.7);
+      }
+      100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(40, 167, 69, 0);
+      }
+    }
+
+    /* Incorrect Answer Styling & Shake Animation */
+    .option-item.incorrect {
+      background-color: #f8d7da;
+      border-color: #dc3545;
+      color: #721c24;
+      animation: wrongShake 0.4s ease-in-out;
+    }
+
+    @keyframes wrongShake {
+      0%, 100% { transform: translateX(0); }
+      20% { transform: translateX(-8px); }
+      40% { transform: translateX(8px); }
+      60% { transform: translateX(-5px); }
+      80% { transform: translateX(5px); }
+    }
+
+    .explanation-box {
+      display: none;
+      background: #f1f8e9;
+      padding: 14px;
+      border-left: 4px solid #28a745;
+      margin-top: 12px;
+      white-space: pre-line;
+      font-size: 0.95em;
+      border-radius: 0 6px 6px 0;
+    }
+    .explanation-box.show {
+      display: block;
+    }
+
+    /* AI Deep Dive Box */
+    .deep-dive-box {
+      display: none;
+      background: #f8f0fc;
+      border-left: 4px solid #ae3ec9;
+      padding: 14px;
+      margin-top: 12px;
+      font-size: 0.92em;
+      color: #3b224c;
+      border-radius: 0 6px 6px 0;
+      white-space: pre-line;
+    }
+    .deep-dive-box.show {
+      display: block;
+    }
+
+    /* Balloon Animation Styles */
+    .balloon-container {
+      position: fixed;
+      bottom: -100px;
+      pointer-events: none;
+      z-index: 9999;
+      width: 100%;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+    }
+
+    .balloon {
+      position: absolute;
+      bottom: -100px;
+      width: 50px;
+      height: 65px;
+      border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
+      animation: floatUp 3.5s linear forwards;
+    }
+
+    .balloon::after {
+      content: "";
+      position: absolute;
+      bottom: -12px;
+      left: 22px;
+      width: 2px;
+      height: 15px;
+      background: #888;
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-120vh) rotate(20deg);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div id="balloon-container" class="balloon-container"></div>
+
+<div class="container">
+  <h1>U.G.C. NET Exam - Computer Science</h1>
+  
+  
+  <!-- Dynamic Filter Controls -->
+  <div class="filter-section">
+    <div class="filter-group">
+      <label for="year-filter">Filter by Year:</label>
+      <select id="year-filter">
+        <option value="all">All Years</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label for="unit-filter">Filter by Unit:</label>
+      <select id="unit-filter">
+        <option value="all">All Units</option>
+      </select>
+    </div>
+  </div>
+
+  <div id="questions-container">Loading questions...</div>
+</div>
+
+<script src="config.js"></script>
+
+<script type="module">
+  
+
+  let allQuestions = [];
+  let currentUtterance = null;
+  let activeSpeakBtn = null;
+
+
+  // Web Audio Context initialization
+  let audioCtx;
+
+  function getAudioContext() {
+    if (!audioCtx) {
+      audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    }
+    return audioCtx;
+  }
+
+  function playCorrectSound() {
+    const ctx = getAudioContext();
+    const now = ctx.currentTime;
+    
+    const notes = [659.25, 830.61, 987.77];
+    notes.forEach((freq, idx) => {
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+
+      osc.type = 'triangle';
+      osc.frequency.setValueAtTime(freq, now + idx * 0.08);
+
+      gain.gain.setValueAtTime(0.2, now + idx * 0.08);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + idx * 0.08 + 0.3);
+
+      osc.connect(gain);
+      gain.connect(ctx.destination);
+
+      osc.start(now + idx * 0.08);
+      osc.stop(now + idx * 0.08 + 0.35);
+    });
+  }
+
+  function playIncorrectSound() {
+    const ctx = getAudioContext();
+    const now = ctx.currentTime;
+
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+
+    osc.type = 'sawtooth';
+    osc.frequency.setValueAtTime(130.81, now);
+    osc.frequency.exponentialRampToValueAtTime(98.00, now + 0.2);
+
+    gain.gain.setValueAtTime(0.12, now);
+    gain.gain.exponentialRampToValueAtTime(0.001, now + 0.25);
+
+    osc.connect(gain);
+    gain.connect(ctx.destination);
+
+    osc.start(now);
+    osc.stop(now + 0.25);
+  }
+
+  function triggerPopper() {
+    if (typeof confetti === 'function') {
+      confetti({
+        particleCount: 90,
+        spread: 80,
+        origin: { y: 0.6 }
+      });
+    }
+  }
+
+  function triggerBalloons() {
+    const balloonContainer = document.getElementById('balloon-container');
+    const colors = ['#ff4d4d', '#3399ff', '#33cc33', '#ffcc00', '#cc33ff', '#ff9933'];
+
+    for (let i = 0; i < 8; i++) {
+      const balloon = document.createElement('div');
+      balloon.className = 'balloon';
+      
+      const randomColor = colors[Math.floor(Math.random() * colors.length)];
+      const randomLeft = Math.random() * 80 + 10;
+      const randomDelay = Math.random() * 0.5;
+
+      balloon.style.backgroundColor = randomColor;
+      balloon.style.left = randomLeft + '%';
+      balloon.style.animationDelay = randomDelay + 's';
+
+      balloonContainer.appendChild(balloon);
+
+      setTimeout(() => {
+        balloon.remove();
+      }, 4000);
+    }
+  }
+
+  function getBestVoice() {
+    const voices = window.speechSynthesis.getVoices();
+    return voices.find(v => 
+      v.lang.startsWith('en') && (
+        v.name.includes('Natural') || 
+        v.name.includes('Google') || 
+        v.name.includes('Enhanced') ||
+        v.name.includes('Premium')
+      )
+    ) || voices.find(v => v.lang.startsWith('en')) || voices[0];
+  }
+
+  const cleanText = (str) => str ? str.replace(/<[^>]*>?/gm, '') : '';
+
+  function speakText(text, btn, labelText) {
+    if (!('speechSynthesis' in window)) {
+      alert("Sorry, your browser does not support Speech Synthesis.");
+      return;
+    }
+
+    if (window.speechSynthesis.speaking) {
+      window.speechSynthesis.cancel();
+      if (activeSpeakBtn) {
+        const prevLabel = activeSpeakBtn.getAttribute('data-label') || '🔊 Read Aloud';
+        activeSpeakBtn.classList.remove('speaking');
+        activeSpeakBtn.innerHTML = `🔊 ${prevLabel}`;
+      }
+      if (activeSpeakBtn === btn) {
+        activeSpeakBtn = null;
+        return;
+      }
+    }
+
+    currentUtterance = new SpeechSynthesisUtterance(text);
+    currentUtterance.rate = 0.95;
+    currentUtterance.pitch = 1.0;
+
+    const bestVoice = getBestVoice();
+    if (bestVoice) {
+      currentUtterance.voice = bestVoice;
+    }
+
+    btn.setAttribute('data-label', labelText);
+
+    currentUtterance.onstart = () => {
+      btn.classList.add('speaking');
+      btn.innerHTML = '⏹ Stop';
+      activeSpeakBtn = btn;
+    };
+
+    currentUtterance.onend = () => {
+      btn.classList.remove('speaking');
+      btn.innerHTML = `🔊 ${labelText}`;
+      activeSpeakBtn = null;
+    };
+
+    currentUtterance.onerror = () => {
+      btn.classList.remove('speaking');
+      btn.innerHTML = `🔊 ${labelText}`;
+      activeSpeakBtn = null;
+    };
+
+    window.speechSynthesis.speak(currentUtterance);
+  }
+
+  function speakQuestion(q, btn) {
+    let text = `Question number ${q.question_number}. ${cleanText(q.question_text)}. `;
+    text += "Options are: ";
+    for (const [key, val] of Object.entries(q.options)) {
+      text += `Option ${key}, ${cleanText(val)}. `;
+    }
+    speakText(text, btn, 'Read Question');
+  }
+
+  function speakExplanation(q, btn) {
+    let text = `Explanation for Question ${q.question_number}. `;
+    text += `The correct answer is option ${q.answer}. `;
+    text += cleanText(q.explanation);
+    speakText(text, btn, 'Read Explanation');
+  }
+
+  function speakAiText(q, content, btn) {
+    let text = `AI Deep Dive for Question ${q.question_number}. ${cleanText(content)}`;
+    speakText(text, btn, 'Read AI Analysis');
+  }
+
+
+  function formatMarkdown(text) {
+  let html = text
+    // headers
+    .replace(/^### (.*$)/gim, '<strong style="display:block;margin-top:10px;">$1</strong>')
+    .replace(/^## (.*$)/gim, '<strong style="display:block;font-size:1.05em;margin-top:12px;">$1</strong>')
+    .replace(/^# (.*$)/gim, '<strong style="display:block;font-size:1.1em;margin-top:12px;">$1</strong>')
+    // bold
+    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+    // italics
+    .replace(/\*(.*?)\*/g, '<em>$1</em>')
+    // line breaks
+    .replace(/\n/g, '<br>');
+  return html;
+}
+
+
+
+  // Official @google/genai Client Call using gemini-1.5-flash
+  async function generateAIDeepDive(q, containerEl) {
+  
+  const apiKey = GROQ_API_KEY;
+
+  containerEl.innerHTML = `<em>✨ Connecting to Groq... Generating AI Deep Dive Explanation...</em>`;
+
+  try {
+    const prompt = `You are an expert UGC NET Computer Science mentor. Provide a detailed, easy-to-understand breakdown for this exam question:\n\n` +
+      `Unit: ${q.unit}\n` +
+      `Question: ${q.question_text}\n` +
+      `Options:\n${JSON.stringify(q.options, null, 2)}\n` +
+      `Correct Answer: ${q.answer}\n\n` +
+      `Please structure your explanation as follows:\n` +
+      `1. Core Concept Explanation\n` +
+      `2. Step-by-Step Derivation/Reasoning\n` +
+      `3. Analysis of Why Other Options Are Incorrect\n` +
+      `4. Quick UGC NET Exam Tip / Related Formula`;
+
+    const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${apiKey}`
+      },
+      body: JSON.stringify({
+        model: 'llama-3.3-70b-versatile',
+        messages: [
+          { role: 'user', content: prompt }
+        ],
+        temperature: 0.5
+      })
+    });
+
+    if (!response.ok) {
+      const errData = await response.json().catch(() => ({}));
+      throw new Error(errData.error?.message || `HTTP ${response.status}`);
+    }
+
+    const data = await response.json();
+    const aiText = data.choices?.[0]?.message?.content || 'No response generated.';
+
+    containerEl.innerHTML = `<strong>🤖 AI Deep Dive Explanation:</strong>\n\n${formatMarkdown(aiText)}` +
+      `<div style="margin-top: 10px;">` +
+      `<button class="speak-btn" id="speak-ai-btn-${q.question_number}">🔊 Read AI Analysis</button>` +
+      `</div>`;
+
+    const speakAiBtn = containerEl.querySelector(`#speak-ai-btn-${q.question_number}`);
+    if (speakAiBtn) {
+      speakAiBtn.addEventListener('click', () => speakAiText(q, aiText, speakAiBtn));
+    }
+
+  } catch (err) {
+    console.error(err);
+    containerEl.innerHTML = `<span style="color:red;">Error generating AI explanation: ${err.message || err}. Please verify your API key.</span>`;
+  }
+}
+ 
+  if ('speechSynthesis' in window) {
+    window.speechSynthesis.onvoiceschanged = () => window.speechSynthesis.getVoices();
+  }
+
+  fetch('questions.json')
+    .then(response => {
+      if (!response.ok) throw new Error('Failed to load JSON file');
+      return response.json();
+    })
+    .then(questions => {
+      allQuestions = questions;
+      populateFilterOptions(allQuestions);
+      renderQuestions(allQuestions);
+    })
+    .catch(error => {
+      document.getElementById('questions-container').innerHTML = 
+        `<p style="color:red;">Error loading questions. Make sure you are serving the files via a local web server.</p>`;
+      console.error(error);
+    });
+
+  function populateFilterOptions(questions) {
+    const yearSelect = document.getElementById('year-filter');
+    const unitSelect = document.getElementById('unit-filter');
+
+    const years = [...new Set(questions.map(q => q.year).filter(Boolean))];
+    const units = [...new Set(questions.map(q => q.unit).filter(Boolean))];
+
+    years.sort();
+
+    units.sort((a, b) => {
+      const numA = parseInt(a.match(/\d+/)?.[0] || 0, 10);
+      const numB = parseInt(b.match(/\d+/)?.[0] || 0, 10);
+      return numA - numB;
+    });
+
+    years.forEach(year => {
+      const opt = document.createElement('option');
+      opt.value = year;
+      opt.textContent = year;
+      yearSelect.appendChild(opt);
+    });
+
+    units.forEach(unit => {
+      const opt = document.createElement('option');
+      opt.value = unit;
+      opt.textContent = unit;
+      unitSelect.appendChild(opt);
+    });
+
+    yearSelect.addEventListener('change', applyFilters);
+    unitSelect.addEventListener('change', applyFilters);
+  }
+
+  function applyFilters() {
+    if (window.speechSynthesis) window.speechSynthesis.cancel();
+    const selectedYear = document.getElementById('year-filter').value;
+    const selectedUnit = document.getElementById('unit-filter').value;
+
+    const filtered = allQuestions.filter(q => {
+      const matchYear = (selectedYear === 'all') || (q.year === selectedYear);
+      const matchUnit = (selectedUnit === 'all') || (q.unit === selectedUnit);
+      return matchYear && matchUnit;
+    });
+
+    renderQuestions(filtered);
+  }
+
+  function renderQuestions(questions) {
+    const container = document.getElementById('questions-container');
+    container.innerHTML = '';
+
+    if (questions.length === 0) {
+      container.innerHTML = '<p>No questions found for the selected filter combination.</p>';
+      return;
+    }
+
+    questions.forEach((q, index) => {
+      const card = document.createElement('div');
+      card.className = 'question-card';
+
+      const correctAnswerKey = q.answer.replace(/[^a-zA-Z]/g, '').toLowerCase();
+
+      let optionsHTML = '<div class="options">';
+      for (const [key, value] of Object.entries(q.options)) {
+        optionsHTML += `
+          <div class="option-item" data-key="${key}">
+            (${key}) ${value}
+          </div>`;
+      }
+      optionsHTML += '</div>';
+
+      card.innerHTML = `
+        <button class="speak-btn speak-q-btn" id="speak-q-btn-${index}">🔊 Read Question</button>
+        <span class="unit-badge">${q.unit}</span> ${q.year ? `<span class="unit-badge" style="background:#dceefb; color:#0c5460;">${q.year}</span>` : ''}
+        <div class="question-title">Q${q.question_number}. ${q.question_text}</div>
+        ${optionsHTML}
+        <div class="explanation-box" id="exp-${index}">
+          <strong>Explanation:</strong>\n${q.explanation}
+          <div class="button-group">
+            <button class="speak-btn" id="speak-exp-btn-${index}">🔊 Read Explanation</button>
+            <button class="deep-dive-btn" id="deep-dive-btn-${index}">🤖 AI Deep Dive</button>
+          </div>
+          <div class="deep-dive-box" id="deep-dive-box-${index}"></div>
+        </div>
+      `;
+
+      container.appendChild(card);
+
+      const optionElements = card.querySelectorAll('.option-item');
+      const expBox = card.querySelector(`#exp-${index}`);
+      const deepDiveBox = card.querySelector(`#deep-dive-box-${index}`);
+      
+      const speakQBtn = card.querySelector(`#speak-q-btn-${index}`);
+      const speakExpBtn = card.querySelector(`#speak-exp-btn-${index}`);
+      const deepDiveBtn = card.querySelector(`#deep-dive-btn-${index}`);
+
+      speakQBtn.addEventListener('click', () => speakQuestion(q, speakQBtn));
+      speakExpBtn.addEventListener('click', () => speakExplanation(q, speakExpBtn));
+
+      deepDiveBtn.addEventListener('click', () => {
+        const isShown = deepDiveBox.classList.contains('show');
+        if (isShown) {
+          deepDiveBox.classList.remove('show');
+          deepDiveBtn.innerHTML = '🤖 AI Deep Dive';
+        } else {
+          deepDiveBox.classList.add('show');
+          deepDiveBtn.innerHTML = '🤖 Hide AI Deep Dive';
+          if (!deepDiveBox.dataset.loaded) {
+            generateAIDeepDive(q, deepDiveBox);
+            deepDiveBox.dataset.loaded = "true";
+          }
+        }
+      });
+
+      optionElements.forEach(optEl => {
+        optEl.addEventListener('click', () => {
+          optionElements.forEach(el => el.style.pointerEvents = 'none');
+
+          const selectedKey = optEl.getAttribute('data-key');
+
+          if (selectedKey === correctAnswerKey) {
+            optEl.classList.add('correct');
+            playCorrectSound();
+            triggerPopper();
+            triggerBalloons();
+          } else {
+            optEl.classList.add('incorrect');
+            playIncorrectSound();
+            card.querySelector(`[data-key="${correctAnswerKey}"]`).classList.add('correct');
+          }
+
+          expBox.classList.add('show');
+        });
+      });
+    });
+  }
+
+</script>
+
+</body>
+</html>
