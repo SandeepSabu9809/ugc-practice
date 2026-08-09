@@ -237,6 +237,21 @@
     .explanation-box.show {
       display: block;
     }
+    /* SVG Container Styles */
+.svg-container {
+    margin: 15px 0;
+    text-align: center;
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+    overflow: auto;
+}
+
+.svg-container svg {
+    max-width: 100%;
+    height: auto;
+}
 
     /* AI Deep Dive Box */
     .deep-dive-box {
@@ -792,7 +807,7 @@ function applyFilters() {
 
     renderQuestions(filtered);
 }
-  function renderQuestions(questions) {
+ function renderQuestions(questions) {
     const container = document.getElementById('questions-container');
     container.innerHTML = '';
 
@@ -816,10 +831,21 @@ function applyFilters() {
       }
       optionsHTML += '</div>';
 
+      // Check if there's an SVG to display
+      let svgHTML = '';
+      if (q.svg && q.svg.trim() !== '') {
+        svgHTML = `
+          <div class="svg-container">
+            ${q.svg}
+          </div>
+        `;
+      }
+
       card.innerHTML = `
         <button class="speak-btn speak-q-btn" id="speak-q-btn-${index}">🔊 Read Question</button>
         <span class="unit-badge">${q.unit}</span> ${q.year ? `<span class="unit-badge" style="background:#dceefb; color:#0c5460;">${q.year}</span>` : ''}
         <div class="question-title">Q${q.question_number}. ${q.question_text}</div>
+        ${svgHTML}
         ${optionsHTML}
         <div class="explanation-box" id="exp-${index}">
           <strong>Explanation:</strong>\n${formatMarkdown(q.explanation)}
@@ -872,7 +898,6 @@ function applyFilters() {
             triggerBalloons();
           } else {
             optEl.classList.add('incorrect');
-            //playIncorrectSound();
             card.querySelector(`[data-key="${correctAnswerKey}"]`).classList.add('correct');
           }
 
@@ -881,7 +906,6 @@ function applyFilters() {
       });
     });
   }
-
 </script>
 
 </body>
