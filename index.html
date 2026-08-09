@@ -511,6 +511,21 @@
   }
 
 
+  //function formatMarkdown(text) {
+  //let html = text
+    // headers
+  //  .replace(/^### (.*$)/gim, '<strong style="display:block;margin-top:10px;">$1</strong>')
+  //  .replace(/^## (.*$)/gim, '<strong style="display:block;font-size:1.05em;margin-top:12px;">$1</strong>')
+  //  .replace(/^# (.*$)/gim, '<strong style="display:block;font-size:1.1em;margin-top:12px;">$1</strong>')
+    // bold
+  //  .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+    // italics
+   // .replace(/\*(.*?)\*/g, '<em>$1</em>')
+    // line breaks
+   // .replace(/\n/g, '<br>');
+  //return html;
+  //}
+
   function formatMarkdown(text) {
   let html = text
     // headers
@@ -521,11 +536,57 @@
     .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
     // italics
     .replace(/\*(.*?)\*/g, '<em>$1</em>')
+    // Superscript: x^2 or x^{2}
+    .replace(/\^\{([^}]+)\}/g, '<sup>$1</sup>')
+    .replace(/\^([a-zA-Z0-9])/g, '<sup>$1</sup>')
+    // Subscript: x_2 or x_{2}
+    .replace(/\_\{([^}]+)\}/g, '<sub>$1</sub>')
+    .replace(/\_([a-zA-Z0-9])/g, '<sub>$1</sub>')
+    // Greek letters
+    .replace(/\\alpha/g, 'α')
+    .replace(/\\beta/g, 'β')
+    .replace(/\\gamma/g, 'γ')
+    .replace(/\\delta/g, 'δ')
+    .replace(/\\theta/g, 'θ')
+    .replace(/\\lambda/g, 'λ')
+    .replace(/\\mu/g, 'μ')
+    .replace(/\\pi/g, 'π')
+    .replace(/\\sigma/g, 'σ')
+    .replace(/\\tau/g, 'τ')
+    .replace(/\\phi/g, 'φ')
+    .replace(/\\omega/g, 'ω')
+    .replace(/\\Delta/g, 'Δ')
+    .replace(/\\Pi/g, 'Π')
+    .replace(/\\Sigma/g, 'Σ')
+    .replace(/\\Omega/g, 'Ω')
+    // Mathematical symbols
+    .replace(/\\infty/g, '∞')
+    .replace(/\\sum/g, '∑')
+    .replace(/\\int/g, '∫')
+    .replace(/\\neq/g, '≠')
+    .replace(/\\leq/g, '≤')
+    .replace(/\\geq/g, '≥')
+    .replace(/\\approx/g, '≈')
+    .replace(/\\times/g, '×')
+    .replace(/\\div/g, '÷')
+    .replace(/\\pm/g, '±')
+    .replace(/\\rightarrow/g, '→')
+    .replace(/\\leftarrow/g, '←')
+    .replace(/\\forall/g, '∀')
+    .replace(/\\exists/g, '∃')
+    .replace(/\\in/g, '∈')
+    .replace(/\\subset/g, '⊂')
+    .replace(/\\supset/g, '⊃')
+    // Fractions: \frac{a}{b}
+    .replace(/\\frac\{([^}]+)\}\{([^}]+)\}/g, 
+      '<span style="display:inline-block;vertical-align:middle;text-align:center;"><span style="display:block;border-bottom:2px solid #333;padding:0 6px;">$1</span><span style="display:block;padding:0 6px;">$2</span></span>')
+    // Square root: \sqrt{x}
+    .replace(/\\sqrt\{([^}]+)\}/g, 
+      '<span style="display:inline-block;font-size:1.2em;">√<span style="border-top:2px solid #333;padding:0 4px;">$1</span></span>')
     // line breaks
     .replace(/\n/g, '<br>');
   return html;
 }
-
 
 
   // Official @google/genai Client Call using gemini-1.5-flash
@@ -591,22 +652,82 @@
     window.speechSynthesis.onvoiceschanged = () => window.speechSynthesis.getVoices();
   }
 
-  fetch('questions.json')
-    .then(response => {
-      if (!response.ok) throw new Error('Failed to load JSON file');
-      return response.json();
-    })
-    .then(questions => {
-      allQuestions = questions;
-      populateFilterOptions(allQuestions);
-      renderQuestions(allQuestions);
-    })
-    .catch(error => {
-      document.getElementById('questions-container').innerHTML = 
-        `<p style="color:red;">Error loading questions. Make sure you are serving the files via a local web server.</p>`;
-      console.error(error);
-    });
+  // Load all questions using manifest.json
+async function loadAllQuestions() {
+  const allQuestionsData = [];
+  
+  try {
+    // Load the manifest file
+    const manifestResponse = await fetch('data/manifest.json');
+    if (!manifestResponse.ok) {
+      throw new Error('Could not load manifest.json');
+    }
+    const manifest = await manifestResponse.json();
+    
+    console.log(`📋 Found ${manifest.files.length} question files to load`);
+    
+    // Load each file listed in the manifest
+    for (const fileName of manifest.files) {
+      try {
+        const response = await fetch(`data/${fileName}`);
+        if (response.ok) {
+          const data = await response.json();
+          
+          // Handle different JSON structures
+          if (Array.isArray(data)) {
+            allQuestionsData.push(...data);
+            console.log(`✅ Loaded ${fileName} - ${data.length} questions`);
+          } else if (data.questions && Array.isArray(data.questions)) {
+            allQuestionsData.push(...data.questions);
+            console.log(`✅ Loaded ${fileName} - ${data.questions.length} questions`);
+          } else {
+            console.warn(`⚠️ ${fileName} has unknown structure`);
+          }
+        } else {
+          console.warn(`⚠️ Could not load ${fileName} - file not found`);
+        }
+      } catch (err) {
+        console.warn(`⚠️ Error loading ${fileName}:`, err.message);
+      }
+    }
+    
+    console.log(`📚 Total questions loaded: ${allQuestionsData.length}`);
+    return allQuestionsData;
+    
+  } catch (error) {
+    console.error('Error loading manifest:', error);
+    // If manifest fails, try fallback
+    console.log('Trying fallback files...');
+    const fallbackFiles = ['2025_june_official.json', '2024_june_cancelled.json'];
+    for (const fileName of fallbackFiles) {
+      try {
+        const response = await fetch(`data/${fileName}`);
+        if (response.ok) {
+          const data = await response.json();
+          if (Array.isArray(data)) {
+            allQuestionsData.push(...data);
+          }
+        }
+      } catch (err) {
+        // Silently skip
+      }
+    }
+    return allQuestionsData;
+  }
+}
 
+// Call the function to load all questions
+loadAllQuestions()
+  .then(questions => {
+    allQuestions = questions;
+    populateFilterOptions(allQuestions);
+    renderQuestions(allQuestions);
+  })
+  .catch(error => {
+    document.getElementById('questions-container').innerHTML = 
+      `<p style="color:red;">Error loading questions. Make sure you are serving the files via a local web server.</p>`;
+    console.error(error);
+  });
   function populateFilterOptions(questions) {
     const yearSelect = document.getElementById('year-filter');
     const unitSelect = document.getElementById('unit-filter');
@@ -621,6 +742,7 @@
       const numB = parseInt(b.match(/\d+/)?.[0] || 0, 10);
       return numA - numB;
     });
+
 
     years.forEach(year => {
       const opt = document.createElement('option');
