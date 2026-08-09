@@ -2,7 +2,7 @@
   {
     "question_number": 1,
     "year": "2024",
-    "unit": "Unit 3: Programming Languages and Problem Solving",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
     "question_text": "Which of the following is not an object Oriented Programming language?",
     "options": {
       "a": "Pearl",
@@ -16,7 +16,7 @@
   {
     "question_number": 2,
     "year": "2024",
-    "unit": "Unit 8: Theory of Computation and Compilers",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
     "question_text": "Shift-Reduce conflicts are resolved by:",
     "options": {
       "a": "Left recursion",
@@ -30,7 +30,7 @@
   {
     "question_number": 3,
     "year": "2024",
-    "unit": "Unit 1: Discrete Mathematics and Optimization",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
     "question_text": "A least integer n such that f(x) is O(x^n) for each of the following functions. Arrange following according to the value of n in increasing order:\n\nA. f(x) = 3x^3 + (log x)^4\nB. f(x) = (x^5 + x^2 + 1) / (x^3 + 1)\nC. f(x) = (x^3 + x^2 + 1) / (x^2 + 1)\nD. f(x) = (x^2 + 5logx) / (x^2 + 1)",
     "options": {
       "a": "D, C, A, B",
@@ -44,7 +44,7 @@
   {
     "question_number": 4,
     "year": "2024",
-    "unit": "Unit 6: Software Engineering",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
     "question_text": "Arrange the following so that they can be placed in perfect/appropriate order.\n\nA. Planning\nB. Construction\nC. Modeling\nD. Communication\nE. Deployment",
     "options": {
       "a": "A, B, C, D, E",
@@ -58,7 +58,7 @@
   {
     "question_number": 5,
     "year": "2024",
-    "unit": "Unit 8: Theory of Computation and Compilers",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
     "question_text": "Match List-I with List-II:\n\n<table border='1' style='border-collapse: collapse; width: 100%; margin: 10px 0;'>\n  <thead>\n    <tr style='background-color: #f2f2f2;'>\n      <th style='padding: 8px; text-align: left;'>List-I</th>\n      <th style='padding: 8px; text-align: left;'>List-II</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td style='padding: 8px;'>A. A → aB | a, a ∈ T, A, B ∈ V</td>\n      <td style='padding: 8px;'>I. Recursive Descent Parser</td>\n    </tr>\n    <tr>\n      <td style='padding: 8px;'>B. A → BC | a, a ∈ T, A, B, C ∈ V</td>\n      <td style='padding: 8px;'>II. Turing Machine</td>\n    </tr>\n    <tr>\n      <td style='padding: 8px;'>C. LL (1) grammar</td>\n      <td style='padding: 8px;'>III. Chomsky Normal Form</td>\n    </tr>\n    <tr>\n      <td style='padding: 8px;'>D. Halting problem</td>\n      <td style='padding: 8px;'>IV. Finite Automate</td>\n    </tr>\n  </tbody>\n</table>\n\nChoose the correct answer from the options given below:",
     "options": {
       "a": "A-IV, B-III, C-I, D-II",
@@ -72,7 +72,7 @@
   {
     "question_number": 6,
     "year": "2024",
-    "unit": "Unit 10: Artificial Intelligence",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
     "question_text": "What is a perceptron in ANN?",
     "options": {
       "a": "A double layer auto-associative neural network",
@@ -86,7 +86,7 @@
   {
     "question_number": 7,
     "year": "2024",
-    "unit": "Unit 10: Artificial Intelligence",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
     "question_text": "Arrange the following examples of Artificial Intelligence (AI) in the order of increasing complexity:\n\nA. Spam email detection using rule-based systems.\nB. Handwritten digit recognition using shallow neural networks.\nC. Image classification using convolutional neural networks.\nD. Autonomous driving using reinforcement learning algorithms.",
     "options": {
       "a": "A, B, C, D",
@@ -100,7 +100,7 @@
   {
     "question_number": 8,
     "year": "2024",
-    "unit": "Unit 9: Data Communication and Computer Networks",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
     "question_text": "Match List-I with List-II:\n\n<table border='1' style='border-collapse: collapse; width: 100%; margin: 10px 0;'>\n  <thead>\n    <tr style='background-color: #f2f2f2;'>\n      <th style='padding: 8px; text-align: left;'>List-I</th>\n      <th style='padding: 8px; text-align: left;'>List-II</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td style='padding: 8px;'>A. NRZ-L</td>\n      <td style='padding: 8px;'>I. B = N / 4</td>\n    </tr>\n    <tr>\n      <td style='padding: 8px;'>B. 2B1Q</td>\n      <td style='padding: 8px;'>II. B = N / 8</td>\n    </tr>\n    <tr>\n      <td style='padding: 8px;'>C. 4D-PAM5</td>\n      <td style='padding: 8px;'>III. B = N / 3</td>\n    </tr>\n    <tr>\n      <td style='padding: 8px;'>D. MLT-3</td>\n      <td style='padding: 8px;'>IV. B = N / 2</td>\n    </tr>\n  </tbody>\n</table>\n\nChoose the correct answer from the options given below:",
     "options": {
       "a": "A-II, B-I, C-IV, D-III",
@@ -114,7 +114,7 @@
   {
     "question_number": 9,
     "year": "2024",
-    "unit": "Unit 5: System Software and Operating Systems",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
     "question_text": "The order of steps of Address Translation in Linux Virtual Memory Scheme will be:\n\nA. Register\nB. Offset\nC. Page directory\nD. Page table\nE. Page middle directory",
     "options": {
       "a": "B, A, D, E, C",
@@ -128,7 +128,7 @@
   {
     "question_number": 10,
     "year": "2024",
-    "unit": "Unit 1: Discrete Mathematics and Optimization",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
     "question_text": "If f(n) = 5f(n/2) + 3 and f(1) = 7 is a recurrence relation where K is positive integer, then f(2^k) =",
     "options": {
       "a": "5^k(31/4) - 3/4",
@@ -142,7 +142,7 @@
   {
     "question_number": 11,
     "year": "2024",
-    "unit": "Unit 2: Computer Architecture and Organization",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
     "question_text": "The instruction LD ADR(X) which is equivalent to AC ← M[ADR + XR] is in:",
     "options": {
       "a": "Direct Addressing Mode",
@@ -156,7 +156,7 @@
   {
     "question_number": 12,
     "year": "2024",
-    "unit": "Unit 10: Artificial Intelligence",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
     "question_text": "For the following Parent in figure (1) and (2): Which is correct?\n\nFigure (1): Parent 1: 1010010101, Parent 2: 0101010101\nFigure (2): Offspring 1: 1010010101, Offspring 2: 0101010101",
     "options": {
       "a": "Figure (2) is the two point crossover of figure (1)",
@@ -170,7 +170,7 @@
   {
     "question_number": 13,
     "year": "2024",
-    "unit": "Unit 5: System Software and Operating Systems",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
     "question_text": "The sequence of steps for a page replacement algorithm will be:\n\nA. Find a frame that is not currently being used\nB. Change the page table\nC. Use freed frame\nD. No frame is free\nE. Free a frame",
     "options": {
       "a": "D, A, E, B, C",
@@ -184,7 +184,7 @@
   {
     "question_number": 14,
     "year": "2024",
-    "unit": "Unit 7: Data Structures and Algorithms",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
     "question_text": "Match List-I with List-II:\n\n<table border='1' style='border-collapse: collapse; width: 100%; margin: 10px 0;'>\n  <thead>\n    <tr style='background-color: #f2f2f2;'>\n      <th style='padding: 8px; text-align: left;'>List-I (Divide-and-conquer based algorithms)</th>\n      <th style='padding: 8px; text-align: left;'>List-II (Recurrence Relation)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td style='padding: 8px;'>A. Binary Search</td>\n      <td style='padding: 8px;'>I. f(n) = 7f(n/2) + 15</td>\n    </tr>\n    <tr>\n      <td style='padding: 8px;'>B. Merge Sort</td>\n      <td style='padding: 8px;'>II. f(n) = 3f(n/2) + n^2</td>\n    </tr>\n    <tr>\n      <td style='padding: 8px;'>C. Quick Sort (Worst Case)</td>\n      <td style='padding: 8px;'>III. f(n) = f(n/2) + 1</td>\n    </tr>\n    <tr>\n      <td style='padding: 8px;'>D. Strassen's Matrix Multiplication</td>\n      <td style='padding: 8px;'>IV. f(n) = f(n-1) + n</td>\n    </tr>\n  </tbody>\n</table>\n\nChoose the correct answer from the options given below:",
     "options": {
       "a": "A-I, B-II, C-III, D-IV",
@@ -198,7 +198,7 @@
   {
     "question_number": 15,
     "year": "2024",
-    "unit": "Unit 5: System Software and Operating Systems",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
     "question_text": "Which of the following control problem does not exist, when processes unaware of each other during interaction?",
     "options": {
       "a": "Mutual exclusion",
@@ -212,7 +212,7 @@
   {
     "question_number": 16,
     "year": "2024",
-    "unit": "Unit 7: Data Structures and Algorithms",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
     "question_text": "The height of a binary search tree for the words banana, peach, apple, pear, coconut, mango and papaya using alphabetical order is:",
     "options": {
       "a": "2",
@@ -226,7 +226,7 @@
   {
     "question_number": 17,
     "year": "2024",
-    "unit": "Unit 5: System Software and Operating Systems",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
     "question_text": "Match List-I with List-II:\n\n<table border='1' style='border-collapse: collapse; width: 100%; margin: 10px 0;'>\n  <thead>\n    <tr style='background-color: #f2f2f2;'>\n      <th style='padding: 8px; text-align: left;'>List-I</th>\n      <th style='padding: 8px; text-align: left;'>List-II</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td style='padding: 8px;'>A. Batch Multiprogramming</td>\n      <td style='padding: 8px;'>I. Allows more efficient use of main memory</td>\n    </tr>\n    <tr>\n      <td style='padding: 8px;'>B. Time sharing</td>\n      <td style='padding: 8px;'>II. User no longer has direct access to the processor</td>\n    </tr>\n    <tr>\n      <td style='padding: 8px;'>C. Monitor</td>\n      <td style='padding: 8px;'>III. Maximize processor use</td>\n    </tr>\n    <tr>\n      <td style='padding: 8px;'>D. Reentrant Procedures</td>\n      <td style='padding: 8px;'>IV. Minimize response time</td>\n    </tr>\n  </tbody>\n</table>\n\nChoose the correct answer from the options given below:",
     "options": {
       "a": "A-III, B-II, C-IV, D-I",
@@ -240,7 +240,7 @@
   {
     "question_number": 18,
     "year": "2024",
-    "unit": "Unit 8: Theory of Computation and Compilers",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
     "question_text": "Which of the following is the function of the semantic analysis phase of compilation process?",
     "options": {
       "a": "Type conversion",
@@ -254,7 +254,7 @@
   {
     "question_number": 19,
     "year": "2024",
-    "unit": "Unit 8: Theory of Computation and Compilers",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
     "question_text": "For the regular languages and context free languages which is not correct?\n\nA. Both are closed under union operation\nB. Both are closed under concatenation operation\nC. Both are closed under intersection operation\nD. Both are closed under complementation operation\nE. Both are closed under kleene star operation",
     "options": {
       "a": "A and B Only",
@@ -268,7 +268,7 @@
   {
     "question_number": 20,
     "year": "2024",
-    "unit": "Unit 8: Theory of Computation and Compilers",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
     "question_text": "Match List-I with List-II:\n\n<table border='1' style='border-collapse: collapse; width: 100%; margin: 10px 0;'>\n  <thead>\n    <tr style='background-color: #f2f2f2;'>\n      <th style='padding: 8px; text-align: left;'>List-I</th>\n      <th style='padding: 8px; text-align: left;'>List-II</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td style='padding: 8px;'>A. Back Tracking</td>\n      <td style='padding: 8px;'>I. Automata</td>\n    </tr>\n    <tr>\n      <td style='padding: 8px;'>B. Infinite languages with matching numbers</td>\n      <td style='padding: 8px;'>II. Undecidable Problem</td>\n    </tr>\n    <tr>\n      <td style='padding: 8px;'>C. Canonical LR Parser</td>\n      <td style='padding: 8px;'>III. Predictive Parser</td>\n    </tr>\n    <tr>\n      <td style='padding: 8px;'>D. Post Correspondence Problem</td>\n      <td style='padding: 8px;'>IV. Large number of states</td>\n    </tr>\n  </tbody>\n</table>\n\nChoose the correct answer from the options given below:",
     "options": {
       "a": "A-I, B-II, C-III, D-IV",
@@ -282,7 +282,7 @@
   {
     "question_number": 21,
     "year": "2024",
-    "unit": "Unit 3: Programming Languages and Problem Solving",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
     "question_text": "The output of the following C Program is:\n\n#include <stdio.h>\nint main (void) {\n    int x, *p;\n    x = 30;\n    p = x;\n    printf(\"%d\", *p);\n    return 0;\n}",
     "options": {
       "a": "30",
@@ -296,7 +296,7 @@
   {
     "question_number": 22,
     "year": "2024",
-    "unit": "Unit 1: Discrete Mathematics and Optimization",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
     "question_text": "Which of the following have truth values if universe of discourse consists of all integers?\n\nA. ∀n∃m(n^2 < m)\nB. ∃n∀m(n < m^2)\nC. ∃n∃m(n^2 + m^2 = 5)\nD. ∃n∃m(n^2 + m^2 = 6)\nE. ∃n∃m(m + n = 4 ∧ n - m = 1)",
     "options": {
       "a": "A, B, C Only",
@@ -310,7 +310,7 @@
   {
     "question_number": 23,
     "year": "2024",
-    "unit": "Unit 3: Programming Languages and Problem Solving",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
     "question_text": "Multiple Inheritance is permitted directly in...\n\nA. C++\nB. Java\nC. Python\nD. VB.NET\nE. BASIC",
     "options": {
       "a": "A and B Only",
@@ -324,7 +324,7 @@
   {
     "question_number": 24,
     "year": "2024",
-    "unit": "Unit 6: Software Engineering",
+    "unit": "Unit 6: Software Engineering (Software development life cycle, software testing techniques, software quality assurance, software metrics)",
     "question_text": "The ratio of error found before software delivery and to the total errors (before and after) is called:",
     "options": {
       "a": "Accuracy",
@@ -338,7 +338,7 @@
   {
     "question_number": 25,
     "year": "2024",
-    "unit": "Unit 2: Computer Architecture and Organization",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
     "question_text": "Match List-I with List-II:\n\n<table border='1' style='border-collapse: collapse; width: 100%; margin: 10px 0;'>\n  <thead>\n    <tr style='background-color: #f2f2f2;'>\n      <th style='padding: 8px; text-align: left;'>List-I</th>\n      <th style='padding: 8px; text-align: left;'>List-II</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td style='padding: 8px;'>A. RAID level-2</td>\n      <td style='padding: 8px;'>I. Block-interleaved</td>\n    </tr>\n    <tr>\n      <td style='padding: 8px;'>B. RAID level-3</td>\n      <td style='padding: 8px;'>II. Error-correcting-code</td>\n    </tr>\n    <tr>\n      <td style='padding: 8px;'>C. RAID level-4</td>\n      <td style='padding: 8px;'>III. Reed-Solomon codes</td>\n    </tr>\n    <tr>\n      <td style='padding: 8px;'>D. RAID level-6</td>\n      <td style='padding: 8px;'>IV. Bit-interleaved</td>\n    </tr>\n  </tbody>\n</table>\n\nChoose the correct answer from the options given below:",
     "options": {
       "a": "A-I, B-III, C-IV, D-II",
@@ -352,7 +352,7 @@
   {
     "question_number": 26,
     "year": "2024",
-    "unit": "Unit 1: Discrete Mathematics and Optimization",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
     "question_text": "Which of the following sequences {a_n} are the solution of recurrence relation a_n = 8a_{n-1} - 16a_{n-2}?\n\nA. a_n = 1\nB. a_n = 2^n\nC. a_n = 4^n\nD. a_n = n4^n",
     "options": {
       "a": "A, B, C Only",
@@ -380,7 +380,7 @@
   {
     "question_number": 28,
     "year": "2024",
-    "unit": "Unit 3: Programming Languages and Problem Solving",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
     "question_text": "Which of the following is the Markup language?\n\nA. HTML\nB. XML\nC. DHTML\nD. LML\nE. PML",
     "options": {
       "a": "B, C, D Only",
@@ -422,7 +422,7 @@
   {
     "question_number": 21,
     "year": "2024",
-    "unit": "Unit 3: Programming Languages and Problem Solving",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
     "question_text": "The output of the following C Program is:\n\n#include <stdio.h>\nint main (void) {\n    int x, *p;\n    x = 30;\n    p = x;\n    printf(\"%d\", *p);\n    return 0;\n}",
     "options": {
       "a": "30",
@@ -436,7 +436,7 @@
   {
     "question_number": 22,
     "year": "2024",
-    "unit": "Unit 1: Discrete Mathematics and Optimization",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
     "question_text": "Which of the following have truth values if universe of discourse consists of all integers?\n\nA. ∀n∃m(n^2 < m)\nB. ∃n∀m(n < m^2)\nC. ∃n∃m(n^2 + m^2 = 5)\nD. ∃n∃m(n^2 + m^2 = 6)\nE. ∃n∃m(m + n = 4 ∧ n - m = 1)",
     "options": {
       "a": "A, B, C Only",
@@ -450,7 +450,7 @@
   {
     "question_number": 23,
     "year": "2024",
-    "unit": "Unit 3: Programming Languages and Problem Solving",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
     "question_text": "Multiple Inheritance is permitted directly in...\n\nA. C++\nB. Java\nC. Python\nD. VB.NET\nE. BASIC",
     "options": {
       "a": "A and B Only",
@@ -464,7 +464,7 @@
   {
     "question_number": 24,
     "year": "2024",
-    "unit": "Unit 6: Software Engineering",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
     "question_text": "The ratio of error found before software delivery and to the total errors (before and after) is called:",
     "options": {
       "a": "Accuracy",
@@ -478,7 +478,7 @@
   {
     "question_number": 25,
     "year": "2024",
-    "unit": "Unit 2: Computer Architecture and Organization",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
     "question_text": "Match List-I with List-II:\n\n<table border='1' style='border-collapse: collapse; width: 100%; margin: 10px 0;'>\n  <thead>\n    <tr style='background-color: #f2f2f2;'>\n      <th style='padding: 8px; text-align: left;'>List-I</th>\n      <th style='padding: 8px; text-align: left;'>List-II</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td style='padding: 8px;'>A. RAID level-2</td>\n      <td style='padding: 8px;'>I. Block-interleaved</td>\n    </tr>\n    <tr>\n      <td style='padding: 8px;'>B. RAID level-3</td>\n      <td style='padding: 8px;'>II. Error-correcting-code</td>\n    </tr>\n    <tr>\n      <td style='padding: 8px;'>C. RAID level-4</td>\n      <td style='padding: 8px;'>III. Reed-Solomon codes</td>\n    </tr>\n    <tr>\n      <td style='padding: 8px;'>D. RAID level-6</td>\n      <td style='padding: 8px;'>IV. Bit-interleaved</td>\n    </tr>\n  </tbody>\n</table>\n\nChoose the correct answer from the options given below:",
     "options": {
       "a": "A-I, B-III, C-IV, D-II",
@@ -492,7 +492,7 @@
   {
     "question_number": 26,
     "year": "2024",
-    "unit": "Unit 1: Discrete Mathematics and Optimization",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
     "question_text": "Which of the following sequences {a_n} are the solution of recurrence relation a_n = 8a_{n-1} - 16a_{n-2}?\n\nA. a_n = 1\nB. a_n = 2^n\nC. a_n = 4^n\nD. a_n = n4^n",
     "options": {
       "a": "A, B, C Only",
@@ -520,7 +520,7 @@
   {
     "question_number": 28,
     "year": "2024",
-    "unit": "Unit 3: Programming Languages and Problem Solving",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
     "question_text": "Which of the following is the Markup language?\n\nA. HTML\nB. XML\nC. DHTML\nD. LML\nE. PML",
     "options": {
       "a": "B, C, D Only",
@@ -562,7 +562,7 @@
   {
     "question_number": 31,
     "year": "2024",
-    "unit": "Unit 2: Computer Architecture and Organization",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
     "question_text": "The instructions ADD R1, A, B; ADD R2, C, D; MUL X, R1, R2 represents:",
     "options": {
       "a": "Vector operation",
@@ -604,7 +604,7 @@
   {
     "question_number": 34,
     "year": "2024",
-    "unit": "Unit 1: Discrete Mathematics and Optimization",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
     "question_text": "The Boolean expression for the following would be: F(A, B, C) = Σ(0, 2, 6) d(A, B, C) = Σ(1, 3, 5)",
     "options": {
       "a": "A'C' + BC'",
@@ -618,7 +618,7 @@
   {
     "question_number": 35,
     "year": "2024",
-    "unit": "Unit 5: System Software and Operating Systems",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
     "question_text": "Arrange the following in correct order, so that they can follow a proper run time environment:\n\nA. Programming statement\nB. Compilation\nC. Memory allocation\nD. Type of variable\nE. Memory deallocation",
     "options": {
       "a": "A, B, C, D, E",
@@ -632,7 +632,7 @@
   {
     "question_number": 36,
     "year": "2024",
-    "unit": "Unit 2: Computer Architecture and Organization",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
     "question_text": "A computer system with cache access time of 100 ns, a main memory access time of 1100 ns, and a hit ratio of 0.9, then average access time would be:",
     "options": {
       "a": "200 ns",
@@ -660,7 +660,7 @@
   {
     "question_number": 38,
     "year": "2024",
-    "unit": "Unit 1: Discrete Mathematics and Optimization",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
     "question_text": "Arrange the following simple graphs based on number of spanning tree they have:\n\nA. K3 (Complete Graph with 3 nodes)\nB. K4 (Complete Graph with 4 nodes)\nC. K2,2 (Complete bipartite graph with 2 nodes in each partition)\nD. C5 (Cycle graph of 5 nodes)",
     "options": {
       "a": "A, B, C, D",
@@ -716,7 +716,7 @@
   {
     "question_number": 42,
     "year": "2024",
-    "unit": "Unit 1: Discrete Mathematics and Optimization",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
     "question_text": "Match List-I with List-II:\n\n<table border='1' style='border-collapse: collapse; width: 100%; margin: 10px 0;'>\n  <thead>\n    <tr style='background-color: #f2f2f2;'>\n      <th style='padding: 8px; text-align: left;'>List-I (Boolean Expression)</th>\n      <th style='padding: 8px; text-align: left;'>List-II (Dual of Boolean Expression)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td style='padding: 8px;'>A. x·(y+0)</td>\n      <td style='padding: 8px;'>I. (x+0)·(y·z)</td>\n    </tr>\n    <tr>\n      <td style='padding: 8px;'>B. x·1+(y+z)</td>\n      <td style='padding: 8px;'>II. x+y·1</td>\n    </tr>\n    <tr>\n      <td style='padding: 8px;'>C. x·(y+z)</td>\n      <td style='padding: 8px;'>III. x+y·1</td>\n    </tr>\n    <tr>\n      <td style='padding: 8px;'>D. x·1+(y·z)</td>\n      <td style='padding: 8px;'>IV. (x+0)·(y+z)</td>\n    </tr>\n  </tbody>\n</table>\n\nChoose the correct answer from the options given below:",
     "options": {
       "a": "A-I, B-II, C-III, D-IV",
@@ -730,7 +730,7 @@
   {
     "question_number": 43,
     "year": "2024",
-    "unit": "Unit 1: Discrete Mathematics and Optimization",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
     "question_text": "A bit string of length four is generated at random. What is probability that it contains at least two consecutive 0's given that first bit is 0?",
     "options": {
       "a": "1/2",
@@ -772,7 +772,7 @@
   {
     "question_number": 46,
     "year": "2024",
-    "unit": "Unit 1: Discrete Mathematics and Optimization",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
     "question_text": "Arrange the following sets in increasing order, on the basis of their cardinality:\n\nA. A1 = {{1,2}, {3}}\nB. A2 = {{1}, {2}, {3}, {4}}\nC. A3 = {{1,2,3,4,5,6}}\nD. A4 = {{1,2}, {2,3,4}, {5}}\nE. A5 = {{1}, {2}, {3}, {4}, {5}}",
     "options": {
       "a": "A, B, D, E, C",
@@ -800,7 +800,7 @@
   {
     "question_number": 48,
     "year": "2024",
-    "unit": "Unit 6: Software Engineering",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
     "question_text": "Which of the following is not the goal of reverse Engineering?",
     "options": {
       "a": "Cope with complexity",
@@ -814,7 +814,7 @@
   {
     "question_number": 49,
     "year": "2024",
-    "unit": "Unit 1: Discrete Mathematics and Optimization",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
     "question_text": "The chairs of an auditorium are to be labelled with a letter followed by a positive two digits integer where labelling is starting with A01. How many maximum possible chairs could be labelled in this way?",
     "options": {
       "a": "2600",
@@ -842,7 +842,7 @@
   {
     "question_number": 51,
     "year": "2024",
-    "unit": "Unit 1: Discrete Mathematics and Optimization",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
     "question_text": "Lower-triangular sparse matrix is one:",
     "options": {
       "a": "In which all the non-zero elements lie only on the leading diagonal",
@@ -870,7 +870,7 @@
   {
     "question_number": 53,
     "year": "2024",
-    "unit": "Unit 5: System Software and Operating Systems",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
     "question_text": "Which of the following is not correct about the virtual memory segmentation?",
     "options": {
       "a": "It is not necessary to load all of the segments of a process",
@@ -898,7 +898,7 @@
   {
     "question_number": 55,
     "year": "2024",
-    "unit": "Unit 1: Discrete Mathematics and Optimization",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
     "question_text": "Z is set of integers, <Z, *> forms group if * is:",
     "options": {
       "a": "*(a,b) = a + b + 2",
@@ -926,7 +926,7 @@
   {
     "question_number": 57,
     "year": "2024",
-    "unit": "Unit 5: System Software and Operating Systems",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
     "question_text": "Which of the following is not a characteristic of a specialized embedded OS?",
     "options": {
       "a": "Real time scheduling policy",
@@ -982,7 +982,7 @@
   {
     "question_number": 61,
     "year": "2024",
-    "unit": "Unit 6: Software Engineering",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
     "question_text": "The cyclomatic complexity of the following flow graph is:\n\n[Flow graph with nodes 1 to 10 and edges: 1→2, 2→3, 3→9, 9→10, 10→1, 2→4, 4→6, 6→7, 7→9, 4→5, 5→7]",
     "options": {
       "a": "3",
@@ -1010,7 +1010,7 @@
   {
     "question_number": 63,
     "year": "2024",
-    "unit": "Unit 1: Discrete Mathematics and Optimization",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
     "question_text": "Arrange the steps of Mathematical Modeling:\n\nA. Solution fitting with data\nB. Formulation Mathematically\nC. Solve Mathematically\nD. Repeat formulation if it fit worst with data\nE. Interpretation results",
     "options": {
       "a": "B, C, A, D, E",
@@ -1024,7 +1024,7 @@
   {
     "question_number": 64,
     "year": "2024",
-    "unit": "Unit 5: System Software and Operating Systems",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
     "question_text": "In windows scheduling, which of the following option is correct?",
     "options": {
       "a": "4 non-real-time priorities",
@@ -1038,7 +1038,7 @@
   {
     "question_number": 65,
     "year": "2024",
-    "unit": "Unit 2: Computer Architecture and Organization",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
     "question_text": "The I/O methods in which memory addresses and I/O addresses are distinct, is called:\n\nA. Isolated I/O\nB. Memory-Mapped I/O\nC. Strobe Control\nD. Handshaking\nE. Interrupt",
     "options": {
       "a": "A, B Only",
@@ -1066,7 +1066,7 @@
   {
     "question_number": 67,
     "year": "2024",
-    "unit": "Unit 1: Discrete Mathematics and Optimization",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
     "question_text": "Which of the followings are tautology?\n\nA. (p ∨ r) → p\nB. p → (p ∧ r)\nC. ¬p → (p → r)\nD. (p ∧ r) → (p → r)\nE. ¬(p → r) → p",
     "options": {
       "a": "A, B Only",
@@ -1080,7 +1080,7 @@
   {
     "question_number": 68,
     "year": "2024",
-    "unit": "Unit 2: Computer Architecture and Organization",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
     "question_text": "Arrange the following from fastest to slowest in speed.\n\nA. DRAM\nB. SRAM\nC. CPU Registers\nD. Magnetic tapes\nE. Hard disk",
     "options": {
       "a": "A, B, C, D, E",
@@ -1108,7 +1108,7 @@
   {
     "question_number": 70,
     "year": "2024",
-    "unit": "Unit 2: Computer Architecture and Organization",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
     "question_text": "Regarding the subroutines, see the following sequence of tasks to be performed:\n\nA. Turn on the interrupt facility on.\nB. Service the device whose flag is set.\nC. Save the contents of processor registers.\nD. Check which flag is set.\nE. Restore the contents of processor registers.",
     "options": {
       "a": "A, D, C, B, E",
@@ -1122,7 +1122,7 @@
     {
     "question_number": 71,
     "year": "2024",
-    "unit": "Unit 6: Software Engineering",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
     "question_text": "Match List-I with List-II:\n\n<table border='1' style='border-collapse: collapse; width: 100%; margin: 10px 0;'>\n  <thead>\n    <tr style='background-color: #f2f2f2;'>\n      <th style='padding: 8px; text-align: left;'>List-I</th>\n      <th style='padding: 8px; text-align: left;'>List-II</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td style='padding: 8px;'>A. Verification</td>\n      <td style='padding: 8px;'>I. White box Testing</td>\n    </tr>\n    <tr>\n      <td style='padding: 8px;'>B. Validation</td>\n      <td style='padding: 8px;'>II. Black box Testing</td>\n    </tr>\n    <tr>\n      <td style='padding: 8px;'>C. Internal Logic exercise</td>\n      <td style='padding: 8px;'>III. Quality Control</td>\n    </tr>\n    <tr>\n      <td style='padding: 8px;'>D. Software requirement exercise</td>\n      <td style='padding: 8px;'>IV. Quality Assurance</td>\n    </tr>\n  </tbody>\n</table>\n\nChoose the correct answer from the options given below:",
     "options": {
       "a": "A-IV, B-III, C-I, D-II",
@@ -1164,7 +1164,7 @@
   {
     "question_number": 74,
     "year": "2024",
-    "unit": "Unit 3: Programming Languages and Problem Solving",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
     "question_text": "The number of tokens in the following line: for i in range (begin : end : step) : is:",
     "options": {
       "a": "4",
@@ -1206,7 +1206,7 @@
   {
     "question_number": 77,
     "year": "2024",
-    "unit": "Unit 2: Computer Architecture and Organization",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
     "question_text": "Match List-I with List-II:\n\n<table border='1' style='border-collapse: collapse; width: 100%; margin: 10px 0;'>\n  <thead>\n    <tr style='background-color: #f2f2f2;'>\n      <th style='padding: 8px; text-align: left;'>List-I</th>\n      <th style='padding: 8px; text-align: left;'>List-II</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td style='padding: 8px;'>A. Complement</td>\n      <td style='padding: 8px;'>I. Adder</td>\n    </tr>\n    <tr>\n      <td style='padding: 8px;'>B. Ex-OR</td>\n      <td style='padding: 8px;'>II. Instruction decoding</td>\n    </tr>\n    <tr>\n      <td style='padding: 8px;'>C. Accumulator</td>\n      <td style='padding: 8px;'>III. Negative number representation</td>\n    </tr>\n    <tr>\n      <td style='padding: 8px;'>D. Control-Unit</td>\n      <td style='padding: 8px;'>IV. Arithmetic and Logic operations</td>\n    </tr>\n  </tbody>\n</table>\n\nChoose the correct answer from the options given below:",
     "options": {
       "a": "A-I, B-II, C-III, D-IV",
@@ -1248,7 +1248,7 @@
   {
     "question_number": 80,
     "year": "2024",
-    "unit": "Unit 3: Programming Languages and Problem Solving",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
     "question_text": "For line drawing, which of the following algorithms are used?\n\nA. DDA algorithm\nB. Bresenham algorithm\nC. Mid point algorithm\nD. Curve algorithm",
     "options": {
       "a": "B and C Only",
@@ -1290,7 +1290,7 @@
   {
     "question_number": 83,
     "year": "2024",
-    "unit": "Unit 2: Computer Architecture and Organization",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
     "question_text": "The least values of a signed and unsigned data type variables requiring 8 bits, would be:",
     "options": {
       "a": "0, 128",
@@ -1318,7 +1318,7 @@
   {
     "question_number": 85,
     "year": "2024",
-    "unit": "Unit 2: Computer Architecture and Organization",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
     "question_text": "For making a memory of size 2048 × 8 bytes, by using the chips of size 128 × 4 bytes, the number of chips required is:",
     "options": {
       "a": "8",
@@ -1332,7 +1332,7 @@
   {
     "question_number": 86,
     "year": "2024",
-    "unit": "Unit 2: Computer Architecture and Organization",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
     "question_text": "Which of the followings are sequential circuits?\n\nA. Flip flop\nB. Multiplexer\nC. Counter\nD. Decoder\nE. Adder",
     "options": {
       "a": "B, D Only",
@@ -1346,7 +1346,7 @@
   {
     "question_number": 87,
     "year": "2024",
-    "unit": "Unit 6: Software Engineering",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
     "question_text": "Which of the followings are White Box Testing?\n\nA. Path Testing\nB. Loop Testing\nC. Regression Testing\nD. Non-functional Testing",
     "options": {
       "a": "A and B Only",
@@ -1360,7 +1360,7 @@
   {
     "question_number": 88,
     "year": "2024",
-    "unit": "Unit 2: Computer Architecture and Organization",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
     "question_text": "Techniques for performing I/O:\n\nA. Programmed I/O\nB. Interrupt-driven I/O\nC. Rational I/O\nD. Direct memory access I/O\nE. Channelized I/O",
     "options": {
       "a": "A and C Only",
@@ -1374,7 +1374,7 @@
   {
     "question_number": 89,
     "year": "2024",
-    "unit": "Unit 6: Software Engineering",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
     "question_text": "For the software quality assurance, which of the followings are correct?\n\nA. Execution of code\nB. No execution of code\nC. Preventive technique\nD. A corrective technique",
     "options": {
       "a": "A, B Only",
@@ -1402,7 +1402,7 @@
    {
     "question_number": 91,
     "year": "2024",
-    "unit": "Unit 1: Discrete Mathematics and Optimization",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
     "question_text": "A firm can produce two type of cloth say A and B. Three kind of wool are required for it, say red wool, green wool and blue wool. One unit length of type A cloth needs 2 yards of red and 3 yards of green wool. One unit length of type B cloth needs 3 yards of red wool, 2 yards of green wool and 2 yards blue wool. The firm has only a stock of 8 yards of red wool, 10 yards of green wool and 15 yards of blue wool. It is assumed that the income obtained from one unit length of type A and type B cloths are 30 and 50, respectively.\n\nWhen we formulate the LPP from the above given passage. Which of the following is a objective function for its dual problem?",
     "options": {
       "a": "Min P = 5u + 8v + 15w",
@@ -1416,7 +1416,7 @@
   {
     "question_number": 92,
     "year": "2024",
-    "unit": "Unit 1: Discrete Mathematics and Optimization",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
     "question_text": "A firm can produce two type of cloth say A and B. Three kind of wool are required for it, say red wool, green wool and blue wool. One unit length of type A cloth needs 2 yards of red and 3 yards of green wool. One unit length of type B cloth needs 3 yards of red wool, 2 yards of green wool and 2 yards blue wool. The firm has only a stock of 8 yards of red wool, 10 yards of green wool and 15 yards of blue wool. It is assumed that the income obtained from one unit length of type A and type B cloths are 30 and 50, respectively.\n\nWhich of the following will be appropriate objective function for the given problem?",
     "options": {
       "a": "2x + 3y",
@@ -1430,7 +1430,7 @@
   {
     "question_number": 93,
     "year": "2024",
-    "unit": "Unit 1: Discrete Mathematics and Optimization",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
     "question_text": "A firm can produce two type of cloth say A and B. Three kind of wool are required for it, say red wool, green wool and blue wool. One unit length of type A cloth needs 2 yards of red and 3 yards of green wool. One unit length of type B cloth needs 3 yards of red wool, 2 yards of green wool and 2 yards blue wool. The firm has only a stock of 8 yards of red wool, 10 yards of green wool and 15 yards of blue wool. It is assumed that the income obtained from one unit length of type A and type B cloths are 30 and 50, respectively.\n\nHow many unit length used for cloth A when income is maximized?",
     "options": {
       "a": "0.8 unit",
@@ -1444,7 +1444,7 @@
   {
     "question_number": 94,
     "year": "2024",
-    "unit": "Unit 1: Discrete Mathematics and Optimization",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
     "question_text": "A firm can produce two type of cloth say A and B. Three kind of wool are required for it, say red wool, green wool and blue wool. One unit length of type A cloth needs 2 yards of red and 3 yards of green wool. One unit length of type B cloth needs 3 yards of red wool, 2 yards of green wool and 2 yards blue wool. The firm has only a stock of 8 yards of red wool, 10 yards of green wool and 15 yards of blue wool. It is assumed that the income obtained from one unit length of type A and type B cloths are 30 and 50, respectively.\n\nIf x unit length of type A cloths and y unit length of type B cloths, then constraints formulate for the LPP, is:",
     "options": {
       "a": "y ≤ 7.5, 2x + 3y ≤ 8, 3y + 2x ≤ 10",
@@ -1458,7 +1458,7 @@
   {
     "question_number": 95,
     "year": "2024",
-    "unit": "Unit 1: Discrete Mathematics and Optimization",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
     "question_text": "A firm can produce two type of cloth say A and B. Three kind of wool are required for it, say red wool, green wool and blue wool. One unit length of type A cloth needs 2 yards of red and 3 yards of green wool. One unit length of type B cloth needs 3 yards of red wool, 2 yards of green wool and 2 yards blue wool. The firm has only a stock of 8 yards of red wool, 10 yards of green wool and 15 yards of blue wool. It is assumed that the income obtained from one unit length of type A and type B cloths are 30 and 50, respectively.\n\nOn the basis of available material, maximum total income is:",
     "options": {
       "a": "Rs. 133.3",

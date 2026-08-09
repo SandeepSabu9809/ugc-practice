@@ -733,49 +733,65 @@ loadAllQuestions()
     const unitSelect = document.getElementById('unit-filter');
 
     const years = [...new Set(questions.map(q => q.year).filter(Boolean))];
-    const units = [...new Set(questions.map(q => q.unit).filter(Boolean))];
+    // Extract only the main unit name (remove parentheses content)
+    const units = [...new Set(questions.map(q => {
+        if (q.unit) {
+            // Remove everything inside parentheses and the parentheses themselves
+            return q.unit.replace(/\([^)]*\)/g, '').trim();
+        }
+        return null;
+    }).filter(Boolean))];
 
     years.sort();
 
+    // Sort units by their number (Unit 1, Unit 2, etc.)
     units.sort((a, b) => {
-      const numA = parseInt(a.match(/\d+/)?.[0] || 0, 10);
-      const numB = parseInt(b.match(/\d+/)?.[0] || 0, 10);
-      return numA - numB;
+        const numA = parseInt(a.match(/\d+/)?.[0] || 0, 10);
+        const numB = parseInt(b.match(/\d+/)?.[0] || 0, 10);
+        return numA - numB;
     });
 
+    // Clear existing options (except the "All" option)
+    yearSelect.innerHTML = '<option value="all">All Years</option>';
+    unitSelect.innerHTML = '<option value="all">All Units</option>';
 
     years.forEach(year => {
-      const opt = document.createElement('option');
-      opt.value = year;
-      opt.textContent = year;
-      yearSelect.appendChild(opt);
+        const opt = document.createElement('option');
+        opt.value = year;
+        opt.textContent = year;
+        yearSelect.appendChild(opt);
     });
 
     units.forEach(unit => {
-      const opt = document.createElement('option');
-      opt.value = unit;
-      opt.textContent = unit;
-      unitSelect.appendChild(opt);
+        const opt = document.createElement('option');
+        opt.value = unit;
+        opt.textContent = unit;
+        unitSelect.appendChild(opt);
     });
 
     yearSelect.addEventListener('change', applyFilters);
     unitSelect.addEventListener('change', applyFilters);
-  }
+}
 
-  function applyFilters() {
+function applyFilters() {
     if (window.speechSynthesis) window.speechSynthesis.cancel();
     const selectedYear = document.getElementById('year-filter').value;
     const selectedUnit = document.getElementById('unit-filter').value;
 
     const filtered = allQuestions.filter(q => {
-      const matchYear = (selectedYear === 'all') || (q.year === selectedYear);
-      const matchUnit = (selectedUnit === 'all') || (q.unit === selectedUnit);
-      return matchYear && matchUnit;
+        const matchYear = (selectedYear === 'all') || (q.year === selectedYear);
+        // For unit matching, check if the selected unit matches the main unit name (without parentheses)
+        let matchUnit = true;
+        if (selectedUnit !== 'all') {
+            // Extract main unit name from question (without parentheses)
+            const qUnit = q.unit ? q.unit.replace(/\([^)]*\)/g, '').trim() : '';
+            matchUnit = qUnit === selectedUnit;
+        }
+        return matchYear && matchUnit;
     });
 
     renderQuestions(filtered);
-  }
-
+}
   function renderQuestions(questions) {
     const container = document.getElementById('questions-container');
     container.innerHTML = '';
