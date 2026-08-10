@@ -191,7 +191,7 @@
   background: rgba(240, 170, 200, 0.35) !important;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  border-radius: 8px;
+  border-radius: 5px;
 }
 
 /* Active Word Highlight (Vivid Yellow Badge) */
@@ -663,7 +663,7 @@ function speakQuestion(q, btn, targetContainer) {
   }
 
  function speakExplanation(q, btn, targetContainer) {
-    let text = `Explanation. The correct answer is option ${q.answer}. `;
+    let text = `Explanation.`;
     text += cleanText(q.explanation);
     speakText(text, btn, 'Read Explanation', targetContainer);
 }
