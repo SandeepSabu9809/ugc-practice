@@ -191,8 +191,7 @@
   background: rgba(240, 170, 200, 0.35) !important;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  border-radius: 3px;
-  display: inline;
+  border-radius: 18px;
 }
 
 /* Active Word Highlight (Vivid Yellow Badge) */
@@ -494,34 +493,31 @@
  /* ROBUST WORD HIGHLIGHTER WITH TIMER FALLBACK */
 /* ENHANCED SPAN & LINE WRAPPER ENGINE */
 function wrapTextNodesInSpans(element) {
-  // First, wrap distinct paragraph/line blocks if they don't exist
-  const childNodes = Array.from(element.childNodes);
+  // Store the original HTML
+  const html = element.innerHTML;
   
-  childNodes.forEach(node => {
-    if (node.nodeType === Node.TEXT_NODE && node.nodeValue.trim().length > 0) {
-      const lineSpan = document.createElement('span');
-      lineSpan.className = 'speech-line-block';
-      lineSpan.style.display = 'inline-block';
-      lineSpan.style.width = '100%';
-      node.parentNode.insertBefore(lineSpan, node);
-      lineSpan.appendChild(node);
-    }
-  });
-
-  // Now wrap individual text words in spans
-  const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT, null, false);
+  // Create a temporary container
+  const temp = document.createElement('div');
+  temp.innerHTML = html;
+  
+  // Walk through text nodes only (skip HTML tags)
+  const walker = document.createTreeWalker(temp, NodeFilter.SHOW_TEXT, null, false);
   const textNodes = [];
   let node;
   while ((node = walker.nextNode())) {
-    if (node.nodeValue.trim().length > 0) textNodes.push(node);
+    if (node.nodeValue.trim().length > 0) {
+      textNodes.push(node);
+    }
   }
-
+  
   let totalWords = 0;
-  textNodes.forEach((textNode) => {
+  
+  // Wrap each text node's words
+  textNodes.forEach(textNode => {
     const words = textNode.nodeValue.split(/(\s+)/);
     const fragment = document.createDocumentFragment();
-
-    words.forEach((word) => {
+    
+    words.forEach(word => {
       if (word.trim().length > 0) {
         const span = document.createElement('span');
         span.className = 'speech-word';
@@ -532,10 +528,12 @@ function wrapTextNodesInSpans(element) {
         fragment.appendChild(document.createTextNode(word));
       }
     });
-
+    
     textNode.parentNode.replaceChild(fragment, textNode);
   });
-
+  
+  // Update the element with wrapped content
+  element.innerHTML = temp.innerHTML;
   return totalWords;
 }
 
@@ -559,7 +557,6 @@ function speakText(text, btn, labelText, containerEl) {
   }
 
   let timerInterval = null;
-  const originalHTML = containerEl ? containerEl.innerHTML : '';
   let totalWordSpans = 0;
 
   if (containerEl) {
@@ -580,33 +577,28 @@ function speakText(text, btn, labelText, containerEl) {
   let boundaryFired = false;
 
   const updateHighlight = (activeWordSpan) => {
-  if (!containerEl || !activeWordSpan) return;
+    if (!containerEl || !activeWordSpan) return;
 
-  // 1. Clear existing highlights
-  containerEl.querySelectorAll('.speech-word.highlight').forEach(s => s.classList.remove('highlight'));
-  containerEl.querySelectorAll('.speech-line-highlight').forEach(s => s.classList.remove('speech-line-highlight'));
+    containerEl.querySelectorAll('.speech-word.highlight').forEach(s => s.classList.remove('highlight'));
+    containerEl.querySelectorAll('.speech-line-highlight').forEach(s => s.classList.remove('speech-line-highlight'));
 
-  // 2. Apply yellow badge to the spoken word
-  activeWordSpan.classList.add('highlight');
+    activeWordSpan.classList.add('highlight');
 
-  // 3. Find up to 4 words total (1 before, current word, 2 after)
-  const allWords = Array.from(containerEl.querySelectorAll('.speech-word'));
-  const currentIndex = allWords.indexOf(activeWordSpan);
+    const allWords = Array.from(containerEl.querySelectorAll('.speech-word'));
+    const currentIndex = allWords.indexOf(activeWordSpan);
 
-  if (currentIndex !== -1) {
-    const startIndex = Math.max(0, currentIndex - 1);
-    const endIndex = Math.min(allWords.length, currentIndex + 2);
+    if (currentIndex !== -1) {
+      const startIndex = Math.max(0, currentIndex - 1);
+      const endIndex = Math.min(allWords.length, currentIndex + 2);
 
-    // Apply blue highlight ONLY to this 4-word cluster
-    for (let i = startIndex; i < endIndex; i++) {
-      allWords[i].classList.add('speech-line-highlight');
+      for (let i = startIndex; i < endIndex; i++) {
+        allWords[i].classList.add('speech-line-highlight');
+      }
     }
-  }
 
-  activeWordSpan.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-};
+    activeWordSpan.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  };
 
-// 1. Boundary-based speech event
   currentUtterance.addEventListener('boundary', (event) => {
     if (event.name === 'word' && containerEl) {
       boundaryFired = true;
@@ -625,7 +617,6 @@ function speakText(text, btn, labelText, containerEl) {
     btn.innerHTML = '⏹ Stop';
     activeSpeakBtn = btn;
 
-    // 2. Timer fallback for browsers without boundary support
     setTimeout(() => {
       if (!boundaryFired && containerEl && totalWordSpans > 0) {
         const wordSpans = containerEl.querySelectorAll('.speech-word');
@@ -650,8 +641,10 @@ function speakText(text, btn, labelText, containerEl) {
     btn.innerHTML = `🔊 ${labelText}`;
     activeSpeakBtn = null;
     
-    if (containerEl && originalHTML) {
-      containerEl.innerHTML = originalHTML;
+    // FIXED: Only remove highlights, don't restore HTML
+    if (containerEl) {
+      containerEl.querySelectorAll('.speech-word.highlight').forEach(s => s.classList.remove('highlight'));
+      containerEl.querySelectorAll('.speech-line-highlight').forEach(s => s.classList.remove('speech-line-highlight'));
     }
   };
 
@@ -660,7 +653,6 @@ function speakText(text, btn, labelText, containerEl) {
 
   window.speechSynthesis.speak(currentUtterance);
 }
-
 function speakQuestion(q, btn, targetContainer) {
     let text = `Question number ${q.question_number}. ${cleanText(q.question_text)}. `;
     text += "Options are: ";
@@ -670,13 +662,11 @@ function speakQuestion(q, btn, targetContainer) {
     speakText(text, btn, 'Read Question', targetContainer);
   }
 
-  function speakExplanation(q, btn, targetContainer) {
-    let text = `Explanation for Question ${q.question_number}. `;
-    text += `The correct answer is option ${q.answer}. `;
+ function speakExplanation(q, btn, targetContainer) {
+    let text = `Explanation. The correct answer is option ${q.answer}. `;
     text += cleanText(q.explanation);
     speakText(text, btn, 'Read Explanation', targetContainer);
-  }
-
+}
   function speakAiText(q, content, btn, targetContainer) {
     let text = `AI Deep Dive for Question ${q.question_number}. ${cleanText(content)}`;
     speakText(text, btn, 'Read AI Analysis', targetContainer);
