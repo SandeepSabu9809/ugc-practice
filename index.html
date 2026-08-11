@@ -956,8 +956,7 @@ function speakQuestion(q, btn, targetContainer) {
       renderQuestions(allQuestions);
     })
     .catch(error => {
-      document.getElementById('questions-container').innerHTML = 
-        `<p style="color:red;">Error loading questions. Make sure you are serving the files via a local web server.</p>`;
+      document.getElementById('questions-container').innerHTML = '';
       console.error(error);
     });
 
