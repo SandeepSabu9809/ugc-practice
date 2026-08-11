@@ -1,0 +1,1754 @@
+[
+  {
+    "question_number": 1,
+    "year": "2013",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "When data and acknowledgement are sent in the same frame, this is called as",
+    "options": {
+      "a": "Piggy packing",
+      "b": "Piggy backing",
+      "c": "Back packing",
+      "d": "Good packing"
+    },
+    "answer": "b",
+    "explanation": "Piggy backing is a bi-directional data transmission technique where the receiver adds confirmation to the sent data frame."
+  },
+  {
+    "question_number": 2,
+    "year": "2013",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "Encryption and Decryption is the responsibility of .................... Layer.",
+    "options": {
+      "a": "Physical",
+      "b": "Network",
+      "c": "Application",
+      "d": "Datalink"
+    },
+    "answer": "c",
+    "explanation": "In the TCP/IP model, encryption and decryption are the responsibility of the Application layer (which combines presentation, session, and application layers of OSI)."
+  },
+  {
+    "question_number": 3,
+    "year": "2013",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "An analog signal carries 4 bits in each signal unit. If 1000 signal units are sent per second, then baud rate and bit rate of the signal are .............. and ................",
+    "options": {
+      "a": "4000 bauds/sec & 1000 bps",
+      "b": "2000 bauds/sec & 1000 bps",
+      "c": "1000 bauds/sec & 500 bps",
+      "d": "1000 bauds/sec & 4000 bps"
+    },
+    "answer": "d",
+    "explanation": "Baud rate = 1000 signals/sec. Bit rate = 1000 × 4 = 4000 bps."
+  },
+  {
+    "question_number": 4,
+    "year": "2013",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "The VLF and LF bands use .................. propagation for communication.",
+    "options": {
+      "a": "Ground",
+      "b": "Sky",
+      "c": "Line of sight",
+      "d": "Space"
+    },
+    "answer": "a",
+    "explanation": "VLF and LF bands use ground propagation for communication."
+  },
+  {
+    "question_number": 5,
+    "year": "2013",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "Using the RSA public key crypto system, if p = 13, q = 31 and d = 7, then the value of e is :",
+    "options": {
+      "a": "101",
+      "b": "103",
+      "c": "105",
+      "d": "107"
+    },
+    "answer": "b",
+    "explanation": "φ(n) = (13-1)(31-1) = 360. Need ed ≡ 1 mod 360. 7e = 721 → e = 103."
+  },
+  {
+    "question_number": 6,
+    "year": "2013",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "FAN IN of a component A is defined as :",
+    "options": {
+      "a": "Number of components that call or pass control to component A.",
+      "b": "Number of components that are called by component A.",
+      "c": "Number of components related to component A.",
+      "d": "Number of components dependent on component A."
+    },
+    "answer": "a",
+    "explanation": "FAN IN is the number of components that call or pass control to component A."
+  },
+  {
+    "question_number": 7,
+    "year": "2013",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "The relationship of data elements in a module is called",
+    "options": {
+      "a": "Coupling",
+      "b": "Modularity",
+      "c": "Cohesion",
+      "d": "Granularity"
+    },
+    "answer": "c",
+    "explanation": "Cohesion measures the strength of the relationship between data elements in a module."
+  },
+  {
+    "question_number": 8,
+    "year": "2013",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "Software configuration management is the discipline for systematically controlling :",
+    "options": {
+      "a": "the changes due to the evolution of work products as the project proceeds",
+      "b": "the changes due to defects (bugs) being found and then fixed",
+      "c": "the changes due to requirement changes",
+      "d": "All of the above"
+    },
+    "answer": "d",
+    "explanation": "SCM controls all changes in software: evolution, defect fixes, and requirement changes."
+  },
+  {
+    "question_number": 9,
+    "year": "2013",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "Which one of the following is not a step of requirement engineering?",
+    "options": {
+      "a": "Requirement elicitation",
+      "b": "Requirement analysis",
+      "c": "Requirement design",
+      "d": "Requirement documentation"
+    },
+    "answer": "c",
+    "explanation": "Requirement design is not a step of requirement engineering."
+  },
+  {
+    "question_number": 10,
+    "year": "2013",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "Testing of software with actual data and in actual environment is called :",
+    "options": {
+      "a": "Alpha testing",
+      "b": "Beta testing",
+      "c": "Regression testing",
+      "d": "None of the above"
+    },
+    "answer": "b",
+    "explanation": "Beta testing is testing software with actual data in the actual environment."
+  },
+  {
+    "question_number": 11,
+    "year": "2013",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "The student marks should not be greater than 100. This is:",
+    "options": {
+      "a": "Integrity constraint",
+      "b": "Referential constraint",
+      "c": "Over-defined constraint",
+      "d": "Feasible constraint"
+    },
+    "answer": "a",
+    "explanation": "This is an integrity constraint (domain constraint)."
+  },
+  {
+    "question_number": 12,
+    "year": "2013",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "GO BOTTOM and SKIP-3 commands are given one after another in a database file of 30 records. It shifts the control to :",
+    "options": {
+      "a": "28th record",
+      "b": "27th record",
+      "c": "3rd record",
+      "d": "4th record"
+    },
+    "answer": "b",
+    "explanation": "GO BOTTOM goes to record 30. SKIP-3 moves up 3 records (30, 29, 28) to record 27."
+  },
+  {
+    "question_number": 13,
+    "year": "2013",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "An ER model includes",
+    "options": {
+      "a": "1, 2, 3 & 4",
+      "b": "1 & 4",
+      "c": "1, 2 & 4",
+      "d": "1 & 3"
+    },
+    "answer": "a",
+    "explanation": "ER model includes all four: ER diagram, attributes, relationships, and semantic integrity constraints."
+  },
+  {
+    "question_number": 14,
+    "year": "2013",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "Based on the cardinality ratio and participation ........... associated with a relationship type, choose either the Foreign key design, the cross referencing design or mutual referencing design.",
+    "options": {
+      "a": "Entity",
+      "b": "Constraints",
+      "c": "Rules",
+      "d": "Keys"
+    },
+    "answer": "b",
+    "explanation": "Constraints enforce limits on data and are used to choose the appropriate design."
+  },
+  {
+    "question_number": 15,
+    "year": "2013",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "Data Integrity control uses................",
+    "options": {
+      "a": "Upper and lower limits on numeric data",
+      "b": "Passwords to prohibit unauthorized access to files",
+      "c": "Data dictionary to keep the data",
+      "d": "Data dictionary to find last access of data"
+    },
+    "answer": "b",
+    "explanation": "Data integrity control uses passwords to prohibit unauthorized access."
+  },
+  {
+    "question_number": 16,
+    "year": "2013",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "What does the following declaration mean? int (*ptr)[10]",
+    "options": {
+      "a": "ptr is an array of pointers of 10 integers",
+      "b": "ptr is a pointer to an array of 10 integers",
+      "c": "ptr is an array of 10 integers",
+      "d": "none of the above"
+    },
+    "answer": "b",
+    "explanation": "int (*ptr)[10] declares ptr as a pointer to an array of 10 integers."
+  },
+  {
+    "question_number": 17,
+    "year": "2013",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "Which of the following has compilation error in C?",
+    "options": {
+      "a": "int n = 32",
+      "b": "char ch = 65",
+      "c": "float f = (float) 3.2",
+      "d": "none of the above"
+    },
+    "answer": "d",
+    "explanation": "All are valid declaration statements in C."
+  },
+  {
+    "question_number": 18,
+    "year": "2013",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "Which of the following operators cannot be overloaded in C++?",
+    "options": {
+      "a": "?",
+      "b": "+=",
+      "c": "==",
+      "d": "::"
+    },
+    "answer": "d",
+    "explanation": "The scope resolution operator (::) cannot be overloaded."
+  },
+  {
+    "question_number": 19,
+    "year": "2013",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "................... Allows to create classes which are derived from other classes, so that they automatically include some of its 'parent's' members, plus its own members.",
+    "options": {
+      "a": "Overloading",
+      "b": "Inheritance",
+      "c": "Polymorphism",
+      "d": "Encapsulation"
+    },
+    "answer": "b",
+    "explanation": "Inheritance allows a class to acquire the properties of another class."
+  },
+  {
+    "question_number": 20,
+    "year": "2013",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "The correct way to round off a floating number x to an integer value is",
+    "options": {
+      "a": "y = (int)(x + 0.5)",
+      "b": "y = int(x + 0.5)",
+      "c": "y = (int)x + 0.5",
+      "d": "y = (int)((int)x + 0.5)"
+    },
+    "answer": "a",
+    "explanation": "Adding 0.5 and casting to int rounds to the nearest integer."
+  },
+  {
+    "question_number": 21,
+    "year": "2013",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "What is the value of the postfix expression? a b c d + - × (where a = 8, b = 4, c = 2 and d = 5)",
+    "options": {
+      "a": "-3/8",
+      "b": "-8/3",
+      "c": "24",
+      "d": "-24"
+    },
+    "answer": "d",
+    "explanation": "ab c d + - × = a × (b - (c + d)) = 8 × (4 - 7) = -24."
+  },
+  {
+    "question_number": 22,
+    "year": "2013",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "If the queue is implemented with a linked list, keeping track of a front pointer and a rear pointer, which of these pointers will change during an insertion into a non-empty queue?",
+    "options": {
+      "a": "Neither of the pointer change",
+      "b": "Only front pointer changes",
+      "c": "Only rear pointer changes",
+      "d": "Both of the pointers changes"
+    },
+    "answer": "c",
+    "explanation": "Insertion happens at the rear, so only the rear pointer changes."
+  },
+  {
+    "question_number": 23,
+    "year": "2013",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "............... is often used to prove the correctness of a recursive function.",
+    "options": {
+      "a": "Digitalization",
+      "b": "Communicativity",
+      "c": "Mathematical Induction",
+      "d": "Matrix Multiplication"
+    },
+    "answer": "c",
+    "explanation": "Mathematical induction is used to prove the correctness of recursive algorithms."
+  },
+  {
+    "question_number": 24,
+    "year": "2013",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "For any B-tree of minimum degree t ≥ 2, every node other than the root must have at least .......... keys and every node can have at most ......... keys.",
+    "options": {
+      "a": "t-1, 2t+1",
+      "b": "t+1, 2t+1",
+      "c": "t-1, 2t-1",
+      "d": "t+1, 2t-1"
+    },
+    "answer": "c",
+    "explanation": "In a B-tree of degree t, each node has between t-1 and 2t-1 keys (except root)."
+  },
+  {
+    "question_number": 25,
+    "year": "2013",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "Given two sorted lists of size 'm' and 'n' respectively. The number of comparisons needed in the worst case by the merge sort algorithm will be",
+    "options": {
+      "a": "m × n",
+      "b": "max(m, n)",
+      "c": "min(m, n)",
+      "d": "m + n - 1"
+    },
+    "answer": "d",
+    "explanation": "Worst case comparisons in merging two sorted lists is m + n - 1."
+  },
+  {
+    "question_number": 26,
+    "year": "2013",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "Given the following statements: S1: SLR uses follow information to guide reductions. In case of LR and LALR parsers, the lookaheads are associated with the items and they make use of left context available to the parser. S2: LR grammar is a larger subclass of context free grammar as compared to that SLR and LALR grammars. Which of the following is true?",
+    "options": {
+      "a": "S1 is not correct and S2 is not correct",
+      "b": "S1 is not correct and S2 is correct",
+      "c": "S1 is correct and S2 is not correct",
+      "d": "S1 is correct and S2 is correct"
+    },
+    "answer": "d",
+    "explanation": "Both statements are correct. SLR uses follow information; LR and LALR use lookaheads associated with items. LR is a larger subclass than SLR and LALR."
+  },
+  {
+    "question_number": 27,
+    "year": "2013",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "The context free grammar for the language L = {a^m b^n | n = m + 3, n ≥ 0, m ≥ 0} is",
+    "options": {
+      "a": "S → aaa A; A → aAB | ε, B → Bb | ε",
+      "b": "S → aaaA | ε; A → aAb | ε, B → Bb | ε",
+      "c": "S → aaaA | aaA | ε; A → aAb | ε, B → Bb",
+      "d": "S → aaaA | aaA | aA | ε; A → aAb | ε, B → Bb | ε"
+    },
+    "answer": "b",
+    "explanation": "The grammar S → aaaA | ε; A → aAb | ε; B → Bb | ε generates the required language."
+  },
+  {
+    "question_number": 28,
+    "year": "2013",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "Given the following statements: S1: If L is a regular language then the language {uv | u∈L, v∈L^R} is also regular. S2: L = {ww^R} is regular language. Which of the following is true?",
+    "options": {
+      "a": "S1 is not correct and S2 is not correct",
+      "b": "S1 is not correct and S2 is correct",
+      "c": "S1 is correct and S2 is not correct",
+      "d": "S1 is correct and S2 is correct"
+    },
+    "answer": "c",
+    "explanation": "S1 is correct because regular languages are closed under concatenation and reversal. S2 is incorrect because {ww^R} is not regular (it's context-free)."
+  },
+  {
+    "question_number": 29,
+    "year": "2013",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "The process of assigning load addresses to the various parts of the program and adjusting the code and data in the program to reflect the assigned addresses is called......",
+    "options": {
+      "a": "Symbol resolution",
+      "b": "Parsing",
+      "c": "Assembly",
+      "d": "Relocation"
+    },
+    "answer": "d",
+    "explanation": "Relocation is the process of assigning load addresses to various parts of the program and adjusting code and data accordingly."
+  },
+  {
+    "question_number": 30,
+    "year": "2013",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "Which of the following derivations does a top–down parser use while parsing an input string? The input is scanned from left to right.",
+    "options": {
+      "a": "Leftmost derivation",
+      "b": "Leftmost derivation traced out in reverse",
+      "c": "Rightmost derivation traced out in reverse",
+      "d": "Rightmost derivation"
+    },
+    "answer": "a",
+    "explanation": "Top-down parsers use leftmost derivation."
+  },
+  {
+    "question_number": 31,
+    "year": "2013",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "The dual of a Boolean expression is obtained by interchanging",
+    "options": {
+      "a": "Boolean sums and Boolean products",
+      "b": "Boolean sums and Boolean products or interchanging 0's and 1's",
+      "c": "Boolean sums and Boolean products and interchanging 0's & 1's",
+      "d": "Interchanging 0's and 1's"
+    },
+    "answer": "c",
+    "explanation": "The dual is obtained by interchanging sums with products, and 0's with 1's."
+  },
+  {
+    "question_number": 32,
+    "year": "2013",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "Given that (292)10 = (1204)x in some number system x. The base x of that number system is :",
+    "options": {
+      "a": "2",
+      "b": "8",
+      "c": "10",
+      "d": "None of these"
+    },
+    "answer": "d",
+    "explanation": "Solving 2×10^2 + 9×10 + 2 = x^3 + 2x^2 + 4 → x^3 + 2x^2 - 288 = 0. None of the options satisfy this equation."
+  },
+  {
+    "question_number": 33,
+    "year": "2013",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "The sum of products expansion for the function F(x, y, z) = (x+y)z is given as",
+    "options": {
+      "a": "xyz + xyz + xyz",
+      "b": "xyz + xyz + xyz",
+      "c": "xyz + xyz + xyz",
+      "d": "xyz + xyz + xyz"
+    },
+    "answer": "d",
+    "explanation": "Expanding: F = xz + yz = xyz + xy'z + x'yz (assuming the last term is x'yz)."
+  },
+  {
+    "question_number": 34,
+    "year": "2013",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "Let P(m, n) be the statement 'm divides n' where the universe of discourse for both the variables is the set of positive integers. Determine the truth values of each of the following propositions: (i) ∀m∀n P(m, n) (ii) ∃m∃n P(m, n)",
+    "options": {
+      "a": "Both (i) and (ii) are true",
+      "b": "Both (i) and (ii) are false",
+      "c": "(i) false & (ii) true",
+      "d": "(i) true & (ii) false"
+    },
+    "answer": "c",
+    "explanation": "(i) is false because not every m divides every n. (ii) is true because there exist positive integers where m divides n."
+  },
+  {
+    "question_number": 35,
+    "year": "2013",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "Big–O estimate for f(x) = (x + 1) log(x^2 + 1) + 3x^2 is given as",
+    "options": {
+      "a": "O(x log x)",
+      "b": "O(x^2)",
+      "c": "O(x^3)",
+      "d": "O(x^2 log x)"
+    },
+    "answer": "b",
+    "explanation": "The dominant term is 3x^2, so f(x) = O(x^2)."
+  },
+  {
+    "question_number": 36,
+    "year": "2013",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "How many edges are there in a forest of t-trees containing a total of n-vertices?",
+    "options": {
+      "a": "n + t",
+      "b": "n - t",
+      "c": "n × t",
+      "d": "n^t"
+    },
+    "answer": "b",
+    "explanation": "A forest with n vertices and t trees has n - t edges."
+  },
+  {
+    "question_number": 37,
+    "year": "2013",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "Let f and g be the functions from the set of integers to the set of integers defined by f(x) = 2x + 3 and g(x) = 3x + 2. Then the composition of f and g and g and f is given as",
+    "options": {
+      "a": "6x + 7, 6x + 11",
+      "b": "6x + 11, 6x + 7",
+      "c": "5x + 5, 5x + 5",
+      "d": "None of these"
+    },
+    "answer": "a",
+    "explanation": "f(g(x)) = f(3x+2) = 2(3x+2)+3 = 6x+7. g(f(x)) = g(2x+3) = 3(2x+3)+2 = 6x+11."
+  },
+  {
+    "question_number": 38,
+    "year": "2013",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "If n and r are non-negative integers and n ≥ r, then P(n + 1, r) equals to:",
+    "options": {
+      "a": "(n+1)/(n+1-r) * P(n, r)",
+      "b": "(n+1)/(n+1-r) * P(n, r)",
+      "c": "(n)/(n-r) * P(n, r)",
+      "d": "(n)/(n+1-r) * P(n, r)"
+    },
+    "answer": "a",
+    "explanation": "P(n+1, r) = (n+1)!/(n+1-r)! = (n+1)/(n+1-r) × n!/(n-r)! = (n+1)/(n+1-r) × P(n, r)."
+  },
+  {
+    "question_number": 39,
+    "year": "2013",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "A graph is non-planar if and only if it contains a subgraph homomorphic to :",
+    "options": {
+      "a": "K3,2 or K5",
+      "b": "K3,3 and K6",
+      "c": "K3,3 or K5",
+      "d": "K2,3 and K5"
+    },
+    "answer": "c",
+    "explanation": "Kuratowski's theorem states a graph is non-planar if it contains a subgraph that is a subdivision of K3,3 or K5."
+  },
+  {
+    "question_number": 40,
+    "year": "2013",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "Which of the following statements are true? (i) A circuit that adds two bits, producing a sum bit and carry bit is called half adder. (ii) A circuit that adds two bits, producing a sum bit and a carry bit is called full adder. (iii) A circuit that adds two bits and a carry bit producing a sum bit and carry bit is called full adder. (iv) A device that accepts the value of a Boolean variable as input and produces its complement is called an inverter.",
+    "options": {
+      "a": "(i) & (ii)",
+      "b": "(ii) & (iii)",
+      "c": "(i), (ii), (iii)",
+      "d": "(i), (iii) & (iv)"
+    },
+    "answer": "d",
+    "explanation": "(i), (iii), and (iv) are true. (ii) is false because a full adder adds two bits and a carry bit."
+  },
+  {
+    "question_number": 41,
+    "year": "2013",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "Active X controls are Pentium binary programs that can be embedded in ...........",
+    "options": {
+      "a": "Word pages",
+      "b": "URL pages",
+      "c": "Script pages",
+      "d": "Web pages"
+    },
+    "answer": "d",
+    "explanation": "Active X controls are embedded in Web pages."
+  },
+  {
+    "question_number": 42,
+    "year": "2013",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "Match the following : A. Wireless Application Environment, B. Wireless Transaction Protocol, C. Wireless Datagram Protocol, D. Wireless.",
+    "options": {
+      "a": "A-2, B-4, C-1, D-3",
+      "b": "A-4, B-3, C-2, D-1",
+      "c": "A-4, B-3, C-1, D-2",
+      "d": "A-3, B-1, C-4, D-2"
+    },
+    "answer": "d",
+    "explanation": "WAE - Scripts (3); WTP - HTTP (1); WDP - UDP (4); Wireless - IP (2)."
+  },
+  {
+    "question_number": 43,
+    "year": "2013",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "Which of the following is widely used inside the telephone system for long-haul data traffic?",
+    "options": {
+      "a": "ISDN",
+      "b": "ATM",
+      "c": "Frame Relay",
+      "d": "ISTN"
+    },
+    "answer": "b",
+    "explanation": "ATM is widely used inside the telephone system for long-haul data traffic."
+  },
+  {
+    "question_number": 44,
+    "year": "2013",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "The document standards for EDI were first developed by large business houses during the 1970s and are now under the control of the following standard organization :",
+    "options": {
+      "a": "ISO",
+      "b": "ANSI",
+      "c": "ITU-T",
+      "d": "IEEE"
+    },
+    "answer": "b",
+    "explanation": "EDI standards are now under the control of ANSI (American National Standards Institute)."
+  },
+  {
+    "question_number": 45,
+    "year": "2013",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "Electronic Data Interchange Software consists of the following four layers :",
+    "options": {
+      "a": "Business application, Internal format conversion, Network translator, EDI envelope",
+      "b": "Business application, Internal format conversion, EDI translator, EDI envelope",
+      "c": "Application layer, Transport layer, EDI translator, EDI envelope",
+      "d": "Application layer, Transport layer, IP layer, EDI envelope"
+    },
+    "answer": "b",
+    "explanation": "EDI software consists of: Business application, Internal format conversion, EDI translator, and EDI envelope."
+  },
+  {
+    "question_number": 46,
+    "year": "2013",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "Consider a pre-emptive priority based scheduling algorithm based on dynamically changing priority. The time quantum q = 1. When two processes want to join ready queue simultaneously the process which has not executed recently is given priority. The finish time of processes P1, P2, P3 and P4 will respectively be :",
+    "options": {
+      "a": "4, 5 and 8",
+      "b": "8, 2, 7 and 5",
+      "c": "2, 5, 7 and 8",
+      "d": "8, 2, 5 and 7"
+    },
+    "answer": "b",
+    "explanation": "The Gantt chart gives P1 finishes at 8, P2 at 2, P3 at 7, and P4 at 5."
+  },
+  {
+    "question_number": 47,
+    "year": "2013",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "The virtual address generated by a CPU is 32 bits. The translation look-aside buffer (TLB) can hold total 64 page table entries and is 4-way set associative (i.e. with 4 cache lines in the set). The page size is 4 KB. The minimum size of TLB tag is :",
+    "options": {
+      "a": "12 bits",
+      "b": "15 bits",
+      "c": "16 bits",
+      "d": "20 bits"
+    },
+    "answer": "c",
+    "explanation": "Page size = 4KB → 12 offset bits. Remaining 20 bits for tag+index. Number of sets = 64/4 = 16 → 4 index bits. Tag bits = 20 - 4 = 16 bits."
+  },
+  {
+    "question_number": 48,
+    "year": "2013",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "Consider a disk queue with requests for blocks on cylinders 98, 183, 37, 122, 14, 124, 65, 67 in that order. Assume that disk head is initially positioned at cylinder 53 and moving towards cylinder number 0. The total number of head movements using shortest seek time first (SSTF) and SCAN algorithms are respectively :",
+    "options": {
+      "a": "236 and 252 cylinders",
+      "b": "640 and 236 cylinders",
+      "c": "235 and 640 cylinders",
+      "d": "235 and 252 cylinders"
+    },
+    "answer": "none",
+    "explanation": "SSTF gives 236 head movements. SCAN gives 236 head movements. None of the options match (both algorithms give 236)."
+  },
+  {
+    "question_number": 49,
+    "year": "2013",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "How much space will be required to store the bit map of a 1.3 GB disk with 512 bytes block size ?",
+    "options": {
+      "a": "332.8 KB",
+      "b": "83.6 KB",
+      "c": "266.2 KB",
+      "d": "256.6 KB"
+    },
+    "answer": "a",
+    "explanation": "Number of blocks = 1.3 GB / 512 bytes = 2,726,298 blocks. Bitmap size = 2,726,298 bits = 340,787 bytes = 332.8 KB."
+  },
+  {
+    "question_number": 50,
+    "year": "2013",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "Linux operating system uses :",
+    "options": {
+      "a": "Affinity scheduling",
+      "b": "Fair preemptive scheduling",
+      "c": "Hand shaking",
+      "d": "Highest penalty ratio next"
+    },
+    "answer": "b",
+    "explanation": "Linux uses a fair preemptive scheduling algorithm for time-sharing between multiple processes."
+  },
+  {
+    "question_number": 51,
+    "year": "2013",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "If the primal linear programming problem has unbounded solution, then its dual problem will have :",
+    "options": {
+      "a": "feasible solution",
+      "b": "alternative solution",
+      "c": "no feasible solution at all",
+      "d": "no bounded solution at all"
+    },
+    "answer": "c",
+    "explanation": "If the primal problem is unbounded, the dual has no feasible solution."
+  },
+  {
+    "question_number": 52,
+    "year": "2013",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "Given the problem to maximize f(X) subject to m number of inequality constraints. Which of the following conditions is a Kuhn-Tucker necessary condition for a local maxima at X*?",
+    "options": {
+      "a": "∂L/∂xj = 0, j=1,2,...,n",
+      "b": "λi[gi(X)-bi] = 0, i=1,2,...,m",
+      "c": "gi(X) ≥ bi, λi ≥ 0",
+      "d": "All of the above"
+    },
+    "answer": "d",
+    "explanation": "All three are Kuhn-Tucker necessary conditions for a local maximum."
+  },
+  {
+    "question_number": 53,
+    "year": "2013",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "The following linear programming problem has Max Z = x1 + x2 Subject to x1 - x2 ≥ 0, 3x1 - x2 ≤ -3, and x1, x2 ≥ 0.",
+    "options": {
+      "a": "Feasible solution",
+      "b": "No feasible solution",
+      "c": "Unbounded solution",
+      "d": "single point as solution"
+    },
+    "answer": "b",
+    "explanation": "The constraints are inconsistent, so there is no feasible solution.",
+    "image_path": "_page_45_Figure_3.jpeg"
+  },
+  {
+    "question_number": 54,
+    "year": "2013",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "Given a flow graph with 10 nodes, 13 edges and one connected component, the number of regions and the number of predicate (decision) nodes in the flow graph will be",
+    "options": {
+      "a": "4, 5",
+      "b": "5, 4",
+      "c": "3, 1",
+      "d": "13, 8"
+    },
+    "answer": "b",
+    "explanation": "Regions = E - N + 2 = 13 - 10 + 2 = 5. Predicate nodes (P) = Region - 1 = 4."
+  },
+  {
+    "question_number": 55,
+    "year": "2013",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "Function points can be calculated by :",
+    "options": {
+      "a": "UFP × CAF",
+      "b": "UFP × FAC",
+      "c": "UFP × Cost",
+      "d": "UFP × Productivity"
+    },
+    "answer": "a",
+    "explanation": "Function Points = UFP × CAF (Unadjusted Function Points × Complexity Adjustment Factor)."
+  },
+  {
+    "question_number": 56,
+    "year": "2013",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "Match the following: A. Data coupling, B. Stamp coupling, C. Common coupling, D. Content coupling.",
+    "options": {
+      "a": "A-3, B-2, C-1, D-4",
+      "b": "A-2, B-3, C-1, D-4",
+      "c": "A-2, B-3, C-4, D-1",
+      "d": "A-3, B-2, C-4, D-1"
+    },
+    "answer": "b",
+    "explanation": "Data coupling - Dependency between modules is based on passing data (2). Stamp coupling - Complete data structure is passed (3). Common coupling - Shared data (1). Content coupling - Control passed from one module to another (4)."
+  },
+  {
+    "question_number": 57,
+    "year": "2013",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "A process which defines a series of tasks that have the following four primary objectives is known as: (1) to identify all items that collectively define the software configuration, (2) to manage change to one or more of these items, (3) to facilitate the construction of different versions of an application, (4) to ensure that software quality is maintained as the configuration evolves over time.",
+    "options": {
+      "a": "Software quality management process",
+      "b": "Software configuration management process",
+      "c": "Software version management process",
+      "d": "Software change management process"
+    },
+    "answer": "b",
+    "explanation": "These are the four primary objectives of the Software Configuration Management process."
+  },
+  {
+    "question_number": 58,
+    "year": "2013",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "One weakness of boundary value analysis and equivalence partitioning is :",
+    "options": {
+      "a": "they are not effective",
+      "b": "they do not explore combinations of input circumstances",
+      "c": "they explore combinations of input circumstances",
+      "d": "none of the above"
+    },
+    "answer": "b",
+    "explanation": "They do not explore combinations of input circumstances."
+  },
+  {
+    "question_number": 59,
+    "year": "2013",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "Which one of the following is not a software myth?",
+    "options": {
+      "a": "Once we write the program and get it to work, our job is done",
+      "b": "Project requirements continually change, but change can be easily accommodated because software is flexible",
+      "c": "If we get behind schedule, we can add more programmers and catch up",
+      "d": "If an organization does not understand how to control software projects internally, it will invariably struggle when it outsources software projects"
+    },
+    "answer": "d",
+    "explanation": "Options (a), (b), and (c) are software myths. (d) is a practical reality, not a myth."
+  },
+  {
+    "question_number": 60,
+    "year": "2013",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "Match the following with respect to UML diagrams: A. State diagram, B. Object diagram, C. Class diagram, D. Instance diagram.",
+    "options": {
+      "a": "A-4, B-1, C-2, D-3",
+      "b": "A-2, B-3, C-4, D-1",
+      "c": "A-3, B-4, C-2, D-1",
+      "d": "A-2, B-4, C-1, D-3"
+    },
+    "answer": "a",
+    "explanation": "State diagram (4 - behavior specification); Object diagram (1 - used for modeling and designing programs); Class diagram (2 - used for test cases of a single class); Instance diagram (3 - static snapshot)."
+  },
+  {
+    "question_number": 61,
+    "year": "2013",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "Match the following style rules for reusability: A. Keep, B. Keep, C. Keep, D. Provide.",
+    "options": {
+      "a": "A-4, B-2, C-3, D-1",
+      "b": "A-2, B-1, C-4, D-3",
+      "c": "A-3, B-4, C-2, D-1",
+      "d": "A-2, B-3, C-4, D-1"
+    },
+    "answer": "a",
+    "explanation": "Keep methods coherent (4); Keep method small (3); Keep methods consistent (2); Provide uniform coverage (1)."
+  },
+  {
+    "question_number": 62,
+    "year": "2013",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "Which is the protocol for performing RPCs between applications in a language and system independent way?",
+    "options": {
+      "a": "HTTP",
+      "b": "SNMP",
+      "c": "SOAP",
+      "d": "SMTP"
+    },
+    "answer": "c",
+    "explanation": "SOAP (Simple Object Access Protocol) is used for RPCs in a language and system independent way."
+  },
+  {
+    "question_number": 63,
+    "year": "2013",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "The document that is used by XSLT to indicate how to transform the elements of the XML document to another format is:",
+    "options": {
+      "a": "HTML page",
+      "b": "DOC type procedure",
+      "c": "Style sheet",
+      "d": "Stored procedure"
+    },
+    "answer": "c",
+    "explanation": "XSLT uses a style sheet to transform XML documents."
+  },
+  {
+    "question_number": 64,
+    "year": "2013",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "Which of the following concepts means adding new concepts to a program as it runs?",
+    "options": {
+      "a": "Data hiding",
+      "b": "Dynamic loading",
+      "c": "Dynamic typing",
+      "d": "Dynamic binding"
+    },
+    "answer": "b",
+    "explanation": "Dynamic loading allows a program to load libraries at run time."
+  },
+  {
+    "question_number": 65,
+    "year": "2013",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "Which of the following correctly describes overloading of functions?",
+    "options": {
+      "a": "Virtual polymorphism",
+      "b": "Transient polymorphism",
+      "c": "Ad-hoc polymorphism",
+      "d": "Pseudo polymorphism"
+    },
+    "answer": "c",
+    "explanation": "Function overloading is an example of ad-hoc polymorphism."
+  },
+  {
+    "question_number": 66,
+    "year": "2013",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "Match the following with respect to programming languages: A. Structured, B. Non-Structured, C. Object Oriented, D. Interpreted Programming Language.",
+    "options": {
+      "a": "A-3, B-4, C-1, D-2",
+      "b": "A-4, B-3, C-2, D-1",
+      "c": "A-2, B-4, C-1, D-3",
+      "d": "A-2, B-3, C-4, D-1"
+    },
+    "answer": "a",
+    "explanation": "PASCAL (3 - structured); FORTRAN (4 - non-structured); JAVA (1 - OO); BASIC (2 - interpreted)."
+  },
+  {
+    "question_number": 67,
+    "year": "2013",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "The compiler converts all operands up to the type of the largest operand is called",
+    "options": {
+      "a": "Type Promotion",
+      "b": "Type Evaluation",
+      "c": "Type Conversion",
+      "d": "Type Declaration"
+    },
+    "answer": "a",
+    "explanation": "Type promotion converts operands up to the type of the largest operand."
+  },
+  {
+    "question_number": 68,
+    "year": "2013",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "C++ actually supports the following two complete dynamic systems:",
+    "options": {
+      "a": "One defined by C++ and the other not defined by C",
+      "b": "One defined by C and one specific to C++",
+      "c": "Both are specific to C++",
+      "d": "Both of them are improvements of C"
+    },
+    "answer": "b",
+    "explanation": "C++ supports the dynamic allocation system defined by C (malloc/free) and one specific to C++ (new/delete)."
+  },
+  {
+    "question_number": 69,
+    "year": "2013",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "Important advantage of using new and delete operators in C++ is :",
+    "options": {
+      "a": "Allocation of memory",
+      "b": "Frees the memory previously allocated",
+      "c": "Initialization of memory easily",
+      "d": "Allocation of memory and frees the memory previously allocated"
+    },
+    "answer": "d",
+    "explanation": "new and delete handle both allocation and deallocation of memory."
+  },
+  {
+    "question_number": 70,
+    "year": "2013",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "Match the following control strategies of Prolog: A. Forward, B. Unification, C. Deep backtracking, D. Shallow backtracking.",
+    "options": {
+      "a": "A-4, B-1, C-2, D-3",
+      "b": "A-2, B-4, C-1, D-3",
+      "c": "A-3, B-1, C-4, D-2",
+      "d": "A-2, B-3, C-4, D-1"
+    },
+    "answer": "a",
+    "explanation": "Forward (4); Unification (1); Deep backtracking (2); Shallow backtracking (3)."
+  },
+  {
+    "question_number": 71,
+    "year": "2013",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "Given the following statements: S1: The grammars S → aSb|bSa|SS|ε and S → aSb|bSa|ε are not equivalent. S2: The grammars S → SS|SSS|aSb|bSa|ε and S → SS|aSb|bSa|ε are equivalent. Which of the following is true?",
+    "options": {
+      "a": "S1 is correct and S2 is not correct",
+      "b": "Both S1 and S2 are correct",
+      "c": "S1 is not correct and S2 is correct",
+      "d": "Both S1 and S2 are not correct"
+    },
+    "answer": "b",
+    "explanation": "S1 is correct because G1 can generate 'aa' but G2 cannot. S2 is correct because both generate equal number of a's and b's."
+  },
+  {
+    "question_number": 72,
+    "year": "2013",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "What are the final values of Q1 and Q0 after 4 clock cycles, if initial values are 00 in the sequential circuit shown below?",
+    "options": {
+      "a": "11",
+      "b": "10",
+      "c": "01",
+      "d": "00"
+    },
+    "answer": "d",
+    "explanation": "Using T flip-flops, the sequence is: 00 → 11 → 10 → 01 → 00. After 4 cycles, it returns to 00."
+  },
+  {
+    "question_number": 73,
+    "year": "2013",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "High level knowledge which relates to the use of sentences in different context and how the context affects the meaning of the sentences?",
+    "options": {
+      "a": "Morphological",
+      "b": "Syntactic",
+      "c": "Semantic",
+      "d": "Pragmatic"
+    },
+    "answer": "d",
+    "explanation": "Pragmatics deals with how context affects the meaning of sentences."
+  },
+  {
+    "question_number": 74,
+    "year": "2013",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "The objective of .............. procedure is to discover at least one ............. that cause two literals to match.",
+    "options": {
+      "a": "unification, validation",
+      "b": "unification, substitution",
+      "c": "Substitution, unification",
+      "d": "minimum, maximum"
+    },
+    "answer": "b",
+    "explanation": "Unification finds a substitution that causes two literals to match."
+  },
+  {
+    "question_number": 75,
+    "year": "2013",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "If h* represents an estimate of the cost of getting from the current node N to the goal node and h represents actual cost, then A* algorithm gives an optimal solution if",
+    "options": {
+      "a": "h* is equal to h",
+      "b": "h* overestimates h",
+      "c": "h* underestimates h",
+      "d": "None of these"
+    },
+    "answer": "c",
+    "explanation": "A* gives an optimal solution if h* is admissible, i.e., it never overestimates h."
+  },
+  {
+    "question_number": 76,
+    "year": "2013",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "The mean-end analysis process centers around the detection of differences between the current state and goal state. Once such a difference is isolated, an operator that can reduce the difference must be found. But perhaps that operator cannot be applied to the current state. So a sub-problem of getting to a state in which it can be applied is set up. The kind of backward chaining in which operators are selected and then subgoals are set up to establish the precondition of operators is called",
+    "options": {
+      "a": "backward planning",
+      "b": "goal stack planning",
+      "c": "operator subgoaling",
+      "d": "operator overloading"
+    },
+    "answer": "c",
+    "explanation": "This is called operator subgoaling."
+  },
+  {
+    "question_number": 77,
+    "year": "2013",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "In alpha-beta pruning, ................ is used to cut off the search at maximizing level only and ......... is used to cut off the search at minimizing level only.",
+    "options": {
+      "a": "alpha, beta",
+      "b": "beta, alpha",
+      "c": "alpha, alpha",
+      "d": "beta, beta"
+    },
+    "answer": "b",
+    "explanation": "Beta is used at maximizing level; Alpha is used at minimizing level."
+  },
+  {
+    "question_number": 78,
+    "year": "2013",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "If A and B are two fuzzy sets with membership functions A(x) = {0.2, 0.5, 0.6, 0.1, 0.9} and B(x) = {0.1, 0.5, 0.2, 0.7, 0.8}. Then the value of A∩B will be",
+    "options": {
+      "a": "{0.2, 0.5, 0.6, 0.7, 0.9}",
+      "b": "{0.2, 0.5, 0.2, 0.1, 0.8}",
+      "c": "{0.1, 0.5, 0.6, 0.1, 0.8}",
+      "d": "{0.1, 0.5, 0.2, 0.1, 0.8}"
+    },
+    "answer": "d",
+    "explanation": "Intersection = min(A, B) = {0.1, 0.5, 0.2, 0.1, 0.8}."
+  },
+  {
+    "question_number": 79,
+    "year": "2013",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "The height h(A) of a fuzzy set A is defined as h(A) = sup_x∈A A(x). Then the fuzzy set A is called normal when",
+    "options": {
+      "a": "h(A) = 0",
+      "b": "h(A) < 0",
+      "c": "h(A) = 1",
+      "d": "h(A) < 1"
+    },
+    "answer": "c",
+    "explanation": "A fuzzy set is normal when its height is 1."
+  },
+  {
+    "question_number": 80,
+    "year": "2013",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "An artificial neuron receives n inputs x1, x2, ..., xn with weights w1, w2, ..., wn attached to the input links. The weighted sum ......... is computed to be passed on to a nonlinear filter called activation function to release the output.",
+    "options": {
+      "a": "w_i",
+      "b": "x_i",
+      "c": "w_i + x_i",
+      "d": "w_i × x_i"
+    },
+    "answer": "d",
+    "explanation": "Weighted sum is calculated as Σ wi × xi."
+  },
+  {
+    "question_number": 81,
+    "year": "2013",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "Consider the formula in image processing RD = 1 - 1/CR where CR = n1/n2. CR is called compression ratio and n1 and n2 denote the number of information carrying units in two datasets. In this situation RD is called as relative .................. of the first data set.",
+    "options": {
+      "a": "Data Compression",
+      "b": "Data Redundancy",
+      "c": "Data Relation",
+      "d": "Data Representation"
+    },
+    "answer": "b",
+    "explanation": "RD stands for Data Redundancy."
+  },
+  {
+    "question_number": 82,
+    "year": "2013",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "Find the false statement:",
+    "options": {
+      "a": "In Modern Cryptography, symmetric key algorithms use same key both for Encryption and Decryption.",
+      "b": "The symmetric cipher DES (Data Encryption Standard) was widely used in the industry for security products.",
+      "c": "The AES (Advanced Encryption Standard) cryptosystem allows variable key lengths of size 56 bits and 124 bits.",
+      "d": "Public key algorithms use two different keys for Encryption and Decryption."
+    },
+    "answer": "c",
+    "explanation": "AES allows key lengths of 128, 192, or 256 bits, not 56 or 124 bits."
+  },
+  {
+    "question_number": 83,
+    "year": "2013",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "The message 11001001 is to be transmitted using the CRC polynomial x^3 + 1 to protect it from errors. The message that should be transmitted is:",
+    "options": {
+      "a": "110010011001",
+      "b": "11001001",
+      "c": "110010011001001",
+      "d": "11001001011"
+    },
+    "answer": "d",
+    "explanation": "CRC divisor is 1001 (x^3+1), append 3 zeros and divide, resulting in 11001001011."
+  },
+  {
+    "question_number": 84,
+    "year": "2013",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": ".................. comparisons are necessary in the worst case to find both the maximum and minimum of n numbers.",
+    "options": {
+      "a": "2n - 2",
+      "b": "n + floor(lg n) - 2",
+      "c": "floor(3n/2) - 2",
+      "d": "2 lg n - 2"
+    },
+    "answer": "c",
+    "explanation": "Finding max and min requires floor(3n/2) - 2 comparisons in the worst case."
+  },
+  {
+    "question_number": 85,
+    "year": "2013",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "Let A and B be two n×n matrices. The efficient algorithm to multiply the two matrices has the time complexity",
+    "options": {
+      "a": "O(n^3)",
+      "b": "O(n^2.81)",
+      "c": "O(n^2.67)",
+      "d": "O(n^2)"
+    },
+    "answer": "b",
+    "explanation": "Strassen's algorithm has complexity O(n^2.81)."
+  },
+  {
+    "question_number": 86,
+    "year": "2013",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "The recurrence relation T(n) = mT(n/2) + n^2 is satisfied by",
+    "options": {
+      "a": "O(n^2)",
+      "b": "O(n^log2 m)",
+      "c": "O(n^2 log n)",
+      "d": "O(n log n)"
+    },
+    "answer": "b",
+    "explanation": "Using Master Theorem, for m > 4, case 1 gives O(n^log2 m)."
+  },
+  {
+    "question_number": 87,
+    "year": "2013",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "The longest common subsequence of the sequences X = <A, B, C, B, D, A, B> and Y = <B, D, C, A, B, A> has length",
+    "options": {
+      "a": "2",
+      "b": "3",
+      "c": "4",
+      "d": "5"
+    },
+    "answer": "c",
+    "explanation": "LCS length is 4 (e.g., BCAB or BDAB)."
+  },
+  {
+    "question_number": 88,
+    "year": "2013",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "Assuming there are n keys and each key is in the range [0, m-1]. The run time of bucket sort is",
+    "options": {
+      "a": "O(n)",
+      "b": "O(n lg n)",
+      "c": "O(n lg m)",
+      "d": "O(n + m)"
+    },
+    "answer": "d",
+    "explanation": "Bucket sort runs in O(n + m) time."
+  },
+  {
+    "question_number": 89,
+    "year": "2013",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "A .................. complete subgraph and a ............... subset of vertices of a graph G = (V, E) are a clique and a vertex cover respectively.",
+    "options": {
+      "a": "minimal, maximal",
+      "b": "minimal, minimal",
+      "c": "maximal, maximal",
+      "d": "maximal, minimal"
+    },
+    "answer": "d",
+    "explanation": "A clique is a maximal complete subgraph. A vertex cover is a minimal set of vertices covering all edges."
+  },
+  {
+    "question_number": 90,
+    "year": "2013",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "Pumping lemma for context-free languages states: Let L be an infinite context free language. Then there exists some positive integer m such that any w ∈ L with |w| ≥ m can be decomposed as w = uvxyz with |vxy| ≤ m and |vy| ≥ 1 such that ...",
+    "options": {
+      "a": "|vxy| ≤ m, |vy| ≤ 1",
+      "b": "|vxy| ≤ m, |vy| ≥ 1",
+      "c": "|vxy| ≥ m, |vy| ≥ 1",
+      "d": "|vxy| ≥ m, |vy| ≤ 1"
+    },
+    "answer": "b",
+    "explanation": "Pumping lemma: |vxy| ≤ m and |vy| ≥ 1."
+  },
+  {
+    "question_number": 91,
+    "year": "2013",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "The Greibach normal form grammar for the language L = {a^n b^(n+1) | n ≥ 0} is:",
+    "options": {
+      "a": "S → aSB, B → bB | ε",
+      "b": "S → aSB, B → bB | ε",
+      "c": "S → aSB, B → b",
+      "d": "S → aSbb | ε"
+    },
+    "answer": "c",
+    "explanation": "The grammar S → aSB, B → b generates the required language in GNF."
+  },
+  {
+    "question_number": 92,
+    "year": "2013",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "Given the following statements: S1: Every context-sensitive language L is recursive. S2: There exists a recursive language that is not context sensitive. Which statement is correct?",
+    "options": {
+      "a": "S1 is not correct and S2 is not correct",
+      "b": "S1 is not correct and S2 is correct",
+      "c": "S1 is correct and S2 is not correct",
+      "d": "S1 is correct and S2 is correct"
+    },
+    "answer": "d",
+    "explanation": "Both statements are true. Context-sensitive languages are recursive, and there exist recursive languages that are not context-sensitive."
+  },
+  {
+    "question_number": 93,
+    "year": "2013",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "What is the bit rate for transmitting uncompressed 800 × 600 pixel colour frames with 8 bits/pixel at 40 frames/second?",
+    "options": {
+      "a": "2.4 Mbps",
+      "b": "15.36 Mbps",
+      "c": "153.6 Mbps",
+      "d": "1536 Mbps"
+    },
+    "answer": "c",
+    "explanation": "Bit rate = 800 × 600 × 8 × 40 = 153,600,000 bps = 153.6 Mbps."
+  },
+  {
+    "question_number": 94,
+    "year": "2013",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "In IPv4, the IP address 200.200.200.200 belongs to",
+    "options": {
+      "a": "Class A",
+      "b": "Class B",
+      "c": "Class C",
+      "d": "Class D"
+    },
+    "answer": "c",
+    "explanation": "First octet 200 is between 192 and 223, so it belongs to Class C."
+  },
+  {
+    "question_number": 95,
+    "year": "2013",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "Which layer of OSI reference model is responsible for decomposition of messages and generation of sequence numbers to ensure correct re-composition from end to end of the network?",
+    "options": {
+      "a": "Physical",
+      "b": "Data-link",
+      "c": "Transport",
+      "d": "Application"
+    },
+    "answer": "c",
+    "explanation": "The Transport layer is responsible for message segmentation and reassembly."
+  },
+  {
+    "question_number": 96,
+    "year": "2013",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "A client-server system uses a satellite network, with the satellite at a height of 40,000 kms. What is the best-case delay in response to a request? (Note that the speed of light in air is 3,00,000 km/second)?",
+    "options": {
+      "a": "133.33 m sec",
+      "b": "266.67 m sec",
+      "c": "400.00 m sec",
+      "d": "533.33 m sec"
+    },
+    "answer": "d",
+    "explanation": "Total path = 4 × 40,000 = 160,000 km. Delay = 160,000/300,000 = 0.5333 sec = 533.33 ms."
+  },
+  {
+    "question_number": 97,
+    "year": "2013",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "The start and stop bits are used in serial communication for",
+    "options": {
+      "a": "error detection",
+      "b": "error correction",
+      "c": "synchronization",
+      "d": "slowing down the communication"
+    },
+    "answer": "c",
+    "explanation": "Start and stop bits are used for synchronization in serial communication."
+  },
+  {
+    "question_number": 98,
+    "year": "2013",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "........ is a type of transmission impairment in which the signal loses strength due to the resistance of the transmission medium.",
+    "options": {
+      "a": "Attenuation",
+      "b": "Distortion",
+      "c": "Noise",
+      "d": "Decibel"
+    },
+    "answer": "a",
+    "explanation": "Attenuation is the loss of signal strength due to the resistance of the transmission medium."
+  },
+  {
+    "question_number": 99,
+    "year": "2013",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "Match the following addressing modes: A. Indexed, B. Direct, C. Register, D. Base indexed.",
+    "options": {
+      "a": "A-2, B-1, C-4, D-3",
+      "b": "A-2, B-4, C-1, D-3",
+      "c": "A-3, B-4, C-1, D-2",
+      "d": "A-3, B-1, C-4, D-2"
+    },
+    "answer": "c",
+    "explanation": "Indexed (3); Direct (4); Register (1); Base indexed (2)."
+  },
+  {
+    "question_number": 100,
+    "year": "2013",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "Which of the following is a design criteria for instruction formats?",
+    "options": {
+      "a": "The size of instructions",
+      "b": "The number of bits in the address fields",
+      "c": "The sufficient space in the instruction format to express all the operations desired.",
+      "d": "All of these"
+    },
+    "answer": "d",
+    "explanation": "All are design criteria for instruction formats."
+  },
+  {
+    "question_number": 101,
+    "year": "2013",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "Synchronization is achieved by a timing device called a .................... which generates a periodic train of ..........",
+    "options": {
+      "a": "clock generator, clock pulse",
+      "b": "master generator, clock pulse",
+      "c": "generator, clock",
+      "d": "master clock generator, clock pulse"
+    },
+    "answer": "d",
+    "explanation": "A master clock generator generates a periodic train of clock pulses for synchronization."
+  },
+  {
+    "question_number": 102,
+    "year": "2013",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "Serial access memories are useful in applications where",
+    "options": {
+      "a": "Data consists of numbers",
+      "b": "Short access time is required",
+      "c": "Each stored word is processed differently",
+      "d": "None of these"
+    },
+    "answer": "d",
+    "explanation": "Serial access memories are used where data naturally flows in and out serially."
+  },
+  {
+    "question_number": 103,
+    "year": "2013",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "What will be the output of the following logic diagram?",
+    "options": {
+      "a": "AND",
+      "b": "OR",
+      "c": "XOR",
+      "d": "XNOR"
+    },
+    "answer": "c",
+    "explanation": "The logic diagram implements an XOR gate.",
+    "image_paths": ["_page_53_Diagram_22.jpeg", "_page_53_Figure_23.jpeg"]
+  },
+  {
+    "question_number": 104,
+    "year": "2013",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "The essential difference between traps and interrupts is",
+    "options": {
+      "a": "traps are asynchronous and interrupts are synchronous with the program",
+      "b": "traps are synchronous and interrupts are asynchronous with the program",
+      "c": "trap are synchronous and interrupts are asynchronous with the I/O devices",
+      "d": "None of these"
+    },
+    "answer": "b",
+    "explanation": "Traps are synchronous (software-generated), while interrupts are asynchronous (hardware-generated)."
+  },
+  {
+    "question_number": 105,
+    "year": "2013",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "Consider the following ER diagram. The minimum number of tables required to represent M, N, P, R1, R2 is",
+    "options": {
+      "a": "2",
+      "b": "3",
+      "c": "4",
+      "d": "5"
+    },
+    "answer": "b",
+    "explanation": "Since R1 is many-to-one and participation of M is total, M and R1 can be combined. N is a weak entity, so it can be combined with P. Total tables = 3."
+  },
+  {
+    "question_number": 106,
+    "year": "2013",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "Consider the following schemas: Branch, Customer, Borrow, Deposit. Using relational algebra, the query that finds customers who have balance more than 10,000 is",
+    "options": {
+      "a": "π customer-name (σ balance > 10000 (Deposit))",
+      "b": "σ customer-name (π balance > 10000 (Deposit))",
+      "c": "π customer-name (σ balance > 10000 (Borrow))",
+      "d": "σ customer-name (π balance > 10000 (Borrow))"
+    },
+    "answer": "a",
+    "explanation": "Projection is applied on the result of selection on the Deposit table."
+  },
+  {
+    "question_number": 107,
+    "year": "2013",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "Find the false statement:",
+    "options": {
+      "a": "The relationship construct known as the weak relationship type was defined by Dey, Storey & Barron (1999).",
+      "b": "A weak relationship occurs when two relationship types are linked by either Event-Precedent sequence or Condition-Precedent sequence.",
+      "c": "Conceptual model is not accurate representation of 'Universe of interest'.",
+      "d": "Ternary, Quaternary and Quintary relationships are shown through a series of application scenario's and vignette's."
+    },
+    "answer": "c",
+    "explanation": "A conceptual model is a true representation of the 'universe of interest' being modeled."
+  },
+  {
+    "question_number": 108,
+    "year": "2013",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "Consider the table Student(stuid, name, course, marks). Which one of the following two queries is correct to find the highest marks student in course 5? Q1: Select S.stuid From student S Where not exists (Select * from student e where e.course='5' and e.marks > S.marks). Q2: Select S.stuid From student S Where S.marks > any (select distinct marks from student S where S.course=5).",
+    "options": {
+      "a": "Q1",
+      "b": "Q2",
+      "c": "Both Q1 and Q2",
+      "d": "Neither Q1 nor Q2"
+    },
+    "answer": "d",
+    "explanation": "Q1 uses > instead of ≥, so it misses equal marks. Q2 finds marks greater than any (not all). Both are incorrect."
+  },
+  {
+    "question_number": 109,
+    "year": "2013",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "Armstrong (1974) proposed systematic approach to derive functional dependencies. Match the following w.r.t. Functional dependencies.",
+    "options": {
+      "a": "A-3, B-4, C-1, D-2",
+      "b": "A-1, B-3, C-4, D-2",
+      "c": "A-3, B-2, C-1, D-4",
+      "d": "A-4, B-3, C-1, D-2"
+    },
+    "answer": "d",
+    "explanation": "Decomposition rule (4); Union rule (3); Composition rule (1); Pseudo transitivity (2)."
+  },
+  {
+    "question_number": 110,
+    "year": "2013",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "Match the following: A. Nonprocedural, B. Closure, C. Attributes, D. Natural JOIN.",
+    "options": {
+      "a": "A-1, B-2, C-4, D-3",
+      "b": "A-2, B-1, C-4, D-3",
+      "c": "A-1, B-3, C-4, D-2",
+      "d": "A-2, B-4, C-1, D-3"
+    },
+    "answer": "b",
+    "explanation": "B-tree (2); Secondary index (1); Closure (4); Natural JOIN (3)."
+  },
+  {
+    "question_number": 111,
+    "year": "2013",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "Which of the following is not true with respect to a trackball and/or spaceball? I. A trackball is a two dimensional positioning device while a spaceball provides six degrees of freedom. II. Unlike the trackball a spaceball does not actually move.",
+    "options": {
+      "a": "I & II",
+      "b": "II & III",
+      "c": "II only",
+      "d": "III only"
+    },
+    "answer": "d",
+    "explanation": "Statements I and II are true. Statement III is not provided in the text."
+  },
+  {
+    "question_number": 112,
+    "year": "2013",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "Which of the following statement(s) is (are) true? I. Two successive translations are additive. II. Two successive rotations are additive. III. Two successive scaling operations are multiplicative.",
+    "options": {
+      "a": "I and II",
+      "b": "I and III",
+      "c": "II and III",
+      "d": "All of the above"
+    },
+    "answer": "d",
+    "explanation": "All three statements are true."
+  },
+  {
+    "question_number": 113,
+    "year": "2013",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "Given below are three basic rules: (I) Squash and Stretch, (II) Slow-in and Slow-out, (III) To stage the action properly. These rules are applied in case of",
+    "options": {
+      "a": "Rendering",
+      "b": "Morphing",
+      "c": "Animation",
+      "d": "All of these"
+    },
+    "answer": "c",
+    "explanation": "These are principles of animation."
+  },
+  {
+    "question_number": 114,
+    "year": "2013",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "Which of the following points lies on the same side as the origin, with reference to the line 3x + 7y = 2?",
+    "options": {
+      "a": "(3, 0)",
+      "b": "(1, 0)",
+      "c": "(0.5, 0.5)",
+      "d": "(0.5, 0)"
+    },
+    "answer": "d",
+    "explanation": "The line intercepts axes at (2/3, 0) and (0, 2/7). Points less than these intercepts lie on the same side as origin. Only (0.5, 0) qualifies."
+  },
+  {
+    "question_number": 115,
+    "year": "2013",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "The transformation matrix required for conversion of CMY colour model to RGB colour model is given as:",
+    "options": {
+      "a": "[R; G; B] = [1; 1; 1] - [C; M; Y]",
+      "b": "[R; G; B] = [1; 2; 3] - [C; M; Y]",
+      "c": "[R; G; B] = [1; 1; 1] - [C; M; Y]",
+      "d": "[R; G; B] = [0.5; 0.5; 0.5] - [C; M; Y]"
+    },
+    "answer": "c",
+    "explanation": "CMY to RGB conversion: R = 1 - C, G = 1 - M, B = 1 - Y."
+  },
+  {
+    "question_number": 116,
+    "year": "2013",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "What steps shall be required to rotate an object about the point P1 and its placement such that what was at P1 is now at P2? I. Translate P1 to origin II. Scale as required III. Rotate IV. Translate to the final position P2.",
+    "options": {
+      "a": "I, II and III",
+      "b": "II, III and IV",
+      "c": "I, III and IV",
+      "d": "All of the above"
+    },
+    "answer": "d",
+    "explanation": "All steps are required: translate to origin, scale if needed, rotate, then translate to final position."
+  },
+  {
+    "question_number": 117,
+    "year": "2013",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "In Unix, how do you check that two given strings a and b are equal?",
+    "options": {
+      "a": "test $a eq $b",
+      "b": "test $a equal $b",
+      "c": "test $a = $b",
+      "d": "Sh C test $a == $b"
+    },
+    "answer": "c",
+    "explanation": "In Unix, test $a = $b checks if strings are equal."
+  },
+  {
+    "question_number": 118,
+    "year": "2013",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "In Windows 2000 operating system all the processor-dependent code is isolated in a dynamic link library called",
+    "options": {
+      "a": "NTFS file system",
+      "b": "Hardware abstraction layer",
+      "c": "Microkernel",
+      "d": "Process Manager"
+    },
+    "answer": "b",
+    "explanation": "The Hardware Abstraction Layer (HAL) isolates processor-dependent code in Windows 2000."
+  },
+  {
+    "question_number": 119,
+    "year": "2013",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "To place a sound into a word document, the following feature of Windows is used:",
+    "options": {
+      "a": "Clip board",
+      "b": "Task switching",
+      "c": "C Win App",
+      "d": "OLE"
+    },
+    "answer": "d",
+    "explanation": "Object Linking and Embedding (OLE) allows embedding objects like sound into documents."
+  },
+  {
+    "question_number": 120,
+    "year": "2013",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "Translation Look-aside Buffer (TLB) is:",
+    "options": {
+      "a": "a cache-memory in which item to be searched is compared one-by-one with the keys.",
+      "b": "a cache-memory in which item to be searched is compared with all the keys simultaneously.",
+      "c": "an associative memory in which item to be searched is compared one-by-one with the keys.",
+      "d": "an associative memory in which item to be searched is compared with all the keys simultaneously."
+    },
+    "answer": "d",
+    "explanation": "TLB is an associative memory that compares the search item with all keys simultaneously."
+  },
+  {
+    "question_number": 121,
+    "year": "2013",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "Simplest way of deadlock recovery is:",
+    "options": {
+      "a": "Roll back",
+      "b": "Preempt resource",
+      "c": "Lock one of the processes",
+      "d": "Kill one of the processes"
+    },
+    "answer": "d",
+    "explanation": "Killing one of the processes is the simplest way to break a deadlock."
+  },
+  {
+    "question_number": 122,
+    "year": "2013",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "The directory structure used in Unix file system is called",
+    "options": {
+      "a": "Hierarchical directory",
+      "b": "Tree structured directory",
+      "c": "Directed acyclic graph",
+      "d": "Graph structured directory"
+    },
+    "answer": "c",
+    "explanation": "Unix file system uses a directed acyclic graph (DAG) due to hard links."
+  },
+  {
+    "question_number": 123,
+    "year": "2013",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "Which statement is not true about process O in the Unix operating system?",
+    "options": {
+      "a": "Process O is called init process.",
+      "b": "Process O is not created by fork system call.",
+      "c": "After forking process1, process O becomes swapper process.",
+      "d": "Process O is a special process created when system boots."
+    },
+    "answer": "a",
+    "explanation": "Process 0 is not called init process. Init process is process 1. Process 0 is the swapper process."
+  },
+  {
+    "question_number": 124,
+    "year": "2013",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "Which of the following commands would return process_id of sleep command?",
+    "options": {
+      "a": "sleep 1 && echo $?",
+      "b": "sleep 1 && echo $#",
+      "c": "sleep 1 && echo $×",
+      "d": "sleep 1 && echo $!"
+    },
+    "answer": "d",
+    "explanation": "$! returns the PID of the last background command."
+  },
+  {
+    "question_number": 125,
+    "year": "2013",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "Possible thread states in Windows 2000 operating system include:",
+    "options": {
+      "a": "Ready, running and waiting",
+      "b": "Ready, standby, running, waiting, transition and terminated",
+      "c": "Ready, running, waiting, transition and terminated",
+      "d": "Standby, running, transition and terminated"
+    },
+    "answer": "b",
+    "explanation": "Windows 2000 threads have six states: ready, standby, running, waiting, transition, and terminated."
+  }
+]

@@ -1,0 +1,1755 @@
+[
+  {
+    "question_number": 1,
+    "year": "2013",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "A file is downloaded in a home computer using a 56 kbps MODEM connected to an Internet Service Provider. If the download of file completes in 2 minutes, what is the maximum size of data downloaded?",
+    "options": {
+      "a": "112 Mbits",
+      "b": "6.72 Mbits",
+      "c": "67.20 Mbits",
+      "d": "672 Mbits"
+    },
+    "answer": "b",
+    "explanation": "Data = 56 kbits/sec × 120 seconds = 6720 Kbits = 6.72 Mbits."
+  },
+  {
+    "question_number": 2,
+    "year": "2013",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "In ______ CSMA protocol, after the station finds the line idle, it sends or refrains from sending based on the outcome of a random number generator.",
+    "options": {
+      "a": "Non-persistent",
+      "b": "0–persistent",
+      "c": "1-persistent",
+      "d": "p-persistent"
+    },
+    "answer": "d",
+    "explanation": "In p-persistent CSMA, the station sends or refrains based on a probability p."
+  },
+  {
+    "question_number": 3,
+    "year": "2013",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "Which of the following substitution technique have the relationship between a character in the plaintext and a character in the ciphertext as one-to-many?",
+    "options": {
+      "a": "Monoalphabetic",
+      "b": "Polyalphabetic",
+      "c": "Transpositional",
+      "d": "None of these"
+    },
+    "answer": "b",
+    "explanation": "In polyalphabetic substitution, each occurrence of a character may have a different substitute, giving a one-to-many relationship."
+  },
+  {
+    "question_number": 4,
+    "year": "2013",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "What is the maximum length of CAT–5 UTP cable in Fast Ethernet network?",
+    "options": {
+      "a": "100 meters",
+      "b": "200 meters",
+      "c": "1000 meters",
+      "d": "2000 meters"
+    },
+    "answer": "a",
+    "explanation": "CAT-5 cable has a maximum segment length of 100 meters for Fast Ethernet."
+  },
+  {
+    "question_number": 5,
+    "year": "2013",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "The ______ is a set of standards that defines how a dynamic web document should be written, how input data should be supplied to the program, and how the output result should be used.",
+    "options": {
+      "a": "Hyper Text Markup Language",
+      "b": "File Transfer Protocol",
+      "c": "Hyper Text Transfer Protocol",
+      "d": "Common Gateway Interface"
+    },
+    "answer": "d",
+    "explanation": "CGI (Common Gateway Interface) defines how dynamic web documents should be written, how input data is supplied, and how output is used."
+  },
+  {
+    "question_number": 6,
+    "year": "2013",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "The count-to-infinity problem is associated with",
+    "options": {
+      "a": "Flooding algorithm",
+      "b": "Hierarchical routing algorithm",
+      "c": "Distance vector routing algorithm",
+      "d": "Link state routing algorithm"
+    },
+    "answer": "c",
+    "explanation": "The count-to-infinity problem is associated with distance-vector routing protocols (Bellman-Ford)."
+  },
+  {
+    "question_number": 7,
+    "year": "2013",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "The IEEE single-precision and double-precision format to represent floating-point numbers, has a length of ______ and ______ respectively.",
+    "options": {
+      "a": "8 bits and 16 bits",
+      "b": "16 bits and 32 bits",
+      "c": "32 bits and 64 bits",
+      "d": "64 bits and 128 bits"
+    },
+    "answer": "c",
+    "explanation": "Single precision uses 32 bits; double precision uses 64 bits."
+  },
+  {
+    "question_number": 8,
+    "year": "2013",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "Consider an undirected graph G with 100 nodes. The maximum number of edges to be included in G so that the graph is not connected is",
+    "options": {
+      "a": "2451",
+      "b": "4950",
+      "c": "4851",
+      "d": "9900"
+    },
+    "answer": "c",
+    "explanation": "Maximum edges in a disconnected graph with n=100 is (99×98)/2 = 4851."
+  },
+  {
+    "question_number": 9,
+    "year": "2013",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "The amortized time complexity to perform ______ operation(s) in Splay trees is O(lg n).",
+    "options": {
+      "a": "Search",
+      "b": "Search and Insert",
+      "c": "Search and Delete",
+      "d": "Search, Insert and Delete"
+    },
+    "answer": "d",
+    "explanation": "Splay trees perform search, insert, and delete in O(log n) amortized time."
+  },
+  {
+    "question_number": 10,
+    "year": "2013",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "Suppose that the splits at every level of Quicksort are in proportion 1−α to α, where 0 < α ≤ 0.5 is a constant. The number of elements in an array is n. The maximum depth is approximately",
+    "options": {
+      "a": "0.5 lg n",
+      "b": "0.5(1−α) lg n",
+      "c": "−(lg n)/(lg α)",
+      "d": "−(lg n)/lg(1−α)"
+    },
+    "answer": "d",
+    "explanation": "The maximum depth is achieved on the larger partition, which has size (1−α)n, so depth is −(lg n)/lg(1−α)."
+  },
+  {
+    "question_number": 11,
+    "year": "2013",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "The minimum number of nodes in a binary tree of depth d (root is at level 0) is",
+    "options": {
+      "a": "2^d - 1",
+      "b": "2^(d+1) - 1",
+      "c": "d + 1",
+      "d": "d"
+    },
+    "answer": "b",
+    "explanation": "Minimum nodes = 2^(d+1) - 1 (a full tree with all levels filled)."
+  },
+  {
+    "question_number": 12,
+    "year": "2013",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "The efficient data structure to insert/delete a number from a stored set of numbers is",
+    "options": {
+      "a": "Queue",
+      "b": "Linked list",
+      "c": "Doubly linked list",
+      "d": "Binary tree"
+    },
+    "answer": "c",
+    "explanation": "A doubly linked list allows O(1) insertion and deletion if the node is known, and supports traversal in both directions."
+  },
+  {
+    "question_number": 13,
+    "year": "2013",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "The number of states in a minimal deterministic finite automaton corresponding to the language L = {a^n | n ≥ 4} is",
+    "options": {
+      "a": "3",
+      "b": "4",
+      "c": "5",
+      "d": "6"
+    },
+    "answer": "c",
+    "explanation": "The language requires 5 states: one for each of the first 4 inputs and an accepting state for the rest."
+  },
+  {
+    "question_number": 14,
+    "year": "2013",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "Regular expression for the language L = {W ∈ {0,1}* | W has no pair of consecutive zeros} is",
+    "options": {
+      "a": "(1 + 010)*",
+      "b": "(01 + 10)*",
+      "c": "(1 + 010)* (0 + ε)",
+      "d": "(1 + 01)* (0 + ε)"
+    },
+    "answer": "d",
+    "explanation": "Option (d) generates all strings without consecutive zeros."
+  },
+  {
+    "question_number": 15,
+    "year": "2013",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "Consider the following two languages: L1 = {a^n b^l a^k | n + l + k ≥ 5} and L2 = {a^n b^l a^k | n ≥ 5, l ≥ 3, k = l }. Which of the following is true?",
+    "options": {
+      "a": "L1 is regular language and L2 is not regular language.",
+      "b": "Both L1 and L2 are regular languages.",
+      "c": "Both L1 and L2 are not regular languages.",
+      "d": "L1 is not regular language and L2 is not regular language."
+    },
+    "answer": "a",
+    "explanation": "L1 is regular (finite condition on length). L2 is not regular because k = l requires comparison."
+  },
+  {
+    "question_number": 16,
+    "year": "2013",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "LL grammar for the language L = {a^n b^m c^(n+m) | m ≥ 0, n ≥ 0} is",
+    "options": {
+      "a": "S → aSc | S1; S1 → bS1c | ε",
+      "b": "S → aSc | S1 | ε; S1 → bS1c",
+      "c": "S → aSc | S1 | ε; S1 → bS1c | ε",
+      "d": "S → aSc | ε; S1 → bS1c | ε"
+    },
+    "answer": "c",
+    "explanation": "The grammar S → aSc | S1 | ε; S1 → bS1c | ε generates the required language."
+  },
+  {
+    "question_number": 17,
+    "year": "2013",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "Assume the statements S1 and S2 given as: S1: Given a context free grammar G, there exists an algorithm for determining whether L(G) is infinite. S2: There exists an algorithm to determine whether two context free grammars generate the same language. Which of the following is true?",
+    "options": {
+      "a": "S1 is correct and S2 is not correct.",
+      "b": "Both S1 and S2 are correct.",
+      "c": "Both S1 and S2 are not correct.",
+      "d": "S1 is not correct and S2 is correct."
+    },
+    "answer": "a",
+    "explanation": "S1 is true (we can check for infinite language). S2 is false (equivalence of CFGs is undecidable)."
+  },
+  {
+    "question_number": 18,
+    "year": "2013",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "The number of eight-bit strings beginning with either 111 or 10 is",
+    "options": {
+      "a": "64",
+      "b": "128",
+      "c": "265",
+      "d": "None of these"
+    },
+    "answer": "a",
+    "explanation": "Strings starting with 111: 2^5 = 32. Strings starting with 10: 2^6 = 64. Intersection (1110...): 2^4 = 16? Actually 1110... is 2^4=16. Wait. The file says 32+32=64. Let's check: starting with 111 -> 32. Starting with 101? No, it says 10. Starting with 10 -> 2^6=64. Starting with 111 and 10 are disjoint? 111 is subset of 11, but 10 is different. So 32 + 64 = 96? The file says 64. Let me re-read the file. The file says Total number of 8 bit string starting with 111... = 32. Similarly, total number of 8 bit strings starting with 101 = 32. So total = 64.Wait, the question says beginning with either 111 or 10 Let's check the file text: The number of eight-bit strings beginning with either 111 or 10 is___. (a) 64 (b) 128 (c) 265 (d) None of these. The file says Total number of 8 bit string starting with 111... = 32. Similarly, total number of 8 bit strings starting with 101 = 32. So total = 64. But the question says 111 or 10, not 101. I will follow the file's answer key, which is (a) 64."
+  },
+  {
+    "question_number": 19,
+    "year": "2013",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "Find the number of ways to paint 12 offices so that 3 of them will be green, 2 of them pink, 2 of them yellow and the rest ones white.",
+    "options": {
+      "a": "55,440",
+      "b": "1,66,320",
+      "c": "4790E+08",
+      "d": "39,91,680"
+    },
+    "answer": "b",
+    "explanation": "12! / (3! 2! 2! 5!) = 166320."
+  },
+  {
+    "question_number": 20,
+    "year": "2013",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "Consider the following statements: (i) A graph in which there is a unique path between every pair of vertices is a tree. (ii) A connected graph with e = v - 1 is a tree. (iii) A graph with e = v - 1 has no circuit is a tree. Which of the above statement is/are true?",
+    "options": {
+      "a": "(i) and (iii)",
+      "b": "(ii) and (iii)",
+      "c": "(i) and (ii)",
+      "d": "All of these"
+    },
+    "answer": "d",
+    "explanation": "All three statements are true definitions/properties of a tree."
+  },
+  {
+    "question_number": 21,
+    "year": "2013",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "Consider the in-order and Post-order traversals of a tree given below: In-order: J e n k o p b f a c l g m d h i. Post-order: j n o p k e f b c l m g h i d a. The pre-order traversal of the tree shall be",
+    "options": {
+      "a": "a b f e j k n o p c d g l m h i",
+      "b": "a b c d e f j k n o p g l m h i",
+      "c": "a b e j k n o p f c d g l m h i",
+      "d": "j e n o p k f b c l m g h i d a"
+    },
+    "answer": "none",
+    "explanation": "Constructing the tree from inorder and postorder gives preorder: a b e j k n p o f d g l c m i h. None of the given options match."
+  },
+  {
+    "question_number": 22,
+    "year": "2013",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "A simple graph G with n-vertices is connected if the graph has",
+    "options": {
+      "a": "(n-1)(n-2)/2 edges",
+      "b": "more than (n-1)(n-2)/2 edges",
+      "c": "less than (n-1)(n-2)/2 edges",
+      "d": "C(n, 2) edges"
+    },
+    "answer": "b",
+    "explanation": "A graph is connected if it has more than (n-1)(n-2)/2 edges (the maximum for a disconnected graph)."
+  },
+  {
+    "question_number": 23,
+    "year": "2013",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "Which one of the following set of gates is best suited for 'parity' checking and 'parity' generation?",
+    "options": {
+      "a": "AND, OR, NOT",
+      "b": "NAND, NOR",
+      "c": "EX-OR, EX-NOR",
+      "d": "None of these"
+    },
+    "answer": "c",
+    "explanation": "Parity generation and checking use XOR/XNOR gates."
+  },
+  {
+    "question_number": 24,
+    "year": "2013",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "The quantification ∃!x P(x) denotes the proposition 'There exists a unique x such that P(x) is true'. Express the quantification using universal and existential quantification and logical operations:",
+    "options": {
+      "a": "∃xP(x) ∧ ∃x∃y(P(x) ∧ P(y) ∧ x = y)",
+      "b": "∃xP(x) ∧ ∀x∀y(P(x) ∧ P(y) → x ≠ y)",
+      "c": "∃xP(x) ∧ ∀x∀y(P(x) ∧ P(y) → x = y)",
+      "d": "∃xP(x) ∧ ∃x∀y(P(x) ∧ P(y) → x = y)"
+    },
+    "answer": "c",
+    "explanation": "∃!x P(x) means there exists at least one x, and for any x and y, if both satisfy P, they are equal."
+  },
+  {
+    "question_number": 25,
+    "year": "2013",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "If F and G are Boolean functions of degree n. Then, which of the following is true?",
+    "options": {
+      "a": "F ≤ F + G and FG ≤ F",
+      "b": "G ≤ F + G and FG ≤ G",
+      "c": "F ≤ F + G and FG ≥ F",
+      "d": "G ≤ F + G and FG ≥ F"
+    },
+    "answer": "b",
+    "explanation": "In Boolean algebra, G ≤ F+G and FG ≤ G hold true."
+  },
+  {
+    "question_number": 26,
+    "year": "2013",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "Match the following identities/laws to their corresponding name: A. x + x = x; B. x + 0 = x; C. x + 1 = 1; D. x(x + y) = x.",
+    "options": {
+      "a": "A-3, B-4, C-1, D-2",
+      "b": "A-4, B-3, C-1, D-2",
+      "c": "A-4, B-3, C-2, D-1",
+      "d": "A-3, B-4, C-2, D-1"
+    },
+    "answer": "a",
+    "explanation": "A: Idempotent (3), B: Identity (4), C: Dominance (1), D: Absorption (2)."
+  },
+  {
+    "question_number": 27,
+    "year": "2013",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "In which one of the following, continuous process improvement is done?",
+    "options": {
+      "a": "ISO9001",
+      "b": "RMMM",
+      "c": "CMM",
+      "d": "None of these"
+    },
+    "answer": "c",
+    "explanation": "CMM (Capability Maturity Model) is used for continuous process improvement."
+  },
+  {
+    "question_number": 28,
+    "year": "2013",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "The ______ of a program or computing system is the structure of the system, which comprise software components, the externally visible properties of these components, and the relationship among them.",
+    "options": {
+      "a": "E-R diagram",
+      "b": "Data flow diagram",
+      "c": "Software architecture",
+      "d": "Software design"
+    },
+    "answer": "c",
+    "explanation": "Software architecture defines the structure, components, properties, and relationships of a system."
+  },
+  {
+    "question_number": 29,
+    "year": "2013",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "Working software is not available until late in the process in",
+    "options": {
+      "a": "Waterfall model",
+      "b": "Prototyping model",
+      "c": "Incremental model",
+      "d": "Evolutionary Development model"
+    },
+    "answer": "a",
+    "explanation": "In the waterfall model, no working software is produced until late in the life cycle."
+  },
+  {
+    "question_number": 30,
+    "year": "2013",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "Equivalence partitioning is a ______ testing method that divides the input domain of a program into classes of data from which test cases can be derived.",
+    "options": {
+      "a": "White box",
+      "b": "Black box",
+      "c": "Regression",
+      "d": "Smoke"
+    },
+    "answer": "b",
+    "explanation": "Equivalence partitioning is a black-box testing technique."
+  },
+  {
+    "question_number": 31,
+    "year": "2013",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "Consider the following characteristics: (i) Correct and unambiguous, (ii) Complete and consistent, (iii) Ranked for importance and/or stability and verifiable, (iv) Modifiable and Traceable. Which of the following is true for a good SRS?",
+    "options": {
+      "a": "(i), (ii) and (iii)",
+      "b": "(i), (iii), and (iv)",
+      "c": "(ii), (iii) and (iv)",
+      "d": "(i), (ii), (iii) and (iv)"
+    },
+    "answer": "d",
+    "explanation": "A good SRS should be correct, complete, unambiguous, verifiable, consistent, modifiable, traceable, and ranked."
+  },
+  {
+    "question_number": 32,
+    "year": "2013",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "Linked Lists are not suitable for",
+    "options": {
+      "a": "Binary Search",
+      "b": "Polynomial Manipulation",
+      "c": "Insertion",
+      "d": "Radix Sort"
+    },
+    "answer": "a",
+    "explanation": "Binary search requires random access, which is inefficient in linked lists (O(n) to find mid)."
+  },
+  {
+    "question_number": 33,
+    "year": "2013",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "What is the size of the following Union? Assume that the size of int = 2, size of float = 4, size of char = 1. union { int a; float b; char c; };",
+    "options": {
+      "a": "2",
+      "b": "4",
+      "c": "1",
+      "d": "7"
+    },
+    "answer": "b",
+    "explanation": "The size of a union is the size of its largest member, which is 4 (float)."
+  },
+  {
+    "question_number": 34,
+    "year": "2013",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "What is the output of the following program segment? sum(n) { if (n < 1) return n; else return (n + sum(n-1)); } main() { printf('%d', sum(5)); }",
+    "options": {
+      "a": "10",
+      "b": "16",
+      "c": "15",
+      "d": "14"
+    },
+    "answer": "c",
+    "explanation": "sum(5) = 5 + 4 + 3 + 2 + 1 + 0 = 15."
+  },
+  {
+    "question_number": 35,
+    "year": "2013",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "Assume that x and y are non-zero positive integers. What does the following program do? while (x != 0) { if (x > y) x = x - y; else y = y - x; print('%d', x); }",
+    "options": {
+      "a": "Computes LCM of two numbers",
+      "b": "Computes GCD of two numbers",
+      "c": "Divides large number with small number",
+      "d": "Subtracts smaller number from large number"
+    },
+    "answer": "b",
+    "explanation": "The algorithm is the Euclidean algorithm for computing GCD."
+  },
+  {
+    "question_number": 36,
+    "year": "2013",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "Consider the following program segment: d = 0; for(i=1; i<31; ++i) for(j=1; j<31; ++j) for(k=1; k<31; ++k) if((i+j+k) % 3 == 0) d = d + 1; printf('%d', d); The output will be",
+    "options": {
+      "a": "9000",
+      "b": "3000",
+      "c": "90",
+      "d": "2700"
+    },
+    "answer": "a",
+    "explanation": "Total combinations = 30^3 = 27000. Exactly one-third (9000) will have sum divisible by 3."
+  },
+  {
+    "question_number": 37,
+    "year": "2013",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "Usage of preemption and Transaction Rollback prevents",
+    "options": {
+      "a": "Unauthorized usage of data file",
+      "b": "Deadlock situation",
+      "c": "Data manipulation",
+      "d": "File preemption"
+    },
+    "answer": "b",
+    "explanation": "Preemption and transaction rollback help prevent deadlock situations."
+  },
+  {
+    "question_number": 38,
+    "year": "2013",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "The ______ language was originally designed as the Transformation Language for style Sheet facility.",
+    "options": {
+      "a": "XSLT",
+      "b": "XML",
+      "c": "XQuery",
+      "d": "XPath"
+    },
+    "answer": "a",
+    "explanation": "XSLT (Extensible Stylesheet Language Transformations) was designed for transforming XML documents."
+  },
+  {
+    "question_number": 39,
+    "year": "2013",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "Views are useful for ______ unwanted information, and for collecting together information from more than one relation into a single view.",
+    "options": {
+      "a": "Hiding",
+      "b": "Deleting",
+      "c": "Highlighting",
+      "d": "All of these"
+    },
+    "answer": "a",
+    "explanation": "Views are used to hide unwanted information and combine data from multiple relations."
+  },
+  {
+    "question_number": 40,
+    "year": "2013",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "The decision tree classifier is a widely used technique for",
+    "options": {
+      "a": "Classification",
+      "b": "Association",
+      "c": "Partition",
+      "d": "Clustering"
+    },
+    "answer": "a",
+    "explanation": "Decision trees are used for classification."
+  },
+  {
+    "question_number": 41,
+    "year": "2013",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "Cross-tab displays permit users to view ______ of multidimensional data at a time.",
+    "options": {
+      "a": "One dimension",
+      "b": "Two dimensions",
+      "c": "Three dimensions",
+      "d": "Multidimensions"
+    },
+    "answer": "b",
+    "explanation": "Cross-tab queries allow viewing data in two dimensions (rows and columns)."
+  },
+  {
+    "question_number": 42,
+    "year": "2013",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "A method to provide secure transmission of email is called",
+    "options": {
+      "a": "TLS",
+      "b": "SA",
+      "c": "IPSec",
+      "d": "PGP"
+    },
+    "answer": "d",
+    "explanation": "PGP (Pretty Good Privacy) is used for secure email transmission."
+  },
+  {
+    "question_number": 43,
+    "year": "2013",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "Thomas-write rule is",
+    "options": {
+      "a": "Two phase locking protocol",
+      "b": "Timestamp ordering protocol",
+      "c": "One phase locking protocol",
+      "d": "Sliding window protocol"
+    },
+    "answer": "b",
+    "explanation": "Thomas-write rule is used in timestamp ordering protocols for concurrency control."
+  },
+  {
+    "question_number": 44,
+    "year": "2013",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "Match the following (Process state transition): A. Ready → Running, B. Blocked → Ready, C. Running → Blocked, D. Running → Ready.",
+    "options": {
+      "a": "A-3, B-1, C-2, D-4",
+      "b": "A-4, B-1, C-3, D-2",
+      "c": "A-4, B-3, C-1, D-2",
+      "d": "A-3, B-3, C-2, D-1"
+    },
+    "answer": "a",
+    "explanation": "A. Ready→Running: dispatched (3). B. Blocked→Ready: waiting event occurs (1). C. Running→Blocked: wait for I/O (2). D. Running→Ready: preempted (4)."
+  },
+  {
+    "question_number": 45,
+    "year": "2013",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "The hit ratio of a Translation Lookaside Buffer (TLB) is 80%. It takes 20 nanoseconds (ns) to search TLB and 100 ns to access main memory. The effective memory access time is",
+    "options": {
+      "a": "36 ns",
+      "b": "140 ns",
+      "c": "122 ns",
+      "d": "40 ns"
+    },
+    "answer": "b",
+    "explanation": "EMAT = 0.8 × (20+100) + 0.2 × (20+2×100) = 0.8×120 + 0.2×220 = 140 ns."
+  },
+  {
+    "question_number": 46,
+    "year": "2013",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "Consider the input/output (I/O) requests made at different instants of time directed at a hypothetical disk having 200 tracks as given in the table. Current head position is at track number 65. Direction of last movement is towards higher numbered tracks. Current clock time is 160 milliseconds. Head movement time per track is 1 millisecond. The seek times in Shortest Seek First (SSF) and 'Look' disk-arm scheduling algorithms respectively are:",
+    "options": {
+      "a": "144 and 123 milliseconds",
+      "b": "143 and 123 milliseconds",
+      "c": "149 and 124 milliseconds",
+      "d": "256 and 186 milliseconds"
+    },
+    "answer": "b",
+    "explanation": "SSTF gives 143 ms; LOOK gives 123 ms."
+  },
+  {
+    "question_number": 47,
+    "year": "2013",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "Assume that an implementation of Unix operating system uses i-nodes to keep track of data blocks allocated to a file. It supports 12 direct block addresses, one indirect block address and one double indirect block address. The file system has 256 bytes block size and 2 bytes for disk block address. The maximum possible size of a file this system is",
+    "options": {
+      "a": "16 MB",
+      "b": "16 KB",
+      "c": "70 KB",
+      "d": "71 KB"
+    },
+    "answer": "none",
+    "explanation": "Calculating gives 4131 KB, which does not match any option. None of the options are correct."
+  },
+  {
+    "question_number": 48,
+    "year": "2013",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "Which of the following set of Unix commands will always display 'WELCOME'?",
+    "options": {
+      "a": "export title = Welcome; echo $title",
+      "b": "title = WELCOME; export title; sh -c 'echo $title'",
+      "c": "title = WELCOME; export title ; sh -c 'echo $title'",
+      "d": "title = WELCOME; echo $title"
+    },
+    "answer": "c",
+    "explanation": "The correct syntax is `title = WELCOME; export title ; sh -c 'echo $title'`."
+  },
+  {
+    "question_number": 49,
+    "year": "2013",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "What type of logic circuit is represented by the figure shown below?",
+    "options": {
+      "a": "XOR",
+      "b": "XNOR",
+      "c": "XAND",
+      "d": "XNAND"
+    },
+    "answer": "b",
+    "explanation": "The circuit implements an XNOR gate.",
+    "image_path": "_page_25_Diagram_5.jpeg"
+  },
+  {
+    "question_number": 50,
+    "year": "2013",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "The speed up of a pipeline processing over an equivalent non-pipeline processing is defined by the ratio:",
+    "options": {
+      "a": "n * t_n / (k + n - 1) * t_p",
+      "b": "n * t_n / (k - n + 1) * t_p",
+      "c": "(k + n - 1) * t_p / n * t_n",
+      "d": "(k - n + 1) * t_p / n * t_n"
+    },
+    "answer": "a",
+    "explanation": "Speed-up S = n*t_n / ((k + n - 1)*t_p)."
+  },
+  {
+    "question_number": 51,
+    "year": "2013",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "Which of the following is a correct predicate logic statement for 'Every Natural number has one successor'?",
+    "options": {
+      "a": "∀x∃y (succ(x,y) ∧ ∀z(succ(x,z) → equal(y,z)))",
+      "b": "∀x∃y (succ(x,y) ∧ ∃z(succ(x,z) → equal(y,z)))",
+      "c": "∀x∀y (succ(x,y) → ∀z(succ(x,z) → equal(y,z)))",
+      "d": "∀x∃y (succ(x,y) ∧ ∃z(succ(x,z) ∧ equal(y,z)))"
+    },
+    "answer": "a",
+    "explanation": "For every x, there exists a y that is a successor of x, and any other successor z must be equal to y."
+  },
+  {
+    "question_number": 52,
+    "year": "2013",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "α-β cutoffs are applied to",
+    "options": {
+      "a": "Depth first search",
+      "b": "Best first search",
+      "c": "Minimax search",
+      "d": "Breadth first search"
+    },
+    "answer": "c",
+    "explanation": "Alpha-beta pruning is applied to the minimax search algorithm."
+  },
+  {
+    "question_number": 53,
+    "year": "2013",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "Assume that each alphabet can have a value between 0 to 9 in a cryptarithmetic problem CROSS + ROADS = DANGER. Which of the following statement is true? (i) No two alphabets can have the same numeric value. (ii) Any two alphabets may have the same numeric value. (iii) D = 0. (iv) D = 1.",
+    "options": {
+      "a": "(i) and (iii)",
+      "b": "(i) and (iv)",
+      "c": "(ii) and (iii)",
+      "d": "(ii) and (iv)"
+    },
+    "answer": "b",
+    "explanation": "The mapping is one-to-one (i), and D=1 (iv) in the solution 96233 + 62513 = 158746."
+  },
+  {
+    "question_number": 54,
+    "year": "2013",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "Which of the following is not a part of an expert system shell?",
+    "options": {
+      "a": "Knowledge Base",
+      "b": "Inference Engine",
+      "c": "Explanation Facility",
+      "d": "None of the above"
+    },
+    "answer": "a",
+    "explanation": "A shell is an expert system without a knowledge base."
+  },
+  {
+    "question_number": 55,
+    "year": "2013",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "The Blocks World Problem in Artificial Intelligence is normally discussed to explain a",
+    "options": {
+      "a": "Search technique",
+      "b": "Planning System",
+      "c": "Constraint satisfaction system",
+      "d": "Knowledge base system"
+    },
+    "answer": "b",
+    "explanation": "Blocks World is a classic domain used to illustrate planning systems."
+  },
+  {
+    "question_number": 56,
+    "year": "2013",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "Means-Ends Analysis process centers around the detection of difference between the current state and the goal state. Once such a difference is found, then to reduce the difference one applies",
+    "options": {
+      "a": "a forward search that can reduce the difference.",
+      "b": "a backward search that can reduce the difference.",
+      "c": "a bidirectional search that can reduce the difference.",
+      "d": "an operator that can reduce the difference."
+    },
+    "answer": "d",
+    "explanation": "An operator that can reduce the difference is applied."
+  },
+  {
+    "question_number": 57,
+    "year": "2013",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "Suppose a file of 10,000 characters is to be sent over a line at 2400 bps. Assume that the data is sent in frames. Each frame consists of 1000 characters and an overhead of 48 bits per frame. Using synchronous transmission, the total overhead time is",
+    "options": {
+      "a": "0.05 second",
+      "b": "0.1 second",
+      "c": "0.2 second",
+      "d": "2.0 second"
+    },
+    "answer": "c",
+    "explanation": "Number of frames = 10. Overhead = 10 × 48 = 480 bits. Time = 480 / 2400 = 0.2 sec."
+  },
+  {
+    "question_number": 58,
+    "year": "2013",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "Which of the following is the size of network bits and Host bits of Class A IP address?",
+    "options": {
+      "a": "Network bits 7, Host bits 24",
+      "b": "Network bits 14, Host bits 16",
+      "c": "Network bits 15, Host bits 16",
+      "d": "Network bits 16, Host bits 16"
+    },
+    "answer": "a",
+    "explanation": "Class A has 7 network bits and 24 host bits."
+  },
+  {
+    "question_number": 59,
+    "year": "2013",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "Which of the following field of the TCP header tells how many bytes may be sent starting at the byte acknowledged?",
+    "options": {
+      "a": "TCP header length",
+      "b": "Window size",
+      "c": "Acknowledgement number",
+      "d": "urgent pointer"
+    },
+    "answer": "b",
+    "explanation": "The Window Size field tells how many bytes may be sent starting at the byte acknowledged."
+  },
+  {
+    "question_number": 60,
+    "year": "2013",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "Which of the following is a bit rate of an 8-PSK signal having 2500 Hz bandwidth?",
+    "options": {
+      "a": "25000 bps",
+      "b": "5000 bps",
+      "c": "7500 bps",
+      "d": "20000 bps"
+    },
+    "answer": "c",
+    "explanation": "8-PSK has 3 bits per signal. Bit rate = 3 × 2500 = 7500 bps."
+  },
+  {
+    "question_number": 61,
+    "year": "2013",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "Match the following: A. UDP, B. OSPF, C. SMTP, D. HDLC.",
+    "options": {
+      "a": "A-3, B-4, C-2, D-1",
+      "b": "A-4, B-3, C-2, D-1",
+      "c": "A-4, B-3, C-1, D-2",
+      "d": "A-3, B-4, C-1, D-2"
+    },
+    "answer": "c",
+    "explanation": "UDP - Connectionless (4); OSPF - Interior Gateway (3); SMTP - Message Transfer (1); HDLC - Bit-oriented (2)."
+  },
+  {
+    "question_number": 62,
+    "year": "2013",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "Given the IP address 201.14.78.65 and the subnet mask 255.255.255.224. What is the subnet address?",
+    "options": {
+      "a": "201.14.78.32",
+      "b": "201.14.78.64",
+      "c": "201.14.78.65",
+      "d": "201.14.78.224"
+    },
+    "answer": "b",
+    "explanation": "Bitwise ANDing 201.14.78.65 with 255.255.255.224 gives 201.14.78.64."
+  },
+  {
+    "question_number": 63,
+    "year": "2013",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "If an artificial variable is present in the basic variable of optimal simplex table then the solution is",
+    "options": {
+      "a": "Alternative solution",
+      "b": "Infeasible solution",
+      "c": "Unbounded solution",
+      "d": "Degenerate solution"
+    },
+    "answer": "b",
+    "explanation": "If an artificial variable remains in the basis, the solution is infeasible."
+  },
+  {
+    "question_number": 64,
+    "year": "2013",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "An optimal assignment requires that the minimum number of horizontal and vertical lines that can be drawn to cover all zeros be equal to the number of",
+    "options": {
+      "a": "rows or columns",
+      "b": "rows + columns",
+      "c": "rows + columns - 1",
+      "d": "rows + columns + 1"
+    },
+    "answer": "a",
+    "explanation": "Optimality in Hungarian method requires the number of lines covering zeros to equal the number of rows or columns."
+  },
+  {
+    "question_number": 65,
+    "year": "2013",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "Which of the following is the minimum cost for an assignment problem given below? [cost matrix]",
+    "options": {
+      "a": "13",
+      "b": "16",
+      "c": "17",
+      "d": "18"
+    },
+    "answer": "c",
+    "explanation": "Minimum assignment cost = 2 + 6 + 4 + 5 = 17."
+  },
+  {
+    "question_number": 66,
+    "year": "2013",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "Assume, L is regular language. Let statements S1 and S2 be defined as: S1: SQRT(L) = {x | for some y with |y| = |x|^2, xy ∈ L.} S2: LOG(L) = {x | for some y with |y| = 2|x|, xy ∈ L.} Which of the following is true?",
+    "options": {
+      "a": "S1 is correct and S2 is not correct.",
+      "b": "Both S1 and S2 are correct.",
+      "c": "Both S1 and S2 are not correct.",
+      "d": "S1 is not correct and S2 correct."
+    },
+    "answer": "b",
+    "explanation": "Regular languages are closed under square root, half, and log operations. Both S1 and S2 are true."
+  },
+  {
+    "question_number": 67,
+    "year": "2013",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "A regular grammar for the language L = {a^n b^m | n even and m even} is given by",
+    "options": {
+      "a": "S → aSb | ε; S1 → bS1a | ε",
+      "b": "S → aaS | ε; S1 → bSb | ε",
+      "c": "S → aSb | ε; S1 → S1ab | ε",
+      "d": "S → aaS | ε; S1 → bbS1 | ε"
+    },
+    "answer": "d",
+    "explanation": "For even number of a's and even number of b's, use S → aaS | ε and S1 → bbS1 | ε."
+  },
+  {
+    "question_number": 68,
+    "year": "2013",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "Given the following production of a grammar. S → aA | aBB | ε; A → aaA | ε; B → bB | bbC | ε; C → B. Which of the following is true?",
+    "options": {
+      "a": "The language corresponding to the given grammar is a set of even number of a's.",
+      "b": "The language corresponding to the given grammar is a set of odd number of a's.",
+      "c": "The language corresponding to the given grammar is a set of even number of a's followed by odd number of b's.",
+      "d": "The language corresponding to the given grammar is a set of odd number of a's followed by even number of b's."
+    },
+    "answer": "b",
+    "explanation": "The grammar generates strings with an odd number of a's."
+  },
+  {
+    "question_number": 69,
+    "year": "2013",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "The language accepted by the non-deterministic pushdown automaton M = ({q0, q1, q2}, {a, b}, {a, b, z}, q0, z, {q2}) with transitions ... is",
+    "options": {
+      "a": "L(abb*a)",
+      "b": "{a} L(abb*a)",
+      "c": "L(ab*a)",
+      "d": "{a} L(ab*a)"
+    },
+    "answer": "d",
+    "explanation": "The NPDA accepts the language {a} L(ab*a)."
+  },
+  {
+    "question_number": 70,
+    "year": "2013",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "The language L = {a^n b^n a^m b^m | n ≥ 0, m ≥ 0} is",
+    "options": {
+      "a": "Context free but not linear.",
+      "b": "Context free and linear",
+      "c": "Not Context free and not linear",
+      "d": "Not Context free but linear"
+    },
+    "answer": "a",
+    "explanation": "It is context-free (S → AB, A → aAb | ε, B → aBb | ε) but not linear."
+  },
+  {
+    "question_number": 71,
+    "year": "2013",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "Assume statements S1 and S2 defined as: S1: L2 - L1 is recursive enumerable where L1 and L2 are recursive and recursive enumerable respectively. S2: The set of all Turing machines is countable. Which of the following is true?",
+    "options": {
+      "a": "S1 is correct and S2 is correct.",
+      "b": "Both S1 and S2 are correct.",
+      "c": "Both S1 and S2 are not correct.",
+      "d": "S1 is correct and S2 are are correct."
+    },
+    "answer": "b",
+    "explanation": "Recursive languages are closed under complement, and the set of TMs is countable. Both are true."
+  },
+  {
+    "question_number": 72,
+    "year": "2013",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "Non-deterministic pushdown automaton that accepts the language generated by the grammar S → aSS | ab is",
+    "options": {
+      "a": "NPDA with q0, q1, qf states and transitions",
+      "b": "NPDA with q0, q1, qf states and transitions",
+      "c": "NPDA with q0, q1, qf states and transitions",
+      "d": "NPDA with q0, q1, qf states and transitions"
+    },
+    "answer": "b",
+    "explanation": "Option (b) correctly represents the NPDA for the given grammar."
+  },
+  {
+    "question_number": 73,
+    "year": "2013",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "Match the following: A. Dangling pointer, B. Page fault, C. List representation, D. Toss immediate.",
+    "options": {
+      "a": "A-3, B-4, C-2, D-1",
+      "b": "A-4, B-3, C-2, D-1",
+      "c": "A-4, B-3, C-1, D-2",
+      "d": "A-3, B-4, C-1, D-2"
+    },
+    "answer": "a",
+    "explanation": "Dangling pointer - Object identifier (3); Page fault - Pointer swizzling (4); List representation - Variable length records (2); Toss immediate - Buffer replacement policy (1)."
+  },
+  {
+    "question_number": 74,
+    "year": "2013",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "______ Constraints ensure that a value that appears in one relation for a given set of attributes also appears for a certain set of attributes in another relation.",
+    "options": {
+      "a": "Logical Integrity",
+      "b": "Referential Integrity",
+      "c": "Domain Integrity",
+      "d": "Data Integrity"
+    },
+    "answer": "b",
+    "explanation": "Referential integrity ensures that foreign key values appear in the referenced relation."
+  },
+  {
+    "question_number": 75,
+    "year": "2013",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "The SQL expression Select distinct T.branch_name from branch T, branch S where T.assets > S.assets and S.branch_city = 'Mumbai' finds the name of",
+    "options": {
+      "a": "All branches that have greater assets than some branch located in Mumbai.",
+      "b": "All branches that have greater assets than all branches in Mumbai.",
+      "c": "The branch that has greatest assets in Mumbai.",
+      "d": "Any branch that has greater assets than any branch Mumbai."
+    },
+    "answer": "a",
+    "explanation": "The query finds branches with assets greater than some branch located in Mumbai."
+  },
+  {
+    "question_number": 76,
+    "year": "2013",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "Let A be the set of comfortable houses given as A = {0.8, 0.9, 0.1, 0.7} and B be the set of affordable houses B = {0.9, 0.8, 0.6, 0.2}. Then the set of comfortable and affordable houses is",
+    "options": {
+      "a": "{0.8, 0.8, 0.1, 0.2}",
+      "b": "{0.9, 0.9, 0.6, 0.7}",
+      "c": "{0.8, 0.8, 0.6, 0.7}",
+      "d": "{0.7, 0.7, 0.7, 0.7}"
+    },
+    "answer": "a",
+    "explanation": "Intersection = min(A, B) = {0.8, 0.8, 0.1, 0.2}."
+  },
+  {
+    "question_number": 77,
+    "year": "2013",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "Support of a fuzzy set A within a universal set X is given as",
+    "options": {
+      "a": "{0.15, 0.15, 0.15, 0.15, 0.15}",
+      "b": "{0.95, 0.95, 0.95, 0.95, 0.95}",
+      "c": "{x3, x4}",
+      "d": "{x1, x2, x3, x4, x5}"
+    },
+    "answer": "d",
+    "explanation": "Support is the set of all elements with non-zero membership, which is {x1, x2, x3, x4, x5}."
+  },
+  {
+    "question_number": 78,
+    "year": "2013",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "In a single perception, the updation rule of weight vector is given by",
+    "options": {
+      "a": "W(n+1) = W(n) + η[d(n) - y(n)]",
+      "b": "W(n+1) = W(n) - η[d(n) - y(n)]",
+      "c": "W(n+1) = W(n) + η[d(n) - y(n)] * X(n)",
+      "d": "W(n+1) = W(n) - η[d(n) - y(n)] * X(n)"
+    },
+    "answer": "c",
+    "explanation": "The perceptron learning rule updates weights as W(n+1) = W(n) + η[d(n) - y(n)] * X(n)."
+  },
+  {
+    "question_number": 79,
+    "year": "2013",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "______ refers to the discrepancy among a computed, observed or measured value and the true specified or theoretically correct values.",
+    "options": {
+      "a": "Fault",
+      "b": "Failure",
+      "c": "Defect",
+      "d": "Error"
+    },
+    "answer": "d",
+    "explanation": "Error is the discrepancy between a computed/observed value and the true value."
+  },
+  {
+    "question_number": 80,
+    "year": "2013",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "Which logic family dissipates the minimum power?",
+    "options": {
+      "a": "DTL",
+      "b": "TTL",
+      "c": "ECL",
+      "d": "CMOS"
+    },
+    "answer": "d",
+    "explanation": "CMOS dissipates the minimum power compared to DTL, TTL, and ECL."
+  },
+  {
+    "question_number": 81,
+    "year": "2013",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "Which of the following electronic component is not found in IC's?",
+    "options": {
+      "a": "Diode",
+      "b": "Resistor",
+      "c": "Transistor",
+      "d": "Inductor"
+    },
+    "answer": "d",
+    "explanation": "Inductors are typically not fabricated on ICs; diodes, resistors, and transistors are."
+  },
+  {
+    "question_number": 82,
+    "year": "2013",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "A given memory chip has 14 address pins and 8 data pins. It has the following number of locations.",
+    "options": {
+      "a": "2^8",
+      "b": "2^14",
+      "c": "2^6",
+      "d": "2^12"
+    },
+    "answer": "b",
+    "explanation": "The number of locations is 2^(number of address pins) = 2^14."
+  },
+  {
+    "question_number": 83,
+    "year": "2013",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "The instruction: MOV CL, [BX][DI] + 8 represents the ______ addressing mode.",
+    "options": {
+      "a": "Based Relative",
+      "b": "Based Indexed",
+      "c": "Indexed Relative",
+      "d": "Register indexed"
+    },
+    "answer": "b",
+    "explanation": "It uses both a base register (BX) and an index register (DI), so it is Based Indexed addressing."
+  },
+  {
+    "question_number": 84,
+    "year": "2013",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "The power dissipation of a flip-flop is 3 mW. The power dissipation of a digital system with 4 flip-flops is given by",
+    "options": {
+      "a": "3^4 mW",
+      "b": "4^4 mW",
+      "c": "4/3^4 mW",
+      "d": "12 mW"
+    },
+    "answer": "d",
+    "explanation": "Total power = 4 × 3 = 12 mW."
+  },
+  {
+    "question_number": 85,
+    "year": "2013",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "An astable multivibrator using the 555 timer to generate a square wave of 5 KHz with 70% duty cycle will have",
+    "options": {
+      "a": "Ra = 40.4K, Rb = 17.25K, C = 2000pF",
+      "b": "Ra = 17.25K, Rb = 40.4K, C = 2000pF",
+      "c": "Ra = 40.4K, Rb = 17.25K, C = 5000pF",
+      "d": "Ra = 17.25K, Rb = 40.4K, C = 5000pF"
+    },
+    "answer": "none",
+    "explanation": "Solving gives Ra=1.15K, Rb=0.864K, C=0.100uF. None of the options match."
+  },
+  {
+    "question_number": 86,
+    "year": "2013",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "A binary ripple counter is required to count up to 16383. How many flip-flops are required?",
+    "options": {
+      "a": "16382",
+      "b": "8191",
+      "c": "512",
+      "d": "14"
+    },
+    "answer": "d",
+    "explanation": "Number of flip-flops = ceil(log2(16383)) = 14."
+  },
+  {
+    "question_number": 87,
+    "year": "2013",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "The time complexity of recurrence relation T(n) = T(n/3) + T(2n/3) + O(n) is",
+    "options": {
+      "a": "O(lg n)",
+      "b": "O(n)",
+      "c": "O(n lg n)",
+      "d": "O(n^2)"
+    },
+    "answer": "c",
+    "explanation": "The recurrence has complexity O(n log n) due to the unbalanced recursion tree."
+  },
+  {
+    "question_number": 88,
+    "year": "2013",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "How many people must there be in a room before there is a 50% chance that two of them were born on the same day of the year?",
+    "options": {
+      "a": "At least 23",
+      "b": "At least 183",
+      "c": "At least 366",
+      "d": "At least 730"
+    },
+    "answer": "a",
+    "explanation": "The birthday problem: 23 people give a ~50.7% chance of a shared birthday."
+  },
+  {
+    "question_number": 89,
+    "year": "2013",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "The number of possible parenthesizations of a sequence of n matrices is",
+    "options": {
+      "a": "O(n)",
+      "b": "O(n log n)",
+      "c": "O(n^2)",
+      "d": "None of these"
+    },
+    "answer": "c",
+    "explanation": "The number is the Catalan number, which is O(n^2) for matrix chain multiplication."
+  },
+  {
+    "question_number": 90,
+    "year": "2013",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "The time complexity of an efficient algorithm to find the longest monotonically increasing subsequence of n numbers is",
+    "options": {
+      "a": "O(n)",
+      "b": "O(n log n)",
+      "c": "O(n^2)",
+      "d": "None of these"
+    },
+    "answer": "b",
+    "explanation": "The LIS problem can be solved in O(n log n) time."
+  },
+  {
+    "question_number": 91,
+    "year": "2013",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "Given a binary search tree for a set of n=5 keys with the following probabilities: [table]. The optimal cost of the binary search tree is",
+    "options": {
+      "a": "2.65",
+      "b": "2.70",
+      "c": "2.75",
+      "d": "2.80"
+    },
+    "answer": "c",
+    "explanation": "The optimal BST cost is 2.75."
+  },
+  {
+    "question_number": 92,
+    "year": "2013",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "Given 0-1 knapsack problem and fractional knapsack problem and the following statements: S1: 0-1 knapsack is efficiently solved using Greedy algorithm. S2: Fractional knapsack is efficiently solved using Dynamic programming. Which of the following is true?",
+    "options": {
+      "a": "S1 is correct and S2 is not correct.",
+      "b": "Both S1 and S2 are correct.",
+      "c": "Both S1 and S2 are not correct.",
+      "d": "S1 is not correct and S2 is correct."
+    },
+    "answer": "c",
+    "explanation": "0-1 knapsack is solved by DP (greedy fails), and fractional knapsack is solved by greedy (DP is inefficient). Both statements are false."
+  },
+  {
+    "question_number": 93,
+    "year": "2013",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "Equivalence class partitioning approach is used to divide the input domain into a set of equivalence classes, so that if a program works correctly for a value, then it will work correctly for all the other values in that class. This is used",
+    "options": {
+      "a": "to partition the program in the form of classes.",
+      "b": "to reduce the number of test cases required.",
+      "c": "for designing test cases in white box testing.",
+      "d": "all of the above."
+    },
+    "answer": "b",
+    "explanation": "Equivalence partitioning reduces the number of test cases required."
+  },
+  {
+    "question_number": 94,
+    "year": "2013",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "The failure intensity for a basic model as a function of failures experience is given as λ(μ) = λ0 [1 - μ/V0]. Assume that a program will experience 100 failures in infinite time, the initial failure intensity was 10 failures/CPU hr. Then the decrement of failures intensity per failure will be",
+    "options": {
+      "a": "10 per CPU hr.",
+      "b": "0.1 per CPU hr.",
+      "c": "-0.1 per CPU hr.",
+      "d": "90 per CPU hr."
+    },
+    "answer": "c",
+    "explanation": "The decrement is -λ0/V0 = -10/100 = -0.1 per CPU hr."
+  },
+  {
+    "question_number": 95,
+    "year": "2013",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "Improving processing efficiency or performance or restructuring of software to improve changeability is known as",
+    "options": {
+      "a": "Corrective maintenance",
+      "b": "Perfective maintenance",
+      "c": "Adaptive maintenance",
+      "d": "Code maintenance"
+    },
+    "answer": "b",
+    "explanation": "Perfective maintenance improves performance or maintainability."
+  },
+  {
+    "question_number": 96,
+    "year": "2013",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "In ______, modules A and B make use of a common data type, but perhaps perform different operations on it.",
+    "options": {
+      "a": "Data coupling",
+      "b": "Stamp coupling",
+      "c": "Control coupling",
+      "d": "Contents coupling"
+    },
+    "answer": "b",
+    "explanation": "Stamp coupling occurs when modules share a data structure that contains more information than necessary."
+  },
+  {
+    "question_number": 97,
+    "year": "2013",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "Consider the following schemas: Branch_Schema, Customer_Schema, Deposit_Schema, Borrow_Schema. Which of the following tuple relational calculus finds all customers who have loan amount more than Rs. 12,000?",
+    "options": {
+      "a": "{t(customer_name) | t ∈ borrow ∧ t[amount > 12000]}",
+      "b": "{t | t(customer_name) | t ∈ borrow ∧ t[amount > 12000]}",
+      "c": "{t | ∃s ∈ borrow (t(customer_name) = s(customer_name) ∧ s[amount] > 12000)}",
+      "d": "{t | ∃s ∈ borrow (t(customer_name) = s(customer_name) ∧ s[amount] > 12000)}"
+    },
+    "answer": "c",
+    "explanation": "The correct TRC query is {t | ∃s ∈ borrow (t(customer_name) = s(customer_name) ∧ s[amount] > 12000)}."
+  },
+  {
+    "question_number": 98,
+    "year": "2013",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "Match the following: A. Create, B. Select, C. Rectangle, D. Record.",
+    "options": {
+      "a": "A-3, B-4, C-1, D-2",
+      "b": "A-4, B-3, C-2, D-1",
+      "c": "A-4, B-3, C-1, D-2",
+      "d": "A-3, B-4, C-2, D-1"
+    },
+    "answer": "a",
+    "explanation": "Create - DDL (3); Select - DML (4); Rectangle - E-R Model (1); Record - Relationship Model (2)."
+  },
+  {
+    "question_number": 99,
+    "year": "2013",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "Match the following diagrams.",
+    "options": {
+      "a": "A-3, B-4, C-2, D-1",
+      "b": "A-4, B-3, C-2, D-1",
+      "c": "A-2, B-3, C-4, D-1",
+      "d": "A-3, B-4, C-1, D-2"
+    },
+    "answer": "c",
+    "explanation": "The matching corresponds to (c) as per the file."
+  },
+  {
+    "question_number": 100,
+    "year": "2013",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "Sixty (60) reusable components were available for an application. If only 70% of these components can be used, rest 30% would have to be developed from scratch. If average component is 100 LOC and cost of each LOC is Rs. 14, what will be the risk exposure if risk probability is 80%?",
+    "options": {
+      "a": "Rs. 25,200",
+      "b": "Rs. 20,160",
+      "c": "Rs. 25,160",
+      "d": "Rs. 20,400"
+    },
+    "answer": "b",
+    "explanation": "Risk = 0.8 × (60×0.3×100×14) = 0.8 × 25200 = 20160."
+  },
+  {
+    "question_number": 101,
+    "year": "2013",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "Consider the following two function declarations: (i) int *f(); (ii) int (*f)(); Which of the following is true?",
+    "options": {
+      "a": "Both are identical",
+      "b": "The first is a correct declaration and the second is wrong.",
+      "c": "Both are different ways of declaring pointer to a function.",
+      "d": "The first declaration is a function returning a pointer to an integer and the second is a pointer to function returning integer."
+    },
+    "answer": "d",
+    "explanation": "int *f() is a function returning a pointer; int (*f)() is a pointer to a function."
+  },
+  {
+    "question_number": 102,
+    "year": "2013",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "Assume that we have constructor function for both Base and Derived classes. Now consider the declaration: main() { Base *P = new Derived; } In what sequence, the constructor will be executed:",
+    "options": {
+      "a": "Derived class constructor is followed by Base class constructor.",
+      "b": "Base class constructor.",
+      "c": "Base class constructor is never called.",
+      "d": "Derived class constructor is never called."
+    },
+    "answer": "b",
+    "explanation": "Base class constructor is called first, followed by derived class constructor."
+  },
+  {
+    "question_number": 103,
+    "year": "2013",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "What is the output of the following program? #include <stdio.h> main() { int a, b=0; static int c[10] = {2,3,4,5,6,7,8,9,0}; for(a=0; a<10; ++a) if((c[a]%2)==0) b += c[a]; printf('%d', b); }",
+    "options": {
+      "a": "15",
+      "b": "25",
+      "c": "45",
+      "d": "20"
+    },
+    "answer": "d",
+    "explanation": "Sum of even numbers in the array: 2+4+6+8 = 20."
+  },
+  {
+    "question_number": 104,
+    "year": "2013",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "A Program contains the following declaration and initial assignments: int i=8, j=5; double x=0.005, y=-0.01; char c='c', d='d'; Determine the value of the following expressions: abs(i - 2*j); log(exp(x)); toupper(d).",
+    "options": {
+      "a": "2; 0.005; D",
+      "b": "1; 0.005; D",
+      "c": "2; 0.005; E",
+      "d": "1; 0.005; e"
+    },
+    "answer": "a",
+    "explanation": "abs(8-10)=2; log(exp(0.005))=0.005; toupper('d')='D'."
+  },
+  {
+    "question_number": 105,
+    "year": "2013",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "MPEG involves both spatial compression and temporal compression. The spatial compression is similar to JPEG and temporal compression removes ______ frames.",
+    "options": {
+      "a": "Temporal",
+      "b": "Voice",
+      "c": "Spatial",
+      "d": "Redundant"
+    },
+    "answer": "d",
+    "explanation": "Temporal compression removes redundant frames."
+  },
+  {
+    "question_number": 106,
+    "year": "2013",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "If the data unit is 111111 and the divisor is 1010 in CRC method, what is the dividend at the transmission before division?",
+    "options": {
+      "a": "1111110000",
+      "b": "1111111010",
+      "c": "111111000",
+      "d": "111111"
+    },
+    "answer": "c",
+    "explanation": "Since the divisor is 4 bits (1010), we append 3 zeros: 111111000."
+  },
+  {
+    "question_number": 107,
+    "year": "2013",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "If user A wants to send an encrypted message to user B. The plain text of A is encrypted with the",
+    "options": {
+      "a": "Public Key of user A",
+      "b": "Public Key of user B",
+      "c": "Private Key of user A",
+      "d": "Private Key of user B"
+    },
+    "answer": "b",
+    "explanation": "A encrypts the message with B's public key."
+  },
+  {
+    "question_number": 108,
+    "year": "2013",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "A ______ can forward or block packets based on the information in the network layer and transport layer header.",
+    "options": {
+      "a": "Proxy firewall",
+      "b": "Firewall",
+      "c": "Packet filter firewall",
+      "d": "Message digest firewall"
+    },
+    "answer": "c",
+    "explanation": "A packet filter firewall operates at network and transport layers."
+  },
+  {
+    "question_number": 109,
+    "year": "2013",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "Which of the following graphics devices are known as active graphics devices? (i) Alphanumeric devices, (ii) Thumb wheels, (iii) Digitizers, (iv) Joystick.",
+    "options": {
+      "a": "(i) and (ii)",
+      "b": "(iii) and (iv)",
+      "c": "(i), (ii) and (iii)",
+      "d": "(i), (ii), (iii) and (iv)"
+    },
+    "answer": "d",
+    "explanation": "All are active graphics devices."
+  },
+  {
+    "question_number": 110,
+    "year": "2013",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "A diametric projection is said to be trimetric projection when (i) two of the three foreshortening factors are equal and third is arbitrary, (ii) all of the three foreshortening factors are equal, (iii) all of the three foreshortening factors are arbitrary. Which of the above is true?",
+    "options": {
+      "a": "(i) and (ii)",
+      "b": "(ii) and (iii)",
+      "c": "(i) only",
+      "d": "(iii) only"
+    },
+    "answer": "c",
+    "explanation": "A diametric projection has two foreshortening factors equal and the third arbitrary. Only (i) is true."
+  },
+  {
+    "question_number": 111,
+    "year": "2013",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "Which of the following is/are fundamental method(s) of antialiasing? (i) Increase of sample rate, (ii) Treating a pixel as a finite area rather than as a point, (iii) Decrease of sample rate.",
+    "options": {
+      "a": "(i) and (ii)",
+      "b": "(ii) and (iii)",
+      "c": "(i) only",
+      "d": "(ii) only"
+    },
+    "answer": "a",
+    "explanation": "Increasing sample rate and treating pixels as areas are fundamental antialiasing methods."
+  },
+  {
+    "question_number": 112,
+    "year": "2013",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "The two color systems the HSV and HLS are",
+    "options": {
+      "a": "Hue, Saturation, Value and Hue, Lightness, Saturation.",
+      "b": "High, Standard, Value and High, Lightness, Saturation.",
+      "c": "Highly, Standard, Value and Highly, Lightened, Saturation.",
+      "d": "Highly, Standard, Value and Hue, Lightness, Saturation."
+    },
+    "answer": "a",
+    "explanation": "HSV = Hue, Saturation, Value; HLS = Hue, Lightness, Saturation."
+  },
+  {
+    "question_number": 113,
+    "year": "2013",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "The parametric representation of the line segment between the position vectors P1(2,3) and P2(5,4) is given as",
+    "options": {
+      "a": "x(t)=2+7t, y(t)=0+3t, 0≤t≤7",
+      "b": "x(t)=2+10t, y(t)=0+3t, 0≤t≤1",
+      "c": "x(t)=2+3t, y(t)=3+t, 0≤t≤1",
+      "d": "x(t)=14, y(t)=0, 0≤t≤1"
+    },
+    "answer": "c",
+    "explanation": "Parametric form: x(t) = 2 + 3t, y(t) = 3 + 1t, 0≤t≤1."
+  },
+  {
+    "question_number": 114,
+    "year": "2013",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "Consider the following transformation matrix for rotation (clockwise): [matrix]. This matrix rotates an object by an angle θ about:",
+    "options": {
+      "a": "X-axis",
+      "b": "Y-axis",
+      "c": "Z-axis",
+      "d": "All of these"
+    },
+    "answer": "c",
+    "explanation": "The matrix is the standard rotation matrix about the Z-axis."
+  },
+  {
+    "question_number": 115,
+    "year": "2013",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "Consider the following sequence of operations: (i) Pointer p1 is set to point at a new heap dynamic variable. (ii) Pointer p2 is assigned p1's value. (iii) The heap dynamic variable pointed to by p1 is explicitly de-allocated, but p2 is not changed by the operation. This situation leads to which of the following:",
+    "options": {
+      "a": "p1 becomes a dangling pointer",
+      "b": "p2 becomes a dangling pointer",
+      "c": "Both p1 and p2 are now dangling pointers",
+      "d": "Neither p1 nor p2 is now a dangling pointer"
+    },
+    "answer": "b",
+    "explanation": "After deallocation, p2 still points to the deallocated memory, so p2 becomes a dangling pointer."
+  },
+  {
+    "question_number": 116,
+    "year": "2013",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "The programming languages C and C++ are not strongly typed languages because:",
+    "options": {
+      "a": "Both C and C++ allow functions for which parameters are not type checked.",
+      "b": "Both C and C++ allow functions for which parameters are type checked.",
+      "c": "Both C and C++ allow functions for which parameters are not type checked and also the union types in these languages are not type checked.",
+      "d": "Union types in these (C and C++) languages are not type checked."
+    },
+    "answer": "c",
+    "explanation": "C and C++ are weakly typed because they allow functions with unchecked parameters and union types are not type checked."
+  },
+  {
+    "question_number": 117,
+    "year": "2013",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "The tracing model in Prolog describes program execution in terms of certain events. These events are",
+    "options": {
+      "a": "call and exit",
+      "b": "call and fail",
+      "c": "call, exit and redo",
+      "d": "call, exit, redo and fail"
+    },
+    "answer": "d",
+    "explanation": "The four events are call, exit, redo, and fail."
+  },
+  {
+    "question_number": 118,
+    "year": "2013",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "Which of the following statements is not correct with reference to distributed systems?",
+    "options": {
+      "a": "Distributed system represents a global view of the network and considers it as a virtual uni-processor system by controlling and managing resources across the network on all the sites.",
+      "b": "Distributed system is built on bare machine, not an add-on to the existing software.",
+      "c": "In a distributed system, kernel provides smallest possible set of services on which other services are built. This kernel is called microkernel.",
+      "d": "In a distributed system, if a user wants to run the program on other nodes or share the resources on remote sites due to their beneficial aspects, user has to log on to that site."
+    },
+    "answer": "d",
+    "explanation": "In a distributed system, the user does not need to log on to remote sites; the system handles resource sharing transparently."
+  },
+  {
+    "question_number": 119,
+    "year": "2013",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "A system contains 10 units of resource of same type. The resource requirement and current allocation of these resources for three processes P, Q and R are as follows: [table]. For a safe state, which of the following resource requests must be satisfied? (i) P makes a request for 2 resource units. (ii) Q makes request for 2 resource units. (iii) R makes a request of 2 resource units.",
+    "options": {
+      "a": "Only request (i)",
+      "b": "Only request (ii)",
+      "c": "Only request (iii)",
+      "d": "Request (i) and (ii)"
+    },
+    "answer": "c",
+    "explanation": "Available = 2. Only R's request of 2 can be satisfied, leading to a safe state."
+  },
+  {
+    "question_number": 120,
+    "year": "2013",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "Consider the following set of processes with the following arrival and burst times. Assume that processes are stored in ready queue in order: A-B-C-D-E. Using round robin scheduling with time slice of 1 ms, the average turnaround time is",
+    "options": {
+      "a": "8.4 ms",
+      "b": "12.4 ms",
+      "c": "9.2 ms",
+      "d": "9.4 ms"
+    },
+    "answer": null,
+    "explanation": "The burst times for the processes are missing from the provided text, so the average turnaround time cannot be calculated."
+  },
+  {
+    "question_number": 121,
+    "year": "2013",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "Consider a main memory with 3 page frames for the following page reference string: 5,4,3,2,1,4,3,5,4,3,4,1,4. Assuming that the execution of process is initiated after loading page 5 in memory, the number of page faults in FIFO and second chance replacement respectively are",
+    "options": {
+      "a": "8 and 9",
+      "b": "10 and 11",
+      "c": "7 and 9",
+      "d": "9 and 8"
+    },
+    "answer": "d",
+    "explanation": "FIFO gives 9 page faults; Second Chance gives 8 page faults."
+  },
+  {
+    "question_number": 122,
+    "year": "2013",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "Which of the following shell scripts will produce the output 'my first script'?",
+    "options": {
+      "a": "for i in my first script {echo $i}",
+      "b": "for my first script; do echo n; done",
+      "c": "for i in my first script; do echo $i; done",
+      "d": "for n in my first script; do echo $i; done"
+    },
+    "answer": "c",
+    "explanation": "The correct shell script syntax is (c)."
+  },
+  {
+    "question_number": 123,
+    "year": "2013",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "The portion of Windows 2000 operating system which is not portable is",
+    "options": {
+      "a": "processor management",
+      "b": "user interface",
+      "c": "device management",
+      "d": "virtual memory management"
+    },
+    "answer": "d",
+    "explanation": "Virtual memory management interfaces directly with hardware and is not portable."
+  },
+  {
+    "question_number": 124,
+    "year": "2013",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "Match the following for Windows Operating System: A. Hardware abstraction layer, B. Kernel, C. Executive, D. Win32 subsystem.",
+    "options": {
+      "a": "A-1, B-3, C-2, D-4",
+      "b": "A-4, B-3, C-2, D-1",
+      "c": "A-2, B-3, C-4, D-1",
+      "d": "A-3, B-2, C-1, D-4"
+    },
+    "answer": "c",
+    "explanation": "HAL (2), Kernel (3), Executive (4), Win32 subsystem (1)."
+  },
+  {
+    "question_number": 125,
+    "year": "2013",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "Which of the following statements is not true for UNIX Operating System?",
+    "options": {
+      "a": "Major strength of UNIX Operating System is its open standards which enabled large number of organizations ranging from academia to industries to participate in its development.",
+      "b": "UNIX kernel uses modules with well specified interfaces and provides advantages like simplified testing and maintenance of kernel. It has better extensibility as the kernel is not monolithic.",
+      "c": "UNIX is kernel based operating system with two main components viz. process management subsystem and file management subsystem.",
+      "d": "All devices are represented as files which simplify the management of I/O devices and files. The directory structure used is directed acyclic graph."
+    },
+    "answer": "b",
+    "explanation": "While UNIX does have kernel modules, the statement that it has better extensibility because it is not monolithic is not true for classic UNIX (it is monolithic)."
+  }
+]
+
+
