@@ -675,14 +675,19 @@ function speakText(text, btn, labelText, containerEl) {
     }
   }
 
-  let timerInterval = null;
-  let totalWordSpans = 0;
+  // ✅ FIX: Use the container's actual visible text, not the cleaned string
+  let actualText = text;
+  if (containerEl) {
+    actualText = containerEl.innerText || text;
+  }
 
+  // Wrap the DOM text into spans if we have a container
+  let totalWordSpans = 0;
   if (containerEl) {
     totalWordSpans = wrapTextNodesInSpans(containerEl);
   }
 
-  currentUtterance = new SpeechSynthesisUtterance(text);
+  currentUtterance = new SpeechSynthesisUtterance(actualText);
   currentUtterance.rate = 1.0;
   currentUtterance.pitch = 1.0;
 
@@ -693,55 +698,47 @@ function speakText(text, btn, labelText, containerEl) {
 
   btn.setAttribute('data-label', labelText);
 
-  let boundaryFired = false;
-
   const updateHighlight = (activeWordSpan) => {
     if (!containerEl || !activeWordSpan) return;
-
     containerEl.querySelectorAll('.speech-word.highlight').forEach(s => s.classList.remove('highlight'));
     containerEl.querySelectorAll('.speech-line-highlight').forEach(s => s.classList.remove('speech-line-highlight'));
-
     activeWordSpan.classList.add('highlight');
-
     const allWords = Array.from(containerEl.querySelectorAll('.speech-word'));
     const currentIndex = allWords.indexOf(activeWordSpan);
-
     if (currentIndex !== -1) {
       const startIndex = Math.max(0, currentIndex - 1);
       const endIndex = Math.min(allWords.length, currentIndex + 2);
-
       for (let i = startIndex; i < endIndex; i++) {
         allWords[i].classList.add('speech-line-highlight');
       }
     }
-
     activeWordSpan.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   };
 
   currentUtterance.addEventListener('boundary', (event) => {
     if (event.name === 'word' && containerEl) {
-      boundaryFired = true;
       const wordSpans = containerEl.querySelectorAll('.speech-word');
+      // ✅ Now counting words on the EXACT SAME text used by the speech engine
       const charIndex = event.charIndex;
-      const wordsBefore = text.substring(0, charIndex).trim().split(/\s+/).filter(Boolean).length;
-      
+      const wordsBefore = actualText.substring(0, charIndex).trim().split(/\s+/).filter(Boolean).length;
       if (wordSpans[wordsBefore]) {
         updateHighlight(wordSpans[wordsBefore]);
       }
     }
   });
 
+  // Keep the fallback timer, but it will now sync much better because actualText matches the DOM.
+  // (You can even remove the timer fallback if boundaries fire reliably.)
+  let timerInterval = null;
   currentUtterance.onstart = () => {
     btn.classList.add('speaking');
     btn.innerHTML = '⏹ Stop';
     activeSpeakBtn = btn;
-
+    // Fallback timer (less needed now, but keep as safety)
     setTimeout(() => {
-      if (!boundaryFired && containerEl && totalWordSpans > 0) {
-        const wordSpans = containerEl.querySelectorAll('.speech-word');
+      const wordSpans = containerEl?.querySelectorAll('.speech-word');
+      if (wordSpans && wordSpans.length > 0) {
         let currentIdx = 0;
-        const intervalMs = 430;
-
         timerInterval = setInterval(() => {
           if (currentIdx < wordSpans.length) {
             updateHighlight(wordSpans[currentIdx]);
@@ -749,7 +746,7 @@ function speakText(text, btn, labelText, containerEl) {
           } else {
             clearInterval(timerInterval);
           }
-        }, intervalMs);
+        }, 410);
       }
     }, 400);
   };
@@ -759,8 +756,6 @@ function speakText(text, btn, labelText, containerEl) {
     btn.classList.remove('speaking');
     btn.innerHTML = `🔊 ${labelText}`;
     activeSpeakBtn = null;
-    
-    // FIXED: Only remove highlights, don't restore HTML
     if (containerEl) {
       containerEl.querySelectorAll('.speech-word.highlight').forEach(s => s.classList.remove('highlight'));
       containerEl.querySelectorAll('.speech-line-highlight').forEach(s => s.classList.remove('speech-line-highlight'));
@@ -772,25 +767,22 @@ function speakText(text, btn, labelText, containerEl) {
 
   window.speechSynthesis.speak(currentUtterance);
 }
+
 function speakQuestion(q, btn, targetContainer) {
-    let text = `Question number ${q.question_number}. ${cleanText(q.question_text)}. `;
-    text += "Options are: ";
-    for (const [key, val] of Object.entries(q.options)) {
-      text += `Option ${key}, ${cleanText(val)}. `;
-    }
-    speakText(text, btn, 'Read Question', targetContainer);
-  }
-
- function speakExplanation(q, btn, targetContainer) {
-    let text = `Explanation.`;
-    text += cleanText(q.explanation);
-    speakText(text, btn, 'Read Explanation', targetContainer);
+  // Just pass a dummy text – the function will use targetContainer.innerText
+  speakText('', btn, 'Read Question', targetContainer);
 }
-  function speakAiText(q, content, btn, targetContainer) {
-    let text = `AI Deep Dive for Question ${q.question_number}. ${cleanText(content)}`;
-    speakText(text, btn, 'Read AI Analysis', targetContainer);
-  }
 
+function speakExplanation(q, btn, targetContainer) {
+  speakText('', btn, 'Read Explanation', targetContainer);
+}
+
+function speakAiText(q, content, btn, targetContainer) {
+  // For AI content, we build a temporary container or pass raw text.
+  // Since AI content is plain text and not in the DOM yet, keep the text param.
+  let text = `AI Deep Dive for Question ${q.question_number}. ${cleanText(content)}`;
+  speakText(text, btn, 'Read AI Analysis', targetContainer);
+}
   function formatMarkdown(text) {
     let html = text
       .replace(/^### (.*$)/gim, '<strong style="display:block;margin-top:10px;">$1</strong>')
