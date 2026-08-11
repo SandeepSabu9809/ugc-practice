@@ -337,13 +337,36 @@
       transition: background-color 0.1s ease;
     }
   </style>
+
+
+
 </head>
+
+
+
 <body>
 
 <div id="balloon-container" class="balloon-container"></div>
 
 <div class="container">
   <h1>U.G.C. NET Exam - Computer Science</h1>
+
+  <div class="api-key-section" id="api-key-section">
+  <!-- INPUT AREA (visible when no key is saved) -->
+  <div id="api-key-input-area">
+    <label for="api-key-input">🔑 Groq API Key:</label>
+    <input type="password" id="api-key-input" placeholder="Enter your Groq API key" />
+    <button id="save-api-key">💾 Save Key</button>
+    <button id="clear-api-key" style="background:#dc3545;">🗑️ Clear Key</button>
+    <span id="key-status" style="font-size:0.9em;color:#28a745;"></span>
+  </div>
+
+  <!-- SAVED AREA (visible when key is stored) -->
+  <div id="api-key-saved-area" style="display:none;">
+    <span style="font-weight:bold; color:#28a745;">✅ API Key is saved</span>
+    <button id="change-api-key" style="margin-left:10px;">🔄 Change Key</button>
+  </div>
+</div>
   
   <!-- Dynamic Filter Controls -->
   <div class="filter-section">
@@ -364,7 +387,103 @@
   <div id="questions-container">Loading questions...</div>
 </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <script src="config.js"></script>
+
+<script>
+  (function loadApiKey() {
+    const saved = localStorage.getItem('groq_api_key');
+    if (saved) {
+      window.GROQ_API_KEY = saved;
+      const input = document.getElementById('api-key-input');
+      if (input) input.value = saved;
+      // Hide input area, show saved area
+      document.getElementById('api-key-input-area').style.display = 'none';
+      document.getElementById('api-key-saved-area').style.display = 'block';
+    } else {
+      // Ensure input area is visible, saved area hidden
+      document.getElementById('api-key-input-area').style.display = 'block';
+      document.getElementById('api-key-saved-area').style.display = 'none';
+    }
+  })();
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const saveBtn = document.getElementById('save-api-key');
+    const clearBtn = document.getElementById('clear-api-key');
+    const changeBtn = document.getElementById('change-api-key');
+    const input = document.getElementById('api-key-input');
+    const status = document.getElementById('key-status');
+    const inputArea = document.getElementById('api-key-input-area');
+    const savedArea = document.getElementById('api-key-saved-area');
+
+    // Save key
+    if (saveBtn && input) {
+      saveBtn.addEventListener('click', function() {
+        const key = input.value.trim();
+        if (key) {
+          window.GROQ_API_KEY = key;
+          localStorage.setItem('groq_api_key', key);
+          status.textContent = '✅ Key saved!';
+          status.style.color = '#28a745';
+          // Hide input area, show saved area
+          inputArea.style.display = 'none';
+          savedArea.style.display = 'block';
+        } else {
+          alert('Please enter a valid API key.');
+        }
+      });
+    }
+
+    // Clear key
+    if (clearBtn) {
+      clearBtn.addEventListener('click', function() {
+        localStorage.removeItem('groq_api_key');
+        window.GROQ_API_KEY = null;
+        input.value = '';
+        status.textContent = '🗑️ Key cleared';
+        status.style.color = '#dc3545';
+        // Show input area, hide saved area
+        inputArea.style.display = 'block';
+        savedArea.style.display = 'none';
+      });
+    }
+
+    // Change key (show input area again)
+    if (changeBtn) {
+      changeBtn.addEventListener('click', function() {
+        inputArea.style.display = 'block';
+        savedArea.style.display = 'none';
+        input.focus();
+        status.textContent = ''; // clear status
+      });
+    }
+
+    // Also handle Enter key on input for convenience
+    if (input) {
+      input.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+          saveBtn.click();
+        }
+      });
+    }
+  });
+</script>
 
 <script type="module">
   let allQuestions = [];
