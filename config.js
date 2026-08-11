@@ -1,1 +1,1 @@
-window.GROQ_API_KEY = "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";// new key
+window.GROQ_API_KEY= process.env.GROQ_API_KEY;
