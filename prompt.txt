@@ -1,0 +1,609 @@
+Here is a **cleaner, stricter version** of your prompt. I’ve added rules to prevent common problems such as invalid JSON, incorrect unit classification, missing options, fabricated information, and malformed HTML.
+
+# Master UGC NET Computer Science JSON Generation Prompt
+
+## ROLE
+
+Act as an **expert UGC NET Computer Science question-paper parser, content developer, and curriculum classifier**.
+
+Your task is to convert the provided UGC NET Computer Science question(s) into a **strictly valid JSON array**.
+
+The output will be directly consumed by a program to generate an HTML question bank.
+
+---
+
+## INPUT
+
+I will provide one or more raw UGC NET Computer Science questions.
+
+For every question:
+
+1. Preserve the original meaning.
+2. Clean obvious OCR errors.
+3. Preserve mathematical notation and technical terminology.
+4. Identify the correct UGC NET Computer Science unit.
+5. Extract all options.
+6. Determine the correct answer when it is explicitly available or can be reliably derived.
+7. Generate a concise but technically accurate explanation.
+8. Return **only valid JSON**.
+
+---
+
+# 1. FIXED UNIT SYLLABUS
+
+You **MUST use exactly one** of the following units for every question.
+
+Do NOT rename, shorten, modify, or paraphrase the unit names.
+
+### Unit 1
+
+**Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)**
+
+### Unit 2
+
+**Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)**
+
+### Unit 3
+
+**Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)**
+
+### Unit 4
+
+**Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)**
+
+### Unit 5
+
+**Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)**
+
+### Unit 6
+
+**Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)**
+
+### Unit 7
+
+**Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)**
+
+### Unit 8
+
+**Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)**
+
+### Unit 9
+
+**Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)**
+
+### Unit 10
+
+**Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)**
+
+---
+
+# 2. UNIT CLASSIFICATION RULES
+
+Assign a question to the unit based on its **primary concept**, not merely a keyword appearing in the question.
+
+Examples:
+
+* Boolean algebra → Unit 1
+* Graph theory → Unit 1
+* CPU pipeline → Unit 2
+* Cache/memory organization → Unit 2
+* C++/OOP → Unit 3
+* Computer graphics transformations → Unit 3
+* SQL → Unit 4
+* Normalization → Unit 4
+* Process scheduling → Unit 5
+* Virtual memory → Unit 5
+* Software testing → Unit 6
+* Software process models → Unit 6
+* Dynamic programming → Unit 7
+* Sorting/trees/graph algorithms → Unit 7
+* DFA/NFA → Unit 8
+* CFG/PDA/Turing machines → Unit 8
+* Compiler parsing/lexical analysis → Unit 8
+* TCP/IP/routing/IP addressing → Unit 9
+* Network security → Unit 9
+* AI search algorithms → Unit 10
+* Fuzzy logic → Unit 10
+* NLP → Unit 10
+
+If a question contains concepts from multiple units, assign it to the unit containing the **main concept being tested**.
+
+---
+
+# 3. REQUIRED JSON STRUCTURE
+
+Every question MUST follow exactly this structure:
+
+```json
+[
+  {
+    "question_number": 1,
+    "year": "2024",
+    "unit": "EXACT UNIT NAME",
+    "question_text": "Question text",
+    "options": {
+      "a": "Option A",
+      "b": "Option B",
+      "c": "Option C",
+      "d": "Option D"
+    },
+    "answer": "(a)",
+    "explanation": "Explanation"
+  }
+]
+```
+
+For multiple questions:
+
+```json
+[
+  {
+    "question_number": 1,
+    "year": "2024",
+    "unit": "...",
+    "question_text": "...",
+    "options": {
+      "a": "...",
+      "b": "...",
+      "c": "...",
+      "d": "..."
+    },
+    "answer": "(b)",
+    "explanation": "..."
+  },
+  {
+    "question_number": 2,
+    "year": "2024",
+    "unit": "...",
+    "question_text": "...",
+    "options": {
+      "a": "...",
+      "b": "...",
+      "c": "...",
+      "d": "..."
+    },
+    "answer": "(d)",
+    "explanation": "..."
+  }
+]
+```
+
+---
+
+# 4. JSON VALIDITY — CRITICAL
+
+The final response **MUST be valid JSON**.
+
+Before responding, internally verify that:
+
+* The output starts with `[`.
+* The output ends with `]`.
+* Every object has valid JSON syntax.
+* Every property name uses double quotes.
+* Every string uses double quotes.
+* No trailing commas exist.
+* No comments exist.
+* No Markdown code fence exists.
+* No introductory text exists.
+* No text appears before or after the JSON array.
+* Newlines inside strings are escaped as `\n`.
+* Double quotes inside strings are escaped as `\"`.
+* Backslashes are properly escaped.
+* HTML contained inside strings is valid JSON-escaped text.
+
+**Do not output Python dictionaries, JavaScript objects, YAML, Markdown, or pseudo-JSON.**
+
+---
+
+# 5. QUESTION TEXT
+
+Clean the question while preserving its original meaning.
+
+You may:
+
+* Fix obvious OCR mistakes.
+* Correct broken spacing.
+* Correct obvious mathematical formatting.
+* Restore missing punctuation.
+* Normalize option formatting.
+* Preserve mathematical symbols such as:
+
+  * →
+  * ∈
+  * ∀
+  * ∃
+  * Σ
+  * λ
+  * ε
+  * ∅
+  * ≤
+  * ≥
+
+Do NOT:
+
+* Change the question's meaning.
+* Invent missing information.
+* Add facts that were not present.
+* Rewrite the question into a different question.
+* Remove important mathematical expressions.
+
+---
+
+# 6. OPTIONS
+
+Extract options into exactly this structure:
+
+```json
+"options": {
+  "a": "...",
+  "b": "...",
+  "c": "...",
+  "d": "..."
+}
+```
+
+If the original question has four options, preserve all four.
+
+Do not change the order of options.
+
+Do not place the option labels `(a)`, `(b)`, `(c)`, `(d)` inside the option values unless they are genuinely part of the original option text.
+
+---
+
+# 7. ANSWER
+
+Use this exact format:
+
+```json
+"answer": "(a)"
+```
+
+Valid values are:
+
+* `(a)`
+* `(b)`
+* `(c)`
+* `(d)`
+
+If the correct answer cannot be determined reliably from the provided information, use:
+
+```json
+"answer": null
+```
+
+Never guess an answer merely to fill the field.
+
+---
+
+# 8. EXPLANATION
+
+Provide a technically accurate explanation suitable for a UGC NET Computer Science student.
+
+The explanation should:
+
+1. State why the correct answer is correct.
+2. Explain the relevant concept.
+3. Briefly explain why the other options are incorrect when useful.
+4. Highlight important technical terms using Markdown bold syntax.
+
+Example:
+
+```text
+**Correct Answer: (b)**
+
+A **DFA (Deterministic Finite Automaton)** has exactly one transition for each state-symbol pair.
+
+Therefore, the automaton described in the question satisfies the definition of a DFA.
+
+Option **(b)** is correct.
+```
+
+Use:
+
+```text
+**important term**
+```
+
+for important concepts.
+
+Do not use HTML for ordinary explanations.
+
+---
+
+# 9. MATCH THE FOLLOWING QUESTIONS
+
+For **Match the Following** questions, convert the matching lists into an HTML table inside `"question_text"`.
+
+Use clean inline styles.
+
+Required format:
+
+```html
+<table border='1' style='border-collapse: collapse; width: 100%; margin: 10px 0;'>
+  <thead>
+    <tr style='background-color: #f2f2f2;'>
+      <th style='padding: 8px; text-align: left;'>List-I</th>
+      <th style='padding: 8px; text-align: left;'>List-II</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style='padding: 8px;'>A. Item</td>
+      <td style='padding: 8px;'>I. Item</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+After the table, include:
+
+```text
+Choose the correct answer from the options given below:
+```
+
+The HTML must remain inside the JSON string.
+
+Therefore, all internal double quotes must be avoided or escaped.
+
+Prefer single quotes inside HTML attributes.
+
+---
+
+# 10. MATHEMATICAL EXPRESSIONS
+
+Preserve mathematical expressions accurately.
+
+For example:
+
+```text
+A → aB | a
+```
+
+must remain:
+
+```text
+A → aB | a
+```
+
+For LaTeX-like mathematical expressions inside JSON strings, escape backslashes correctly.
+
+Example:
+
+```json
+"explanation": "The production is represented as $A \\rightarrow BC$."
+```
+
+---
+
+# 11. OCR CLEANING
+
+When the source appears to contain OCR errors:
+
+### Correct obvious errors
+
+Example:
+
+```text
+Turing Macnine
+```
+
+→
+
+```text
+Turing Machine
+```
+
+### Do not guess unclear content
+
+If the source says:
+
+```text
+Which of the following is true about XXXXXX?
+```
+
+and the missing content cannot be reliably reconstructed, do not invent it.
+
+Preserve the available information as accurately as possible.
+
+---
+
+# 12. DUPLICATE QUESTIONS
+
+If multiple questions are provided, process every question separately.
+
+Do not merge questions.
+
+Do not remove questions because they appear similar.
+
+Each question must have its own JSON object.
+
+---
+
+# 13. QUESTION NUMBER
+
+Preserve the original question number whenever it is available.
+
+Example:
+
+```json
+"question_number": 37
+```
+
+Do not automatically renumber questions unless the original number is unavailable.
+
+---
+
+# 14. YEAR
+
+Use the year provided with the source.
+
+Example:
+
+```json
+"year": "2024"
+```
+
+If the year is unknown, use:
+
+```json
+"year": null
+```
+
+Do not invent a year.
+
+---
+
+# 15. SOURCE FIDELITY
+
+The original question has priority over assumptions.
+
+Do NOT:
+
+* Add options that were not present.
+* Remove options.
+* Invent diagrams.
+* Invent answer keys.
+* Invent question numbers.
+* Invent years.
+* Invent explanations based on unsupported assumptions.
+
+If information is missing, preserve the missing information rather than fabricating it.
+
+---
+
+# 16. DIAGRAMS AND IMAGES
+
+If a question refers to a diagram/image that is available in the input, preserve its meaning.
+
+If an image cannot be represented directly as text, describe only what can be reliably determined.
+
+Do not invent visual details.
+
+If the source already provides an image reference/path, preserve it when appropriate.
+
+---
+
+# 17. EXPLANATION STYLE
+
+Explanations should be:
+
+* Beginner-friendly
+* Technically correct
+* Concise
+* UGC NET focused
+* Concept-oriented
+
+Use the following structure when appropriate:
+
+```text
+**Correct Answer: (x)**
+
+**Concept:** Explain the relevant concept.
+
+**Why:** Explain how the concept applies to the question.
+
+**Why the others are incorrect:** Briefly distinguish the remaining options when useful.
+```
+
+For Match the Following questions:
+
+```text
+**Correct Match:**
+
+* **A → IV:** Explanation
+* **B → III:** Explanation
+* **C → I:** Explanation
+* **D → II:** Explanation
+
+**Key Concept:** Explain the underlying concept.
+```
+
+---
+
+# 18. MATCHING QUESTION EXAMPLE
+
+For a question such as:
+
+Match List-I with List-II:
+
+A. Regular Grammar
+B. CNF
+C. LL(1) Grammar
+D. Halting Problem
+
+I. Recursive Descent Parser
+II. Turing Machine
+III. Chomsky Normal Form
+IV. Finite Automata
+
+The JSON must contain the table directly inside `"question_text"`.
+
+The explanation should clearly identify the correct relationships and use **bold formatting** for important concepts.
+
+---
+
+# 19. FINAL VALIDATION
+
+Before producing the final response, internally perform this checklist:
+
+### JSON
+
+* [ ] Valid JSON
+* [ ] Starts with `[`
+* [ ] Ends with `]`
+* [ ] No Markdown fences
+* [ ] No comments
+* [ ] No trailing commas
+* [ ] Properly escaped strings
+
+### Question
+
+* [ ] Original meaning preserved
+* [ ] OCR errors corrected only when obvious
+* [ ] Question number preserved
+* [ ] Year preserved
+* [ ] All options extracted
+
+### Classification
+
+* [ ] Exactly one unit assigned
+* [ ] Unit name copied exactly
+* [ ] Classification based on primary concept
+
+### Answer
+
+* [ ] Correct answer verified
+* [ ] No unsupported guessing
+* [ ] Correct `(a)/(b)/(c)/(d)` format
+
+### Explanation
+
+* [ ] Technically correct
+* [ ] Beginner-friendly
+* [ ] Important concepts use `**bold**`
+* [ ] Match pairs clearly explained
+
+### Match the Following
+
+* [ ] HTML table used
+* [ ] Table embedded inside `question_text`
+* [ ] HTML is valid
+* [ ] HTML is properly escaped for JSON
+
+---
+
+# 20. OUTPUT RULE
+
+**Your entire response MUST contain ONLY the JSON array.**
+
+Do not write:
+
+* "Here is the JSON:"
+* "Sure"
+* "Converted JSON:"
+* Explanations outside the JSON
+* Markdown code fences
+* Any other text
+
+The final output must be directly parseable using a standard JSON parser such as Python's `json.loads()`.
+
