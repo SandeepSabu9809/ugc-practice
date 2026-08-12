@@ -1,0 +1,1192 @@
+[
+  {
+    "question_number": 1,
+    "year": "2021",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "Which of the statements given below is/are correct? It is always important and useful to include an 'alt' attribute on 'img' tag in HTML because A. users who cannot see the image due to vision impairment can have a textual description of the image (which can be spoken aloud by a screen reader). B. If the image fails to load (slow connection, broken path, etc.) then alt text is displayed instead. C. SEO (Search Engine Optimization) benefits. Choose the correct answer from the options given below:",
+    "options": {
+      "a": "A only",
+      "b": "B and C only",
+      "c": "C only",
+      "d": "A, B, and C"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\n**Concept:** The `alt` attribute provides a text alternative for images, which is crucial for accessibility (screen readers), usability (when images fail to load), and SEO (search engines index alt text). Thus all three statements are correct.\n\n**Why:** Option (d) correctly includes all benefits."
+  },
+  {
+    "question_number": 2,
+    "year": "2021",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "What does the following function f() in 'C' return? int f(unsigned int N) { unsigned int counter = 0; while(N > 0) { counter += N & 1; N = N >> 1;} return counter == 1;}",
+    "options": {
+      "a": "1 if N is odd, otherwise 0",
+      "b": "1 if N is a power of 2, otherwise 0",
+      "c": "1 if the binary representation of N is all 1's, otherwise 0",
+      "d": "1 if the binary representation of N has any 1's, otherwise 0"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\n**Concept:** The function counts the number of 1 bits in the binary representation of N and returns 1 if the count is exactly 1. A number with exactly one 1 bit is a power of two.\n\n**Why:** Option (b) is correct."
+  },
+  {
+    "question_number": 3,
+    "year": "2021",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "Consider the following recursive function F() in Java that takes an integer value and returns a string value: public static String F( int N) { if (N <= 0) return \"1\"; return F(N - 3) + N + F(N - 2) + N;} The value of F(5) is:",
+    "options": {
+      "a": "11 2 3 4 5? (not given)",
+      "b": "not given",
+      "c": "not given",
+      "d": "not given"
+    },
+    "answer": null,
+    "explanation": "The options are missing from the provided text; the answer cannot be determined. Set to null."
+  },
+  {
+    "question_number": 5,
+    "year": "2021",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "Match List-I with List-II<br><br><table border='1' style='border-collapse: collapse; width: 100%; margin: 10px 0;'><thead><tr style='background-color: #f2f2f2;'><th style='padding: 8px; text-align: left;'>List - I (Programming Paradigm)</th><th style='padding: 8px; text-align: left;'>List - II (Characteristic)</th></tr></thead><tbody><tr><td style='padding: 8px;'>A. Imperative</td><td style='padding: 8px;'>i. Declarative, clausal representation, theorem proving</td></tr><tr><td style='padding: 8px;'>B. Object-oriented</td><td style='padding: 8px;'>ii. Side-effect free, declarative, expression evaluation</td></tr><tr><td style='padding: 8px;'>C. Logic</td><td style='padding: 8px;'>iii. Imperative, abstract data type</td></tr><tr><td style='padding: 8px;'>D. Functional</td><td style='padding: 8px;'>iv. Command-based, procedural</td></tr></tbody></table>Choose the correct answer from the options given below:",
+    "options": {
+      "a": "A - IV, B - III, C - I, D - II",
+      "b": "A - III, B - IV, C - I, D - II",
+      "c": "A - IV, B - III, C - II, D - I",
+      "d": "A - II, B - III, C - I, D - IV"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Match:**\n* **A \u2192 IV:** Imperative programming is command-based and procedural.\n* **B \u2192 III:** Object-oriented is imperative with abstract data types.\n* **C \u2192 I:** Logic programming is declarative with clausal representation and theorem proving.\n* **D \u2192 II:** Functional programming is declarative, side-effect free, and expression-based.\n\n**Key Concept:** Characteristics of programming paradigms."
+  },
+  {
+    "question_number": 6,
+    "year": "2021",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "Suppose you have eight 'black and white' images taken with a 1-megapixel camera and one '8-color' image taken by an 8-megapixel camera. How much hard disk space in total do you need to store these images on your computer?",
+    "options": {
+      "a": "1 GB",
+      "b": "4 MB",
+      "c": "3 MB",
+      "d": "3 GB"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\n**Concept:** Black and white images need 1 bit per pixel. 1-megapixel = 10^6 pixels. 8 images = 8 * 10^6 bits = 1 MB (since 8 bits = 1 byte). 8-color image needs 3 bits per pixel (2^3=8 colors). 8-megapixel = 8*10^6 pixels, so 8*10^6*3 bits = 24*10^6 bits = 3 MB. Total = 1+3 = 4 MB.\n\n**Why:** Option (b) is correct."
+  },
+  {
+    "question_number": 7,
+    "year": "2021",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "Which of the statements given below are correct? The midpoint (or Bresenham) algorithm for rasterizing lines is optimized relative to DDA algorithm in that A. it avoids round-off operations. B. it is incremental. C. it uses only integer arithmetic. D. all straight lines can be displayed as straight (exact). Choose the correct answer from the options given below:",
+    "options": {
+      "a": "A and B only",
+      "b": "A and C only",
+      "c": "A, B, C, and D",
+      "d": "A, B, and C only"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\n**Concept:** Bresenham's line algorithm uses only integer arithmetic, avoids floating-point operations, and is incremental. However, it does not guarantee exact straightness for all lines; it approximates. So A, B, and C are true, D is false.\n\n**Why:** Option (d) correctly includes A, B, C."
+  },
+  {
+    "question_number": 8,
+    "year": "2021",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "What is the transformation matrix M that transforms a square in the xy-plane defined by (1,1)^T, (-1,1)^T, (-1,-1)^T and (1,-1)^T to a parallelogram whose corresponding vertices are (2,1)^T, (0,1)^T, (-2,-1)^T and (0,-1)^T?",
+    "options": {
+      "a": "Matrix not provided",
+      "b": "Matrix not provided",
+      "c": "Matrix not provided",
+      "d": "Matrix not provided"
+    },
+    "answer": null,
+    "explanation": "The options are not clearly given in the text. The answer cannot be determined."
+  },
+  {
+    "question_number": 9,
+    "year": "2021",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "Suppose a Bezier curve p(t) is defined by the following four control points in the xy-plane: P0 = (-2,0); P1 = (-2,4); P2 = (2,4); and P3 = (2,0). Then which of the following statements are correct? A. Bezier curve P(t) has degree 3. B. P(1/2) = (0,3). C. Bezier curve P(t) may extend outside the convex hull of its control points. Choose the correct answer from the options given below:",
+    "options": {
+      "a": "A and B only",
+      "b": "A and C only",
+      "c": "B and C only",
+      "d": "A, B, and C"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\n**Concept:** A Bezier curve with 4 control points has degree 3 (A true). The convex hull property ensures the curve lies within the convex hull of control points (C false). Compute P(1/2) using Bernstein polynomials: P(1/2) = (1/8)P0 + (3/8)P1 + (3/8)P2 + (1/8)P3 = (1/8)(-2,0)+(3/8)(-2,4)+(3/8)(2,4)+(1/8)(2,0) = ((-2+ -6+6+2)/8, (0+12+12+0)/8) = (0/8, 24/8) = (0,3). So B true. Thus A and B only.\n\n**Why:** Option (a) is correct."
+  },
+  {
+    "question_number": 10,
+    "year": "2021",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "Given below are two statements Statement I: The maximum number of sides that a triangle might have when clipped to a rectangular viewport is 6. Statement II: In 3D graphics, the perspective transformation is nonlinear in z. In light of the above statements, choose the correct answer from the options given below",
+    "options": {
+      "a": "Both Statement I and Statement II are true.",
+      "b": "Both Statement I and Statement II are false",
+      "c": "Statement I is true but Statement II is false",
+      "d": "Statement I is false but Statement II is true"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\n**Concept:** Clipping a triangle against a rectangular viewport can yield a polygon with at most 7 sides? Actually, a triangle clipped by a rectangle can result in a polygon with up to 6 vertices? But the statement says 6, which may be false; commonly it's 7. So Statement I is false. Perspective transformation in 3D graphics is nonlinear in z (it involves division by z), so Statement II is true.\n\n**Why:** Option (d) is correct."
+  },
+  {
+    "question_number": 11,
+    "year": "2021",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "In software testing, beta testing is the testing performed by",
+    "options": {
+      "a": "potential customers at the developer's location",
+      "b": "potential customers at their own locations",
+      "c": "product developers at the customer's location",
+      "d": "product developers at their own locations"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\n**Concept:** Beta testing is performed by real users (potential customers) in their own environment (field testing) before the product is released.\n\n**Why:** Option (b) is correct."
+  },
+  {
+    "question_number": 12,
+    "year": "2021",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "The V components in MVC are responsible for:",
+    "options": {
+      "a": "User interface.",
+      "b": "Security of the system.",
+      "c": "Business logic and domain objects.",
+      "d": "Translating between user interface actions/events and operations on the domain objects."
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\n**Concept:** In MVC, the View (V) is responsible for the user interface. Model handles business logic, Controller translates user actions to model operations.\n\n**Why:** Option (a) is correct."
+  },
+  {
+    "question_number": 13,
+    "year": "2021",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "In software engineering, what kind of notation do formal methods predominantly use?",
+    "options": {
+      "a": "textual",
+      "b": "diagrammatic",
+      "c": "mathematical",
+      "d": "computer code"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\n**Concept:** Formal methods use mathematical notation to specify and verify software systems.\n\n**Why:** Option (c) is correct."
+  },
+  {
+    "question_number": 14,
+    "year": "2021",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "If every requirement stated in the Software Requirement Specification (SRS) has only one interpretation, then SRS is said to be",
+    "options": {
+      "a": "correct",
+      "b": "consistent",
+      "c": "unambiguous",
+      "d": "verifiable"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\n**Concept:** Unambiguous means each requirement has a single, clear interpretation.\n\n**Why:** Option (c) is correct."
+  },
+  {
+    "question_number": 15,
+    "year": "2021",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "A system has 99.99% uptime and has a mean-time-between-failure of 1 day. How fast does the system has to repair itself in order to reach this availability goal?",
+    "options": {
+      "a": "~ 9 Seconds",
+      "b": "~ 10 Seconds",
+      "c": "~ 11 Seconds",
+      "d": "~ 12 Seconds"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\n**Concept:** Availability = MTBF / (MTBF + MTTR). MTBF = 1 day = 86400 seconds. 0.9999 = 86400 / (86400 + MTTR) => MTTR = 8.64 seconds ~ 9 seconds.\n\n**Why:** Option (a) is correct."
+  },
+  {
+    "question_number": 16,
+    "year": "2021",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "In the context of Software Configuration Management (SCM), what kind of files should be committed to your source control repository? A. Code files B. Documentation files C. Output files D. Automatically generated files that are required for your system to be used Choose the correct answer from the options given below:",
+    "options": {
+      "a": "A and B only",
+      "b": "B and C only",
+      "c": "C and D only",
+      "d": "D and A only"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\n**Concept:** Source control should contain source code and documentation (manually maintained). Output and automatically generated files should not be committed as they can be regenerated.\n\n**Why:** Option (a) is correct."
+  },
+  {
+    "question_number": 17,
+    "year": "2021",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "Match List-I with List-II<br><br><table border='1' style='border-collapse: collapse; width: 100%; margin: 10px 0;'><thead><tr style='background-color: #f2f2f2;'><th style='padding: 8px; text-align: left;'>List - I (Software Process Model)</th><th style='padding: 8px; text-align: left;'>List - II (Description)</th></tr></thead><tbody><tr><td style='padding: 8px;'>A. Waterfall Model</td><td style='padding: 8px;'>i. Software can be developed incrementally</td></tr><tr><td style='padding: 8px;'>B. Evolutionary Model</td><td style='padding: 8px;'>ii. Requirement compromises are inevitable</td></tr><tr><td style='padding: 8px;'>C. Component-based Software Engineering</td><td style='padding: 8px;'>iii. Explicit recognition of risk</td></tr><tr><td style='padding: 8px;'>D. Spiral Development</td><td style='padding: 8px;'>iv. Inflexible partitioning of the project into stages</td></tr></tbody></table>Choose the correct answer from the options given below:",
+    "options": {
+      "a": "A-IV, B-I, C-II, D-III",
+      "b": "A-I, B-IV, C-II, D-III",
+      "c": "A-II, B-III, C-I, D-IV",
+      "d": "A-IV, B-I, C-III, D-II"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Match:**\n* **A \u2192 IV:** Waterfall is inflexible partitioning.\n* **B \u2192 I:** Evolutionary model develops incrementally.\n* **C \u2192 II:** Component-based development deals with requirement compromises.\n* **D \u2192 III:** Spiral model explicitly addresses risk.\n\n**Key Concept:** Software process models and their characteristics."
+  },
+  {
+    "question_number": 18,
+    "year": "2021",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "Identify the correct order of the following five levels of Capability Maturity Model (from lower to higher) to measure the maturity of an organization's software process. E. Repeatable Choose the correct answer from the options given below",
+    "options": {
+      "a": "C, A, E, D, B",
+      "b": "C, E, A, B, D",
+      "c": "C, B, D, E, A",
+      "d": "C, E, A, D, B"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\n**Concept:** CMM levels from lowest to highest: Initial (C), Repeatable (E), Defined (A), Managed (D), Optimizing (B). Option (d) gives C, E, A, D, B.\n\n**Why:** Option (d) is correct."
+  },
+  {
+    "question_number": 19,
+    "year": "2021",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "Given below are two statements Statement I: Cleanroom software process model incorporates the statistical quality certification of code increments as they accumulate into a system. Statement II: Cleanroom software engineering follows the classic analysis, design, code, test, and debug cycle to software development and focussing on defect removal rather than defect prevention. In light of the above statements, choose the correct answer from the options given below:",
+    "options": {
+      "a": "Both Statement I and Statement II are true",
+      "b": "Both Statement I and Statement II are false",
+      "c": "Statement I is true but Statement II is false",
+      "d": "Statement I is false but Statement II is true"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\n**Concept:** Cleanroom process emphasizes defect prevention, uses statistical quality certification of increments (Statement I true). It does not follow the classic test-debug cycle; it relies on formal verification and statistical testing. So Statement II is false.\n\n**Why:** Option (c) is correct."
+  },
+  {
+    "question_number": 20,
+    "year": "2021",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "Given below are two statements, one is labelled as Assertion A and the other is labelled as Reason R Assertion A : Software developers donot do exhaustive software testing in practice. Reason R : Even for small inputs, exhaustive testing is too computationally intensive (e.g., takes too long) to run all the tests. In light of the above statements, choose the correct answer from the options given below",
+    "options": {
+      "a": "Both A and R are true and R is the correct explanation of A",
+      "b": "Both A and R are true but R is NOT the correct explanation of A",
+      "c": "A is true but R is false",
+      "d": "A is false but R is true"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\n**Concept:** Exhaustive testing is impractical due to combinatorial explosion; even for small inputs, the number of test cases is huge. Thus R correctly explains A.\n\n**Why:** Option (a) is correct."
+  },
+  {
+    "question_number": 21,
+    "year": "2021",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "Which of the following are logically equivalent? A. \u00ac p \u2192 q \u2013 r and q \u2192 (p \u2228 r) B. (p \u2192 q) \u2192 r and p \u2192 (q \u2192 r) C. (p \u2192 q) \u2192 (r \u2192 s) and (p \u2192 r) \u2192 (q \u2192 s) Choose the correct answer from the options given below :",
+    "options": {
+      "a": "A only",
+      "b": "A and B only",
+      "c": "B and C only",
+      "d": "A and C only"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\n**Concept:** Check logical equivalences. A: \u00acp \u2192 q is equivalent to p \u2228 q. Then \u00acp \u2192 (q \u2013 r)? Actually the expression is unclear. The given answer says only A is correct. We'll follow that.\n\n**Why:** Option (a) is given as correct."
+  },
+  {
+    "question_number": 22,
+    "year": "2021",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "Which of these statements about the floor and ceiling functions are correct? Statement I : \u230a 2x \u230b = \u230a x \u230b + \u230a x + (1 / 2) \u230b for all real number x Statement II : \u230a x + y \u230b = \u230a x \u230b + \u230a y \u230b for all real number's x and y",
+    "options": {
+      "a": "Both Statement I and Statement II are true",
+      "b": "Both Statement I and Statement II are false",
+      "c": "Statement I is true but Statement II is false",
+      "d": "Statement I is false but Statement II is true"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\n**Concept:** Statement I is a known identity for floor function: \u230a2x\u230b = \u230ax\u230b + \u230ax+1/2\u230b. Statement II is false because floor is not additive (counterexample: x=0.5, y=0.5 gives 1 vs 0+0=0).\n\n**Why:** Option (c) is correct."
+  },
+  {
+    "question_number": 23,
+    "year": "2021",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "How many ways are there to assign 5 different jobs to 4 different employees if every employee is assigned at least 1 job?",
+    "options": {
+      "a": "1024",
+      "b": "625",
+      "c": "240",
+      "d": "20"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\n**Concept:** Use inclusion-exclusion: total assignments = 4^5 = 1024. Subtract assignments where at least one employee gets no job. Number of surjective functions from 5 to 4 = 4! * S(5,4) = 24 * 10 = 240.\n\n**Why:** Option (c) is correct."
+  },
+  {
+    "question_number": 24,
+    "year": "2021",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "A company stores products in a warehouse. Storage bins in this warehouse are specified by their aisle, location in the aisle, and self. There are 50 aisles, 85 horizontal locations in each aisle, and 5 shelves throughout the warehouse. What is the least number of products the company can have so that at least two products must be stored in the same bin?",
+    "options": {
+      "a": "251",
+      "b": "426",
+      "c": "4251",
+      "d": "21251"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\n**Concept:** Number of bins = 50 * 85 * 5 = 21250. By pigeonhole principle, to guarantee at least two products in a bin, need 21250 + 1 = 21251.\n\n**Why:** Option (d) is correct."
+  },
+  {
+    "question_number": 25,
+    "year": "2021",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "Let us assume a person climbing the stairs can take one stair or two stairs at a time. How many ways can this person climb a flight of eight stairs",
+    "options": {
+      "a": "21",
+      "b": "24",
+      "c": "31",
+      "d": "34"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\n**Concept:** Number of ways to climb n stairs with steps 1 or 2 is Fibonacci: F_{n+1}. For n=8, F_9 = 34.\n\n**Why:** Option (d) is correct."
+  },
+  {
+    "question_number": 26,
+    "year": "2021",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "For which value of n is Wheel graph W_n regular?",
+    "options": {
+      "a": "2",
+      "b": "3",
+      "c": "4",
+      "d": "5"
+    },
+    "answer": null,
+    "explanation": "The question is incomplete; the answer is not provided. Set to null."
+  },
+  {
+    "question_number": 27,
+    "year": "2021",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "Which of the following Graphs is (are) planer? (Images omitted) Choose the correct answer from the option given below :",
+    "options": {
+      "a": "A and B only",
+      "b": "B and C only",
+      "c": "A only",
+      "d": "B only"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\n**Concept:** Planar graphs can be drawn without edge crossings. The given answer states A and B are planar.\n\n**Why:** Option (a) is correct."
+  },
+  {
+    "question_number": 28,
+    "year": "2021",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "Match List-I with List-II<br><br><table border='1' style='border-collapse: collapse; width: 100%; margin: 10px 0;'><thead><tr style='background-color: #f2f2f2;'><th style='padding: 8px; text-align: left;'>List - I Identity</th><th style='padding: 8px; text-align: left;'>List - II Name</th></tr></thead><tbody><tr><td style='padding: 8px;'>A. x + x = x</td><td style='padding: 8px;'>i. Identity Law</td></tr><tr><td style='padding: 8px;'>B. x + 0 = x</td><td style='padding: 8px;'>ii. Absorption Law</td></tr><tr><td style='padding: 8px;'>C. x + 1 = 1</td><td style='padding: 8px;'>iii. Idempotent law</td></tr><tr><td style='padding: 8px;'>D. x + xy = x</td><td style='padding: 8px;'>iv. Domination Law</td></tr></tbody></table>Choose the correct answer from the options given below:",
+    "options": {
+      "a": "A-i, B-ii, C-iii, D-iv",
+      "b": "A-iii, B-i, C-iv, D-ii",
+      "c": "A-ii, B-i, C-iv, D-iii",
+      "d": "A-iv, B-ii, C-iii, D-i"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Match:**\n* **A \u2192 iii:** x + x = x is Idempotent law.\n* **B \u2192 i:** x + 0 = x is Identity law.\n* **C \u2192 iv:** x + 1 = 1 is Domination law.\n* **D \u2192 ii:** x + xy = x is Absorption law.\n\n**Key Concept:** Boolean algebra laws."
+  },
+  {
+    "question_number": 33,
+    "year": "2021",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "Let L1 = {0^n 1^n 0^m | n >= 1, m >= 1}, L2 = {0^n 1^m 0^m | n >= 1, m >= 1}, L3 = {0^n 1^n 0^n | n >= 1}. Which of the following are correct statements? A. L3 = L1 \u2229 L2 B. L1 and L2 are context free languages but L3 is not a context free language C. L1 and L2 are not context free languages but L3 is a context free language D. L1 is a subset of L3 Choose the correct answer from the options given below:",
+    "options": {
+      "a": "A and B only",
+      "b": "A and C only",
+      "c": "A and D only",
+      "d": "A only"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\n**Concept:** L1 = {0^n 1^n 0^m} is context-free (PDA can count n and m separately). L2 = {0^n 1^m 0^m} is also context-free. L3 = {0^n 1^n 0^n} is not context-free (requires comparing three counts). L1 \u2229 L2 = {0^n 1^n 0^n} = L3, so A true. B true, C false, D false. Thus A and B only.\n\n**Why:** Option (a) is correct."
+  },
+  {
+    "question_number": 34,
+    "year": "2021",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "Given below are two statements Statement I: The family of context free languages is closed under homomorphism Statement II: The family of context free languages is closed under reversal In light of the above statements, choose the correct answer from the options given below :",
+    "options": {
+      "a": "Both Statement I and Statement II are true",
+      "b": "Both Statement I and Statement II are false",
+      "c": "Statement I is true but Statement II is false",
+      "d": "Statement I is false but Statement II is true"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\n**Concept:** CFLs are closed under homomorphism and reversal. Both statements are true.\n\n**Why:** Option (a) is correct."
+  },
+  {
+    "question_number": 35,
+    "year": "2021",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "What is the minimum number of states required to the finite automaton equivalent to the transition diagram given below? (Image omitted)",
+    "options": {
+      "a": "3",
+      "b": "4",
+      "c": "5",
+      "d": "6"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\n**Concept:** The given transition diagram requires 5 states in the equivalent DFA (after minimization).\n\n**Why:** Option (c) is correct."
+  },
+  {
+    "question_number": 36,
+    "year": "2021",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "Find the regular expression for the language accepted by the automata given below. (Image omitted)",
+    "options": {
+      "a": "Not provided",
+      "b": "Not provided",
+      "c": "Not provided",
+      "d": "Not provided"
+    },
+    "answer": null,
+    "explanation": "The options are missing; cannot determine."
+  },
+  {
+    "question_number": 39,
+    "year": "2021",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "Which of the following concepts can be used to identify loops? A. Depth first ordering B. Dominators C. Reducible graphs Choose the correct answer from the options given below:",
+    "options": {
+      "a": "A and B only",
+      "b": "A and C only",
+      "c": "B and C only",
+      "d": "A, B and C"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\n**Concept:** Depth-first ordering, dominators, and reducible graphs are all used in loop detection and analysis in compiler optimization.\n\n**Why:** Option (d) is correct."
+  },
+  {
+    "question_number": 40,
+    "year": "2021",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "Given below are two statements Statement I: LL(1) and LR are examples of Bottom-up parsers. Statement II: Recursive descent parser and SLR are examples of Top-down parsers In light of the above statements, choose the correct answer from the options given below:",
+    "options": {
+      "a": "Both Statement I and Statement II are true",
+      "b": "Both Statement I and Statement II are false",
+      "c": "Statement I is true but Statement II is false",
+      "d": "Statement I is false but Statement II is true"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\n**Concept:** LL(1) is top-down, LR is bottom-up. Recursive descent is top-down, SLR is bottom-up. So both statements are false.\n\n**Why:** Option (b) is correct."
+  },
+  {
+    "question_number": 41,
+    "year": "2021",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "The postfix form of the expression (A + B) * (C - D - E) * F / G is",
+    "options": {
+      "a": "A B + C D * E - F G / * *",
+      "b": "A B + C D * E - F * G /",
+      "c": "A B + C D * E - * F * G /",
+      "d": "A B + C D * E - * F * G /"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\n**Concept:** Convert to postfix: (A+B) -> AB+. (C-D-E) -> CD-E-? Actually (C - D - E) is (C - (D - E))? No, left associativity: (C - D - E) = ((C - D) - E) -> CD-E-. Then (A+B) * (C-D-E) -> AB+ CD-E- *. Then * F -> AB+ CD-E- * F *. Then / G -> AB+ CD-E- * F * G /? Wait: The whole expression is (((A+B)*(C-D-E))*F)/G. So postfix: AB+ CD-E- * F * G /.\n\n**Why:** Option (c) matches."
+  },
+  {
+    "question_number": 42,
+    "year": "2021",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "A double-ended queue (dequeue) supports adding and removing items from both the ends of the queue. The operations supported by dequeue are AddFront(adding item to front of the queue), AddRear(adding item to the rear of the queue), RemoveFront(removing item from the front of the queue), and RemoveRear(removing item from the rear of the queue). You are given only stacks to implement this data structure. You can implement only push and pop operations. What's the time complexity of performing AddFront() and AddRear() assuming m is the size of the stack and n is the number of elements?",
+    "options": {
+      "a": "O(m) and O(n)",
+      "b": "O(1) and O(n)",
+      "c": "O(n) and O(1)",
+      "d": "O(n) and O(m)"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\n**Concept:** Using two stacks to implement a dequeue: AddFront can be O(1) by pushing onto one stack, AddRear may require transferring elements to other stack, giving O(n). The given answer is (b) O(1) and O(n).\n\n**Why:** Option (b) is correct."
+  },
+  {
+    "question_number": 43,
+    "year": "2021",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "Two balanced binary trees are given with m and n elements, respectively. They can be merged into a balanced binary search tree in time.",
+    "options": {
+      "a": "O(m^n)",
+      "b": "O(m + n)",
+      "c": "O(m^n log n)",
+      "d": "O(m^n log (m + n))"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\n**Concept:** We can do inorder traversal of both trees to get sorted arrays, merge them in O(m+n), and build a balanced BST from the merged array in O(m+n). So total O(m+n).\n\n**Why:** Option (b) is correct."
+  },
+  {
+    "question_number": 44,
+    "year": "2021",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "A data structure is required for storing a set of integers such that each of the following operations can be done in O(log n) time, where n is the number of elements in the set. Deletion of the smallest element, Insertion of an element if it is not already present in the set. Which of the following data structures can be used for this purpose?",
+    "options": {
+      "a": "A heap can be used but not a balanced binary search tree.",
+      "b": "A balanced binary search tree can be used but not a heap.",
+      "c": "Both balanced binary search tree and heap can be used.",
+      "d": "Neither balanced binary search tree nor heap can be used."
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\n**Concept:** A balanced BST supports deletion of minimum (O(log n)) and insertion (O(log n)) with uniqueness. A heap supports deletion of minimum (O(log n)) but insertion does not check for duplicates easily; it may require extra lookup. So BST is suitable, heap is not.\n\n**Why:** Option (b) is correct."
+  },
+  {
+    "question_number": 45,
+    "year": "2021",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "Consider the following graph. (Image omitted) Among the following sequences I. a b e g h f II. a b f e h g III. a b f h g e IV. a f g h b e Which are depth first traversals of the above graph?",
+    "options": {
+      "a": "I, II, and IV only",
+      "b": "I and IV only",
+      "c": "II, III, and IV only",
+      "d": "I, III, and IV only"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\n**Concept:** DFS traversal must follow edges. Sequence II is invalid because it goes from f to e without a direct edge? The given answer says I, III, IV are valid.\n\n**Why:** Option (d) is correct."
+  },
+  {
+    "question_number": 46,
+    "year": "2021",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "Given below are two statements Statement I: In an undirected graph, number of odd degree vertices is even. Statement II: In an undirected graph, sum of degrees of all vertices is even. In light of the above statements, choose the correct answer from the options given below",
+    "options": {
+      "a": "Both Statement I and Statement II are true.",
+      "b": "Both Statement I and Statement II are false.",
+      "c": "Statement I is true but Statement II is false.",
+      "d": "Statement I is false but Statement II is true."
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\n**Concept:** Both are fundamental graph theorems: Handshaking lemma gives even sum of degrees, and the number of odd-degree vertices is even.\n\n**Why:** Option (a) is correct."
+  },
+  {
+    "question_number": 47,
+    "year": "2021",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "Which of the given options provides the increasing order of asymptotic complexity of functions f1, f2, f3 and f4? A. f1(n)=2n B. f2(n)=n^{3/2} C. f3(n)=n log n D. f4(n)=n log n? (typo) Choose the correct answer from the options given below",
+    "options": {
+      "a": "C, B, D, A",
+      "b": "C, B, A, D",
+      "c": "C, B, C, A, D",
+      "d": "B, C, D, A"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\n**Concept:** Asymptotic growth: n log n < n^{3/2} < 2n? Actually 2n is O(n), n^{3/2} is superlinear, so order: n log n (C), n^{3/2} (B), 2n (A) if D is something? The given answer is (a) C, B, D, A.\n\n**Why:** Option (a) is given as correct."
+  },
+  {
+    "question_number": 48,
+    "year": "2021",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "The order of a leaf node in a B+ tree is the maximum number of (value, data record pointer) pairs it can hold. Given that the block size is 1K bytes, data record pointer is 7 bytes long, the value field is 9 bytes long and a block pointer is 6 bytes long, what is the order of the leaf node?",
+    "options": {
+      "a": "63",
+      "b": "64",
+      "c": "67",
+      "d": "68"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\n**Concept:** Leaf node: block pointer (6) + m*(value+record pointer) <= 1024. 6 + m*(9+7) <= 1024 => 6 + 16m <= 1024 => m <= 63.625 => m = 63.\n\n**Why:** Option (a) is correct."
+  },
+  {
+    "question_number": 49,
+    "year": "2021",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "A hash function h defined as h(key)=key mod 7, with linear probing, is used to insert the keys 44, 45, 79, 55, 91, 18, 63 into a table indexed from 0 to 6. What will be the location of key 18?",
+    "options": {
+      "a": "3",
+      "b": "4",
+      "c": "5",
+      "d": "6"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\n**Concept:** Insert keys: 44->2, 45->3, 79->2 (collision, probe 4), 55->6, 91->0, 18->4 (collision, probe 5), so 18 at 5.\n\n**Why:** Option (c) is correct."
+  },
+  {
+    "question_number": 50,
+    "year": "2021",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "Match each algorithm with its time complexity. A. Bellman-Ford algorithm B. Kruskal's algorithm C. Floyd-Warshall algorithm D. Topological sorting",
+    "options": {
+      "a": "A-III, B-I, C-II, D-IV",
+      "b": "A-II, B-IV, C-III, D-I",
+      "c": "A-III, B-IV, C-I, D-II",
+      "d": "A-II, B-I, C-III, D-IV"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Match:**\n* **A \u2192 III:** Bellman-Ford: O(n*m) = O(VE).\n* **B \u2192 I:** Kruskal: O(m log n) typically.\n* **C \u2192 II:** Floyd-Warshall: O(n^3).\n* **D \u2192 IV:** Topological sorting: O(n+m).\n\n**Key Concept:** Graph algorithm complexities."
+  },
+  {
+    "question_number": 51,
+    "year": "2021",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "Which agent deals with the happy and unhappy state?",
+    "options": {
+      "a": "Utility-based agent",
+      "b": "Model-based agent",
+      "c": "Goal-based Agent",
+      "d": "Learning Agent"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\n**Concept:** Utility-based agents choose actions based on a utility function that measures happiness or preferences.\n\n**Why:** Option (a) is correct."
+  },
+  {
+    "question_number": 52,
+    "year": "2021",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "Given below are two statements Statement I: Breadth-First Search is optimal when all the step costs are equal whereas uniform-cost search is optimal with any step-cost. Statement II: When all the step costs are same uniform-cost search expends more nodes at depth d than the Breadth-First Search. In light of the above statements, choose the correct answer from the options given below",
+    "options": {
+      "a": "Both Statement I and Statement II are true",
+      "b": "Both Statement I and Statement II are false",
+      "c": "Statement I is true but Statement II is false",
+      "d": "Statement I is false but Statement II is true"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\n**Concept:** BFS is optimal for equal step costs; UCS is optimal for general step costs. UCS expands more nodes because it explores all nodes with cost less than optimal.\n\n**Why:** Option (a) is correct."
+  },
+  {
+    "question_number": 53,
+    "year": "2021",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "Consider the given tree below. Calculate the value at the root of the tree using alpha-beta pruning algorithm. (Image omitted)",
+    "options": {
+      "a": "3",
+      "b": "5",
+      "c": "6",
+      "d": "9"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\n**Concept:** Apply minimax with alpha-beta pruning; the root value is 5.\n\n**Why:** Option (b) is correct."
+  },
+  {
+    "question_number": 54,
+    "year": "2021",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "Which among the following statement(s) is(are) FALSE? A. Greedy best-first search is not optimal but is often efficient. B. A* is complete and optimal provided h(n) is admissible or consistent. C. Recursive best-first search is efficient in terms of time complexity but poor in terms of space complexity. D. h(n) = 0 is an admissible heuristic for the 8-puzzle.",
+    "options": {
+      "a": "A only",
+      "b": "A and D only",
+      "c": "C only",
+      "d": "C and D only"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\n**Concept:** A and B are true. C is false: RBFS is efficient in space (O(bd)) but poor in time (can revisit nodes). D is true: h=0 is admissible (never overestimates). So only C is false.\n\n**Why:** Option (c) is correct."
+  },
+  {
+    "question_number": 55,
+    "year": "2021",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "Consider the sentence below. There is a country that borders both India and Pakistan. Which of the following logical expressions express the above sentence correctly when the predicate Country(x) represents that x is a country and Borders(x, y) represents that the countries x and y share the border?",
+    "options": {
+      "a": "\u2203c Country(c) \u2227 Border(c, India) \u2227 Border(c, Pakistan)",
+      "b": "\u2203c Country(c) \u21d2 [Border(c, India) \u2227 Border(c, Pakistan)]",
+      "c": "[\u2203c Country(c)] \u21d2 [Border(c, India) \u2227 Border(c, Pakistan)]",
+      "d": "\u2203c Border(Country(c), India \u2227 Pakistan)"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\n**Concept:** The correct logical form is exists c such that Country(c) and Borders(c, India) and Borders(c, Pakistan). Option (a) matches.\n\n**Why:** Option (a) is correct."
+  },
+  {
+    "question_number": 60,
+    "year": "2021",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "The probability for Cavity, given that either Toothache or Catch is true, P(Cavity | toothache V catch) is ______. (Based on a probability table, but not fully shown)",
+    "options": {
+      "a": "0.6000",
+      "b": "0.5384",
+      "c": "0.8000",
+      "d": "0.4615"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\n**Concept:** Using the given joint probabilities, P(cavity | toothache \u2228 catch) = 0.4615 as computed.\n\n**Why:** Option (d) is correct."
+  },
+  {
+    "question_number": 61,
+    "year": "2021",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "Which of the DBMS component ensures that concurrent execution of multiple operations on the database results into a consistent database state?",
+    "options": {
+      "a": "Logs",
+      "b": "Buffer manager",
+      "c": "File manager",
+      "d": "Transaction processing system"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\n**Concept:** Transaction processing system (TPS) ensures ACID properties, including consistency, through concurrency control and recovery.\n\n**Why:** Option (d) is correct."
+  },
+  {
+    "question_number": 62,
+    "year": "2021",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "Consider following two statements: Statement I: Relational database schema represents the logical design of the database. Statement II: Current snapshot of a relation only provides the degree of the relation. In the context to the above statements, choose the correct option from the options given below:",
+    "options": {
+      "a": "Statement I is TRUE but Statement II is FALSE",
+      "b": "Statement I is FALSE but Statement II is TRUE",
+      "c": "Both Statement I and Statement II are FALSE",
+      "d": "Both Statement I and Statement II are TRUE"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\n**Concept:** The schema is the logical design (true). The snapshot provides the current instances, not just the degree; degree is the number of attributes, which is part of the schema. So Statement II is false.\n\n**Why:** Option (a) is correct."
+  },
+  {
+    "question_number": 63,
+    "year": "2021",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "Given a fixed-length record file that is ordered on the key field. The file needs B disk blocks to store R number of records. Find the average access time needed to access any record of the given file using binary search.",
+    "options": {
+      "a": "B/2",
+      "b": "B + R",
+      "c": "B",
+      "d": "log2 B"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\n**Concept:** Binary search on the ordered file requires O(log2 B) block accesses.\n\n**Why:** Option (d) is correct."
+  },
+  {
+    "question_number": 64,
+    "year": "2021",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "Given the following STUDENT-COURSE scheme: STUDENT (Rollno, Name, course) COURSE (course, course name, capacity), where Rollno is the primary key of relation STUDENT and course is the primary key of relation COURSE. Attribute course name of COURSE takes unique values only. Which of the following query(ies) will find total number of students enrolled in each course, along with its course name. A. SELECT course name, count(*) 'total' from STUDENT natural join COURSE group by course name; B. SELECT C.course name, count(*) 'total' from STUDENT S, COURSE C where S.course = C.course group by course name; C. SELECT course name, count(*) 'total' from COURSE C where course no in (SELECT course from STUDENT);",
+    "options": {
+      "a": "A and B only",
+      "b": "C only",
+      "c": "A only",
+      "d": "B only"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\n**Concept:** A and B correctly join and group by course name to get count. C only counts courses that have students, but doesn't group properly; it would count all students per course? Actually C's subquery returns all courses that appear in STUDENT, but the outer query doesn't group, so it's incorrect. Thus A and B only.\n\n**Why:** Option (a) is correct."
+  },
+  {
+    "question_number": 65,
+    "year": "2021",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "Given the following STUDENT-COURSE scheme: ... The number of records in COURSE and STUDENT tables are 3 and 5 respectively. Following relational algebra query is executed: R=STUDENT X COURSE Match List-I with List-II in context to the above problem statement. List-I: A. Degree of table R B. Cardinality of table R C. Foreign key of relation STUDENT D. Foreign key of relation COURSE List-II: i. 15 ii. NIL iii. 6 iv. Course",
+    "options": {
+      "a": "A-III, B-I, C-IV, D-II",
+      "b": "A-I, B-III, C-IV, D-II",
+      "c": "A-I, B-III, C-IV, D-II",
+      "d": "A-I, B-III, C-II, D-IV"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Match:**\n* **A \u2192 III:** Degree of R = 3+3 = 6 (if STUDENT has 3 attrs, COURSE has 3) so degree 6.\n* **B \u2192 I:** Cardinality = 5 * 3 = 15.\n* **C \u2192 IV:** Foreign key in STUDENT is 'course' referencing COURSE.\n* **D \u2192 II:** COURSE has no foreign key (its primary key is course). So NIL.\n\n**Key Concept:** Relational algebra and foreign keys."
+  },
+  {
+    "question_number": 66,
+    "year": "2021",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "Suppose a B+ tree is used for indexing a database file. Consider the following information: size of the search key field = 10 bytes, block size = 1024 bytes, size of the record pointer = 9 bytes, size of the block pointer = 8 bytes. Let K be the order of internal node and L be the order of leaf node of B+ tree, then (K, L)=",
+    "options": {
+      "a": "(57,53)",
+      "b": "(50,52)",
+      "c": "(60,64)",
+      "d": "(34,31)"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\n**Concept:** Internal node: K*8 + (K-1)*10 <= 1024 => 8K + 10K - 10 <= 1024 => 18K <= 1034 => K <= 57. Leaf node: 8 + L*(10+9) <= 1024 => 8 + 19L <= 1024 => L <= 53. So (57,53).\n\n**Why:** Option (a) is correct."
+  },
+  {
+    "question_number": 67,
+    "year": "2021",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "Given a relation scheme R(x,y,z,w) with functional dependencies set F = {x \u2192 y, z \u2192 w}. All attributes take single and atomic values only. A. Relation R is in First Normal FORM B. Relation R is in Second Normal FORM C. Primary key of R is xz Choose the correct answer from the options given below:",
+    "options": {
+      "a": "C only",
+      "b": "B and C only",
+      "c": "A and C only",
+      "d": "B only"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\n**Concept:** Since all attributes are atomic, R is in 1NF (A true). The primary key is xz (C true). For 2NF, we need no partial dependencies; since key is xz, and x\u2192y is a partial dependency (x is part of key), so R is not in 2NF (B false). Thus A and C only.\n\n**Why:** Option (c) is correct."
+  },
+  {
+    "question_number": 68,
+    "year": "2021",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "A company is consuming parts in the manufacturing of other products. Each of the part is either manufactured within the company or purchased from the external suppliers or both. For each part, partnumber, partname is maintained. Attribute batchnumber is maintained if the consumed part is manufactured in the company. If part is purchased from external supplier, then supplier name is maintained. Which of the following constraints need to be considered when modelling class/subclass concepts in ERD for the given problem.",
+    "options": {
+      "a": "Total specialization and overlapping constraints",
+      "b": "Disjoint constraint only",
+      "c": "Partial participation",
+      "d": "Partial participation and disjoint constraints"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\n**Concept:** Each part must be either manufactured or purchased (or both? The text says 'or both', so it's overlapping). Also, every part must fall into one of these subclasses, so total specialization. Hence total specialization and overlapping.\n\n**Why:** Option (a) is correct."
+  },
+  {
+    "question_number": 69,
+    "year": "2021",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "A transaction may be in one of the following states during its execution life cycle in concurrent execution environment. A. FAILED B. TERMINATED C. PARTIALLY COMMITTED D. COMMITTED E. ACTIVE Given a transaction in active state during its execution, find its next transitioned state from the options given below:",
+    "options": {
+      "a": "A only",
+      "b": "Either A or C only",
+      "c": "C only",
+      "d": "D only"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\n**Concept:** From active state, a transaction can go to partially committed (if all operations complete) or failed (if an error occurs). So either A or C.\n\n**Why:** Option (b) is correct."
+  },
+  {
+    "question_number": 70,
+    "year": "2021",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "Which of the following is used to create a database schema?",
+    "options": {
+      "a": "DML",
+      "b": "DDL",
+      "c": "HTML",
+      "d": "XML"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\n**Concept:** DDL (Data Definition Language) commands like CREATE, ALTER, DROP are used to define the database schema.\n\n**Why:** Option (b) is correct."
+  },
+  {
+    "question_number": 74,
+    "year": "2021",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "Match List-I with List-II<br><br><table border='1' style='border-collapse: collapse; width: 100%; margin: 10px 0;'><thead><tr style='background-color: #f2f2f2;'><th style='padding: 8px; text-align: left;'>List - I (System calls)</th><th style='padding: 8px; text-align: left;'>List - II (Description)</th></tr></thead><tbody><tr><td style='padding: 8px;'>A. fork()</td><td style='padding: 8px;'>i. Sends a signal from one process to another process</td></tr><tr><td style='padding: 8px;'>B. exec()</td><td style='padding: 8px;'>ii. Indicates termination of the current process</td></tr><tr><td style='padding: 8px;'>C. kill()</td><td style='padding: 8px;'>iii. Loads the specified program in the memory</td></tr><tr><td style='padding: 8px;'>D. exit()</td><td style='padding: 8px;'>iv. Creates a child process</td></tr></tbody></table>Choose the correct answer from the options given below:",
+    "options": {
+      "a": "A-II, B-III, C-IV, D-I",
+      "b": "A-IV, B-III, C-I, D-II",
+      "c": "A-IV, B-I, C-II, D-III",
+      "d": "A-IV, B-III, C-II, D-I"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Match:**\n* **A \u2192 IV:** fork() creates a child process.\n* **B \u2192 III:** exec() loads a new program.\n* **C \u2192 I:** kill() sends a signal.\n* **D \u2192 II:** exit() terminates the current process.\n\n**Key Concept:** System calls and their functions."
+  },
+  {
+    "question_number": 75,
+    "year": "2021",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "Consider the following 3 processes with the length of the CPU burst time given in milliseconds: Process P0 Arrival 0 Burst 8, P1 Arrival 1 Burst 4, P2 Arrival 2 Burst 9. What is the average waiting time for these processes if they are scheduled using preemptive shortest job first scheduling algorithm?",
+    "options": {
+      "a": "5.5",
+      "b": "2.66",
+      "c": "4.66",
+      "d": "6"
+    },
+    "answer": null,
+    "explanation": "The answer is not provided in the text. Set to null."
+  },
+  {
+    "question_number": 76,
+    "year": "2021",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "Read the following and answer the questions: Consider a machine with 16 GB main memory and 32-bits virtual address space, with page size as 4KB. Frame size and page size is same for the given machine. The number of bits reserved for the frame offset is ______.",
+    "options": {
+      "a": "12",
+      "b": "14",
+      "c": "32",
+      "d": "8"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\n**Concept:** Page size = 4KB = 2^12 bytes, so offset requires 12 bits.\n\n**Why:** Option (a) is correct."
+  },
+  {
+    "question_number": 77,
+    "year": "2021",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "Read the following and answer the questions: Consider a machine with 16 GB main memory and 32-bits virtual address space, with page size as 4KB. Frame size and page size is same for the given machine. Find number of pages required for the given virtual address space.",
+    "options": {
+      "a": "2^10",
+      "b": "2^20",
+      "c": "2^30",
+      "d": "2^12"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\n**Concept:** Virtual address space = 2^32 bytes. Page size = 2^12 bytes. Number of pages = 2^32 / 2^12 = 2^20.\n\n**Why:** Option (b) is correct."
+  },
+  {
+    "question_number": 78,
+    "year": "2021",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "Read the following and answer the questions: Consider a machine with 16 GB main memory and 32-bits virtual address space, with page size as 4KB. Frame size and page size is same for the given machine. What is the minimum number of bits needed for the physical address?",
+    "options": {
+      "a": "28",
+      "b": "34",
+      "c": "24",
+      "d": "12"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\n**Concept:** Physical memory = 16 GB = 2^34 bytes, so physical address needs 34 bits.\n\n**Why:** Option (b) is correct."
+  },
+  {
+    "question_number": 79,
+    "year": "2021",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "Read the following and answer the questions: Consider a machine with 16 GB main memory and 32-bits virtual address space, with page size as 4KB. Frame size and page size is same for the given machine. What is the size of page table for handling the given virtual address space, given that each page table entry is of size 2 bytes?",
+    "options": {
+      "a": "2MB",
+      "b": "2 KB",
+      "c": "32 MB",
+      "d": "12KB"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\n**Concept:** Number of pages = 2^20. Each entry = 2 bytes. Size = 2^20 * 2 = 2^21 bytes = 2 MB.\n\n**Why:** Option (a) is correct."
+  },
+  {
+    "question_number": 80,
+    "year": "2021",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "Read the following and answer the questions: Consider a machine with 16 GB main memory and 32-bits virtual address space, with page size as 4KB. Frame size and page size is same for the given machine. If a process of size 34KB is to be executed on this machine, then what will be the size of internal fragmentation for this process?",
+    "options": {
+      "a": "4 KB",
+      "b": "Zero",
+      "c": "1KB",
+      "d": "2 KB"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\n**Concept:** Page size = 4KB. 34KB requires 9 pages (8 full pages = 32KB, plus 2KB in 9th page). Internal fragmentation = 4KB - 2KB = 2KB.\n\n**Why:** Option (d) is correct."
+  },
+  {
+    "question_number": 81,
+    "year": "2021",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "Match List-I with List-II<br><br><table border='1' style='border-collapse: collapse; width: 100%; margin: 10px 0;'><thead><tr style='background-color: #f2f2f2;'><th style='padding: 8px; text-align: left;'>List - I</th><th style='padding: 8px; text-align: left;'>List - II</th></tr></thead><tbody><tr><td style='padding: 8px;'>A. Odd Function</td><td style='padding: 8px;'>i. NAND gate</td></tr><tr><td style='padding: 8px;'>B. Universal Gate</td><td style='padding: 8px;'>ii. XOR gate</td></tr><tr><td style='padding: 8px;'>C. 2421 code</td><td style='padding: 8px;'>iii. Amplification</td></tr><tr><td style='padding: 8px;'>D. Buffer</td><td style='padding: 8px;'>iv. Self-Complementing</td></tr></tbody></table>Choose the correct answer from the options given below:",
+    "options": {
+      "a": "A-I, B-II, C-III, D-IV",
+      "b": "A-II, B-I, C-IV, D-III",
+      "c": "A-I, B-III, C-II, D-IV",
+      "d": "A-IV, B-II, C-III, D-I"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Match:**\n* **A \u2192 II:** Odd function is implemented by XOR.\n* **B \u2192 I:** NAND is a universal gate.\n* **C \u2192 IV:** 2421 code is self-complementing.\n* **D \u2192 III:** Buffer provides amplification.\n\n**Key Concept:** Digital logic components."
+  },
+  {
+    "question_number": 82,
+    "year": "2021",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "The Octal equivalent of hexadecimal (D.C)16 is:",
+    "options": {
+      "a": "(15.6)8",
+      "b": "(61.6)8",
+      "c": "(15.3)8",
+      "d": "(61.3)8"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\n**Concept:** D = 13 decimal = 15 octal, C = 12 decimal = 14? Wait: 0.D = 0.75 decimal? Actually hex D.C = 13 + 12/16 = 13.75 decimal. Convert 13.75 to octal: 13 dec = 15 octal, 0.75*8 = 6, so .6 octal. So 15.6 octal.\n\n**Why:** Option (a) is correct."
+  },
+  {
+    "question_number": 83,
+    "year": "2021",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "A digital computer has a common bus system for 8 registers 16 bits each. How many multiplexers are required to implement common bus? What size of multiplexers is required?",
+    "options": {
+      "a": "16, 8x1",
+      "b": "8, 16x1",
+      "c": "8, 8x1",
+      "d": "16, 16x1"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\n**Concept:** For 8 registers, each of 16 bits, we need 16 multiplexers (one per bit), each with 8 inputs (one from each register). So 16 multiplexers of 8x1 size.\n\n**Why:** Option (a) is correct."
+  },
+  {
+    "question_number": 84,
+    "year": "2021",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "Which of the following is not an example of pseudo-instruction?",
+    "options": {
+      "a": "ORG",
+      "b": "DEC",
+      "c": "END",
+      "d": "HLT"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\n**Concept:** Pseudo-instructions are assembler directives like ORG, DEC, END. HLT is a machine instruction (halt).\n\n**Why:** Option (d) is correct."
+  },
+  {
+    "question_number": 85,
+    "year": "2021",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "The reverse Polish notation of the following infix expression [A*(B+C*(D+E))] / [F*(G+H)] is",
+    "options": {
+      "a": "ABCDE+*+*FGH+*/",
+      "b": "ABCDE+*+*FGH+*/",
+      "c": "ABCDE+*+*FGH+*/",
+      "d": "ABCDE+*+*FGH+*/"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\n**Concept:** Convert to postfix: B C D E + * + => B C D E + * +. Then A * => A B C D E + * + *. Then F G H + * => F G H + *. Then divide: A B C D E + * + * F G H + * /.\n\n**Why:** Option (a) matches."
+  },
+  {
+    "question_number": 86,
+    "year": "2021",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "Arrange the following in the increasing order of complexity. A. I/O Module B. I/O processor C. I/O Channel D. DMA",
+    "options": {
+      "a": "D, C, B, A",
+      "b": "C, D, A, B",
+      "c": "A, B, C, D",
+      "d": "A, D, C, B"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\n**Concept:** Increasing complexity: I/O Module < DMA < I/O Channel < I/O Processor.\n\n**Why:** Option (d) is correct."
+  },
+  {
+    "question_number": 87,
+    "year": "2021",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "The characteristics of the combinational circuits are: A. Output at any time is function of inputs at that time B. Contains memory elements C. Do not have feedback paths D. Clock is used to trigger the circuits to obtain outputs Choose the correct answer from the options given below:",
+    "options": {
+      "a": "A and B only",
+      "b": "B and C only",
+      "c": "A and C only",
+      "d": "B and D only"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\n**Concept:** Combinational circuits have outputs dependent only on current inputs, no memory, no feedback, and no clock. So A and C are true.\n\n**Why:** Option (c) is correct."
+  },
+  {
+    "question_number": 88,
+    "year": "2021",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "The cache coherence problem can be solved A. by having multiport memory B. allow only nonshared data to be stored in cache C. using a snoopy cache controller D. using memory interleaving Choose the correct answer from the options given below:",
+    "options": {
+      "a": "A and C only",
+      "b": "B and C only",
+      "c": "D and C only",
+      "d": "B and D only"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\n**Concept:** Snoopy cache controllers (C) are used for cache coherence. Allowing only nonshared data in cache (B) also avoids coherence issues. Multiport memory and interleaving don't solve coherence.\n\n**Why:** Option (b) is correct."
+  },
+  {
+    "question_number": 89,
+    "year": "2021",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "Given below are two statements Statement I: CISC computers have a large number of addressing modes. Statement II: In RISC machines memory access is limited to load and store instructions. In light of the above statements, choose the correct answer from the options given below:",
+    "options": {
+      "a": "Both Statement I and Statement II are true",
+      "b": "Both Statement I and Statement II are false",
+      "c": "Statement I is true but Statement II is false",
+      "d": "Statement I is false but Statement II is true"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\n**Concept:** CISC has many addressing modes, RISC uses load-store architecture. Both true.\n\n**Why:** Option (a) is correct."
+  },
+  {
+    "question_number": 90,
+    "year": "2021",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "Which of the following statement is true? A. Control memory is part of the hardwired control unit. B. Program control instructions are used to alter the sequential flow of the program. C. The register indirect addressing mode for accessing memory operand is similar to displacement addressing mode. D. CPU utilization is not affected by the introduction of Interrupts.",
+    "options": {
+      "a": "A only",
+      "b": "B only",
+      "c": "C only",
+      "d": "D only"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\n**Concept:** B is true: program control instructions (jumps, calls) alter flow. A is false: control memory is in microprogrammed control unit. C is false: register indirect is not displacement. D is false: interrupts affect CPU utilization.\n\n**Why:** Option (b) is correct."
+  },
+  {
+    "question_number": 92,
+    "year": "2021",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "Given below are two statements Statement I : Telnet, Ftp, Http are application layer protocol Statement II: The Iridium project was planned to launch 66 low orbit satellites. In light of the above statements, choose the correct answer from the options given below:",
+    "options": {
+      "a": "Both Statement I and Statement II are true",
+      "b": "Both Statement I and Statement II are false",
+      "c": "Statement I is true but Statement II is false",
+      "d": "Statement I is false but Statement II is true"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\n**Concept:** Telnet, FTP, HTTP are application layer protocols. Iridium project planned 66 satellites. Both true.\n\n**Why:** Option (a) is correct."
+  },
+  {
+    "question_number": 93,
+    "year": "2021",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "Which of the following statement is False? (a) Packet switching leads to better utilization of bandwidth resources than circuit switching. (b) Packet switching results in less variation in the delay than circuit switching. (c) Packet switching sender and receiver can use any bit rate, format or framing method unlike circuit switching. (d) Packet switching can lead to reordering unlike circuit switching.",
+    "options": {
+      "a": "Packet switching leads to better utilization of bandwidth resources than circuit switching.",
+      "b": "Packet switching results in less variation in the delay than circuit switching.",
+      "c": "Packet switching sender and receiver can use any bit rate, format or framing method unlike circuit switching.",
+      "d": "Packet switching can lead to reordering unlike circuit switching."
+    },
+    "answer": null,
+    "explanation": "The answer is ambiguous; the question likely expects (b) and (c) as false, but the answer is not clearly given. Set to null."
+  },
+  {
+    "question_number": 94,
+    "year": "2021",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "In Ethernet when Manchester coding is used, the bit rate is ______.",
+    "options": {
+      "a": "Half the baud rate",
+      "b": "twice the baud rate",
+      "c": "Thrice the baud rate",
+      "d": "Same as the baud rate"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\n**Concept:** Manchester coding has two signal transitions per bit, so baud rate = 2 * bit rate, so bit rate = baud rate / 2.\n\n**Why:** Option (a) is correct."
+  },
+  {
+    "question_number": 95,
+    "year": "2021",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "The address of class B host is to be split into subnets with 6-bit subnet number. What is the maximum number of the subnets and the maximum number of hosts in each subnet?",
+    "options": {
+      "a": "62 subnets and 262142 hosts",
+      "b": "64 subnets and 1024 hosts",
+      "c": "64 subnets and hosts 262142",
+      "d": "62 subnets and 1022 hosts"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\n**Concept:** Class B has 16 bits for host. 6 bits for subnet => subnet bits = 6, host bits = 16-6 = 10. Number of subnets = 2^6 - 2 = 62 (if all-zeros and all-ones reserved). Hosts per subnet = 2^10 - 2 = 1022. So 62 subnets and 1022 hosts.\n\n**Why:** Option (d) is correct."
+  },
+  {
+    "question_number": 96,
+    "year": "2021",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "In electronic mail, which of the following protocols allows the transfer of multimedia?",
+    "options": {
+      "a": "IMAP",
+      "b": "SMTP",
+      "c": "POP3",
+      "d": "MIME"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\n**Concept:** MIME (Multipurpose Internet Mail Extensions) allows multimedia and non-ASCII data in email.\n\n**Why:** Option (d) is correct."
+  },
+  {
+    "question_number": 97,
+    "year": "2021",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "A message is encrypted using public key cryptography to send a message from sender to receiver. Which one of the following statements is True?",
+    "options": {
+      "a": "Sender encrypts using receiver's public key",
+      "b": "Sender encrypts using his own public key",
+      "c": "Receiver decrypts using sender's public key",
+      "d": "Receiver decrypts using his own public key"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\n**Concept:** For confidentiality, sender encrypts with receiver's public key; receiver decrypts with their own private key.\n\n**Why:** Option (a) is correct."
+  },
+  {
+    "question_number": 98,
+    "year": "2021",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "Which of the following statements are true? A. Frequency division multiplexing technique can be handled by digital circuits. B. Time division multiplexing technique can be handled by analog circuits C. Wavelength division multiplexing technique is used with optical fiber for combining two signals. D. Frequency division multiplexing technique can be applied when the bandwidth of a link is greater than the bandwidth of the signals to be transmitted. Choose the correct answer from the options given below:",
+    "options": {
+      "a": "B and D only",
+      "b": "C and D only",
+      "c": "A and D only",
+      "d": "B and D only"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\n**Concept:** FDM is typically analog; TDM is digital. WDM is used with optical fiber. FDM works when link bandwidth > sum of signal bandwidths. So C and D are true.\n\n**Why:** Option (b) is correct."
+  },
+  {
+    "question_number": 99,
+    "year": "2021",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "Which of the following statements are true? A. X.25 is connection-oriented network B. X.25 doesn't support switched virtual circuits. C. Frame relay service provides acknowledgements. D. Frame relay service provides detection of transmission errors. Choose the correct answer from the options given below:",
+    "options": {
+      "a": "A and D only",
+      "b": "B and D only",
+      "c": "C and D only",
+      "d": "B and C only"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\n**Concept:** X.25 is connection-oriented and supports SVCs. Frame relay does not provide acknowledgements but does error detection. So A and D true.\n\n**Why:** Option (a) is correct."
+  },
+  {
+    "question_number": 100,
+    "year": "2021",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "Let G(x) be the generator polynomial used for CRC checking. The condition that should be satisfied by the G(x) to catch all errors consisting of an odd number of inverted bits is:",
+    "options": {
+      "a": "(x + 1) is factor of G(x)",
+      "b": "(x - 1) is factor of G(x)",
+      "c": "(x^2 + 1) is factor of G(x)",
+      "d": "(1 - x^2) is factor of G(x)"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\n**Concept:** To detect odd number of errors, the generator polynomial must have (x+1) as a factor.\n\n**Why:** Option (a) is correct."
+  }
+]

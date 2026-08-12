@@ -1,0 +1,1234 @@
+[
+  {
+    "question_number": 1,
+    "year": "2024",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "Which of the following is not an object Oriented Programming language?",
+    "options": {
+      "a": "Pearl",
+      "b": "Python",
+      "c": "Small talk",
+      "d": "SQL Plus"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\n**Object-Oriented Programming (OOP)** languages support concepts like classes, objects, inheritance, and polymorphism. Perl, Python, and Smalltalk are OOP languages. **SQL Plus** is a command-line interface for Oracle databases and is not an OOP language. Option (d) is correct."
+  },
+  {
+    "question_number": 2,
+    "year": "2024",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "Shift-Reduce conflicts are resolved by:",
+    "options": {
+      "a": "Python",
+      "b": "SQL Plus",
+      "c": "Operator associativity and precedence rules",
+      "d": "None of the above"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\nIn LR parsing, **shift-reduce conflicts** occur when the parser cannot decide whether to shift (read more input) or reduce (apply a grammar rule). These conflicts are resolved using **operator associativity** (left or right) and **precedence rules** to guide the parser. Option (c) is correct."
+  },
+  {
+    "question_number": 3,
+    "year": "2024",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "A least integer n such that f(x) is O(x^n) for each of the following functions. Arrange following according to the value of n in increasing order:\nA. f(x) = 3x^3 + (log x)^4\nB. f(x) = (x^5 + x^2 + 1) / (x^3 + 1)\nC. f(x) = (x^3 + x^2 + 1) / (x^2 + 1)\nD. f(x) = (x^2 + 5 log x) / (x^2 + 1)",
+    "options": {
+      "a": "D, C, A, B",
+      "b": "D, C, B, A",
+      "c": "D, C, B, A, D",
+      "d": "B, A, C, D"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\nDetermine Big-O for each:\n- **A:** 3x^3 dominates → O(x^3) → n=3\n- **B:** (x^5)/(x^3) = x^2 → O(x^2) → n=2\n- **C:** (x^3)/(x^2) = x → O(x) → n=1\n- **D:** (x^2)/(x^2) = 1 → O(1) → n=0\nIncreasing order: D (0), C (1), B (2), A (3). Option (b) is correct."
+  },
+  {
+    "question_number": 4,
+    "year": "2024",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "What is a perceptron in ANN?",
+    "options": {
+      "a": "A double layer auto-associative neural network",
+      "b": "A neural network that contains feedback",
+      "c": "An auto-associative neural network",
+      "d": "A single layer feed-forward neural network with pre-processing"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\nA **perceptron** is a single-layer feed-forward neural network. It is not auto-associative (no feedback) and is not multi-layer. It is one of the simplest forms of ANNs. Option (d) is correct."
+  },
+  {
+    "question_number": 5,
+    "year": "2024",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "Arrange the following examples of Artificial Intelligence (AI) in the order of increasing complexity:\nA. Spam email detection using rule-based systems.\nB. Handwritten digit recognition using shallow neural networks.\nC. Image classification using convolutional neural networks.\nD. Autonomous driving using reinforcement learning algorithms.",
+    "options": {
+      "a": "A, B, C, D",
+      "b": "B, A, C, D",
+      "c": "A, B, D, C",
+      "d": "B, C, A, D"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\nIncreasing complexity:\n1. **A:** Rule-based spam detection (simplest, predefined rules)\n2. **B:** Handwritten digit recognition using shallow neural networks\n3. **C:** Image classification using CNNs (more complex, learns spatial hierarchies)\n4. **D:** Autonomous driving using reinforcement learning (most complex, real-time decision-making)\nOption (a) is correct."
+  },
+  {
+    "question_number": 6,
+    "year": "2024",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "Match List-I with List-II:\n<table border='1' style='border-collapse: collapse; width: 100%; margin: 10px 0;'><thead><tr style='background-color: #f2f2f2;'><th style='padding: 8px; text-align: left;'>List-I</th><th style='padding: 8px; text-align: left;'>List-II</th></tr></thead><tbody><tr><td style='padding: 8px;'>A. NRZ-L</td><td style='padding: 8px;'>I. B = N / 4</td></tr><tr><td style='padding: 8px;'>B. 2B1Q</td><td style='padding: 8px;'>II. B = N / 8</td></tr><tr><td style='padding: 8px;'>C. 4D-PAM5</td><td style='padding: 8px;'>III. B = N / 3</td></tr><tr><td style='padding: 8px;'>D. MLT-3</td><td style='padding: 8px;'>IV. B = N / 2</td></tr></tbody></table>",
+    "options": {
+      "a": "A-IV, B-I, C-III, D-II",
+      "b": "A-III, B-I, C-IV, D-II",
+      "c": "A-II, B-III, C-I, D-IV",
+      "d": "A-I, B-II, C-III, D-IV"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Match:**\n* **NRZ-L:** B = N/2 (IV)\n* **2B1Q:** B = N/4 (I)\n* **4D-PAM5:** B = N/3 (III)\n* **MLT-3:** B = N/8 (II)\n\n**Key Concept:** Understanding **line encoding schemes** and their bandwidth requirements. Option (a) is correct."
+  },
+  {
+    "question_number": 7,
+    "year": "2024",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "Match List-I with List-II:\n<table border='1' style='border-collapse: collapse; width: 100%; margin: 10px 0;'><thead><tr style='background-color: #f2f2f2;'><th style='padding: 8px; text-align: left;'>List-I</th><th style='padding: 8px; text-align: left;'>List-II</th></tr></thead><tbody><tr><td style='padding: 8px;'>A. Multiplexing</td><td style='padding: 8px;'>I. Flow control</td></tr><tr><td style='padding: 8px;'>B. Error detection</td><td style='padding: 8px;'>II. CRC</td></tr><tr><td style='padding: 8px;'>C. Framing</td><td style='padding: 8px;'>III. TDM</td></tr><tr><td style='padding: 8px;'>D. Sliding window</td><td style='padding: 8px;'>IV. Bit stuffing</td></tr></tbody></table>",
+    "options": {
+      "a": "A-III, B-II, C-IV, D-I",
+      "b": "A-II, B-IV, C-III, D-I",
+      "c": "A-I, B-III, C-II, D-IV",
+      "d": "A-IV, B-I, C-II, D-III"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Match:**\n* **Multiplexing:** TDM (III)\n* **Error detection:** CRC (II)\n* **Framing:** Bit stuffing (IV)\n* **Sliding window:** Flow control (I)\n\n**Key Concept:** Understanding **data link layer** functions. Option (a) is correct."
+  },
+  {
+    "question_number": 8,
+    "year": "2024",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "The instruction LD ADR(X) which is equivalent to AC ← M[ADR + XR] is in:",
+    "options": {
+      "a": "Direct Addressing Mode",
+      "b": "Indirect Addressing Mode",
+      "c": "Index Addressing Mode",
+      "d": "Immediate Addressing Mode"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\n**Index Addressing Mode** calculates the effective address by adding a base address (ADR) and an index register (XR). The instruction `LD ADR(X)` uses this mode. Option (c) is correct."
+  },
+  {
+    "question_number": 9,
+    "year": "2024",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "Which of the following control problem does not exist, when processes unaware of each other during interaction?",
+    "options": {
+      "a": "Mutual exclusion",
+      "b": "Data coherence",
+      "c": "Starvation",
+      "d": "Deadlock"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\n**Deadlock** occurs when processes wait indefinitely for resources held by each other. If processes are completely unaware of each other, they do not hold resources while waiting, making deadlock impossible. Option (d) is correct."
+  },
+  {
+    "question_number": 10,
+    "year": "2024",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "The height of a binary search tree for the words banana, peach, apple, pear, coconut, mango and papaya using alphabetical order is:",
+    "options": {
+      "a": "2",
+      "b": "3",
+      "c": "4",
+      "d": "5"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\nAlphabetical order: apple, banana, coconut, mango, papaya, peach, pear.\nBST: banana (root) → left: apple, right: peach → peach left: coconut, right: pear → coconut right: mango, peach right: papaya? Actually the tree height is 3. Option (b) is correct."
+  },
+  {
+    "question_number": 11,
+    "year": "2024",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "Match List-I with List-II:\n<table border='1' style='border-collapse: collapse; width: 100%; margin: 10px 0;'><thead><tr style='background-color: #f2f2f2;'><th style='padding: 8px; text-align: left;'>List-I</th><th style='padding: 8px; text-align: left;'>List-II</th></tr></thead><tbody><tr><td style='padding: 8px;'>A. Batch Multiprogramming</td><td style='padding: 8px;'>I. Allows more efficient use of main memory</td></tr><tr><td style='padding: 8px;'>B. Time sharing</td><td style='padding: 8px;'>II. User no longer has direct access to the processor</td></tr><tr><td style='padding: 8px;'>C. Monitor</td><td style='padding: 8px;'>III. Maximize processor use</td></tr><tr><td style='padding: 8px;'>D. Reentrant Procedures</td><td style='padding: 8px;'>IV. Minimize response time</td></tr></tbody></table>",
+    "options": {
+      "a": "A-III, B-II, C-IV, D-I",
+      "b": "A-III, B-IV, C-II, D-I",
+      "c": "A-I, B-III, C-IV, D-II",
+      "d": "A-II, B-I, C-IV, D-III"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Match:**\n* **Batch Multiprogramming:** Maximize processor use (III)\n* **Time sharing:** Minimize response time (IV)\n* **Monitor:** User no longer has direct access to the processor (II)\n* **Reentrant Procedures:** Allows more efficient use of main memory (I)\n\n**Key Concept:** Understanding **operating system concepts**. Option (b) is correct."
+  },
+  {
+    "question_number": 12,
+    "year": "2024",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "Which of the following is the function of the semantic analysis phase of compilation process?",
+    "options": {
+      "a": "Type conversion",
+      "b": "Tokenization",
+      "c": "Loop optimization",
+      "d": "Data flow Analysis"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\nThe **semantic analysis** phase ensures the program makes logical sense, including **type checking**, **type conversion**, scope resolution, and function call checks. Tokenization is lexical analysis; loop optimization and data flow analysis are optimization phases. Option (a) is correct."
+  },
+  {
+    "question_number": 13,
+    "year": "2024",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "For the regular languages and context free languages which is not correct?\nA. Both are closed under union operation\nB. Both are closed under concatenation operation\nC. Both are closed under intersection operation\nD. Both are closed under complementation operation\nE. Both are closed under kleen star operation",
+    "options": {
+      "a": "A and B Only",
+      "b": "B and C Only",
+      "c": "C and D Only",
+      "d": "D and E Only"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\n**Closure properties:**\n- Union, concatenation, and Kleene star: both regular and CFL are closed.\n- Intersection: regular is closed, CFL is not.\n- Complementation: regular is closed, CFL is not.\n\nSo C and D are not correct. Option (c) is correct."
+  },
+  {
+    "question_number": 14,
+    "year": "2024",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "Match List-I with List-II:\n<table border='1' style='border-collapse: collapse; width: 100%; margin: 10px 0;'><thead><tr style='background-color: #f2f2f2;'><th style='padding: 8px; text-align: left;'>List-I</th><th style='padding: 8px; text-align: left;'>List-II</th></tr></thead><tbody><tr><td style='padding: 8px;'>A. Back Tracking</td><td style='padding: 8px;'>I. Automata</td></tr><tr><td style='padding: 8px;'>B. Infinite languages with matching numbers</td><td style='padding: 8px;'>II. Undecidable Problem</td></tr><tr><td style='padding: 8px;'>C. Canonical LR Parser</td><td style='padding: 8px;'>III. Predictive Parser</td></tr><tr><td style='padding: 8px;'>D. Post Correspondence Problem</td><td style='padding: 8px;'>IV. Large number of states</td></tr></tbody></table>",
+    "options": {
+      "a": "A-I, B-II, C-III, D-IV",
+      "b": "A-II, B-IV, C-I, D-III",
+      "c": "A-IV, B-III, C-II, D-I",
+      "d": "A-III, B-I, C-IV, D-II"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Match:**\n* **Back Tracking:** Predictive Parser (III)\n* **Infinite languages with matching numbers:** Automata (I)\n* **Canonical LR Parser:** Large number of states (IV)\n* **Post Correspondence Problem:** Undecidable Problem (II)\n\n**Key Concept:** Understanding **automata theory and parsing**. Option (d) is correct."
+  },
+  {
+    "question_number": 15,
+    "year": "2024",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "The output of the following C Program is:\n\n#include <stdio.h>\nint main(void) {\n  int x, *p;\n  x = 30;\n  p = x;\n  printf(\"%d\", *p);\n  return 0;\n}",
+    "options": {
+      "a": "30",
+      "b": "Value of x",
+      "c": "Address of x",
+      "d": "Error"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\n`p` is a pointer to int. `p = x;` assigns an integer value (30) to a pointer without a cast. This is a **compilation error**. To point to x, use `p = &x;`. Option (d) is correct."
+  },
+  {
+    "question_number": 16,
+    "year": "2024",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "Which of the following have truth values if universe of discourse consists of all integers?\nA. ∀n∃m n^2 < m\nB. ∃n∀m n < m^2\nC. ∃n∃m n^2 + m^2 = 5\nD. ∃n∃m n^2 + m^2 = 6\nE. ∃n∃m (m + n = 4) ∧ (n - m = 1)",
+    "options": {
+      "a": "A, B, C Only",
+      "b": "B, C, E Only",
+      "c": "C, D, E Only",
+      "d": "B, D Only"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\nA: True, for any n, choose m = n^2 + 1.\nB: True, e.g., n = -1, for all m, -1 < m^2.\nC: True, e.g., n=1, m=2 gives 1+4=5.\nD: False, no integers satisfy n^2 + m^2 = 6.\nE: False, solving gives n=2.5, m=1.5 (not integers).\n\nSo A, B, C are true. Option (a) is correct."
+  },
+  {
+    "question_number": 17,
+    "year": "2024",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "Multiple Inheritance is permitted directly in...\nA. C++\nB. Java\nC. Python\nD. VB.NET\nE. BASIC",
+    "options": {
+      "a": "A and B Only",
+      "b": "A and C Only",
+      "c": "B and D Only",
+      "d": "A, C and E Only"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\n**Multiple inheritance** is supported directly in **C++** and **Python**. Java supports multiple inheritance of interfaces, not classes. VB.NET and BASIC do not support multiple inheritance. Option (b) is correct."
+  },
+  {
+    "question_number": 18,
+    "year": "2024",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "The ratio of error found before software delivery and to the total errors (before and after) is called:",
+    "options": {
+      "a": "Accuracy",
+      "b": "Specificity",
+      "c": "Defect Removal efficiency",
+      "d": "Through Put"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\n**Defect Removal Efficiency (DRE)** = (Defects found before delivery) / (Total defects) × 100. It measures how effectively defects are detected and removed before software delivery. Option (c) is correct."
+  },
+  {
+    "question_number": 19,
+    "year": "2024",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "Match List-I with List-II:\n<table border='1' style='border-collapse: collapse; width: 100%; margin: 10px 0;'><thead><tr style='background-color: #f2f2f2;'><th style='padding: 8px; text-align: left;'>List-I</th><th style='padding: 8px; text-align: left;'>List-II</th></tr></thead><tbody><tr><td style='padding: 8px;'>A. RAID level-2</td><td style='padding: 8px;'>I. block-interleaved</td></tr><tr><td style='padding: 8px;'>B. RAID level-3</td><td style='padding: 8px;'>II. error-correcting-code</td></tr><tr><td style='padding: 8px;'>C. RAID level-4</td><td style='padding: 8px;'>III. reed-Solomon codes</td></tr><tr><td style='padding: 8px;'>D. RAID level-6</td><td style='padding: 8px;'>IV. bit-interleaved</td></tr></tbody></table>",
+    "options": {
+      "a": "A-I, B-II, C-IV, D-III",
+      "b": "A-II, B-IV, C-I, D-III",
+      "c": "A-IV, B-I, C-II, D-III",
+      "d": "A-II, B-III, C-IV, D-I"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Match:**\n* **RAID-2:** Error-correcting code (II)\n* **RAID-3:** Bit-interleaved (IV)\n* **RAID-4:** Block-interleaved (I)\n* **RAID-6:** Reed-Solomon codes (III)\n\n**Key Concept:** Understanding **RAID levels**. Option (b) is correct."
+  },
+  {
+    "question_number": 20,
+    "year": "2024",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "Which of the followings sequence {a_n} are the solution of recurrence relation a_n = 8a_{n-1} - 16a_{n-2}?\nA. a_n = 1\nB. a_n = 2^n\nC. a_n = 4^n\nD. a_n = n4^n\nE. a_n = (-4)^n",
+    "options": {
+      "a": "A, B, C Only",
+      "b": "B, C, D Only",
+      "c": "C, D Only",
+      "d": "C, D, E Only"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\nCharacteristic equation: r^2 - 8r + 16 = 0 → (r-4)^2 = 0 → r = 4 (double root).\nSolutions: a_n = C1*4^n + C2*n*4^n.\nSo C (4^n) and D (n4^n) are solutions. Option (c) is correct."
+  },
+  {
+    "question_number": 21,
+    "year": "2024",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "Match List-I with List-II:\n<table border='1' style='border-collapse: collapse; width: 100%; margin: 10px 0;'><thead><tr style='background-color: #f2f2f2;'><th style='padding: 8px; text-align: left;'>List-I</th><th style='padding: 8px; text-align: left;'>List-II</th></tr></thead><tbody><tr><td style='padding: 8px;'>A. Thread spawn</td><td style='padding: 8px;'>I. To convert a blocking system call into a non blocking call.</td></tr><tr><td style='padding: 8px;'>B. Block thread</td><td style='padding: 8px;'>II. To reclaim pages</td></tr><tr><td style='padding: 8px;'>C. Jacketing</td><td style='padding: 8px;'>III. Processor turn to the execution of another ready thread.</td></tr><tr><td style='padding: 8px;'>D. Flush</td><td style='padding: 8px;'>IV. Thread is provided with its own register context.</td></tr></tbody></table>",
+    "options": {
+      "a": "A-I, B-II, C-III, D-IV",
+      "b": "A-IV, B-III, C-I, D-II",
+      "c": "A-IV, B-II, C-I, D-III",
+      "d": "A-I, B-III, C-IV, D-II"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Match:**\n* **Thread spawn:** Thread is provided with its own register context (IV)\n* **Block thread:** Processor turn to the execution of another ready thread (III)\n* **Jacketing:** To convert a blocking system call into a non-blocking call (I)\n* **Flush:** To reclaim pages (II)\n\n**Key Concept:** Understanding **thread management**. Option (b) is correct."
+  },
+  {
+    "question_number": 22,
+    "year": "2024",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "Which of the following is the Markup language?\nA. HTML\nB. XML\nC. DHTML\nD. LML\nE. PML",
+    "options": {
+      "a": "B, C, D Only",
+      "b": "A, C, D Only",
+      "c": "A, C, D, E Only",
+      "d": "A, B, C Only"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\n**HTML** and **XML** are markup languages. **DHTML** is a combination of HTML, CSS, and JavaScript (not a standalone markup language). LML and PML are not standard markup languages. Option (d) is correct."
+  },
+  {
+    "question_number": 23,
+    "year": "2024",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "Which of the followings are type of interface in an ATM network?\nA. user-to-user\nB. user-to-network\nC. network-to-network\nD. host-to-network\nE. user-to-host",
+    "options": {
+      "a": "A and B Only",
+      "b": "B and C Only",
+      "c": "C and D Only",
+      "d": "D and E Only"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\nIn **ATM (Asynchronous Transfer Mode)** networks:\n- **UNI (User-to-Network Interface)**: between user and network.\n- **NNI (Network-to-Network Interface)**: between two ATM switches.\nOption (b) is correct."
+  },
+  {
+    "question_number": 24,
+    "year": "2024",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "For the fuzzy set A = {(x1, 0.3), (x2, 0.7), (x3, 0.4)} the complement of A would be represented as:",
+    "options": {
+      "a": "{(x1, 0.4), (x2, 0.3), (x3, 0.1)}",
+      "b": "{(x1, 0.3), (x2, 0.7), (x3, 0.4)}",
+      "c": "{(x1, 0.7), (x2, 0.3), (x3, 0.6)}",
+      "d": "{(x1, 0.21), (x2, 0.28), (x3, 0.12)}"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\nComplement of a fuzzy set: μ_A'(x) = 1 - μ_A(x).\n- x1: 1 - 0.3 = 0.7\n- x2: 1 - 0.7 = 0.3\n- x3: 1 - 0.4 = 0.6\n\nSo A' = {(x1, 0.7), (x2, 0.3), (x3, 0.6)}. Option (c) is correct."
+  },
+  {
+    "question_number": 25,
+    "year": "2024",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "The instructions ADD R1, A, B; ADD R2, C, D; MUL X, R1, R2 correspond to which addressing mode?",
+    "options": {
+      "a": "3-Address instructions",
+      "b": "2-Address instructions",
+      "c": "1-Address instructions",
+      "d": "RISC instructions"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\nEach instruction explicitly specifies two source operands and one destination operand (three addresses). This is **3-address instruction** format. Option (a) is correct."
+  },
+  {
+    "question_number": 26,
+    "year": "2024",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "An ambiguous grammar is one which has:\nA. More than one derivations\nB. More than one left most derivations\nC. More than one right most derivations\nD. More than one Parse tree\nE. More than one syntax tree",
+    "options": {
+      "a": "A and D Only",
+      "b": "B and C Only",
+      "c": "D and E Only",
+      "d": "A and E Only"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\nAn **ambiguous grammar** can generate the same string with:\n- More than one derivation (A)\n- More than one parse tree (D)\n- More than one leftmost/rightmost derivation (which imply multiple parse trees)\n\nOption (a) is correct."
+  },
+  {
+    "question_number": 27,
+    "year": "2024",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "In back propagation in neural networks, the error is propagated:",
+    "options": {
+      "a": "Forward from source to hidden nodes",
+      "b": "Backward from source to sink",
+      "c": "Forward from source to sink",
+      "d": "Backward from sink to hidden nodes"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\n**Back propagation** calculates the error at the output layer and propagates it backward through the network, adjusting weights from the output (sink) to the input (source). Option (b) is correct."
+  },
+  {
+    "question_number": 28,
+    "year": "2024",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "The Boolean expression for the following would be:\nF(A,B,C) = Σ(0,2,6), d(A,B,C) = Σ(1,3,5)",
+    "options": {
+      "a": "A'C' + BC'",
+      "b": "B + AC'",
+      "c": "A + BC'",
+      "d": "A' + BC'"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\nK-map minimization with don't-cares gives the expression A'C' + BC'. Option (a) is correct."
+  },
+  {
+    "question_number": 29,
+    "year": "2024",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "Arrange the following in correct order, so that they can follow a proper run time environment:\nA. Programming statement\nB. Compilation\nC. Memory allocation\nD. Type of variable\nE. Memory deallocation",
+    "options": {
+      "a": "A, B, C, D, E",
+      "b": "A, B, D, C, E",
+      "c": "B, A, D, C, E",
+      "d": "C, D, B, E, A"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\nCorrect order:\n1. **Programming statement** (A) - write code\n2. **Compilation** (B) - compile to machine code\n3. **Type of variable** (D) - determine types\n4. **Memory allocation** (C) - allocate memory\n5. **Memory deallocation** (E) - free memory\n\nOption (b) is correct."
+  },
+  {
+    "question_number": 30,
+    "year": "2024",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "A computer system with cache access time of 100 ns, a main memory access time of 1100 ns, and a hit ratio of 0.9, then average access time would be:",
+    "options": {
+      "a": "200 ns",
+      "b": "190 ns",
+      "c": "210 ns",
+      "d": "120 ns"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\nAverage Access Time = H × T_cache + (1-H) × T_memory\n= 0.9 × 100 + 0.1 × 1100\n= 90 + 110 = 200 ns.\n\nOption (a) is correct."
+  },
+  {
+    "question_number": 31,
+    "year": "2024",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "An IPv4 packet has arrived with the first few hexadecimal digits as shown below. How many hops can this packet travel before being dropped? The data belong to what upper-layer protocol?\n(5 4 0 0 0 0 18 0 0 1 0 0 1 1 0 0 4 0 6 0 1 ......)16",
+    "options": {
+      "a": "01 hops, TCP",
+      "b": "02 hops, UDP",
+      "c": "03 hops, ICMP",
+      "d": "4 hops, TCP"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\nThe TTL field (0x01) indicates 1 hop. The protocol field (0x06) indicates TCP. Option (a) is correct."
+  },
+  {
+    "question_number": 32,
+    "year": "2024",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "Arrange the following simple graphs based on number of spanning tree they have:\nA. K3 [Complete Graph with 3 nodes]\nB. K4 [Complete Graph with 4 nodes]\nC. K2,2 [Complete bipartite graph of the 2 nodes in each partition]\nD. C5 [Cycle graph of 5 nodes]",
+    "options": {
+      "a": "A, B, C, D",
+      "b": "A, C, B, D",
+      "c": "A, C, D, B",
+      "d": "D, B, C, A"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\nNumber of spanning trees:\n- K3: 3^(3-2) = 3\n- K4: 4^(4-2) = 16\n- K2,2: 2^(2-1) * 2^(2-1) = 4\n- C5: 5\nIncreasing order: K3 (3), K2,2 (4), C5 (5), K4 (16) → A, C, D, B. Option (c) is correct."
+  },
+  {
+    "question_number": 33,
+    "year": "2024",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "Match List-I with List-II:\n<table border='1' style='border-collapse: collapse; width: 100%; margin: 10px 0;'><thead><tr style='background-color: #f2f2f2;'><th style='padding: 8px; text-align: left;'>List-I</th><th style='padding: 8px; text-align: left;'>List-II</th></tr></thead><tbody><tr><td style='padding: 8px;'>A. Channelization protocol</td><td style='padding: 8px;'>I. ALOHA</td></tr><tr><td style='padding: 8px;'>B. Bit-oriented protocol</td><td style='padding: 8px;'>II. TDMA</td></tr><tr><td style='padding: 8px;'>C. Random-access protocol</td><td style='padding: 8px;'>III. Reservation</td></tr><tr><td style='padding: 8px;'>D. Controlled-access protocol</td><td style='padding: 8px;'>IV. HDLC</td></tr></tbody></table>",
+    "options": {
+      "a": "A-I, B-II, C-III, D-IV",
+      "b": "A-II, B-IV, C-I, D-III",
+      "c": "A-IV, B-II, C-III, D-I",
+      "d": "A-III, B-IV, C-I, D-II"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Match:**\n* **Channelization protocol:** TDMA (II)\n* **Bit-oriented protocol:** HDLC (IV)\n* **Random-access protocol:** ALOHA (I)\n* **Controlled-access protocol:** Reservation (III)\n\n**Key Concept:** Understanding **network protocols**. Option (b) is correct."
+  },
+  {
+    "question_number": 34,
+    "year": "2024",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "What is the total delay (latency) for a frame size of 10 million bits that is being set up on a link with 20 routers, each having a queuing time of 2 μs and a processing time of 1 μs? The length of link 5000 km. The speed of light inside the link is 2 × 10^8 m/s. The link has bandwidth of 6 Mbps.",
+    "options": {
+      "a": "0.624050 s",
+      "b": "1.691726 s",
+      "c": "2.425080 s",
+      "d": "1.714030 s"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\nTransmission delay = 10^7 / 6×10^6 = 1.6667 s\nPropagation delay = 5×10^6 / 2×10^8 = 0.025 s\nQueuing delay = 20 × 2μs = 40 μs = 0.00004 s\nProcessing delay = 20 × 1μs = 20 μs = 0.00002 s\nTotal = 1.6667 + 0.025 + 0.00004 + 0.00002 = 1.69176 s ≈ 1.691726 s.\nOption (b) is correct."
+  },
+  {
+    "question_number": 35,
+    "year": "2024",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "What is the number of bits required to address 64 MB of memory?",
+    "options": {
+      "a": "24",
+      "b": "26",
+      "c": "28",
+      "d": "30"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\n64 MB = 64 × 2^20 bytes = 2^26 bytes. So 26 address bits are required. Option (b) is correct."
+  },
+  {
+    "question_number": 36,
+    "year": "2024",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "Which of the following is the worst-case time complexity of insertion sort?",
+    "options": {
+      "a": "O(n)",
+      "b": "O(n log n)",
+      "c": "O(n^2)",
+      "d": "O(log n)"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\nThe worst-case time complexity of **insertion sort** is O(n^2) when the array is sorted in reverse order. Option (c) is correct."
+  },
+  {
+    "question_number": 37,
+    "year": "2024",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "Which of the following is not a property of a transaction?",
+    "options": {
+      "a": "Atomicity",
+      "b": "Consistency",
+      "c": "Durability",
+      "d": "Availability"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\nThe ACID properties of a transaction are: **Atomicity**, **Consistency**, **Isolation**, and **Durability**. Availability is not a transaction property. Option (d) is correct."
+  },
+  {
+    "question_number": 38,
+    "year": "2024",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "Which of the following is not a goal of reverse Engineering?",
+    "options": {
+      "a": "Cope with complexity",
+      "b": "Recover lost information",
+      "c": "Detect side effect",
+      "d": "Data flow"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\nReverse engineering aims to understand design, cope with complexity, recover lost information, and detect side effects. Data flow analysis is typically a forward engineering activity. Option (d) is correct."
+  },
+  {
+    "question_number": 39,
+    "year": "2024",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "The chairs of an auditorium are to be labelled with a letter followed by a positive two digits integer where labelling is starting with A01. How many maximum possible chairs could be labelled in this way?",
+    "options": {
+      "a": "2600",
+      "b": "2574",
+      "c": "2340",
+      "d": "2366"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\nLetters: 26 (A to Z)\nTwo-digit positive integers: 01 to 99 → 99 possibilities\nTotal = 26 × 99 = 2574.\n\nOption (b) is correct."
+  },
+  {
+    "question_number": 40,
+    "year": "2024",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "Arrange in appropriate order, the construction of a finite automata:\nA. Minimum State DFA\nB. Regular Expression\nC. NFA-ε\nD. Problem Statement\nE. DFA",
+    "options": {
+      "a": "B, C, E, A, D",
+      "b": "D, B, C, E, A",
+      "c": "C, E, B, A, D",
+      "d": "A, D, C, B, E"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\nCorrect order:\n1. **Problem Statement** (D)\n2. **Regular Expression** (B)\n3. **NFA-ε** (C)\n4. **DFA** (E)\n5. **Minimum State DFA** (A)\n\nOption (b) is correct."
+  },
+  {
+    "question_number": 41,
+    "year": "2024",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "Lower-triangular sparse matrix is one:",
+    "options": {
+      "a": "In which all the non-zero elements lie only on the leading diagonal.",
+      "b": "In which all the non-zero elements lie above leading diagonal.",
+      "c": "In which all the non-zero elements lie below leading diagonal.",
+      "d": "Which is not defined for sparse matrix."
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\nA **lower-triangular matrix** has all non-zero elements on or below the leading diagonal. Option (c) is correct."
+  },
+  {
+    "question_number": 42,
+    "year": "2024",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "The following code: stmt → if expr then stmt else stmt | if expr then stmt suffers from:",
+    "options": {
+      "a": "Ambiguity",
+      "b": "Left factoring",
+      "c": "Left Recursion",
+      "d": "λ-moves"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\nThe grammar is **ambiguous** because a string like `if expr then if expr then stmt else stmt` can have two parse trees (dangling else problem). Option (a) is correct."
+  },
+  {
+    "question_number": 43,
+    "year": "2024",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "Which of the following is not correct about the virtual memory segmentation?",
+    "options": {
+      "a": "It is not necessary to load all of the segments of a process.",
+      "b": "It has no internal fragmentation.",
+      "c": "It has large virtual address space",
+      "d": "It provides lower degree of multiprogramming."
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\nSegmentation provides a **higher** degree of multiprogramming by allowing partial loading of segments. Options (a), (b), and (c) are correct characteristics. Option (d) is false."
+  },
+  {
+    "question_number": 44,
+    "year": "2024",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "Z is set of integers, (Z,*) forms group if * is:\n(a) *(a,b) = a + b + 2\n(b) *(a,b) = 2a + b\n(c) *(a,b) = (a + b) / 2\n(d) *(a,b) = a^2 + b",
+    "options": {
+      "a": "(a) only",
+      "b": "(b) only",
+      "c": "(c) only",
+      "d": "(d) only"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\nFor (Z,*), check group properties:\n- Closure: a+b+2 ∈ Z\n- Associative: (a*b)*c = a*(b*c) = a+b+c+4\n- Identity: e = -2\n- Inverse: b = -a-4\n\nOnly (a) satisfies all. Option (a) is correct."
+  },
+  {
+    "question_number": 45,
+    "year": "2024",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "Which of the following statements is/are false?\nA. A user can assign privileges to any user on any relation.\nB. A user can assign privileges to any user on its own relations only.\nC. System error that leads to accessibility to the portion of database is an example of malicious attack.\nD. Password itself need to be secured from unauthorized access.",
+    "options": {
+      "a": "A and C Only",
+      "b": "A and B Only",
+      "c": "B and D Only",
+      "d": "B and C Only"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\nA: False, users can only assign privileges on their own relations.\nB: True.\nC: False, a system error is not a malicious attack.\nD: True.\n\nSo A and C are false. Option (a) is correct."
+  },
+  {
+    "question_number": 46,
+    "year": "2024",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "Which of the following is not a characteristic of a specialized embedded OS?",
+    "options": {
+      "a": "Real time scheduling policy",
+      "b": "Responds to external interrupts",
+      "c": "Provides special non-sequential files",
+      "d": "Provides fixed or variable sized partitions"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\nEmbedded OS characteristics include real-time scheduling, interrupt response, and memory partitions. Providing special non-sequential files is not a typical characteristic. Option (c) is correct."
+  },
+  {
+    "question_number": 47,
+    "year": "2024",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "What will be the order of the following fields in a frame relay 'frame format'?\nA. Flag\nB. FCS\nC. Address\nD. Information",
+    "options": {
+      "a": "A, C, D, B",
+      "b": "A, B, C, D",
+      "c": "C, B, A, D",
+      "d": "A, B, D, C"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\nFrame Relay frame format: **Flag → Address → Information → FCS → Flag**. So A, C, D, B. Option (a) is correct."
+  },
+  {
+    "question_number": 48,
+    "year": "2024",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "The techniques used to handle the phantom problem are:\nA. Time stamping\nB. Index locking\nC. Predicate locking\nD. Execution indexing",
+    "options": {
+      "a": "A and B Only",
+      "b": "B and C Only",
+      "c": "A and D Only",
+      "d": "C and D Only"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\nThe **phantom problem** is handled using **index locking** and **predicate locking**. Timestamping does not directly handle phantoms. Option (b) is correct."
+  },
+  {
+    "question_number": 49,
+    "year": "2024",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "The sequence of fields in an IP datagram will be:\nA. Flags\nB. Options\nC. Protocol\nD. Identification\nE. Service type",
+    "options": {
+      "a": "E, D, A, C, B",
+      "b": "D, A, B, C, E",
+      "c": "D, E, C, B, A",
+      "d": "E, C, D, A, B"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\nIPv4 header order: Version, Header Length, **Service Type (E)**, Total Length, **Identification (D)**, **Flags (A)**, Fragment Offset, TTL, **Protocol (C)**, Checksum, Source IP, Destination IP, **Options (B)**. So E, D, A, C, B. Option (a) is correct."
+  },
+  {
+    "question_number": 50,
+    "year": "2024",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "The cyclomatic complexity of the following flow graph is: (figure not shown)",
+    "options": {
+      "a": "3",
+      "b": "4",
+      "c": "10",
+      "d": "2"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\nCyclomatic complexity = E - N + 2P. From the flow graph with 10 nodes and 11 edges, V(G) = 11 - 10 + 2(1) = 3. Option (a) is correct."
+  },
+  {
+    "question_number": 51,
+    "year": "2024",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "IP is responsible for _____ communication while TCP is responsible for _____ communication.",
+    "options": {
+      "a": "Node-to-node, Host-to-host",
+      "b": "Process-to-process, Host-to-host",
+      "c": "Socket-to-socket, Host-to-node",
+      "d": "Host-to-Host, Process-to-process"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\n**IP** provides host-to-host (end-to-end) communication. **TCP** provides process-to-process (application) communication. Option (d) is correct."
+  },
+  {
+    "question_number": 52,
+    "year": "2024",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "Arrange the steps of Mathematical Modeling:\nA. Solution fitting with data\nB. Formulation Mathematically\nC. Solve Mathematically\nD. Repeat formulation if it fits worst with data\nE. Interpretation results",
+    "options": {
+      "a": "B, C, A, D, E",
+      "b": "B, A, D, C, E",
+      "c": "D, A, B, C, E",
+      "d": "E, D, C, A, B"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\nCorrect order:\n1. **Formulation Mathematically** (B)\n2. **Solve Mathematically** (C)\n3. **Solution fitting with data** (A)\n4. **Repeat formulation if it fits worst with data** (D)\n5. **Interpretation results** (E)\n\nOption (a) is correct."
+  },
+  {
+    "question_number": 53,
+    "year": "2024",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "In windows scheduling, which of the following option is correct?",
+    "options": {
+      "a": "4 non-real-time priorities",
+      "b": "8 non-real-time priorities",
+      "c": "12 non-real-time priorities",
+      "d": "16 non-real-time priorities"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\nWindows has 32 priority levels (0-31). Real-time: 16-31 (16 levels). Non-real-time: 0-15 (16 levels, including idle priority). Option (d) is correct."
+  },
+  {
+    "question_number": 54,
+    "year": "2024",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "The I/O methods in which memory addresses and I/O addresses are distinct, is called:\nA. Isolated I/O\nB. Memory-Mapped I/O\nC. Strobe Control\nD. Handshaking\nE. Interrupt",
+    "options": {
+      "a": "A, B Only",
+      "b": "C, D Only",
+      "c": "C, E Only",
+      "d": "B, E Only"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\n**Isolated I/O** uses separate address spaces for memory and I/O. **Memory-Mapped I/O** uses the same address space (not distinct). So A (Isolated I/O) is the method with distinct addresses. Option (a) is correct."
+  },
+  {
+    "question_number": 55,
+    "year": "2024",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "What will be the ordering of typical steps when processing a high-level query?\nA. Query optimizer\nB. Runtime database processor\nC. Scanning, parsing and validating\nD. Query code generator",
+    "options": {
+      "a": "D, A, C, B",
+      "b": "C, A, D, B",
+      "c": "C, D, B, A",
+      "d": "D, C, B, A"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\nCorrect order:\n1. **Scanning, parsing and validating** (C)\n2. **Query optimizer** (A)\n3. **Query code generator** (D)\n4. **Runtime database processor** (B)\n\nOption (b) is correct."
+  },
+  {
+    "question_number": 56,
+    "year": "2024",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "Which of the followings are tautology?\nA. (p ∨ r) → p\nB. p → (p ∧ r)\nC. ¬p → (p → r)\nD. (p ∧ r) → (p → r)\nE. ¬(p → r) → p",
+    "options": {
+      "a": "A, B Only",
+      "b": "A, B, C Only",
+      "c": "B, C, D Only",
+      "d": "C, D, E Only"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\nEvaluate each:\n- A: not a tautology (false when p=0, r=1)\n- B: not a tautology (false when p=1, r=0)\n- C: tautology (¬p → (p→r) is always true)\n- D: tautology (always true)\n- E: tautology (always true)\n\nSo C, D, E are tautologies. Option (d) is correct."
+  },
+  {
+    "question_number": 57,
+    "year": "2024",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "The language of the following PDA would be:\nδ(q0,a,z0) = (q0,a a a z0)\nδ(q0,a,a) = (q0,a a a a)\nδ(q0,b,a) = (q1,λ)\nδ(q1,b,a) = (q1,λ)\nδ(q1,ε,z0) = (q1,z0), where q1 is a final state.",
+    "options": {
+      "a": "{a^n b^n | n > 0}",
+      "b": "{a^n b^{2n} | n > 0}",
+      "c": "{a^n b^{3n} | n > 0}",
+      "d": "{a^n b^{4n} | n > 0}"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\nFor each 'a', the PDA pushes 3 additional 'a's (net +3). For each 'b', it pops one 'a'. To accept, number of b's = 3 × number of a's. So language is {a^n b^{3n} | n > 0}. Option (c) is correct."
+  },
+  {
+    "question_number": 58,
+    "year": "2024",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "Regarding the subroutines, see the following sequence of tasks to be performed:\nA. Turn on the interrupt facility on.\nB. Service the device whose flag is set.\nC. Save the contents of processor registers.\nD. Check which flag is set.\nE. Restore the contents of processor registers.",
+    "options": {
+      "a": "A, D, C, B, E",
+      "b": "D, A, B, C, E",
+      "c": "C, D, B, E, A",
+      "d": "B, D, A, C, E"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\nCorrect interrupt handling order:\n1. **Save the contents of processor registers** (C)\n2. **Check which flag is set** (D)\n3. **Service the device whose flag is set** (B)\n4. **Restore the contents of processor registers** (E)\n5. **Turn on the interrupt facility on** (A)\n\nOption (c) is correct."
+  },
+  {
+    "question_number": 59,
+    "year": "2024",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "Match List-I with List-II:\n<table border='1' style='border-collapse: collapse; width: 100%; margin: 10px 0;'><thead><tr style='background-color: #f2f2f2;'><th style='padding: 8px; text-align: left;'>List-I</th><th style='padding: 8px; text-align: left;'>List-II</th></tr></thead><tbody><tr><td style='padding: 8px;'>A. Verification</td><td style='padding: 8px;'>I. White box Testing</td></tr><tr><td style='padding: 8px;'>B. Validation</td><td style='padding: 8px;'>II. Black box Testing</td></tr><tr><td style='padding: 8px;'>C. Internal Logic exercise</td><td style='padding: 8px;'>III. Quality Control</td></tr><tr><td style='padding: 8px;'>D. Software requirement exercise</td><td style='padding: 8px;'>IV. Quality Assurance</td></tr></tbody></table>",
+    "options": {
+      "a": "A-IV, B-III, C-I, D-II",
+      "b": "A-I, B-II, C-III, D-IV",
+      "c": "A-IV, B-III, C-II, D-I",
+      "d": "A-III, B-IV, C-I, D-II"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Match:**\n* **Verification:** Quality Assurance (IV)\n* **Validation:** Quality Control (III)\n* **Internal Logic exercise:** White box Testing (I)\n* **Software requirement exercise:** Black box Testing (II)\n\n**Key Concept:** Understanding **software testing**. Option (a) is correct."
+  },
+  {
+    "question_number": 60,
+    "year": "2024",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "The parameter Actual count is used in Genetic Algorithm (GA) for:",
+    "options": {
+      "a": "Crossover",
+      "b": "Mutation",
+      "c": "Selecting population",
+      "d": "Encoding the Genetic Algorithm"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\n**Actual count** parameter determines the number of individuals selected from the current population to participate in the next generation (selection process). Option (c) is correct."
+  },
+  {
+    "question_number": 61,
+    "year": "2024",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "For the given two machines which of the following is correct? (Figures not shown)",
+    "options": {
+      "a": "Both machines are DFAs",
+      "b": "Both are non-equivalent Machines",
+      "c": "Both are equivalent Machines",
+      "d": "Cannot be determined"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\nBoth machines accept the same language: strings containing at least one 'b'. Therefore, they are **equivalent**. Option (c) is correct."
+  },
+  {
+    "question_number": 62,
+    "year": "2024",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "The number of tokens in the following line:\nfor i in range (begin : end : step) :",
+    "options": {
+      "a": "4",
+      "b": "7",
+      "c": "8",
+      "d": "12"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\nTokens: `for`, `i`, `in`, `range`, `(`, `begin`, `:`, `end`, `:`, `step`, `)`, `:` → 12 tokens. Option (d) is correct."
+  },
+  {
+    "question_number": 63,
+    "year": "2024",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "Which of the following structures of knowledge representation are the most purely syntactic?\nA. Conceptual dependency\nB. Predicate logic\nC. Slot-and-filler\nD. Nonmonotonic systems",
+    "options": {
+      "a": "A and B Only",
+      "b": "B and C Only",
+      "c": "B and D Only",
+      "d": "C and D Only"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\n**Predicate logic** and **Slot-and-filler** structures are primarily syntactic, focusing on form and structure. Conceptual dependency is semantic, and nonmonotonic systems are reasoning frameworks. Option (b) is correct."
+  },
+  {
+    "question_number": 64,
+    "year": "2024",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "In Genetic Algorithm's crossover operation, mask is used in?",
+    "options": {
+      "a": "Three parent crossover",
+      "b": "Two parent crossover",
+      "c": "Uniform crossover",
+      "d": "N point crossover"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\nA mask is used in **Uniform crossover** to determine which parent contributes each gene to the offspring. Option (c) is correct."
+  },
+  {
+    "question_number": 65,
+    "year": "2024",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "Match List-I with List-II:\n<table border='1' style='border-collapse: collapse; width: 100%; margin: 10px 0;'><thead><tr style='background-color: #f2f2f2;'><th style='padding: 8px; text-align: left;'>List-I</th><th style='padding: 8px; text-align: left;'>List-II</th></tr></thead><tbody><tr><td style='padding: 8px;'>A. Complement</td><td style='padding: 8px;'>I. Adder</td></tr><tr><td style='padding: 8px;'>B. Ex-OR</td><td style='padding: 8px;'>II. Instruction decoding</td></tr><tr><td style='padding: 8px;'>C. Accumulator</td><td style='padding: 8px;'>III. Negative number representation</td></tr><tr><td style='padding: 8px;'>D. Control-Unit</td><td style='padding: 8px;'>IV. Arithmetic and Logic operations</td></tr></tbody></table>",
+    "options": {
+      "a": "A-I, B-II, C-III, D-IV",
+      "b": "A-III, B-I, C-IV, D-II",
+      "c": "A-III, B-I, C-IV, D-II",
+      "d": "A-IV, B-II, C-III, D-I"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Match:**\n* **Complement:** Negative number representation (III)\n* **Ex-OR:** Adder (I)\n* **Accumulator:** Arithmetic and Logic operations (IV)\n* **Control-Unit:** Instruction decoding (II)\n\n**Key Concept:** Understanding **computer architecture components**. Option (b) is correct."
+  },
+  {
+    "question_number": 66,
+    "year": "2024",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "Arrange the following prefix expressions based on their values in increasing order:\nA. + - 2 / 8 4 3 2\nB. + - * 3 3 * 4 2 5\nC. + - 1 3 2 ↑ 2 3 / 6 - 4 2\nD. + + 3 + 3 ↑ 3 + 1 1 3",
+    "options": {
+      "a": "A, B, C, D",
+      "b": "B, A, C, D",
+      "c": "D, C, B, A",
+      "d": "C, D, A, B"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\nEvaluate each:\n- A: 3\n- B: 1\n- C: 14\n- D: 45\nIncreasing order: B (1), A (3), C (14), D (45). Option (b) is correct."
+  },
+  {
+    "question_number": 67,
+    "year": "2024",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "Which of the following is not the most common property in social network?",
+    "options": {
+      "a": "Degree distribution follows scale free.",
+      "b": "Average shortest path lengths are shorter in connected network.",
+      "c": "Most of them are directed network.",
+      "d": "Follows small world property."
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\nMost social networks are undirected (e.g., Facebook friendships). Scale-free distribution, short average path lengths, and small-world property are common. Option (c) is correct."
+  },
+  {
+    "question_number": 68,
+    "year": "2024",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "For line drawing, which of the following algorithms are used?\nA. DDA algorithm\nB. Bresenham algorithm\nC. Mid point algorithm\nD. Curve algorithm",
+    "options": {
+      "a": "B and C Only",
+      "b": "C and D Only",
+      "c": "A and B Only",
+      "d": "D and A Only"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\n**DDA** and **Bresenham's** algorithms are used for line drawing. Mid-point is for circles, Curve algorithms for curves. Option (c) is correct."
+  },
+  {
+    "question_number": 69,
+    "year": "2024",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "According to the Nyquist theorem, to produce the original analog signal, one necessary condition is:",
+    "options": {
+      "a": "Sampling rate must be at least 2 times the highest frequency contained in the signal.",
+      "b": "Sampling rate must be at least 2 times the lowest frequency contained in the signal.",
+      "c": "Sampling rate must be at least 1/2 times the highest frequency contained in the signal.",
+      "d": "Sampling rate must be at least 1/2 times the lowest frequency contained in the signal."
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\nThe **Nyquist theorem** states that the sampling rate must be at least twice the highest frequency component (Nyquist rate). Option (a) is correct."
+  },
+  {
+    "question_number": 70,
+    "year": "2024",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "For the fuzzy set A = {(x1, 0.3), (x2, 0.7), (x3, 0.4)} and B = {(x1, 0.5), (x2, 0.2), (x3, 0.4)}, the A ∩ B would be:",
+    "options": {
+      "a": "{(x1, 0.3), (x2, 0.7), (x3, 0.4)}",
+      "b": "{(x1, 0.5), (x2, 0.2), (x3, 0.5)}",
+      "c": "{(x1, 0.5), (x2, 0.7), (x3, 0.5)}",
+      "d": "{(x1, 0.3), (x2, 0.2), (x3, 0.4)}"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\nIntersection of fuzzy sets uses min:\n- x1: min(0.3, 0.5) = 0.3\n- x2: min(0.7, 0.2) = 0.2\n- x3: min(0.4, 0.4) = 0.4\n\nSo A∩B = {(x1, 0.3), (x2, 0.2), (x3, 0.4)}. Option (d) is correct."
+  },
+  {
+    "question_number": 71,
+    "year": "2024",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "The least values of a signed and unsigned data type variables requiring 8 bits, would be:",
+    "options": {
+      "a": "0, 128",
+      "b": "-128, 127",
+      "c": "0, 0",
+      "d": "-128, 0"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\n8-bit signed: min = -2^7 = -128\n8-bit unsigned: min = 0\nSo least values are -128 and 0. Option (d) is correct."
+  },
+  {
+    "question_number": 72,
+    "year": "2024",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "Which of the followings are true for a complete binary tree?\nA. It has always odd number of vertices.\nB. With i internal vertices, it has i + 1 leaves.\nC. With l leaves it has l - 1 vertices.\nD. With 2n - 1 vertices, it has n leaves.",
+    "options": {
+      "a": "A, B, C Only",
+      "b": "B, C Only",
+      "c": "A, D Only",
+      "d": "A, B, C, D"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\nA: True, total nodes in complete binary tree is odd.\nB: True, internal nodes = leaves - 1.\nC: True, with l leaves, internal = l-1, total = 2l-1.\nD: True, with 2n-1 vertices, leaves = n.\n\nAll statements are true. Option (d) is correct."
+  },
+  {
+    "question_number": 73,
+    "year": "2024",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "For making a memory of size 2048 × 8 bytes, by using the chips of size 128 × 4 bytes, the number of chips required is:",
+    "options": {
+      "a": "8",
+      "b": "16",
+      "c": "32",
+      "d": "64"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\nRequired memory = 2048 × 8 = 16384 bytes.\nOne chip = 128 × 4 = 512 bytes.\nNumber of chips = 16384 / 512 = 32.\n\nOption (c) is correct."
+  },
+  {
+    "question_number": 74,
+    "year": "2024",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "Which of the followings are sequential circuit?\nA. Flip flop\nB. Multiplexer\nC. Counter\nD. Decoder\nE. Adder",
+    "options": {
+      "a": "B, D Only",
+      "b": "A, C Only",
+      "c": "C, E Only",
+      "d": "D, A Only"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\n**Sequential circuits** have memory: **Flip-flop** (A) and **Counter** (C). Multiplexer, Decoder, and Adder are combinational circuits. Option (b) is correct."
+  },
+  {
+    "question_number": 75,
+    "year": "2024",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "Which of the followings are White Box Testing?\nA. Path Testing\nB. Loop Testing\nC. Regression Testing\nD. Non functional Testing",
+    "options": {
+      "a": "A and B Only",
+      "b": "B and C Only",
+      "c": "C and D Only",
+      "d": "A and D Only"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\nWhite box testing techniques: **Path Testing** (A) and **Loop Testing** (B). Regression testing is black box; Non-functional testing is a category, not white box. Option (a) is correct."
+  },
+  {
+    "question_number": 76,
+    "year": "2024",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "Techniques for performing I/O:\nA. Programmed I/O\nB. Interrupt-driven I/O\nC. Rotational I/O\nD. Direct memory access I/O\nE. Channelized I/O",
+    "options": {
+      "a": "A and C Only",
+      "b": "A, B and D Only",
+      "c": "A, D and E Only",
+      "d": "B and E Only"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\nI/O techniques: **Programmed I/O** (A), **Interrupt-driven I/O** (B), and **Direct Memory Access (DMA)** (D). Rotational I/O and Channelized I/O are not standard techniques. Option (b) is correct."
+  },
+  {
+    "question_number": 77,
+    "year": "2024",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "For the software quality assurance, which of the followings are correct?\nA. Execution of code\nB. No execution of code\nC. Preventive technique\nD. A corrective technique",
+    "options": {
+      "a": "A, B Only",
+      "b": "B, C Only",
+      "c": "C, D Only",
+      "d": "D, A Only"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\nSoftware Quality Assurance includes **no execution of code** and **preventive techniques**. Execution of code and corrective techniques are more associated with testing. Option (b) is correct."
+  },
+  {
+    "question_number": 78,
+    "year": "2024",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "Which of the following genetic algorithm operation is computationally most expensive?",
+    "options": {
+      "a": "Convergence testing",
+      "b": "Initial population creation",
+      "c": "Selection of sub-population for mating",
+      "d": "Reproduction to produce next generation"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\n**Reproduction** (crossover + mutation) is computationally most expensive as it operates on each individual in the population. Option (d) is correct."
+  },
+  {
+    "question_number": 79,
+    "year": "2024",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "A firm can produce two type of cloth say A and B. Three kind of wool are required for it, say red wool, green wool and blue wool. One unit length of type A cloth needs 2 yards of red and 3 yards of green wool. One unit length of type B cloth needs 3 yards of red wool, 2 yards of green wool and 2 yards blue wool. The firm has only a stock of 8 yards of red wool, 10 yards of green wool and 15 yards of blue wool. It is assumed that the income obtained from one unit length of type A and type B cloths are ₹30 and ₹50, respectively.\n\nWhen we formulate the LPP from the above given passage. Which of the following is a objective function for its dual problem?",
+    "options": {
+      "a": "Min P = 5u + 8v + 15w",
+      "b": "Min P = 8u + 10v + 15w",
+      "c": "Min P = 15u + 5v + 8w",
+      "d": "Max P = 10u + 8v + 15w"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\nPrimal: Max Z = 30x + 50y\nConstraints: 2x+3y ≤ 8, 3x+2y ≤ 10, 0x+2y ≤ 15\nDual: Min P = 8u + 10v + 15w. Option (b) is correct."
+  },
+  {
+    "question_number": 80,
+    "year": "2024",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "Which of the following will be appropriate objective function for the given problem?",
+    "options": {
+      "a": "2x + 3y",
+      "b": "3x + 2y + 2z",
+      "c": "30x + 50y",
+      "d": "3x + 2y"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\nMaximize income = 30x + 50y (where x = units of cloth A, y = units of cloth B). Option (c) is correct."
+  },
+  {
+    "question_number": 81,
+    "year": "2024",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "How many unit length used for cloth A when income is maximized?",
+    "options": {
+      "a": "0.8 unit",
+      "b": "2.4 unit",
+      "c": "2.8 unit",
+      "d": "3.0 unit"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\nSolving constraints 2x+3y=8 and 3x+2y=10 gives x=2.8, y=0.8. So cloth A = 2.8 units. Option (c) is correct."
+  },
+  {
+    "question_number": 82,
+    "year": "2024",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "If x unit length of type A cloths and y unit length of type B cloths, then constraints formulate for the LPP, is:",
+    "options": {
+      "a": "y ≤ 7.5, 2x + 3y ≤ 8, 3y + 2x ≤ 10",
+      "b": "y ≤ 7.5, 2x + 3y ≤ 8, 2x + 2y ≤ 10",
+      "c": "2x + 3y ≤ 8, 3x + 2y + 2z < 15",
+      "d": "2x + 3y ≤ 10, 3x + 2y ≤ 10, 2y ≤ 15"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\nConstraints: Red: 2x+3y ≤ 8, Green: 3x+2y ≤ 10, Blue: 2y ≤ 15 → y ≤ 7.5. Option (a) is correct."
+  },
+  {
+    "question_number": 83,
+    "year": "2024",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "On the basis of available material, maximum total income is:",
+    "options": {
+      "a": "133.3",
+      "b": "124",
+      "c": "100",
+      "d": "153.3"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\nFeasible points: (0, 8/3) → Z = 50×8/3 = 133.3; (10/3, 0) → Z = 100; (14/5, 4/5) → Z = 124. Maximum is 133.3. Option (a) is correct."
+  },
+  {
+    "question_number": 84,
+    "year": "2024",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "A company is implementing a new database system to manage its customer information. The database contains tables for customers, order, products and sales representatives. Each customer can place multiple orders and each order can contain multiple products. Each order is associated with a specific sales representatives who manages the account. The database is designed to improve efficiency in tracking sales and customer interactions.\n\nWhich SQL query retrieves the total number of orders placed by a specific customer?",
+    "options": {
+      "a": "Select COUNT (*) As total_orders from orders where customer_id = [customer_ID];",
+      "b": "Select COUNT (order_id) As total_orders from orders where customer_id = [Customer_ID];",
+      "c": "Select COUNT (DISTINCT order_id) As total_orders from orders Where customer_id = [Customer_ID];",
+      "d": "Select SUM (order_id) As total_orders from orders where customer_id = [Customer_ID];"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\n`SELECT COUNT(*) FROM orders WHERE customer_id = [customer_ID];` counts all orders for that customer. Option (a) is correct."
+  },
+  {
+    "question_number": 85,
+    "year": "2024",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "Based on the passage, which of the following statements is true?",
+    "options": {
+      "a": "Each customer can place only one order.",
+      "b": "Each sales representative can manage multiple customer accounts",
+      "c": "Each order can be associated with only one product",
+      "d": "The database does not include a table for products."
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\nFrom the passage: \"Each order is associated with a specific sales representatives who manages the account.\" A sales representative can manage multiple accounts (implicit). Option (b) is correct."
+  },
+  {
+    "question_number": 86,
+    "year": "2024",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "Which of the following tables is likely to have a foreign key referencing another table in the database system implemented by the company?",
+    "options": {
+      "a": "Customers",
+      "b": "Orders",
+      "c": "Products",
+      "d": "Sales representatives"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\nThe **Orders** table links customers (customer_id), sales reps (rep_id), and products (via junction table), so it has multiple foreign keys. Option (b) is correct."
+  },
+  {
+    "question_number": 87,
+    "year": "2024",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "Which SQL query retrieves the total number of distinct customers who have placed orders?",
+    "options": {
+      "a": "Select COUNT (DISTINCT customer_id) As total_customers From orders;",
+      "b": "Select COUNT (*) As total_customer from customers;",
+      "c": "Select COUNT (DISTINCT order_id) As total_customers from orders;",
+      "d": "Select COUNT (DISTINCT customer_id) As total_customer from customers;"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\n`SELECT COUNT(DISTINCT customer_id) FROM orders;` counts unique customers who have placed orders. Option (a) is correct."
+  },
+  {
+    "question_number": 88,
+    "year": "2024",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "Which of the following best describes the relationship between the \"orders\" table and the \"Customers\" table in the company's database system?",
+    "options": {
+      "a": "One-to-One",
+      "b": "One-to-Many",
+      "c": "Many-to-One",
+      "d": "Many-to-Many"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\n\"Each customer can place multiple orders\" → One customer → many orders. This is a **One-to-Many** relationship. Option (b) is correct."
+  }
+]
