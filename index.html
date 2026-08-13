@@ -525,25 +525,39 @@
   }
 
   function playIncorrectSound() {
-    const ctx = getAudioContext();
-    const now = ctx.currentTime;
+  const ctx = getAudioContext();
+  const now = ctx.currentTime;
 
-    const osc = ctx.createOscillator();
+  [0, 0.16].forEach((offset, i) => {
+    const start = now + offset;
+
+    // generate short filtered noise burst
+    const bufferSize = ctx.sampleRate * 0.15;
+    const buffer = ctx.createBuffer(1, bufferSize, ctx.sampleRate);
+    const data = buffer.getChannelData(0);
+    for (let j = 0; j < bufferSize; j++) {
+      data[j] = (Math.random() * 2 - 1) * (1 - j / bufferSize);
+    }
+    const noise = ctx.createBufferSource();
+    noise.buffer = buffer;
+
+    const filter = ctx.createBiquadFilter();
+    filter.type = 'lowpass';
+    filter.frequency.setValueAtTime(350, start);
+
     const gain = ctx.createGain();
+    const vol = i === 0 ? 0.24 : 0.16; // second hit softer
+    gain.gain.setValueAtTime(vol, start);
+    gain.gain.exponentialRampToValueAtTime(0.001, start + 0.15);
 
-    osc.type = 'sawtooth';
-    osc.frequency.setValueAtTime(130.81, now);
-    osc.frequency.exponentialRampToValueAtTime(98.00, now + 0.2);
-
-    gain.gain.setValueAtTime(0.12, now);
-    gain.gain.exponentialRampToValueAtTime(0.001, now + 0.25);
-
-    osc.connect(gain);
+    noise.connect(filter);
+    filter.connect(gain);
     gain.connect(ctx.destination);
 
-    osc.start(now);
-    osc.stop(now + 0.25);
-  }
+    noise.start(start);
+    noise.stop(start + 0.15);
+  });
+}
 
   function triggerPopper() {
     if (typeof confetti === 'function') {
@@ -1110,6 +1124,7 @@ function speakQuestion(q, btn, targetContainer) {
             triggerPopper();
             triggerBalloons();
           } else {
+            playIncorrectSound();
             optEl.classList.add('incorrect');
             card.querySelector(`[data-key="${correctAnswerKey}"]`).classList.add('correct');
           }

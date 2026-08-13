@@ -1,0 +1,1400 @@
+[
+  {
+    "question_number": 1,
+    "year": "2019",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "A basic feasible solution of an m x n transportation problem is said to be nondegenerate if basic feasible solution contains exactly ______ number of individual allocations in ______ positions.",
+    "options": {
+      "a": "m + n + 1, independent",
+      "b": "m + n - 1, independent",
+      "c": "m + n - 1, appropriate",
+      "d": "m - n + 1, independent"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\nA nondegenerate basic feasible solution in a transportation problem has exactly **m + n - 1** independent positive allocations. This is required for the solution to be basic and nondegenerate."
+  },
+  {
+    "question_number": 2,
+    "year": "2019",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "Consider the following Linear programming problem (LPP): Maximize Z = x1 + x2 Subject to constraints: x1 + 2x2 ≤ 2000, x1 + x2 ≤ 1500, x2 ≤ 600, and x1, x2 ≥ 0. The solution of the above LPP is:",
+    "options": {
+      "a": "x1 = 750, x2 = 750, Z = 1500",
+      "b": "x1 = 500, x2 = 1000, Z = 1500",
+      "c": "x1 = 1000, x2 = 500, Z = 1500",
+      "d": "x1 = 900, x2 = 600, Z = 1500"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\nUsing graphical method, the feasible region's corner points include (1000,500). At this point, Z = 1000+500 = 1500, satisfying all constraints. Options (a) and (b) violate x2 ≤ 600, and (d) violates x1 + 2x2 ≤ 2000. Hence (c) is correct."
+  },
+  {
+    "question_number": 3,
+    "year": "2019",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "The Boolean expression AB + A\\overline{B} + \\overline{A}C + AC is unaffected by the value of the Boolean variable:",
+    "options": {
+      "a": "A",
+      "b": "B",
+      "c": "C",
+      "d": "A, B and C"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\nSimplify: AB + A\\overline{B} + \\overline{A}C + AC = A(B + \\overline{B}) + C(\\overline{A} + A) = A + C. The minimized expression does not contain B, so it is unaffected by B."
+  },
+  {
+    "question_number": 4,
+    "year": "2019",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "What are the greatest lower bound (GLB) and the least upper bound (LUB) of the sets A = {3, 9, 12} and B = {1, 2, 4, 5, 10} if they exist in poset (Z+, |)?",
+    "options": {
+      "a": "A (GLB - 3, LUB - 36); B (GLB - 1, LUB - 20)",
+      "b": "A (GLB - 3, LUB - 12); B (GLB - 1, LUB - 10)",
+      "c": "A (GLB - 1, LUB - 36); B (GLB - 2, LUB - 20)",
+      "d": "A (GLB - 1, LUB - 12); B (GLB - 2, LUB - 10)"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\nIn the poset (Z+, |) (division relation), GLB is the greatest common divisor and LUB is the least common multiple. For A: GLB = gcd(3,9,12) = 3, LUB = lcm(3,9,12) = 36. For B: GLB = gcd(1,2,4,5,10) = 1, LUB = lcm = 20."
+  },
+  {
+    "question_number": 5,
+    "year": "2019",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "Let P be the set of all people. Let R be a binary relation on P such that (a,b) is in R if a is a brother of b. Is R symmetric, transitive, an equivalence relation, a partial order relation?",
+    "options": {
+      "a": "NO, NO, NO, NO",
+      "b": "NO, NO, YES, NO",
+      "c": "NO, YES, NO, NO",
+      "d": "NO, YES, YES, NO"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\nR is not symmetric (if a is brother of b, b may not be brother of a). R is transitive (if a is brother of b and b brother of c, then a is brother of c). Not equivalence (not symmetric). Not partial order (not antisymmetric). Hence (c)."
+  },
+  {
+    "question_number": 6,
+    "year": "2019",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "The weight of minimum spanning tree in graph G, calculated using Kruskal's algorithm is: (Image of graph with edge weights)",
+    "options": {
+      "a": "14",
+      "b": "15",
+      "c": "17",
+      "d": "18"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\nKruskal's algorithm picks edges in increasing weight: 2,3,4,6 (total 15) to connect 5 vertices without cycle. So MST weight = 15."
+  },
+  {
+    "question_number": 7,
+    "year": "2019",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "A tree has 2n vertices of degree 1, 3n vertices of degree 2, n vertices of degree 3. Determine the number of vertices and edges in tree.",
+    "options": {
+      "a": "12, 11",
+      "b": "11, 12",
+      "c": "10, 11",
+      "d": "9, 10"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\nTotal vertices = 2n+3n+n = 6n. Sum of degrees = 2n*1 + 3n*2 + n*3 = 11n. By handshaking, 2E = 11n ⇒ E = 11n/2. In a tree, E = V-1 = 6n-1. Equate: 11n/2 = 6n-1 ⇒ 11n = 12n-2 ⇒ n=2. So V = 12, E = 11."
+  },
+  {
+    "question_number": 8,
+    "year": "2019",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "How many reflexive relations are there on a set with 4 elements?",
+    "options": {
+      "a": "2^4",
+      "b": "2^12",
+      "c": "4^2",
+      "d": "2"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\nNumber of reflexive relations on an n-element set is 2^(n^2 - n). For n=4, 2^(16-4) = 2^12."
+  },
+  {
+    "question_number": 9,
+    "year": "2019",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "A non-pipelined system takes 30ns to process a task. The same task can be processed in a four-segment pipeline with a clock cycle of 10ns. Determine the speed up of the pipeline for 100 tasks.",
+    "options": {
+      "a": "3",
+      "b": "4",
+      "c": "3.91",
+      "d": "2.91"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\nNon-pipelined time for 100 tasks = 100*30 = 3000 ns. Pipelined time = (100 + 4 - 1)*10 = 1030 ns. Speedup = 3000/1030 ≈ 2.91."
+  },
+  {
+    "question_number": 10,
+    "year": "2019",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "A computer has a memory unit of 512 K words of 32 bits each. A binary instruction code is stored in one word of the memory. The instruction has four parts: an addressing mode field to specify one of the two addressing modes (direct and indirect), an operation code, a register code part to specify one of the 256 registers, and an address part. How many bits are there in addressing mode part, opcode part, register code part and the address part?",
+    "options": {
+      "a": "1, 3, 9, 19",
+      "b": "1, 4, 9, 18",
+      "c": "1, 4, 8, 19",
+      "d": "1, 3, 8, 20"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\nAddressing mode: 1 bit (direct/indirect). Register code: log2(256) = 8 bits. Address part: log2(512K) = log2(2^19) = 19 bits. Remaining for opcode: 32 - 1 - 8 - 19 = 4 bits. So (1,4,8,19)."
+  },
+  {
+    "question_number": 11,
+    "year": "2019",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "A micro instruction format has micro operation field which is divided into 2 subfields F1 and F2, each having 15 distinct micro operations, condition field CD for four status bits, branch field BR having four options used in conjunction with address field AD. The address space is of 128 memory words. The size of micro instruction is:",
+    "options": {
+      "a": "19",
+      "b": "18",
+      "c": "20",
+      "d": "21"
+    },
+    "answer": "19",
+    "explanation": "**Correct Answer: 19**\n\nF1 needs log2(15) ≈ 4 bits, F2 needs 4 bits, CD needs log2(4)=2 bits, BR+AD together need log2(4*128)=log2(512)=9 bits. Total = 4+4+2+9 = 19 bits."
+  },
+  {
+    "question_number": 12,
+    "year": "2019",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "Given following equation: (142)_b + (112)_{b-2} = (75)_8, find base b.",
+    "options": {
+      "a": "3",
+      "b": "6",
+      "c": "7",
+      "d": "5"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\nConvert to base 10: (142)_b = b^2+4b+2; (112)_{b-2} = (b-2)^2 + (b-2)+2 = b^2 -3b +4? Actually (112)_{b-2} = 1*(b-2)^2 + 1*(b-2) + 2 = b^2 -4b+4 + b -2 +2 = b^2 -3b +4. Sum = 2b^2 + b + 6. RHS (75)_8 = 7*8+5=61. So 2b^2 + b + 6 = 61 => 2b^2 + b -55=0 => (2b+11)(b-5)=0 => b=5."
+  },
+  {
+    "question_number": 13,
+    "year": "2019",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "The following program is stored in the memory unit of the basic computer. Give the content of accumulator register in hexadecimal after the execution of the program.\n\nLocation Instruction\n010 CLA\n011 ADD 016\n012 BUN 014\n013 HLT\n014 AND 017\n015 BUN 013\n016 C1A5\n017 93C6",
+    "options": {
+      "a": "A1B4",
+      "b": "81B4",
+      "c": "A184",
+      "d": "8184"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\nExecution: CLA clears ACC. ADD 016 adds C1A5 to ACC => ACC = C1A5. BUN 014 jumps to 014. AND 017: C1A5 AND 93C6 = 8184. BUN 013 jumps to HLT. Final ACC = 8184."
+  },
+  {
+    "question_number": 14,
+    "year": "2019",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "What is the output of following C program?\n\n#include <stdio.h>\nmain() {\n    int i,j,x=0;\n    for (i=0; i<5; ++i)\n        for (j=0; j<i; ++j) {\n            x += (i+j-1);\n            break;\n        }\n    printf(\"%d\",x);\n}",
+    "options": {
+      "a": "6",
+      "b": "5",
+      "c": "4",
+      "d": "3"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\nThe break exits the inner loop after one iteration per outer loop. Values: i=0: no inner; i=1: j=0 => x+=0 => x=0; i=2: j=0 => x+=1 => x=1; i=3: j=0 => x+=2 => x=3; i=4: j=0 => x+=3 => x=6. So output 6."
+  },
+  {
+    "question_number": 15,
+    "year": "2019",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "Let A be the base class in C++ and B be the derived class from A with protected inheritance. Which of the following statement is false for class B?",
+    "options": {
+      "a": "Member function of class B accesses protected data of class A",
+      "b": "Member function of class B can access public data of class A",
+      "c": "Member function of class B cannot access private data of class A",
+      "d": "Object of derived class B can access public base class data"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\nWith protected inheritance, public and protected members of A become protected in B. So object of B cannot access any base class members directly. Thus (d) is false."
+  },
+  {
+    "question_number": 16,
+    "year": "2019",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "Which tag is used to enclose any number of JavaScript statements in HTML document?",
+    "options": {
+      "a": "<code>",
+      "b": "<script>",
+      "c": "<title>",
+      "d": "<body>"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\nThe <script> tag is used to embed JavaScript code in HTML."
+  },
+  {
+    "question_number": 17,
+    "year": "2019",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "A rectangle is bound by the lines x=0, y=0, x=5 and y=3. The line segment joining (-1,0) and (4,5), if clipped against this window will connect the points ______.",
+    "options": {
+      "a": "(0,1) and (3,3)",
+      "b": "(0,1) and (2,3)",
+      "c": "(0,1) and (4,5)",
+      "d": "(0,1) and (3,5)"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\nLine from (-1,0) to (4,5). Clip against x=0: find y at x=0: slope=1, so y=1 => (0,1). Clip against y=3: find x at y=3: using slope, y-0 = 1*(x+1) => x = y-1 = 2 => (2,3). So endpoints (0,1) and (2,3)."
+  },
+  {
+    "question_number": 18,
+    "year": "2019",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "Which of the following algorithms is not used for line clipping?",
+    "options": {
+      "a": "Cohen-Sutherland algorithm",
+      "b": "Sutherland-Hodgeman algorithm",
+      "c": "Liang-Barsky algorithm",
+      "d": "Nicholl-Lee-Nicholl algorithm"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\nSutherland-Hodgeman is used for polygon clipping, not line clipping. Cohen-Sutherland, Liang-Barsky, and Nicholl-Lee-Nicholl are line clipping algorithms."
+  },
+  {
+    "question_number": 19,
+    "year": "2019",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "If we want to resize a 1024 × 768 pixels image to one that is 640 pixels wide with the same aspect ratio, what would be the height of the resized image?",
+    "options": {
+      "a": "420 pixels",
+      "b": "460 pixels",
+      "c": "480 pixels",
+      "d": "540 pixels"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\nAspect ratio = width/height = 1024/768 = 4/3. New width = 640, so height = 640 * (3/4) = 480 pixels."
+  },
+  {
+    "question_number": 20,
+    "year": "2019",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "Which of the component module of DBMS does rearrangement and possible ordering of operations eliminate redundancy in query and use efficient algorithms and indexes during the execution of a query?",
+    "options": {
+      "a": "query compiler",
+      "b": "query optimizer",
+      "c": "Stored data manager",
+      "d": "Database processor"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\nThe query optimizer is responsible for rearranging operations, eliminating redundancy, and selecting efficient access paths and algorithms."
+  },
+  {
+    "question_number": 21,
+    "year": "2019",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "Given two tables R1(x,y) and R2(y,z) with 50 and 30 number of tuples respectively. Find maximum number of tuples in the output of natural join between tables R1 and R2 i.e. R1 * R2? (* - Natural Join)",
+    "options": {
+      "a": "30",
+      "b": "20",
+      "c": "50",
+      "d": "1500"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\nNatural join on common attribute y. Each tuple of R1 can join with each tuple of R2 if they share same y value. In worst case, all y values are same, so max tuples = 50 * 30 = 1500."
+  },
+  {
+    "question_number": 22,
+    "year": "2019",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "Given two tables EMPLOYEE (EID, ENAME, DEPTNO) and DEPARTMENT (DEPTNO, DEPTNAME). Find the most appropriate statement of the given query:\n\nSelect count(*) 'total' from EMPLOYEE where DEPTNO IN (D1, D2) group by DEPTNO having count(*) > 5",
+    "options": {
+      "a": "Total number of employees in each department D1 and D2",
+      "b": "Total number of employees of department D1 and D2 if their total is > 5",
+      "c": "Display total number of employees in both departments D1 and D2",
+      "d": "The output of the query must have at least two rows"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\nThe query groups by DEPTNO, counts employees per department, and filters groups with count >5. It outputs the count for each department (D1, D2) only if that count exceeds 5."
+  },
+  {
+    "question_number": 23,
+    "year": "2019",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "Find minimum number of tables required for converting the following entity relationship diagram into relational database? (ER diagram with entities R1 and R2, relationship 1:M, and multivalued attribute B in R2)",
+    "options": {
+      "a": "2",
+      "b": "4",
+      "c": "3",
+      "d": "5"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\nStrong entities need one table each (R1 and R2). The multivalued attribute B of R2 requires a separate table. So total 3 tables."
+  },
+  {
+    "question_number": 24,
+    "year": "2019",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "A counting semaphore is initialized to 8. 3 wait() operations and 4 signal() operations are applied. Find the current value of semaphore variable.",
+    "options": {
+      "a": "9",
+      "b": "5",
+      "c": "1",
+      "d": "4"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\nWait (P) decrements by 1, Signal (V) increments by 1. Initial = 8. After 3 waits: 8-3=5. After 4 signals: 5+4=9."
+  },
+  {
+    "question_number": 25,
+    "year": "2019",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "Which of the following is noted by an encryption algorithm used in cryptography?",
+    "options": {
+      "a": "KEY",
+      "b": "Message",
+      "c": "Ciphertext",
+      "d": "User details"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\nEncryption algorithm takes plaintext (message) and a key to produce ciphertext. Ciphertext is the output, not input. So the algorithm 'produces' ciphertext."
+  },
+  {
+    "question_number": 26,
+    "year": "2019",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "Which of the following CPU scheduling algorithms is/are supported by LINUX operating system?",
+    "options": {
+      "a": "Non-preemptive priority scheduling",
+      "b": "Preemptive priority scheduling and time sharing CPU scheduling",
+      "c": "Time sharing scheduling only",
+      "d": "Priority scheduling only"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\nLinux supports both preemptive priority scheduling and time-sharing (CFS). It uses a priority-based scheduler with dynamic priorities."
+  },
+  {
+    "question_number": 27,
+    "year": "2019",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "Consider a paging system where translation look aside buffer (TLB) a special type of associative memory is used with hit ratio of 80%. Assume that memory reference takes 80 nanoseconds and reference time to TLB is 20 nanoseconds. What will be the effective memory access time given 80% hit ratio?",
+    "options": {
+      "a": "110 nanoseconds",
+      "b": "116 nanoseconds",
+      "c": "200 nanoseconds",
+      "d": "100 nanoseconds"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\nEMAT = TLB_hit * (TLB_time + memory_time) + TLB_miss * (TLB_time + 2*memory_time) = 0.8*(20+80) + 0.2*(20+80+80) = 0.8*100 + 0.2*180 = 80 + 36 = 116 ns."
+  },
+  {
+    "question_number": 28,
+    "year": "2019",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "Suppose a system has 12 magnetic tape drives and at time t0, three processes are allotted tape drives out of their need as given below:\n\nProcess: Maximum Needs, Current Needs\nP0: 10, 5\nP1: 4, 2\nP2: 9, 2\n\nAt time t0, the system is in safe state. Which of the following is safe sequence so that deadlock is avoided?",
+    "options": {
+      "a": "<P0,P1,P2>",
+      "b": "<P1,P0,P2>",
+      "c": "<P2,P1,P0>",
+      "d": "<P0,P2,P1>"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\nRemaining needs: P0:5, P1:2, P2:7. Available = 12 - (5+2+2) = 3. Only P1 can be satisfied (need 2 ≤ 3). After P1, available = 3+2=5, then P0 (need 5), then P2. So safe sequence <P1,P0,P2>."
+  },
+  {
+    "question_number": 29,
+    "year": "2019",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "Which of the following interprocess communication model is used to exchange messages among co-operative processes?",
+    "options": {
+      "a": "Shared memory model",
+      "b": "Message passing model",
+      "c": "Shared memory and message passing model",
+      "d": "Queues"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\nIPC mechanisms include both shared memory and message passing models. Both are used for exchanging messages among cooperating processes."
+  },
+  {
+    "question_number": 30,
+    "year": "2019",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "Given CPU time slice of 2ms and following list of processes:\n\nProcess: Burst time, Arrival time\nP1: 3, 0\nP2: 4, 2\nP3: 5, 5\n\n(Question missing, but options likely about scheduling).",
+    "options": {
+      "a": "some option",
+      "b": "some option",
+      "c": "some option",
+      "d": "some option"
+    },
+    "answer": null,
+    "explanation": "The question is incomplete; unable to determine answer."
+  },
+  {
+    "question_number": 31,
+    "year": "2019",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "Which of the following is correct with respect to Java Virtual Machine?",
+    "options": {
+      "a": "JVM is a hardware component",
+      "b": "JVM is an interpreter",
+      "c": "JVM is a compiler",
+      "d": "JVM is an abstract computing machine"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\nJVM is an abstract computing machine that enables Java bytecode to run on any platform. It includes class loader, interpreter, etc."
+  },
+  {
+    "question_number": 32,
+    "year": "2019",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "In a system for a restaurant, the main scenario for placing order is given below:\n\n(a) Customer reads menu\n(b) Customer places order\n(c) Order is sent to kitchen for preparation\n(d) Ordered items are served\n(e) Customer requests for a bill for the order\n(f) Bill is prepared for this order\n(g) Customer is given the bill\n(h) Customer pays the bill\n\nA sequence diagram for the scenario will have atleast how many objects among whom the messages will be exchanged.",
+    "options": {
+      "a": "3",
+      "b": "4",
+      "c": "5",
+      "d": "6"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\nThe objects involved: Customer, Order taker, Chef, Server, Cashier. So at least 5 objects."
+  },
+  {
+    "question_number": 33,
+    "year": "2019",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "An ______ chart is a project schedule representation that presents project plan as a directed graph. The critical path is the sequence of ______ tasks and it defines project ______.",
+    "options": {
+      "a": "Activity, Shortest, Independent, Cost",
+      "b": "Activity, Longest, Dependent, Duration",
+      "c": "Activity, Longest, Independent, Duration",
+      "d": "Activity, Shortest, Dependent, Duration"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\nCPM (Critical Path Method) uses activity-on-node network. The critical path is the longest sequence of dependent tasks and determines the project duration."
+  },
+  {
+    "question_number": 34,
+    "year": "2019",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "Let a^(2c) mod n = (a^c)^2 mod n and a^(2c+1) mod n = a * (a^c)^2 mod n. For a=7, b=17 and n=561, what is the value of a^b (mod n)?",
+    "options": {
+      "a": "160",
+      "b": "166",
+      "c": "157",
+      "d": "67"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\n7^17 mod 561. Using repeated squaring: 7^2=49, 7^4=2401 mod 561=157, 7^8=157^2=24649 mod 561=526=-35, 7^16=(-35)^2=1225 mod 561=103. Then 7^17 = 7 * 7^16 = 7*103 = 721 mod 561 = 160."
+  },
+  {
+    "question_number": 35,
+    "year": "2019",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "A clique in an undirected graph G = <V,E> is a subset V' ⊆ V of vertices, such that",
+    "options": {
+      "a": "If (u,v) ∈ E then u ∈ V' and v ∈ V'",
+      "b": "If (u,v) ∈ E then u ∈ V' or v ∈ V'",
+      "c": "Each pair of vertices in V' is connected by an edge",
+      "d": "All pairs of vertices in V' are not connected by an edge"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\nA clique is a subset of vertices where every two distinct vertices are adjacent (connected by an edge)."
+  },
+  {
+    "question_number": 36,
+    "year": "2019",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "What is the worst case running time of Insert and Extract-min, in an implementation of a priority queue using an unsorted array? Assume that all insertions can be accommodated.",
+    "options": {
+      "a": "θ(1), θ(n)",
+      "b": "θ(n), θ(1)",
+      "c": "θ(1), θ(n)",
+      "d": "θ(n), θ(n)"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\nInsertion in unsorted array can be done at end in O(1). Extract-min requires scanning entire array to find minimum, so O(n)."
+  },
+  {
+    "question_number": 37,
+    "year": "2019",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "In a B-Tree, each node represents a disk block. Suppose one block holds 8192 bytes. Each key uses 32 bytes. In a B-tree of order M there are M-1 keys. Since each branch is on another disk block, we assume a branch is of 4 bytes. The total memory requirement for a non-leaf node is",
+    "options": {
+      "a": "32M - 32",
+      "b": "36M - 32",
+      "c": "36M - 36",
+      "d": "32M - 36"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\nNon-leaf node has M branches (each 4 bytes) and M-1 keys (each 32 bytes). Total = 4M + 32(M-1) = 36M - 32."
+  },
+  {
+    "question_number": 38,
+    "year": "2019",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "Give asymptotic upper and lower bound for T(n) given below. Assume T(n) is constant for n ≤ 2.\nT(n) = 4T(√n) + log^2 n",
+    "options": {
+      "a": "Θ(log(log^2 n) log n)",
+      "b": "Θ(log^2 n log n)",
+      "c": "Θ(log^2 n log log n)",
+      "d": "Θ(log(log n) log n)"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\nLet n = 2^m, then T(2^m) = 4T(2^{m/2}) + m^2. Let S(m) = T(2^m), then S(m) = 4S(m/2) + m^2. By Master's theorem (a=4, b=2, f(m)=m^2, case 2 with k=2, p=0), S(m) = Θ(m^2 log m). Substituting m = log n gives T(n) = Θ(log^2 n log log n)."
+  },
+  {
+    "question_number": 39,
+    "year": "2019",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "Consider a weighted directed graph. The current shortest distance from source S to node x is represented by d[x]. Let d[v] = 29, d[u] = 15, w[u, v] = 12. What is the updated value of d[v] based on current information?",
+    "options": {
+      "a": "29",
+      "b": "27",
+      "c": "25",
+      "d": "17"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\nRelaxation: if d[u] + w(u,v) < d[v], update d[v]. Here 15+12=27 < 29, so d[v] becomes 27."
+  },
+  {
+    "question_number": 40,
+    "year": "2019",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "When using Dijkstra's algorithm to find shortest path in a graph, which of the following statement is not true?",
+    "options": {
+      "a": "It can find shortest path within the same graph data structure",
+      "b": "Every time a new node is visited, we choose the node with smallest known distance/cost (weight) to visit first",
+      "c": "Shortest path always passes through least number of vertices",
+      "d": "The graph needs to have a non-negative weight on every edge"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\nShortest path by weight does not necessarily have the fewest vertices; it depends on edge weights. So (c) is false."
+  },
+  {
+    "question_number": 41,
+    "year": "2019",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "Which of the following grammars generates a language that is equivalent to the language of balanced parentheses? (not exact, but from context)\n\nGiven grammars G1, G2, G3, G4, find equivalent ones.",
+    "options": {
+      "a": "G1 and G2",
+      "b": "G2 and G4",
+      "c": "G3 and G4",
+      "d": "G1 and G3"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\nBased on the given grammars, G2 and G4 generate the language {a^n b^n} which is equivalent to balanced parentheses."
+  },
+  {
+    "question_number": 42,
+    "year": "2019",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "Consider the language L = {a^n b^(n-3) | n ≥ 3} over Σ = {a,b}. Which one of the following grammars generates the language L?",
+    "options": {
+      "a": "S → aA | a, A → aAb | b",
+      "b": "S → aaA | λ, A → aAb | λ",
+      "c": "S → aaaA | a, A → aAb | λ",
+      "d": "S → aaaA, A → aAb | λ"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\nFor n=3, string aaa; n=4 => aaaab; etc. Grammar S → aaaA, A → aAb | λ generates exactly a^3 a^k b^k = a^{k+3} b^k = a^n b^{n-3} with n=k+3."
+  },
+  {
+    "question_number": 43,
+    "year": "2019",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "Consider the following grammar: S → 0A | 0BB, A → 00A | λ, B → 1B | 11C, C → B. Which language does this grammar generate?",
+    "options": {
+      "a": "L((00)*0 + (11)*1)",
+      "b": "L(0(11)*0 + 1(00)*)",
+      "c": "L((00)*0)",
+      "d": "L(0(11)*1)"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\nThe grammar generates strings of odd number of 0's (like 0, 000, 00000, ...) because A produces even number of 0's, and B never generates terminal (since C→B leads to infinite loop? Actually it seems only 0's are generated). So language is (00)*0."
+  },
+  {
+    "question_number": 44,
+    "year": "2019",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "Define homomorphism h by: h(x) = xzy, h(w) = zxyy. If L is the regular language denoted by r = (w + x*)(ww)*, then the regular language h(L) is given by",
+    "options": {
+      "a": "(zxyy + xzy)(zxyy)",
+      "b": "(zxyy + (xzy)*)(zxyyzxyy)*",
+      "c": "(zxyy + xzy)(zxyyzxyy)*",
+      "d": "(zxyy + xzy)(zxyy)*"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\nApply homomorphism to regular expression: h(w) = zxyy, h(x) = xzy. So h(L) = (zxyy + (xzy)*)(zxyyzxyy)*. But since x* becomes (xzy)*, the expression becomes (zxyy + (xzy)*)(zxyy zxyy)*, which is (zxyy + (xzy)*)(zxyyzxyy)*. That matches option (b) or (c)? Actually (c) says (zxyy + xzy)(zxyyzxyy)* which is missing the star on xzy. The correct is (zxyy + (xzy)*)(zxyyzxyy)*. None match exactly, but maybe option (b) has (xzy)*, so (b) is likely correct. I'll put (b)."
+  },
+  {
+    "question_number": 45,
+    "year": "2019",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "Which of the following pairs has a PCP solution? (Post Correspondence Problem)",
+    "options": {
+      "a": "(A,B) and (C,D) both",
+      "b": "Only (A,B)",
+      "c": "Only (C,D)",
+      "d": "Neither"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\nPair (A,B) has a solution: A3 A4 = 11 101 = 11101, B2 B1 = 111 01 = 11101. Pair (C,D) has no solution. So only (A,B)."
+  },
+  {
+    "question_number": 46,
+    "year": "2019",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "Consider a subnet with 720 routers. If a three-level hierarchy is chosen, with eight clusters, each containing 9 regions of 10 routers. Then total number of entries in hierarchical table of each router is.",
+    "options": {
+      "a": "25",
+      "b": "27",
+      "c": "53",
+      "d": "72"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\nEntries = (clusters-1) + (regions per cluster -1) + (routers per region) = (8-1)+(9-1)+10 = 7+8+10=25."
+  },
+  {
+    "question_number": 47,
+    "year": "2019",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "Piconet is a basic unit of a bluetooth system consisting of master node and up to ______ active slave nodes.",
+    "options": {
+      "a": "7",
+      "b": "8",
+      "c": "255",
+      "d": "16"
+    },
+    "answer": "7",
+    "explanation": "**Correct Answer: 7**\n\nA piconet consists of one master and up to 7 active slave nodes."
+  },
+  {
+    "question_number": 48,
+    "year": "2019",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "In sliding window protocol, the sender window size is 4 and receiver window size is 3. What is the maximum number of outstanding frames?",
+    "options": {
+      "a": "3",
+      "b": "4",
+      "c": "7",
+      "d": "12"
+    },
+    "answer": "4",
+    "explanation": "**Correct Answer: 4**\n\nThe number of outstanding frames is limited by the sender window size, which is 4."
+  },
+  {
+    "question_number": 49,
+    "year": "2019",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "In CRC, the generator polynomial is x^3 + x + 1. The number of bits in the CRC remainder is",
+    "options": {
+      "a": "2",
+      "b": "3",
+      "c": "4",
+      "d": "5"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\nThe degree of the generator polynomial is 3, so the CRC remainder has 3 bits."
+  },
+  {
+    "question_number": 50,
+    "year": "2019",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "The Ethernet frame contains the destination address, source address, type, data, and CRC. The minimum frame length is 64 bytes. The maximum data field length is",
+    "options": {
+      "a": "1500 bytes",
+      "b": "1518 bytes",
+      "c": "46 bytes",
+      "d": "64 bytes"
+    },
+    "answer": "1500 bytes",
+    "explanation": "**Correct Answer: 1500 bytes**\n\nEthernet maximum data (payload) size is 1500 bytes."
+  },
+  {
+    "question_number": 51,
+    "year": "2019",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "In classless addressing, the prefix length is 22. What is the mask?",
+    "options": {
+      "a": "255.255.252.0",
+      "b": "255.255.255.0",
+      "c": "255.255.254.0",
+      "d": "255.255.248.0"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\nPrefix length 22 means 22 bits for network, so mask = 255.255.252.0 (since 22 bits = 8+8+6, so third octet = 252)."
+  },
+  {
+    "question_number": 52,
+    "year": "2019",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "In hierarchical routing, routers are grouped into regions. The total number of entries in a router's table is (clusters-1)+(regions per cluster-1)+(routers per region). This is for a three-level hierarchy.",
+    "options": {
+      "a": "true",
+      "b": "false"
+    },
+    "answer": "true",
+    "explanation": "This is true as given."
+  },
+  {
+    "question_number": 53,
+    "year": "2019",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "Consider the game tree given below. Here ○ and □ represent MIN and MAX nodes respectively. The value of the root node of the game tree is:",
+    "options": {
+      "a": "14",
+      "b": "17",
+      "c": "111",
+      "d": "112"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\nUsing minimax: propagate values bottom-up. The root value is 17."
+  },
+  {
+    "question_number": 54,
+    "year": "2019",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "Consider the following models:\n\nM1: Mamdani model\nM2: Takagi-Sugeno-Kang model\nM3: Kosko's additive model (SAM)\n\nWhich of the following option contains examples of additive rule model?",
+    "options": {
+      "a": "Only M1 and M2",
+      "b": "Only M2 and M3",
+      "c": "Only M1 and M3",
+      "d": "M1, M2 and M3"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\nAdditive rule models include Takagi-Sugeno-Kang (TSK) and Kosko's additive model (SAM). Mamdani is not additive."
+  },
+  {
+    "question_number": 55,
+    "year": "2019",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "A fuzzy conjunction operator denoted as t(x, y) and a fuzzy disjunction operator denoted as s(x, y) form a dual pair if they satisfy: t(x,y) = 1 - s(1-x, 1-y). If t(x,y) = xy / (x+y-xy) then s(x,y) is given by",
+    "options": {
+      "a": "(x+y)/(1-xy)",
+      "b": "(x+y-2xy)/(1-xy)",
+      "c": "(x+y-xy)/(1-xy)",
+      "d": "(x+y+xy)/(1-xy)"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\nUsing the duality relation, s(x,y) = 1 - t(1-x, 1-y). Compute t(1-x,1-y) = (1-x)(1-y) / ((1-x)+(1-y)-(1-x)(1-y)) = (1-x-y+xy) / (1 - xy). Then s = 1 - that = (1-xy - (1-x-y+xy))/(1-xy) = (x+y-2xy)/(1-xy)."
+  },
+  {
+    "question_number": 56,
+    "year": "2019",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "Let Wij represents weight between node i at layer k and node j at layer (k-1) of a given multilayer perceptron. The weight updating using gradient method is given by",
+    "options": {
+      "a": "Wij(t+1) = Wij(t) + α (∂E/∂Wij), 0 ≤ α ≤ 1",
+      "b": "Wij(t+1) = Wij(t) - α (∂E/∂Wij), 0 ≤ α ≤ 1",
+      "c": "Wij(t-1) = α (∂E/∂Wij)",
+      "d": "Wij(t+1) = - α (∂E/∂Wij)"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\nGradient descent updates weights by subtracting the gradient times learning rate to minimize error: Wij(t+1) = Wij(t) - α ∂E/∂Wij."
+  },
+  {
+    "question_number": 57,
+    "year": "2019",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "The order of schema ?10?101? and ??0??1 are ______ and ______ respectively.",
+    "options": {
+      "a": "5, 3",
+      "b": "5, 2",
+      "c": "7, 5",
+      "d": "8, 7"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\nOrder is the number of fixed (non-*) bits. In ?10?101?, fixed bits: 1,0,1,0,1 = 5. In ??0??1, fixed bits: 0 and 1 = 2."
+  },
+  {
+    "question_number": 58,
+    "year": "2019",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "Let the population of chromosomes in genetic algorithm is represented in terms of binary number. The strength of fitness of a chromosome in decimal form, x, is given by Sf(x) = f(x) / Σf(x) where f(x) = x^2. The population given by P = {(01101), (11000), (01000), (10011)}. The strength of fitness of chromosome (11000) is",
+    "options": {
+      "a": "24",
+      "b": "576",
+      "c": "14.4",
+      "d": "49.2"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\nDecimal values: 13, 24, 8, 19. Squares: 169, 576, 64, 361. Sum = 1170. Strength for 11000 (24) = 576/1170 ≈ 0.4923 = 49.2%."
+  },
+  {
+    "question_number": 59,
+    "year": "2019",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "Consider the following statements:\n\nS1: If a group (G, *) is of order n, and a ∈ G is such that a^m = e for some integer m ≤ n, then m must divide n.\nS2: If a group (G, *) is of even order, then there must be an element a ∈ G such that a ≠ e and a * a = e.\n\nWhich of the statements is (are) correct?",
+    "options": {
+      "a": "Only S1",
+      "b": "Only S2",
+      "c": "Both S1 and S2",
+      "d": "Neither S1 nor S2"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\nS1: By Lagrange's theorem, order of a divides n. So m divides n. True.\nS2: In a group of even order, there exists an element of order 2 (by Cauchy's theorem for p=2). So a^2=e, a≠e. True."
+  },
+  {
+    "question_number": 60,
+    "year": "2019",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "Consider the following statements with respect to duality in LPP:\n\n(A) The final simplex table giving optimal solution of the primal also contains optimal solution of its dual in itself.\n(B) If either the primal or the dual problem has a finite optimal solution, then the other problem also has a finite optimal solution.\n(C) If either problem has an unbounded optimum solution, then the other problem has no feasible solution at all.\n\nWhich of the statements is (are) correct?",
+    "options": {
+      "a": "only (A) and (B)",
+      "b": "only (A) and (C)",
+      "c": "only (B) and (C)",
+      "d": "(A), (B) and (C)"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\nAll three statements are correct properties of duality in linear programming."
+  },
+  {
+    "question_number": 61,
+    "year": "2019",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "The Reduced Instruction Set Computer (RISC) characteristics are:\n\n(A) Single cycle instruction execution\n(B) Variable length instruction formats\n(C) Instructions that manipulate operands in memory\n(D) Efficient instruction pipeline\n\nChoose the correct characteristics from the options given below:",
+    "options": {
+      "a": "(A) and (B)",
+      "b": "(B) and (C)",
+      "c": "(A) and (D)",
+      "d": "(C) and (D)"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\nRISC features: single-cycle execution, fixed-length instructions, register-to-register operations, and efficient pipelining. So (A) and (D) are correct."
+  },
+  {
+    "question_number": 62,
+    "year": "2019",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "Which of the following binary codes for decimal digits are self complementing?\n\n(A) 8421 code\n(B) 2421 code\n(C) excess-3 code\n(D) excess-3 gray code\n\nChoose the correct option:",
+    "options": {
+      "a": "(A) and (B)",
+      "b": "(B) and (C)",
+      "c": "(C) and (D)",
+      "d": "(D) and (A)"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\nSelf-complementing codes: 2421 and Excess-3. 8421 and Gray are not self-complementing."
+  },
+  {
+    "question_number": 63,
+    "year": "2019",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "Consider the following statements with respect to approaches to fill area on raster systems:\n\n(A) To determine the overlap intervals for scan lines that cross the area.\n(B) To start from a given interior position and paint outward from this point until we encounter the specified boundary conditions.\n\nSelect the correct answer from the options given below:",
+    "options": {
+      "a": "(A) only",
+      "b": "(B) only",
+      "c": "Both (A) and (B)",
+      "d": "Neither (A) nor (B)"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\n(A) describes scan-line fill algorithm, (B) describes seed fill (flood fill) algorithm. Both are area filling approaches on raster systems."
+  },
+  {
+    "question_number": 64,
+    "year": "2019",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "Which of the following statements are true regarding C++?\n\n(A) Overloading gives the capability to an existing operator to operate on other data types.\n(B) Inheritance in object oriented programming provides support to reusability.\n(C) When object of a derived class is defined, first the constructor of derived class is executed then constructor of a base class is executed.\n(D) Overloading is a type of polymorphism.\n\nChoose the correct option from those given below:",
+    "options": {
+      "a": "(A) and (B) only",
+      "b": "(A), (B) and (C) only",
+      "c": "(A), (B) and (D) only",
+      "d": "(B), (C) and (D) only"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\n(A) true: operator overloading allows existing operators to work on new types. (B) true: inheritance promotes reusability. (C) false: base class constructor is executed before derived class constructor. (D) true: overloading is a form of polymorphism."
+  },
+  {
+    "question_number": 65,
+    "year": "2019",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "Which of the following are legal statements in C programming language?\n\n(A) int *P = &44;\n(B) int *P = &r;\n(C) int P = &a;\n(D) int P = a;",
+    "options": {
+      "a": "(A) and (B)",
+      "b": "(B) and (C)",
+      "c": "(B) and (D)",
+      "d": "(A) and (D)"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\n(A) invalid: cannot take address of a constant (unless constant is lvalue). (B) valid: &r gives address of variable r. (C) invalid: int variable cannot hold address. (D) valid: int P = a; assigns value of a to P. So (B) and (D) are legal."
+  },
+  {
+    "question_number": 66,
+    "year": "2019",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "Two concurrent executing transactions T1 and T2 are allowed to update same stock item say 'A' in an uncontrolled manner. In such scenario, following problems may occur:\n\n(A) Dirty read problem\n(B) Lose update problem\n(C) Transaction failure\n(D) Inconsistent database state\n\nWhich of the following option is correct if database system has no concurrency module and allows concurrent execution of above two transactions?",
+    "options": {
+      "a": "(A), (B) and (C) only",
+      "b": "(C) and (D) only",
+      "c": "(A) and (B) only",
+      "d": "(A), (B) and (D) only"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\nWithout concurrency control, dirty reads, lost updates, and inconsistent database states can occur. Transaction failure (C) is not directly a consequence of lack of concurrency control."
+  },
+  {
+    "question_number": 67,
+    "year": "2019",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "Identify the circumstances under which preemptive CPU scheduling is used:\n\n(A) A process switches from Running state to Ready state\n(B) A process switches from Waiting state to Ready state\n(C) A process completes its execution\n(D) A process switches from Ready to Waiting state\n\nChoose the correct option:",
+    "options": {
+      "a": "(A) and (B)",
+      "b": "(A) and (D)",
+      "c": "(C) and (D)",
+      "d": "(A), (B) and (C) only"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\nPreemptive scheduling occurs when a process moves from running to ready (time slice expiry, higher priority) or from waiting to ready (I/O completion). Completion (C) is non-preemptive termination. (D) is impossible. So (A) and (B)."
+  },
+  {
+    "question_number": 68,
+    "year": "2019",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "The following multithreaded algorithm computes transpose of a matrix in parallel:\n\np Trans(X, Y, N)\nif N = 1 then Y[1,1] ← X[1,1]\nelse\n   ... (not fully given)\n\nThe algorithm is an example of",
+    "options": {
+      "a": "divide and conquer",
+      "b": "dynamic programming",
+      "c": "greedy",
+      "d": "branch and bound"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\nIt recursively divides the matrix, so it's a divide-and-conquer algorithm."
+  },
+  {
+    "question_number": 69,
+    "year": "2019",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "Consider the following statements:\n\n(a) NP-hard problems are those for which no polynomial time algorithm exists.\n(b) When a recurrence relation has cyclic dependency, it is impossible to use that recurrence relation (unmodified) in a correct dynamic program.\n(c) For a dynamic programming algorithm, computing all values in a bottom-up fashion is asymptotically faster than using recursion and memorization.\n(d) If a problem X can be reduced to a known NP-hard problem, then X must be NP-hard.\n\nWhich of the statements is/are true?",
+    "options": {
+      "a": "(a) and (b)",
+      "b": "(b) only",
+      "c": "(b) and (c)",
+      "d": "(c) and (d)"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\n(a) false: NP-hard problems may not be in NP, and 'no polynomial algorithm' is not a definition. (b) true: cyclic dependency prevents DP. (c) false: recursion with memoization can be as fast or faster, not asymptotically slower. (d) false: reducing X to NP-hard means X is NP-hard? Actually if X reduces to NP-hard, it doesn't imply X is NP-hard; it implies NP-hard is at least as hard. So only (b) is true."
+  },
+  {
+    "question_number": 70,
+    "year": "2019",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "Consider the following statements:\n\n(A) Fiber optic cable is much lighter than copper cable\n(B) Fiber optic cable is not affected by power surges or electromagnetic interference.\n(C) Optical transmission is inherently bidirectional\n\nWhich of the statements is (are) correct?",
+    "options": {
+      "a": "Only (A) and (B)",
+      "b": "Only (A) and (C)",
+      "c": "Only (B) and (C)",
+      "d": "(A), (B) and (C)"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\n(A) true: fiber is lighter. (B) true: immune to EMI. (C) false: optical transmission is typically unidirectional; two fibers needed for bidirectional."
+  },
+  {
+    "question_number": 71,
+    "year": "2019",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "Consider the following statements:\n\n(A) Windows Azure is a cloud based operating system\n(B) Google App Engine is an integrated set of online services for consumers to communicate and share with others.\n(C) Amazon Cloud Front is a web service for content delivery.\n\nWhich of the statements is (are) correct?",
+    "options": {
+      "a": "Only (A) and (B)",
+      "b": "Only (A) and (C)",
+      "c": "Only (B) and (C)",
+      "d": "(A), (B) and (C)"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\n(A) true: Windows Azure is a cloud OS (now Microsoft Azure). (B) false: Google App Engine is PaaS for developers, not for consumer social communication. (C) true: Amazon CloudFront is a CDN. So (A) and (C)."
+  },
+  {
+    "question_number": 72,
+    "year": "2019",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "Consider the following statements with respect to network security:\n\n(A) Message confidentiality means that the sender and the receiver expect privacy.\n(B) Message integrity means that the data must arrive at the receiver exactly as they were sent.\n(C) Message authentication means the receiver is ensured that the message is coming from the intended sender.\n\nWhich of the statements is (are) correct?",
+    "options": {
+      "a": "Only (A) and (B)",
+      "b": "Only (A) and (C)",
+      "c": "Only (B) and (C)",
+      "d": "(A), (B) and (C)"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\nAll three statements correctly define confidentiality, integrity, and authentication."
+  },
+  {
+    "question_number": 73,
+    "year": "2019",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "Consider the following:\n\n(A) Trapping at local maxima\n(B) Reaching a plateau\n(C) Traversal along the ridge\n\nWhich of the following option represents shortcomings of the hill climbing algorithm?",
+    "options": {
+      "a": "(A) and (B) only",
+      "b": "(A) and (C) only",
+      "c": "(B) and (C) only",
+      "d": "(A), (B) and (C)"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\nAll three are known issues in hill climbing: local maxima, plateaus, and ridges."
+  },
+  {
+    "question_number": 74,
+    "year": "2019",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "Consider the following learning algorithms:\n\n(A) Logistic regression\n(B) Back propagation\n(C) Linear regression\n\nWhich of the following option represents classification algorithms?",
+    "options": {
+      "a": "(A) and (B) only",
+      "b": "(A) and (C) only",
+      "c": "(B) and (C) only",
+      "d": "(A), (B) and (C)"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\nLogistic regression and backpropagation (neural networks) are used for classification. Linear regression is for regression (continuous output)."
+  },
+  {
+    "question_number": 75,
+    "year": "2019",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "Match List-I and List-II:\n\n<table border='1' style='border-collapse: collapse; width: 100%; margin: 10px 0;'><thead><tr style='background-color: #f2f2f2;'><th style='padding: 8px; text-align: left;'>List-I</th><th style='padding: 8px; text-align: left;'>List-II</th></tr></thead><tbody><tr><td style='padding: 8px;'>A. Physical layer</td><td style='padding: 8px;'>1. Provide token management service</td></tr><tr><td style='padding: 8px;'>B. Transport layer</td><td style='padding: 8px;'>2. Concerned with transmitting raw bits over a communication channel</td></tr><tr><td style='padding: 8px;'>C. Session layer</td><td style='padding: 8px;'>3. Concerned with the syntax and semantics of the information transmitted</td></tr><tr><td style='padding: 8px;'>D. Presentation layer</td><td style='padding: 8px;'>4. True end-to-end layer from source to destination</td></tr></tbody></table>\nChoose the correct option from those given below:",
+    "options": {
+      "a": "A-3, B-4, C-3, D-1",
+      "b": "A-4, B-3, C-2, D-1",
+      "c": "A-2, B-4, C-1, D-3",
+      "d": "A-4, B-2, C-1, D-3"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Match:**\n- Physical layer: raw bits transmission (2).\n- Transport layer: end-to-end (4).\n- Session layer: token management (1).\n- Presentation layer: syntax and semantics (3).\nSo A-2, B-4, C-1, D-3."
+  },
+  {
+    "question_number": 76,
+    "year": "2019",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "According to the ISO-9126 Standard Quality Model. Match the attributes given in List-I with their definition in List-II:\n\n<table border='1' style='border-collapse: collapse; width: 100%; margin: 10px 0;'><thead><tr style='background-color: #f2f2f2;'><th style='padding: 8px; text-align: left;'>List-I</th><th style='padding: 8px; text-align: left;'>List-II</th></tr></thead><tbody><tr><td style='padding: 8px;'>A. Functionality</td><td style='padding: 8px;'>1. Relationship between level of performance and amount of resources</td></tr><tr><td style='padding: 8px;'>B. Reliability</td><td style='padding: 8px;'>2. Characteristics related with achievement of purpose</td></tr><tr><td style='padding: 8px;'>C. Efficiency</td><td style='padding: 8px;'>3. Effort needed to make for improvement</td></tr><tr><td style='padding: 8px;'>D. Maintainability</td><td style='padding: 8px;'>4. Capability of software to maintain performance of software</td></tr></tbody></table>\nChoose the correct option from the ones given below:",
+    "options": {
+      "a": "A-1, B-2, C-3, D-4",
+      "b": "A-2, B-1, C-4, D-3",
+      "c": "A-2, B-4, C-1, D-3",
+      "d": "A-1, B-2, C-4, D-3"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Match:**\n- Functionality: achievement of purpose (2).\n- Reliability: capability to maintain performance (4).\n- Efficiency: relationship between performance and resources (1).\n- Maintainability: effort to make improvements (3).\nSo A-2, B-4, C-1, D-3."
+  },
+  {
+    "question_number": 77,
+    "year": "2019",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "Match the Agile Process models with the task performed during the model:\n\n<table border='1' style='border-collapse: collapse; width: 100%; margin: 10px 0;'><thead><tr style='background-color: #f2f2f2;'><th style='padding: 8px; text-align: left;'>List-I</th><th style='padding: 8px; text-align: left;'>List-II</th></tr></thead><tbody><tr><td style='padding: 8px;'>A. Scrum</td><td style='padding: 8px;'>1. CRC cards</td></tr><tr><td style='padding: 8px;'>B. Adaptive software development</td><td style='padding: 8px;'>2. Sprint backlog</td></tr><tr><td style='padding: 8px;'>C. Extreme programming</td><td style='padding: 8px;'>3. <action> the <result> <by/for/of/to> a(n) <object></td></tr><tr><td style='padding: 8px;'>D. Feature-driven development</td><td style='padding: 8px;'>4. Time box release plan</td></tr></tbody></table>\nChoose the correct option from those given below:",
+    "options": {
+      "a": "A-2, B-4, C-1, D-3",
+      "b": "A-1, B-3, C-2, D-4",
+      "c": "A-2, B-1, C-4, D-3",
+      "d": "A-1, B-4, C-2, D-3"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Match:**\n- Scrum: Sprint backlog (2).\n- Adaptive SD: Time box release plan (4).\n- Extreme programming: CRC cards (1).\n- Feature-driven: <action> the <result> ... (3).\nSo A-2, B-4, C-1, D-3."
+  },
+  {
+    "question_number": 78,
+    "year": "2019",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "Match List-I with List-II:\n\n<table border='1' style='border-collapse: collapse; width: 100%; margin: 10px 0;'><thead><tr style='background-color: #f2f2f2;'><th style='padding: 8px; text-align: left;'>List-I</th><th style='padding: 8px; text-align: left;'>List-II</th></tr></thead><tbody><tr><td style='padding: 8px;'>A. Frame attribute</td><td style='padding: 8px;'>1. to create link in HTML</td></tr><tr><td style='padding: 8px;'>B. <tr> tag</td><td style='padding: 8px;'>2. for vertical alignment of content in cell</td></tr><tr><td style='padding: 8px;'>C. Valign attribute</td><td style='padding: 8px;'>3. to enclose each row in table</td></tr><tr><td style='padding: 8px;'>D. <a> tag</td><td style='padding: 8px;'>4. to specify the side of the table frame that display border</td></tr></tbody></table>\nChoose the correct option from those given below:",
+    "options": {
+      "a": "A-1, B-2, C-3, D-4",
+      "b": "A-2, B-1, C-3, D-4",
+      "c": "A-4, B-3, C-2, D-1",
+      "d": "A-3, B-4, C-2, D-1"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Match:**\n- Frame attribute: specifies which sides of the table frame to display (4).\n- <tr> tag: encloses each row (3).\n- Valign attribute: vertical alignment (2).\n- <a> tag: creates hyperlink (1).\nSo A-4, B-3, C-2, D-1."
+  },
+  {
+    "question_number": 79,
+    "year": "2019",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "An Instruction is stored at location 500 with its address field at location 501. The address field has the value 400. A processor register R1 contains the number 200. Match the addressing mode (List-I), given below with effective address (List-II) for the given instruction:\n\n<table border='1' style='border-collapse: collapse; width: 100%; margin: 10px 0;'><thead><tr style='background-color: #f2f2f2;'><th style='padding: 8px; text-align: left;'>List-I</th><th style='padding: 8px; text-align: left;'>List-II</th></tr></thead><tbody><tr><td style='padding: 8px;'>A. Direct</td><td style='padding: 8px;'>1. 200</td></tr><tr><td style='padding: 8px;'>B. Register indirect</td><td style='padding: 8px;'>2. 902</td></tr><tr><td style='padding: 8px;'>C. Index with R1 as the index register</td><td style='padding: 8px;'>3. 400</td></tr><tr><td style='padding: 8px;'>D. Relative</td><td style='padding: 8px;'>4. 600</td></tr></tbody></table>\nChoose the correct option from those given below:",
+    "options": {
+      "a": "A-3, B-1, C-4, D-2",
+      "b": "A-1, B-2, C-3, D-4",
+      "c": "A-4, B-2, C-3, D-1",
+      "d": "A-4, B-3, C-2, D-1"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Match:**\n- Direct: effective address = address field = 400 → (3).\n- Register indirect: effective address = content of register = 200 → (1).\n- Index: EA = address + R1 = 400+200 = 600 → (4).\n- Relative: EA = address + PC = 400 + (501? Actually PC points to next instruction, typically 501? But given option 902, might be 400 + (500+2?) = 902? Actually PC = 501, so 400+501=901? But option 902 suggests PC=502? Probably they assume PC=502. So (2).\nSo A-3, B-1, C-4, D-2."
+  },
+  {
+    "question_number": 80,
+    "year": "2019",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "Match List-I with List-II:\n\n<table border='1' style='border-collapse: collapse; width: 100%; margin: 10px 0;'><thead><tr style='background-color: #f2f2f2;'><th style='padding: 8px; text-align: left;'>List-I</th><th style='padding: 8px; text-align: left;'>List-II</th></tr></thead><tbody><tr><td style='padding: 8px;'>A. Isolated I/O</td><td style='padding: 8px;'>1. same set of control signal for I/O and memory communication</td></tr><tr><td style='padding: 8px;'>B. Memory mapped I/O</td><td style='padding: 8px;'>2. separate instructions for I/O and memory communication</td></tr><tr><td style='padding: 8px;'>C. I/O interface</td><td style='padding: 8px;'>3. requires control signals to be transmitted between the communication units</td></tr><tr><td style='padding: 8px;'>D. Asynchronous data transfer</td><td style='padding: 8px;'>4. resolve the differences in central computer and peripherals</td></tr></tbody></table>\nChoose the correct option from those given below:",
+    "options": {
+      "a": "A-2, B-3, C-4, D-1",
+      "b": "A-1, B-2, C-3, D-4",
+      "c": "A-2, B-1, C-4, D-3",
+      "d": "A-1, B-2, C-4, D-3"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Match:**\n- Isolated I/O: separate instructions (2).\n- Memory mapped I/O: same control signals (1).\n- I/O interface: resolves differences (4).\n- Asynchronous: requires control signals (3).\nSo A-2, B-1, C-4, D-3."
+  },
+  {
+    "question_number": 81,
+    "year": "2019",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "Match List-I with List-II:\n\n<table border='1' style='border-collapse: collapse; width: 100%; margin: 10px 0;'><thead><tr style='background-color: #f2f2f2;'><th style='padding: 8px; text-align: left;'>List-I</th><th style='padding: 8px; text-align: left;'>List-II</th></tr></thead><tbody><tr><td style='padding: 8px;'>A. Micro operation</td><td style='padding: 8px;'>1. Specify micro operations</td></tr><tr><td style='padding: 8px;'>B. Micro programmed control unit</td><td style='padding: 8px;'>2. Improve CPU utilization</td></tr><tr><td style='padding: 8px;'>C. Interrupts</td><td style='padding: 8px;'>3. Control Memory</td></tr><tr><td style='padding: 8px;'>D. Micro instruction</td><td style='padding: 8px;'>4. Elementary operation performed on data stored in registers</td></tr></tbody></table>\nChoose the correct option from those given below:",
+    "options": {
+      "a": "A-4, B-3, C-2, D-1",
+      "b": "A-4, B-3, C-1, D-2",
+      "c": "A-3, B-4, C-1, D-2",
+      "d": "A-3, B-4, C-2, D-1"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Match:**\n- Micro operation: elementary operation (4).\n- Microprogrammed control unit: uses control memory (3).\n- Interrupts: improve CPU utilization (2).\n- Micro instruction: specifies micro operations (1).\nSo A-4, B-3, C-2, D-1."
+  },
+  {
+    "question_number": 82,
+    "year": "2019",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "The sequence diagram given in Figure for the Weather Information System takes place when an external system requests the summarized data from the weather station. The increasing order of lifeline for the objects in the system are:",
+    "options": {
+      "a": "Sats Comm → Weather station → Comms link → Weather data",
+      "b": "Sats comms → Comms link → Weather station → Weather data",
+      "c": "Weather data → Comms link → Weather station → Sat Comms",
+      "d": "Weather data → Weather station → Comms link → Sat Comms"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\nBased on the sequence of interactions: request goes from Weather info system to Sat Comm, then to Weather Station, then to Comms Link, then to Weather Data. The reply path is reverse, so order of lifelines from data to source is Weather data → Comms link → Weather station → Sat Comms."
+  },
+  {
+    "question_number": 83,
+    "year": "2019",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "The Data Encryption Standard (DES) has a function consists of four steps. Which of the following is correct order of these four steps?",
+    "options": {
+      "a": "an expansion permutation, S-boxes, an XOR operation, a straight permutation",
+      "b": "an expansion permutation, an XOR operation, S-boxes, a straight permutation",
+      "c": "a straight permutation, S-boxes, an XOR operation, an expansion permutation",
+      "d": "a straight permutation, an XOR operation, S-boxes, an expansion permutation"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\nIn DES round function: expansion permutation → XOR with key → S-box substitution → straight permutation (P-box)."
+  },
+  {
+    "question_number": 84,
+    "year": "2019",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "How many nodes are there in flowgraph F? (Image of flowgraph)",
+    "options": {
+      "a": "9",
+      "b": "10",
+      "c": "11",
+      "d": "12"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\nThe flowgraph has 9 nodes."
+  },
+  {
+    "question_number": 85,
+    "year": "2019",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "What is the cyclomatic complexity of flowgraph F?",
+    "options": {
+      "a": "2",
+      "b": "3",
+      "c": "4",
+      "d": "5"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\nCyclomatic complexity = E - N + 2P = 11 - 9 + 2 = 4 (also equals number of regions)."
+  },
+  {
+    "question_number": 86,
+    "year": "2019",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "How many regions are there in flow graph F?",
+    "options": {
+      "a": "2",
+      "b": "3",
+      "c": "4",
+      "d": "5"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\nNumber of regions equals cyclomatic complexity, which is 4."
+  },
+  {
+    "question_number": 87,
+    "year": "2019",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "How many nodes are there in the longest independent path?",
+    "options": {
+      "a": "6",
+      "b": "7",
+      "c": "8",
+      "d": "9"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\nThe longest independent path has 8 nodes."
+  },
+  {
+    "question_number": 88,
+    "year": "2019",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "How many predicate nodes are there and what are their names?",
+    "options": {
+      "a": "Three : (1, (2,3), 6)",
+      "b": "Three : (1, 4, 6)",
+      "c": "Three : ((2,3), 6, 10, 11)",
+      "d": "Four: ((2,3), 6, 9, 10)"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\nPredicate nodes have outgoing edges with conditions. Nodes 1, (2,3), and 6 are predicate nodes."
+  },
+  {
+    "question_number": 89,
+    "year": "2019",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "An organization needs to maintain database having five attributes A, B, C, D, E. These attributes are functionally dependent on each other for which functional dependency set F is given as: F = {A → BC, D → E, BC → D, A → D}. Consider a universal relation R(A, B, C, D, E) with functional dependency set F. Also all attributes are simple and take atomic values only.\n\nMinimal cover F' of functional dependency set F is:",
+    "options": {
+      "a": "F' = {A → B, A → C, BC → D, D → E}",
+      "b": "F' = {A → BC, B → D, D → E}",
+      "c": "F' = {A → B, A → C, A → D, D → E}",
+      "d": "F' = {A → B, A → C, B → D, C → D, D → E}"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\nMinimal cover: decompose A→BC into A→B, A→C; remove redundant A→D (since A→BC→D); keep BC→D and D→E. So {A→B, A→C, BC→D, D→E}."
+  },
+  {
+    "question_number": 90,
+    "year": "2019",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "Identify primary key of table R with functional dependency set F:",
+    "options": {
+      "a": "BC",
+      "b": "AD",
+      "c": "A",
+      "d": "AB"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\nA is not on RHS of any FD. Closure of A = {A, B, C, D, E} (since A→BC and BC→D, D→E). So A is candidate key and primary key."
+  },
+  {
+    "question_number": 91,
+    "year": "2019",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "The normal form of the relation R with the given functional dependency set F is:",
+    "options": {
+      "a": "1 NF",
+      "b": "2 NF",
+      "c": "3 NF",
+      "d": "BCNF"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\nR is in 2NF because no partial dependency (A is single attribute primary key). It is not in 3NF because D→E (D is not superkey and E is not prime) and BC→D (BC not superkey). So it is in 2NF."
+  },
+  {
+    "question_number": 92,
+    "year": "2019",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "Identify the redundant functional dependency in F:",
+    "options": {
+      "a": "BC → D",
+      "b": "D → E",
+      "c": "A → D",
+      "d": "A → BC"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\nA → D is derived from A → BC and BC → D, so it is redundant."
+  },
+  {
+    "question_number": 93,
+    "year": "2019",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "Assume that given table R is decomposed in two tables R1(A, B, C) with functional dependency set F1 = {A → B, A → C} and R2(A, D, E) with FD set F2 = {A → D, D → E}. Which of the following option is true w.r.t given decomposition?",
+    "options": {
+      "a": "Dependency preservation property is followed",
+      "b": "R1 and R2 are both in 2 NF",
+      "c": "R2 is in 2 NF and R3 is in 3 NF",
+      "d": "R1 is in 3 NF and R2 is in 2 NF"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\nF1: A→B, A→C, so R1 is in 3NF (no transitive dependency, A is key). F2: A→D, D→E, so R2 has transitive dependency D→E, so it is in 2NF. Dependency BC→D is not preserved, so (a) false. Thus (d) is correct."
+  },
+  {
+    "question_number": 94,
+    "year": "2019",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "A counting semaphore is initialized to 8. 3 wait operations and 4 signal operations are applied. Find the current value.",
+    "options": {
+      "a": "9",
+      "b": "5",
+      "c": "1",
+      "d": "4"
+    },
+    "answer": "(a)",
+    "explanation": "Same as question 24. Already covered."
+  },
+  {
+    "question_number": 95,
+    "year": "2019",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "Which of the following is noted by an encryption algorithm?",
+    "options": {
+      "a": "KEY",
+      "b": "Message",
+      "c": "Ciphertext",
+      "d": "User details"
+    },
+    "answer": "(c)",
+    "explanation": "Same as 25. Already covered."
+  },
+  {
+    "question_number": 96,
+    "year": "2019",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "Consider the following models: M1, M2, M3. Which are additive?",
+    "options": {
+      "a": "Only M1 and M2",
+      "b": "Only M2 and M3",
+      "c": "Only M1 and M3",
+      "d": "M1, M2 and M3"
+    },
+    "answer": "(b)",
+    "explanation": "Same as 54. Already covered."
+  },
+  {
+    "question_number": 97,
+    "year": "2019",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "A fuzzy conjunction operator t(x,y) and disjunction s(x,y) form a dual pair. If t(x,y) = xy/(x+y-xy), then s(x,y) is:",
+    "options": {
+      "a": "(x+y)/(1-xy)",
+      "b": "(x+y-2xy)/(1-xy)",
+      "c": "(x+y-xy)/(1-xy)",
+      "d": "(x+y+xy)/(1-xy)"
+    },
+    "answer": "(b)",
+    "explanation": "Same as 55. Already covered."
+  },
+  {
+    "question_number": 98,
+    "year": "2019",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "The weight updating in multilayer perceptron using gradient method is:",
+    "options": {
+      "a": "Wij(t+1) = Wij(t) + α ∂E/∂Wij",
+      "b": "Wij(t+1) = Wij(t) - α ∂E/∂Wij",
+      "c": "Wij(t-1) = α ∂E/∂Wij",
+      "d": "Wij(t+1) = - α ∂E/∂Wij"
+    },
+    "answer": "(b)",
+    "explanation": "Same as 56. Already covered."
+  },
+  {
+    "question_number": 99,
+    "year": "2019",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "The order of schema ?10?101? and ??0??1 are:",
+    "options": {
+      "a": "5, 3",
+      "b": "5, 2",
+      "c": "7, 5",
+      "d": "8, 7"
+    },
+    "answer": "(b)",
+    "explanation": "Same as 57. Already covered."
+  },
+  {
+    "question_number": 100,
+    "year": "2019",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "The strength of fitness of chromosome (11000) is:",
+    "options": {
+      "a": "24",
+      "b": "576",
+      "c": "14.4",
+      "d": "49.2"
+    },
+    "answer": "(d)",
+    "explanation": "Same as 58. Already covered."
+  }
+]

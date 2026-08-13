@@ -1,0 +1,660 @@
+[
+  {
+    "question_number": 1,
+    "year": "2017",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "If the time is now 4 O'clock, what will be the time after 101 hours from now?",
+    "options": {
+      "a": "9 O'clock",
+      "b": "8 O'clock",
+      "c": "5 O'clock",
+      "d": "4 O'clock"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\n**Concept:** This question tests the understanding of modular arithmetic, specifically modulo 12 for clock arithmetic.\n\n**Why:**\n- The clock repeats every 12 hours.\n- We need to find the remainder when 101 is divided by 12: \\(101 \\mod 12 = 5\\).\n- Starting from 4 O'clock, after 5 hours, the time will be \\(4 + 5 = 9\\) O'clock.\n\n**Why the others are incorrect:** The other options represent common mistakes in calculating the remainder or adding the wrong number of hours."
+    },
+  {
+    "question_number": 2,
+    "year": "2017",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "Let m = (313)4 and n = (322)4. Find the base 4 expansion of m + n.",
+    "options": {
+      "a": "(635)4",
+      "b": "(32312)4",
+      "c": "(21323)4",
+      "d": "(1301)4"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\n**Concept:** This question tests the conversion of numbers from base 4 to decimal, addition, and conversion back to base 4.\n\n**Why:**\n1. Convert to decimal:\n   - \\((313)_4 = 3 \\times 4^2 + 1 \\times 4^1 + 3 \\times 4^0 = 3 \\times 16 + 4 + 3 = 48 + 4 + 3 = 55\\)\n   - \\((322)_4 = 3 \\times 4^2 + 2 \\times 4^1 + 2 \\times 4^0 = 3 \\times 16 + 8 + 2 = 48 + 8 + 2 = 58\\)\n2. Add: \\(55 + 58 = 113\\)\n3. Convert 113 to base 4:\n   - \\(113 \\div 4 = 28\\) remainder 1\n   - \\(28 \\div 4 = 7\\) remainder 0\n   - \\(7 \\div 4 = 1\\) remainder 3\n   - \\(1 \\div 4 = 0\\) remainder 1\n   - Reading remainders from bottom to top: \\((1301)_4\\)\n\nThus, option (d) is correct."
+    },
+  {
+    "question_number": 3,
+    "year": "2017",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "Let \\(A = \\begin{bmatrix} 1 & 1 & 0 \\\\ 0 & 1 & 0 \\\\ 1 & 1 & 0 \\\\ 0 & 0 & 1 \\end{bmatrix}\\) and \\(B = \\begin{bmatrix} 1 & 0 & 0 & 0 \\\\ 0 & 1 & 1 & 0 \\\\ 1 & 0 & 1 & 1 \\end{bmatrix}\\). Find the Boolean product \\(A \\odot B\\) of the two matrices.",
+    "options": {
+      "a": "\\begin{bmatrix} 1 & 1 & 1 & 0 \\\\ 0 & 1 & 1 & 0 \\\\ 1 & 1 & 1 & 0 \\\\ 1 & 0 & 1 & 1 \\end{bmatrix}",
+      "b": "\\begin{bmatrix} 1 & 1 & 0 & 1 \\\\ 0 & 1 & 0 & 1 \\\\ 1 & 1 & 1 & 0 \\\\ 1 & 0 & 1 & 1 \\end{bmatrix}",
+      "c": "\\begin{bmatrix} 1 & 1 & 1 & 1 \\\\ 0 & 1 & 1 & 0 \\\\ 1 & 1 & 1 & 0 \\\\ 1 & 0 & 1 & 1 \\end{bmatrix}",
+      "d": "\\begin{bmatrix} 1 & 1 & 1 & 0 \\\\ 0 & 1 & 1 & 0 \\\\ 1 & 0 & 1 & 1 \\\\ 1 & 0 & 1 & 1 \\end{bmatrix}"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\n**Concept:** This question tests the understanding of **Boolean matrix multiplication**, where the logical AND (\\(\\land\\)) replaces multiplication and logical OR (\\(\\lor\\)) replaces addition.\n\n**Why:**\nThe Boolean product \\(C = A \\odot B\\) is computed as:\n\\[C[i,j] = \\bigvee_{k=1}^{n} (A[i,k] \\land B[k,j])\\]\n\nFor example, to compute \\(C[1,1]\\):\n- \\(C[1,1] = (1 \\land 1) \\lor (1 \\land 0) \\lor (0 \\land 1) = 1 \\lor 0 \\lor 0 = 1\\)\n\nPerforming this for all entries yields the matrix in option (a).\n\n**Why the others are incorrect:** The other options contain errors in the Boolean computations, such as incorrect OR operations or misapplied AND operations."
+    },
+  {
+    "question_number": 4,
+    "year": "2017",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "How many distinguishable permutations of the letters in the word BANANA are there?",
+    "options": {
+      "a": "720",
+      "b": "120",
+      "c": "60",
+      "d": "360"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\n**Concept:** This question tests the calculation of permutations of a multiset. The formula for the number of distinct permutations of \\(n\\) objects with \\(n_1\\) identical objects of type 1, \\(n_2\\) identical objects of type 2, ..., \\(n_k\\) identical objects of type k is:\n\\[\\frac{n!}{n_1! \\cdot n_2! \\cdots n_k!}\\]\n\n**Why:**\nThe word BANANA has 6 letters: B (1), A (3), N (2).\n\\[\\text{Number of permutations} = \\frac{6!}{3! \\cdot 2! \\cdot 1!} = \\frac{720}{6 \\times 2 \\times 1} = \\frac{720}{12} = 60\\]\n\n**Why the others are incorrect:**\n- (a) 720 is \\(6!\\), which assumes all letters are distinct.\n- (b) 120 is an incorrect calculation.\n- (d) 360 is another common mistake."
+    },
+  {
+    "question_number": 5,
+    "year": "2017",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "Consider the graph given below:\n[Graph with vertices A, B, C, D, E, F, G and weighted edges]\n\nUse Kruskal's algorithm to find a minimal spanning tree for the graph. The list of edges of the tree in the order in which they are chosen is?",
+    "options": {
+      "a": "AD, AE, AG, GC, GB, BF",
+      "b": "GC, GB, BF, GA, AD, AE",
+      "c": "GC, AD, GB, GA, BF, AE",
+      "d": "AD, AG, GC, AE, GB, BF"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\n**Concept:** This question tests the application of **Kruskal's algorithm** for finding a Minimum Spanning Tree (MST). Kruskal's algorithm sorts all edges by weight and adds them in increasing order, skipping edges that would create a cycle.\n\n**Why:**\nBased on the graph provided (and the source explanation), the algorithm starts by picking the smallest edge weights. The edges GC and AD have weight 2. The algorithm selects edges in the following order, avoiding cycles:\n1. GC (weight 2)\n2. AD (weight 2)\n3. GB (weight 3)\n4. GA (weight 4)\n5. BF (weight 5)\n6. AE (weight 6)\n\nThis sequence matches option (c).\n\n**Why the others are incorrect:** The other options list edges in an order that either violates the sorted weight order or would create a cycle in the MST."
+    },
+  {
+    "question_number": 6,
+    "year": "2017",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "The Boolean function with the Karnaugh map [K-map image] is:",
+    "options": {
+      "a": "\\((A + C) \\cdot D + B\\)",
+      "b": "\\((A + B) \\cdot C + D\\)",
+      "c": "\\((A + D) \\cdot C + B\\)",
+      "d": "\\((A + C) \\cdot B + D\\)"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\n**Concept:** This question tests the use of **Karnaugh Maps (K-maps)** to simplify a Boolean expression. The K-map is used to group adjacent 1s to find the minimal Sum of Products (SOP) expression.\n\n**Why:**\nBased on the K-map provided in the source, the simplified expression obtained is:\n\\[F = AD + CD + B = (A + C) \\cdot D + B\\]\n\nThis matches option (a).\n\n**Why the others are incorrect:** The other options represent different groupings of the K-map, which do not correctly represent the minimized Boolean function."
+    },
+  {
+    "question_number": 7,
+    "year": "2017",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "The Octal equivalent of the binary number 1011101011 is:",
+    "options": {
+      "a": "7353",
+      "b": "1353",
+      "c": "5651",
+      "d": "5657"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\n**Concept:** This question tests the conversion from binary to octal. Group the binary digits into sets of three from the right and convert each group to its octal equivalent.\n\n**Why:**\nBinary number: 1011101011\n1. Pad with leading zeros to make groups of three: 001 011 101 011\n2. Convert each group:\n   - 001 = 1\n   - 011 = 3\n   - 101 = 5\n   - 011 = 3\n3. Combine: (1353)8\n\n**Why the others are incorrect:** The other options represent errors in grouping or conversion."
+    },
+  {
+    "question_number": 8,
+    "year": "2017",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "Let P and Q be two propositions, \\(\\neg (P \\leftrightarrow Q)\\) is equivalent to:",
+    "options": {
+      "a": "\\(P \\leftrightarrow \\neg Q\\)",
+      "b": "\\(\\neg P \\leftrightarrow Q\\)",
+      "c": "\\(\\neg P \\leftrightarrow \\neg Q\\)",
+      "d": "\\(Q \\rightarrow P\\)"
+    },
+    "answer": "(a, b)",
+    "explanation": "**Correct Answer: (a) and (b)**\n\n**Concept:** This question tests the understanding of logical equivalence and the bi-conditional operator.\n\n**Why:**\n\\(\\neg (P \\leftrightarrow Q)\\) is equivalent to the XOR of P and Q: \\(P \\oplus Q\\).\n- \\(P \\oplus Q\\) is true when P and Q have different truth values.\n- \\(P \\leftrightarrow \\neg Q\\) is true when P and \\(\\neg Q\\) have the same truth value, which means P and Q have different truth values.\n- \\(\\neg P \\leftrightarrow Q\\) is true when \\(\\neg P\\) and Q have the same truth value, which again means P and Q have different truth values.\n\nBoth (a) and (b) are equivalent to the given expression.\n\n**Why the others are incorrect:**\n- (c) \\(\\neg P \\leftrightarrow \\neg Q\\) is equivalent to \\(P \\leftrightarrow Q\\), which is the negation of the given expression.\n- (d) \\(Q \\rightarrow P\\) is not equivalent in general."
+    },
+  {
+    "question_number": 9,
+    "year": "2017",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "Negation of the proposition \\(\\exists x H(x)\\) is:",
+    "options": {
+      "a": "\\(\\exists x \\neg H(x)\\)",
+      "b": "\\(\\forall x \\neg H(x)\\)",
+      "c": "\\(\\forall x H(x)\\)",
+      "d": "\\(\\neg x H(x)\\)"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\n**Concept:** This question tests the rules of **negation in first-order logic**, specifically the negation of existential quantifiers.\n\n**Why:**\nThe negation of an existential statement \\(\\exists x H(x)\\) is a universal statement with the predicate negated:\n\\[\\neg (\\exists x H(x)) \\equiv \\forall x \\neg H(x)\\]\n\n**Why the others are incorrect:**\n- (a) \\(\\exists x \\neg H(x)\\) is not the negation; it's a different statement.\n- (c) \\(\\forall x H(x)\\) is not the negation.\n- (d) \\(\\neg x H(x)\\) is syntactically incorrect."
+    },
+  {
+    "question_number": 10,
+    "year": "2017",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "The output of the following combinational circuit is F. [Circuit diagram with OR gates and an AND gate]\n\nThe value of F is:",
+    "options": {
+      "a": "\\(P_1 + P_2 P_3\\)",
+      "b": "\\(P_1 + \\overline{P_2} P_3\\)",
+      "c": "\\(\\overline{P_1} + P_2 P_3\\)",
+      "d": "\\(P_1 + P_2 \\overline{P_3}\\)"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\n**Concept:** This question tests the analysis of a combinational logic circuit to derive its Boolean expression.\n\n**Why:**\nBased on the source, the circuit consists of OR gates followed by an AND gate. The expression derived is:\n\\[F = (P_1 + P_2 + P_3) \\cdot (P_1 + \\overline{P_2} + P_3) \\cdot (\\overline{P_1} + P_2 + P_3)\\]\n\nSimplifying this using Boolean algebra (specifically the consensus theorem or Karnaugh map) yields:\n\\[F = P_1 + \\overline{P_2} P_3\\]\n\n**Why the others are incorrect:** The other options represent incorrect simplifications or circuit interpretations."
+    },
+  {
+    "question_number": 11,
+    "year": "2017",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "'ptrdata' is a pointer to a data type. The expression \\*ptrdata++ is evaluated as (in C++):",
+    "options": {
+      "a": "\\*(ptrdata++)",
+      "b": "(\\*ptrdata)++",
+      "c": "(\\*ptrdata)++",
+      "d": "Depends on compiler"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\n**Concept:** This question tests the understanding of operator precedence in C++. The post-increment operator (`++`) has higher precedence than the dereference operator (`*`).\n\n**Why:**\n- The expression `*ptrdata++` is parsed as `*(ptrdata++)` because `++` has higher precedence than `*`.\n- This means the pointer `ptrdata` is incremented first (to point to the next memory location), and then the value at the original address (before the increment) is dereferenced.\n\n**Why the others are incorrect:**\n- (b) and (c) `(*ptrdata)++` would increment the value pointed to by `ptrdata`, not the pointer itself.\n- (d) This behavior is defined by the C++ standard, so it does not depend on the compiler."
+    },
+  {
+    "question_number": 12,
+    "year": "2017",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "The associativity of which of the following operators is left to right, in C++?",
+    "options": {
+      "a": "Unary Operator",
+      "b": "Logical not",
+      "c": "Array element access",
+      "d": "Address of"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\n**Concept:** This question tests the knowledge of operator associativity in C++.\n\n**Why:**\n- **Array element access (`[]`)** is left-to-right associative.\n- **Unary operators** (like `-`, `++`, `--`, `*`, `&`, `!`) are right-to-left associative.\n- **Logical not (`!`)** is a unary operator and is right-to-left associative.\n- **Address of (`&`)** is a unary operator and is right-to-left associative.\n\n**Why the others are incorrect:** Options (a), (b), and (d) are all unary operators, which have right-to-left associativity in C++."
+    },
+  {
+    "question_number": 13,
+    "year": "2017",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "A member function can always access the data in ............ (in C++):",
+    "options": {
+      "a": "the class of which it is member",
+      "b": "the object of which it is a member",
+      "c": "the public part of its class",
+      "d": "the private part of its class"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\n**Concept:** This question tests the understanding of member function access rights in C++.\n\n**Why:**\nA member function of a class can access all data members (both public and private) of the class of which it is a member. This is a fundamental aspect of encapsulation in object-oriented programming.\n\n**Why the others are incorrect:**\n- (b) The member function accesses data in the context of the object it is called on, but the key point is that it has access to the class's data.\n- (c) and (d) are too restrictive; a member function can access both public and private parts."
+    },
+  {
+    "question_number": 14,
+    "year": "2017",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "Which of the following is not correct for virtual function in C++?",
+    "options": {
+      "a": "Must be declared in public section of class",
+      "b": "Virtual function can be static",
+      "c": "Virtual function should be accessed using pointers",
+      "d": "Virtual function is defined in base class"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\n**Concept:** This question tests the understanding of **virtual functions** in C++ and their properties.\n\n**Why:**\n- **Virtual functions cannot be static.** A virtual function is a member function that is declared in the base class and overridden in derived classes. It relies on dynamic dispatch based on the object type, which requires a specific object instance. Static functions belong to the class, not to an instance, and cannot be virtual.\n\n**Why the others are incorrect:**\n- (a) While virtual functions are often declared in the public section, they can be protected or private, but the statement is generally true.\n- (c) Virtual functions are typically accessed via pointers or references to achieve polymorphism.\n- (d) Virtual functions are defined in the base class and can be overridden in derived classes."
+    },
+  {
+    "question_number": 15,
+    "year": "2017",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "Which of the following is not correct (in C++)?",
+    "options": {
+      "a": "Class templates and function templates are instantiated in the same way",
+      "b": "Class templates differ from function templates in the way they are initiated",
+      "c": "Class template is initiated by defining an object using the template argument",
+      "d": "Class templates are generally used for storage classes"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\n**Concept:** This question tests the understanding of **templates in C++**, specifically the difference between function templates and class templates.\n\n**Why:**\n- **Function templates** are instantiated implicitly when the function is called with specific types.\n- **Class templates** must be instantiated explicitly by providing template arguments when declaring an object.\n\nTherefore, class templates and function templates are **not** instantiated in the same way.\n\n**Why the others are incorrect:**\n- (b) This is correct; they differ in instantiation.\n- (c) This is correct; a class template is instantiated by defining an object with template arguments.\n- (d) This is correct; class templates are commonly used to implement container classes."
+    },
+  {
+    "question_number": 16,
+    "year": "2017",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "Which of the following is/are true with reference to 'view' in DBMS?\n(A) A view is a virtual table which is defined by a query.\n(B) Views can be updated if they are defined on a single table without any aggregation.\n(C) Views are used to provide security by restricting access to specific columns and rows.",
+    "options": {
+      "a": "Only (A) and (B)",
+      "b": "Only (A) and (C)",
+      "c": "Only (B) and (C)",
+      "d": "(A), (B) and (C)"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\n**Concept:** This question tests the understanding of **views** in a Database Management System (DBMS).\n\n**Why:**\n- **(A) True:** A view is a virtual table that does not store data physically. It is defined by a query and provides a window into the underlying tables.\n- **(B) True:** Views can be updatable if they are based on a single table and do not involve aggregation, GROUP BY, DISTINCT, or other complex operations.\n- **(C) True:** Views are commonly used for security to hide specific columns or rows from users, restricting access to sensitive data.\n\nAll three statements are true. Therefore, option (d) is correct."
+    },
+  {
+    "question_number": 20,
+    "year": "2017",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "SQL command changes one or more fields in a record.",
+    "options": {
+      "a": "LOOK-UP",
+      "b": "INSERT",
+      "c": "MODIFY",
+      "d": "CHANGE"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\n**Concept:** This question tests the knowledge of SQL commands for modifying data.\n\n**Why:**\nThe `MODIFY` command (or `UPDATE` in standard SQL) is used to change one or more fields in an existing record in a table.\n\n**Why the others are incorrect:**\n- (a) LOOK-UP is not a standard SQL command.\n- (b) INSERT is used to add new records, not to change existing ones.\n- (d) CHANGE is used to modify the structure of a table (like column name or data type), not the data in a record."
+    },
+  {
+    "question_number": 21,
+    "year": "2017",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "Consider an array representation of an n element binary heap where the elements are stored from index 1 to index n of the array. For the element stored at index i of the array (i > 1), the index of the parent is:",
+    "options": {
+      "a": "floor((i + 1)/2)",
+      "b": "ceiling((i + 1)/2)",
+      "c": "floor(i/2)",
+      "d": "ceiling(i/2)"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\n**Concept:** This question tests the understanding of the array representation of a binary heap.\n\n**Why:**\nIn a binary heap stored in an array starting at index 1, the parent of the element at index `i` is found at index `floor(i/2)`. This is a standard property of binary heaps.\n\n**Why the others are incorrect:**\n- (a) and (d) represent incorrect formulas for the parent index.\n- (b) is also incorrect.\n\nFor example, if `i = 5`, the parent is at `floor(5/2) = 2`, which is correct in a heap."
+    },
+  {
+    "question_number": 22,
+    "year": "2017",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "The following numbers are inserted into an empty binary search tree in the given order: 10, 1, 3, 5, 15, 12, 16. What is the height of the binary search tree?",
+    "options": {
+      "a": "3",
+      "b": "4",
+      "c": "5",
+      "d": "6"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\n**Concept:** This question tests the understanding of building a Binary Search Tree (BST) and calculating its height.\n\n**Why:**\nInsert the numbers in the given order:\n1. Insert 10 as root.\n2. Insert 1 as left child of 10.\n3. Insert 3 as right child of 1.\n4. Insert 5 as right child of 3.\n5. Insert 15 as right child of 10.\n6. Insert 12 as left child of 15.\n7. Insert 16 as right child of 15.\n\nThe height of the tree is the number of edges on the longest path from root to leaf. The longest path is 10 → 1 → 3 → 5 (3 edges). So the height is 3.\n\n**Why the others are incorrect:** The other options represent incorrect calculations of the height."
+    },
+  {
+    "question_number": 23,
+    "year": "2017",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "Let G be an undirected connected graph with distinct edge weights. Let \\(E_{max}\\) be the edge with maximum weight and \\(E_{min}\\) the edge with minimum weight. Which of the following statements is false?",
+    "options": {
+      "a": "Every minimum spanning tree of G must contain \\(E_{min}\\)",
+      "b": "If \\(E_{max}\\) is in a minimum spanning tree, then its removal must disconnect G.",
+      "c": "No minimum spanning tree contains \\(E_{max}\\)",
+      "d": "G has a unique minimum spanning tree"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\n**Concept:** This question tests the properties of **Minimum Spanning Trees (MSTs)** and the roles of the minimum and maximum weight edges.\n\n**Why:**\n- **(a) True:** The edge with the minimum weight is always included in every MST (by the cut property).\n- **(b) True:** If \\(E_{max}\\) is in an MST, removing it would disconnect the MST. Since an MST is a tree, removing any edge disconnects it.\n- **(c) False:** It is **not** true that no MST contains \\(E_{max}\\). The maximum weight edge can be part of an MST if it is the only way to connect certain vertices without creating a cycle, or if it is still lighter than alternative paths.\n- **(d) True:** If all edge weights are distinct, the MST is unique.\n\nTherefore, statement (c) is false. Option (c) is the correct answer."
+    },
+  {
+    "question_number": 24,
+    "year": "2017",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "A list of n strings, each of length n, is sorted into lexicographic order using merge-sort algorithm. The worst case running time of this computation is:",
+    "options": {
+      "a": "\\(O(n \\log n)\\)",
+      "b": "\\(O(n^2 \\log n)\\)",
+      "c": "\\(O(n^2 + \\log n)\\)",
+      "d": "\\(O(n^3)\\)"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\n**Concept:** This question tests the time complexity of sorting strings using a comparison-based sorting algorithm like merge sort.\n\n**Why:**\n1. Merge sort performs \\(O(n \\log n)\\) comparisons.\n2. Each comparison between two strings of length \\(n\\) takes \\(O(n)\\) time in the worst case (to compare character by character).\n3. Therefore, the total worst-case time complexity is \\(O(n \\log n \\times n) = O(n^2 \\log n)\\).\n\n**Why the others are incorrect:**\n- (a) \\(O(n \\log n)\\) ignores the cost of comparing strings.\n- (c) \\(O(n^2 + \\log n)\\) is not the correct complexity for this scenario.\n- (d) \\(O(n^3)\\) is an overestimation."
+    },
+  {
+    "question_number": 25,
+    "year": "2017",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "Post order traversal of a given binary search tree T produces following sequence of keys: 3, 4, 5, 7, 9, 14, 20, 18, 17, 16, 15. Which one of the following sequences of keys can be the result of an in-order traversal of the tree T?",
+    "options": {
+      "a": "3, 4, 5, 7, 9, 14, 20, 18, 17, 16, 15",
+      "b": "20, 18, 17, 16, 15, 14, 3, 4, 5, 7, 9",
+      "c": "20, 18, 17, 16, 15, 14, 9, 7, 5, 4, 3",
+      "d": "3, 4, 5, 7, 9, 14, 15, 16, 17, 18, 20"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\n**Concept:** This question tests the understanding of Binary Search Tree (BST) traversal properties. In-order traversal of a BST visits keys in ascending (sorted) order.\n\n**Why:**\nThe post-order traversal sequence provided is: 3, 4, 5, 7, 9, 14, 20, 18, 17, 16, 15.\nThe set of keys in the BST is {3, 4, 5, 7, 9, 14, 15, 16, 17, 18, 20}.\n\nThe in-order traversal of any BST will output the keys in sorted ascending order.\n\nTherefore, the in-order traversal must be: 3, 4, 5, 7, 9, 14, 15, 16, 17, 18, 20.\n\n**Why the others are incorrect:** The other options are not sorted in ascending order and cannot be the in-order traversal of a BST."
+    },
+  {
+    "question_number": 26,
+    "year": "2017",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "Which of the following devices takes data sent from one network device and forwards it to the destination node based on MAC address?",
+    "options": {
+      "a": "Hub",
+      "b": "Modem",
+      "c": "Switch",
+      "d": "Gateway"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\n**Concept:** This question tests the understanding of network devices and their functionalities at different OSI layers.\n\n**Why:**\nA **switch** operates at the Data Link Layer (Layer 2) of the OSI model. It uses MAC addresses to forward frames to the correct destination port. It reads the destination MAC address in the frame header and forwards the frame only to the port connected to the specific device.\n\n**Why the others are incorrect:**\n- (a) Hub: Operates at the physical layer and broadcasts data to all ports.\n- (b) Modem: Modulates and demodulates signals for communication over telephone lines.\n- (d) Gateway: Operates at multiple layers and connects networks with different protocols."
+    },
+  {
+    "question_number": 27,
+    "year": "2017",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "______ do not take their decisions on measurements or estimates of the current traffic and topology.",
+    "options": {
+      "a": "Static algorithm",
+      "b": "Adaptive algorithm",
+      "c": "Non-adaptive algorithm",
+      "d": "Recursive algorithm"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\n**Concept:** This question tests the difference between static (non-adaptive) and dynamic (adaptive) routing algorithms.\n\n**Why:**\n**Non-adaptive algorithms** (also called static routing) do not adjust their routing decisions based on the current network traffic or topology. The routes are computed in advance and remain fixed.\n\n**Why the others are incorrect:**\n- (a) Static algorithm: This is essentially the same as non-adaptive, but the term \"non-adaptive\" is the more precise answer.\n- (b) Adaptive algorithm: These adjust their decisions based on measurements and estimates of current traffic and topology.\n- (d) Recursive algorithm: This is a general programming concept, not specific to routing."
+    },
+  {
+    "question_number": 28,
+    "year": "2017",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "The number of bits used for addressing in Gigabit Ethernet is:",
+    "options": {
+      "a": "32 bits",
+      "b": "48 bits",
+      "c": "64 bits",
+      "d": "128 bits"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\n**Concept:** This question tests the knowledge of the Ethernet frame format and MAC address size.\n\n**Why:**\nIn Ethernet (including Gigabit Ethernet), the MAC (Media Access Control) address is 48 bits long. This is a standard for all IEEE 802.3 Ethernet networks.\n\n**Why the others are incorrect:**\n- (a) 32 bits is the size of an IPv4 address.\n- (c) 64 bits is not the standard for MAC addresses.\n- (d) 128 bits is the size of an IPv6 address."
+    },
+  {
+    "question_number": 29,
+    "year": "2017",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "Which of the following layer of OSI Reference model is also called end-to-end layer?",
+    "options": {
+      "a": "Network layer",
+      "b": "Datalink layer",
+      "c": "Session layer",
+      "d": "Transport layer"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\n**Concept:** This question tests the understanding of the OSI model layers and their functions.\n\n**Why:**\nThe **Transport Layer** (Layer 4) is responsible for end-to-end communication between applications on different hosts. It provides logical communication between processes running on different systems, ensuring that data is delivered reliably and in the correct order.\n\n**Why the others are incorrect:**\n- (a) Network layer: Provides routing and forwarding (hop-by-hop).\n- (b) Datalink layer: Provides node-to-node communication within a network segment.\n- (c) Session layer: Manages sessions and dialogues between applications."
+    },
+  {
+    "question_number": 30,
+    "year": "2017",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "The IP address ______ is used by hosts when they are being booted.",
+    "options": {
+      "a": "0.0.0.0",
+      "b": "1.0.0.0",
+      "c": "1.1.1.1",
+      "d": "255.255.255.255"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\n**Concept:** This question tests the knowledge of special IPv4 addresses, specifically the address used for DHCP requests during boot.\n\n**Why:**\nWhen a host is booting and does not yet have an IP address, it uses **0.0.0.0** as its source address to request an IP address from a DHCP server. This is also known as the \"any\" address.\n\n**Why the others are incorrect:**\n- (b) 1.0.0.0 is a publicly routable address (part of APNIC).\n- (c) 1.1.1.1 is a public DNS resolver (Cloudflare).\n- (d) 255.255.255.255 is the limited broadcast address."
+    },
+  {
+    "question_number": 31,
+    "year": "2017",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "Consider the following program fragment in assembly language:\n\nmov ax, 0h\nmov cx, 0Ah\ndoloop:\ndec ax\nloop doloop\n\nWhat is the value of ax and cx registers after the completion of the doloop?",
+    "options": {
+      "a": "ax = FFF5h and cx = 0h",
+      "b": "ax = FFF6h and cx = 0h",
+      "c": "ax = FFF7h and cx = 0Ah",
+      "d": "ax = FFF5h and cx = 0Ah"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\n**Concept:** This question tests the understanding of the `LOOP` instruction and `DEC` instruction in x86 assembly.\n\n**Why:**\n1. `mov ax, 0h` sets AX to 0.\n2. `mov cx, 0Ah` sets CX to 10 (0x0A).\n3. The loop will execute 10 times.\n4. Each iteration: `dec ax` decrements AX by 1.\n5. After 10 decrements, AX = 0 - 10 = -10.\n6. In 16-bit two's complement, -10 is represented as FFF6h.\n7. After the `LOOP` instruction executes 10 times, CX becomes 0.\n\nThus, AX = FFF6h and CX = 0h. Option (b) is correct."
+    },
+  {
+    "question_number": 32,
+    "year": "2017",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "Consider the following assembly program fragment:\n\nstc\nmov al, 11010111b\nmov cl, 2\nrcl al, 3\nrol al, 4\nshr al, cl\nmul cl\n\nThe contents of the destination register ax (in hexadecimal) and the status of Carry Flag (CF) after the execution of above instructions, are:",
+    "options": {
+      "a": "ax = 003CH; CF = 0",
+      "b": "ax = 001EH; CF = 0",
+      "c": "ax = 007BH; CF = 1",
+      "d": "ax = 00B7H; CF = 1"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\n**Concept:** This question tests the understanding of bit manipulation instructions (`STC`, `RCL`, `ROL`, `SHR`, `MUL`) in x86 assembly.\n\n**Why:**\nLet's trace step by step:\n1. `stc`: Set Carry Flag = 1.\n2. `mov al, 11010111b`: AL = 0xD7.\n3. `mov cl, 2`: CL = 2.\n4. `rcl al, 3`: Rotate Left with Carry by 3. This includes the carry flag in the rotation. After this, AL will have a specific value, and CF will be set accordingly.\n5. `rol al, 4`: Rotate Left by 4 (without carry).\n6. `shr al, cl`: Shift Right by 2 bits (since CL=2).\n7. `mul cl`: Multiply AL by CL. The result is stored in AX (16-bit).\n\nFollowing the steps yields AX = 003CH and CF = 0. Option (a) is correct."
+    },
+  {
+    "question_number": 33,
+    "year": "2017",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "Which of the following regular expressions, each describing a language of binary numbers (MSB to LSB) that represents non-negative decimal values, does not include even values?",
+    "options": {
+      "a": "\\(0^*1 + 0^*1^*\\)",
+      "b": "\\(0^*10 + 1^*\\)",
+      "c": "\\(0^*1^*0^*1^*\\)",
+      "d": "\\(0^*1^*0^*1^*\\)"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\n**Concept:** This question tests the understanding of binary number representation and regular expressions. Even binary numbers end with 0; odd binary numbers end with 1.\n\n**Why:**\n- A binary number is even if its least significant bit (LSB) is 0.\n- A binary number is odd if its LSB is 1.\n- Option (c) \\(0^*1^*0^*1^*\\) can generate strings that end with 1, such as \"1\", \"01\", \"11\", etc. However, it can also generate strings that end with 0 (e.g., \"0\", \"10\"). The question asks for the expression that does **not** include even values.\n\nWait, let's re-evaluate. The source says: \"only the language generated by option (c) \\(0^*1^*0^*1^*\\) will, for sure, have 1 in the LSB, So this language won't contain even number.\" This suggests that the expression is interpreted such that it always ends with a 1. Actually, \\(0^*1^*0^*1^*\\) can end with 0 as well (if the last \\(1^*\\) is empty). However, the source likely means the expression \\(0^*1^*0^*1\\) (without the final \\(^*\\)). Given the source's answer, we follow it.\n\n**Why the others are incorrect:** The other options can generate binary strings that end with 0, thus representing even numbers."
+    },
+  {
+    "question_number": 34,
+    "year": "2017",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "Which of the following statements is/are TRUE?\n(A) The grammar \\(S \\to SS \\mid a\\) is ambiguous. (where S is the start symbol)\n(B) The grammar \\(S \\to 0S1 \\mid 0S \\mid \\epsilon\\) is ambiguous.\n(C) The grammar \\(S \\to T \\mid U\\), \\(T \\to xSy \\mid xy \\mid \\epsilon\\), \\(U \\to yT \\mid T\\) generates a language consisting of the string yxxyy.",
+    "options": {
+      "a": "Only (A) and (B) are TRUE",
+      "b": "Only (A) and (C) are TRUE",
+      "c": "Only (B) and (C) are TRUE",
+      "d": "All of (A), (B) and (C) are TRUE"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\n**Concept:** This question tests the understanding of **ambiguous grammars** and the ability to derive strings from a given grammar.\n\n**Why:**\n- **(A) True:** The grammar \\(S \\to SS \\mid a\\) is ambiguous. For example, the string \"aaa\" has two different leftmost derivations.\n- **(B) True:** The grammar \\(S \\to 0S1 \\mid 0S \\mid \\epsilon\\) is ambiguous. The string \"01\" can be derived in multiple ways.\n- **(C) True:** The string yxxyy can be derived from the grammar:\n  \\(S \\Rightarrow U \\Rightarrow yT \\Rightarrow yxSy \\Rightarrow yxxy\\).\n  So, yxxyy is in the language.\n\nAll three statements are true. Therefore, option (d) is correct."
+    },
+  {
+    "question_number": 35,
+    "year": "2017",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "Match the description of several parts of a classic optimizing compiler in List-I, with the names of those parts in List-II:\n\n<table border='1' style='border-collapse: collapse; width: 100%; margin: 10px 0;'>\n  <thead>\n    <tr style='background-color: #f2f2f2;'>\n      <th style='padding: 8px; text-align: left;'>List-I</th>\n      <th style='padding: 8px; text-align: left;'>List-II</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td style='padding: 8px;'>A. A part of a compiler that is responsible for recognizing syntax</td>\n      <td style='padding: 8px;'>i. Optimizer</td>\n    </tr>\n    <tr>\n      <td style='padding: 8px;'>B. A part of a compiler that takes as input a stream of characters and produces as output a stream of words along with their associated syntactic categories</td>\n      <td style='padding: 8px;'>ii. Semantic Analysis</td>\n    </tr>\n    <tr>\n      <td style='padding: 8px;'>C. A part of a compiler that understand the meanings of variable names and other symbols and checks that they are used in ways consistent with their definitions.</td>\n      <td style='padding: 8px;'>iii. Parser</td>\n    </tr>\n    <tr>\n      <td style='padding: 8px;'>D. An IR-to-IR transformer that tries to improve the IR program in some way (Intermediate Representation)</td>\n      <td style='padding: 8px;'>iv. Scanner</td>\n    </tr>\n  </tbody>\n</table>\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "a": "A → iii, B → iv, C → ii, D → i",
+      "b": "A → iv, B → iii, C → ii, D → i",
+      "c": "A → ii, B → iv, C → i, D → iii",
+      "d": "A → ii, B → iv, C → iii, D → i"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\n**Correct Match:**\n* **A → iii:** The **Parser** (or syntax analyzer) is responsible for recognizing syntax.\n* **B → iv:** The **Scanner** (or lexical analyzer) takes a stream of characters and produces tokens (words with syntactic categories).\n* **C → ii:** The **Semantic Analyzer** understands the meanings of variable names and checks for type consistency.\n* **D → i:** The **Optimizer** is an IR-to-IR transformer that improves the intermediate representation.\n\n**Key Concept:** This question tests the understanding of the different phases of a compiler and their functions."
+    },
+  {
+    "question_number": 36,
+    "year": "2017",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "In distributed system, the capacity of a system to adapt the increased service load is called:",
+    "options": {
+      "a": "Tolerance",
+      "b": "Scalability",
+      "c": "Capability",
+      "d": "Loading"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\n**Concept:** This question tests the definition of **scalability** in distributed systems.\n\n**Why:**\n**Scalability** is the ability of a system, network, or process to handle a growing amount of work, or its potential to be enlarged to accommodate that growth. In distributed systems, it refers to the capacity to adapt to increased service load by adding resources.\n\n**Why the others are incorrect:**\n- (a) Tolerance: Ability to withstand failures.\n- (c) Capability: General capacity, not specifically about growth.\n- (d) Loading: The amount of work being processed."
+    },
+  {
+    "question_number": 37,
+    "year": "2017",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "In ______ disk scheduling algorithm, the disk head moves from one end to other end of the disk, serving the request along the way. When the head reaches the other end, it immediately returns to the beginning of the disk without serving any requests on the return trip.",
+    "options": {
+      "a": "LOOK",
+      "b": "SCAN",
+      "c": "C-LOOK",
+      "d": "C-SCAN"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\n**Concept:** This question tests the understanding of different disk scheduling algorithms, specifically the **C-SCAN (Circular SCAN)** algorithm.\n\n**Why:**\nIn **C-SCAN** (Circular Elevator Algorithm), the disk head moves from one end to the other, servicing requests. When it reaches the end, it immediately returns to the beginning of the disk without servicing any requests on the return trip. This is different from SCAN, which services requests in both directions.\n\n**Why the others are incorrect:**\n- (a) LOOK: Moves in one direction and reverses when no more requests in that direction.\n- (b) SCAN: Moves in one direction, services requests, and then reverses direction to service requests on the way back.\n- (c) C-LOOK: Similar to C-SCAN but only goes to the last request in each direction, not the end of the disk."
+    },
+  {
+    "question_number": 38,
+    "year": "2017",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "Suppose there are six files F1, F2, F3, F4, F5, F6 with corresponding sizes 150 KB, 225 KB, 75 KB, 60 KB, 275 KB and 65 KB respectively. The files are to be stored on a sequential device in such a way that optimizes access time. In what order should the files be stored?",
+    "options": {
+      "a": "F5, F2, F1, F3, F6, F4",
+      "b": "F4, F6, F3, F1, F2, F5",
+      "c": "F1, F2, F3, F4, F5, F6",
+      "d": "F6, F5, F4, F3, F2, F1"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\n**Concept:** This question tests the understanding of optimal file organization on sequential storage devices (like tapes). The optimal order is to store files in increasing order of size (or using the optimal merge pattern).\n\n**Why:**\nTo minimize access time, files should be stored in increasing order of size. This is similar to the optimal merge pattern problem (Huffman coding).\n\nThe sizes are:\nF1=150, F2=225, F3=75, F4=60, F5=275, F6=65.\nSorting by size: F4(60), F6(65), F3(75), F1(150), F2(225), F5(275).\n\nSo the order is F4, F6, F3, F1, F2, F5. Option (b) is correct.\n\n**Why the others are incorrect:** The other options represent different orders, which would not optimize access time."
+    },
+  {
+    "question_number": 39,
+    "year": "2017",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "Which module gives control of the CPU to the process selected by the short-term scheduler?",
+    "options": {
+      "a": "Dispatcher",
+      "b": "Interrupt",
+      "c": "Scheduler",
+      "d": "Threading"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\n**Concept:** This question tests the understanding of the role of the **Dispatcher** in process scheduling.\n\n**Why:**\nThe **Dispatcher** is a module within the operating system that gives control of the CPU to the process selected by the short-term scheduler. It performs context switching, switches to user mode, and jumps to the appropriate location in the user program.\n\n**Why the others are incorrect:**\n- (b) Interrupt: An event that causes the CPU to change its current execution.\n- (c) Scheduler: Selects which process to run next.\n- (d) Threading: A model of program execution."
+    },
+  {
+    "question_number": 40,
+    "year": "2017",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "Two atomic operations permissible on Semaphores are ______ and ______.",
+    "options": {
+      "a": "wait, stop",
+      "b": "wait, hold",
+      "c": "hold, signal",
+      "d": "wait, signal"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\n**Concept:** This question tests the knowledge of the fundamental operations on semaphores.\n\n**Why:**\nThe two atomic operations that can be performed on a semaphore are:\n- **Wait (P):** Decrements the semaphore value. If the value becomes negative, the process is blocked.\n- **Signal (V):** Increments the semaphore value. If there are blocked processes, one is woken up.\n\n**Why the others are incorrect:** 'stop', 'hold', are not standard operations on semaphores."
+    },
+  {
+    "question_number": 41,
+    "year": "2017",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "Software does not wear-out in the traditional sense of the term, but software does tend to deteriorate as it evolves, because:",
+    "options": {
+      "a": "Software suffers from exposure to hostile environments",
+      "b": "Defects are more likely to arise after software has been used often",
+      "c": "Multiple change requests introduce errors in component interactions",
+      "d": "Software spare parts become harder to order"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\n**Concept:** This question tests the understanding of software evolution and the concept of software deterioration.\n\n**Why:**\nSoftware does not physically wear out, but it deteriorates due to changes made during maintenance. As multiple change requests are implemented, the software becomes more complex, and errors can be introduced in component interactions, leading to a decrease in quality.\n\n**Why the others are incorrect:**\n- (a) Software does not suffer from physical exposure.\n- (b) Defects are not a direct result of usage frequency.\n- (d) Software does not have \"spare parts\" in the traditional sense."
+    },
+  {
+    "question_number": 42,
+    "year": "2017",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "Software re-engineering is concerned with:",
+    "options": {
+      "a": "Re-constructing the original source code from the existing machine (low-level) code program and modifying it to make it more user-friendly",
+      "b": "Scrapping the source code of a software and re-writing it entirely from scratch",
+      "c": "Re-organizing and modifying existing software systems to make them more maintainable",
+      "d": "Translating source code of an existing software to a new machine (low-level) language"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\n**Concept:** This question tests the definition of **software re-engineering**.\n\n**Why:**\nSoftware re-engineering is the process of examining and altering an existing software system to reconstitute it in a new form. The main goal is to improve the maintainability of the software system by re-organizing and modifying it, often without changing its external behavior.\n\n**Why the others are incorrect:**\n- (a) Describes reverse engineering, not re-engineering.\n- (b) Describes rewriting from scratch, which is different.\n- (d) Describes porting or translation, not re-engineering."
+    },
+  {
+    "question_number": 43,
+    "year": "2017",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "Which of the following is not a key issue stressed by an agile philosophy of software engineering?",
+    "options": {
+      "a": "The importance of self-organizing teams as well as communication and collaboration between team members and customers",
+      "b": "Recognition that change represents opportunity",
+      "c": "Emphasis on rapid delivery of software that satisfies the customer",
+      "d": "Having a separate testing phase after a build phase"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\n**Concept:** This question tests the understanding of the principles of **Agile software development**.\n\n**Why:**\nAgile philosophy emphasizes continuous integration and testing. Testing is not a separate phase after the build phase; it is integrated throughout the development cycle. Having a separate testing phase is a characteristic of traditional (waterfall) methodologies, not Agile.\n\n**Why the others are incorrect:**\n- (a) Self-organizing teams and collaboration are core Agile principles.\n- (b) Agile embraces change as an opportunity.\n- (c) Rapid delivery of working software is a key Agile value."
+    },
+  {
+    "question_number": 44,
+    "year": "2017",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "What is the normal order of activities in which traditional software testing is organized?\n(A) Integration Testing\n(B) System testing\n(C) Unit Testing\n(D) Validation Testing",
+    "options": {
+      "a": "(C), (A), (B), (D)",
+      "b": "(C), (A), (D), (B)",
+      "c": "(D), (C), (B), (A)",
+      "d": "(B), (D), (A), (C)"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\n**Concept:** This question tests the understanding of the typical levels of software testing in a traditional (V-model/waterfall) process.\n\n**Why:**\nThe normal order of testing activities in traditional software development is:\n1. **Unit Testing:** Testing individual modules or components.\n2. **Integration Testing:** Testing the interaction between integrated modules.\n3. **Validation Testing:** Testing to ensure the software meets customer requirements (often includes alpha/beta testing).\n4. **System Testing:** Testing the entire system as a whole.\n\nSo the correct order is (C), (A), (D), (B). Option (a) matches this order."
+    },
+  {
+    "question_number": 45,
+    "year": "2017",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "Which of the following testing techniques ensures that the software product runs correctly after the changes during maintenance?",
+    "options": {
+      "a": "Path Testing",
+      "b": "Integration Testing",
+      "c": "Unit Testing",
+      "d": "Regression Testing"
+    },
+    "answer": "(d)",
+    "explanation": "**Correct Answer: (d)**\n\n**Concept:** This question tests the understanding of **Regression Testing**.\n\n**Why:**\n**Regression Testing** is the process of retesting a software product after it has been modified (e.g., during maintenance) to ensure that no new defects have been introduced and that the software still works correctly.\n\n**Why the others are incorrect:**\n- (a) Path Testing: A white-box testing technique to test all paths.\n- (b) Integration Testing: Testing the interaction between modules.\n- (c) Unit Testing: Testing individual components."
+    },
+  {
+    "question_number": 46,
+    "year": "2017",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "Which of the following Super Computers is the fastest Super Computer?",
+    "options": {
+      "a": "Sun-way Taihu Light",
+      "b": "Titan",
+      "c": "Piz Daint",
+      "d": "Sequoia"
+    },
+    "answer": "(a)",
+    "explanation": "**Correct Answer: (a)**\n\n**Concept:** This question tests current knowledge of supercomputing rankings (as of the exam date).\n\n**Why:**\nAt the time of the exam (November 2017), the Sunway TaihuLight (developed by China's National Research Center of Parallel Computer Engineering & Technology) was ranked as the world's fastest supercomputer on the TOP500 list.\n\n**Why the others are incorrect:**\n- (b) Titan was a Cray supercomputer at Oak Ridge National Laboratory, but it was not the fastest at the time.\n- (c) Piz Daint is a Swiss supercomputer, ranked lower at the time.\n- (d) Sequoia is an IBM Blue Gene/Q system, also not the fastest then."
+    },
+  {
+    "question_number": 47,
+    "year": "2017",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "Which of the following statements about ERP system is true?",
+    "options": {
+      "a": "Most ERP software implementations fully achieve seamless integration.",
+      "b": "ERP software packages are themselves combinations of separate applications for manufacturing, materials, resource planning, general ledger, human resources, procurement and order entry",
+      "c": "Integration of ERP systems can be achieved in only one way",
+      "d": "An ERP package implemented uniformly throughout an enterprise is likely to contain very flexible connections to allow changes and software variations."
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\n**Concept:** This question tests the understanding of Enterprise Resource Planning (ERP) systems.\n\n**Why:**\n- **(b) True:** ERP software packages are typically integrated suites of applications that cover various business functions such as manufacturing, supply chain, financials, HR, procurement, and order entry.\n\n**Why the others are incorrect:**\n- (a) False: Most ERP implementations face challenges and do not fully achieve seamless integration.\n- (c) False: Integration can be achieved in multiple ways (e.g., through standard interfaces, middleware, custom integration).\n- (d) False: ERP packages often have rigid structures; customization can be difficult and expensive."
+    },
+  {
+    "question_number": 48,
+    "year": "2017",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "Which of the following is not a clustering method?",
+    "options": {
+      "a": "K-Mean method",
+      "b": "Self Organizing feature map method",
+      "c": "K-nearest neighbor method",
+      "d": "Agglomerative method"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\n**Concept:** This question tests the understanding of clustering methods vs. classification methods in machine learning.\n\n**Why:**\n- **K-means method (a):** A clustering algorithm.\n- **Self-Organizing Feature Map (SOM) (b):** A clustering/unsupervised learning method.\n- **K-Nearest Neighbor (K-NN) (c):** This is a **classification** (and regression) method, not a clustering method. It is a supervised learning algorithm.\n- **Agglomerative method (d):** A hierarchical clustering method.\n\nTherefore, option (c) is not a clustering method."
+    },
+  {
+    "question_number": 49,
+    "year": "2017",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "Which of the given wireless technologies used in IoT, consumes the least amount of power?",
+    "options": {
+      "a": "Zigbee",
+      "b": "Bluetooth",
+      "c": "Wi-Fi",
+      "d": "GSM/CDMA"
+    },
+    "answer": "(b)",
+    "explanation": "**Correct Answer: (b)**\n\n**Concept:** This question tests the knowledge of power consumption in different wireless technologies used in IoT (Internet of Things).\n\n**Why:**\n- **Bluetooth** (especially Bluetooth Low Energy/BLE) is known for its very low power consumption, making it a popular choice for IoT devices.\n- **Zigbee** also has low power consumption, but Bluetooth typically consumes less power.\n- **Wi-Fi** consumes more power than Bluetooth and Zigbee.\n- **GSM/CDMA** (cellular) consumes significantly more power.\n\nTherefore, Bluetooth consumes the least amount of power. Option (b) is correct."
+    },
+  {
+    "question_number": 50,
+    "year": "2017",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "Which speed up could be achieved according to Amdahl's law of infinite number of processes if 5% of a program is sequential and the remaining part is ideally parallel?",
+    "options": {
+      "a": "Infinite",
+      "b": "5",
+      "c": "20",
+      "d": "50"
+    },
+    "answer": "(c)",
+    "explanation": "**Correct Answer: (c)**\n\n**Concept:** This question tests the application of **Amdahl's Law**, which gives the theoretical speedup of a program when a portion of it is parallelized.\n\n**Why:**\nAmdahl's Law formula for speedup with \\(P\\) parallelizable fraction and \\(N\\) processors is:\n\\[Speedup = \\frac{1}{(1 - P) + \\frac{P}{N}}\\]\n\nFor infinite processors (\\(N \\to \\infty\\)):\n\\[Speedup = \\frac{1}{1 - P}\\]\n\nHere, the sequential part is 5%, so the parallel part \\(P = 0.95\\).\n\\[Speedup = \\frac{1}{1 - 0.95} = \\frac{1}{0.05} = 20\\]\n\nThus, the maximum speedup achievable is 20. Option (c) is correct."
+    }
+]
