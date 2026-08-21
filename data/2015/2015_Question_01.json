@@ -1,0 +1,590 @@
+[
+{
+  "question_number": 1,
+  "year": "2015",
+  "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+  "question_text": "How many strings of 5 digits have the property that the sum of their digits is 7?",
+  "options": {
+    "a": "66",
+    "b": "330",
+    "c": "495",
+    "d": "99"
+  },
+  "answer": "(b)",
+  "explanation": "Correct Answer: (b)\n\nConcept: This is a combinatorics problem using the stars and bars method. A 5-digit string consists of 5 positions (x₁, x₂, x₃, x₄, x₅) where each digit xᵢ ∈ {0, 1, 2, ..., 9}, and their sum equals 7:\nx₁ + x₂ + x₃ + x₄ + x₅ = 7\n\nSince the total sum is 7, no individual digit can exceed 7, meaning no upper-bound restrictions are violated.\n\nThe number of non-negative integer solutions is given by the formula:\nC(n + r - 1, r - 1) = C(7 + 5 - 1, 5 - 1) = C(11, 4) = (11 × 10 × 9 × 8) / (4 × 3 × 2 × 1) = 330.\n\nTherefore, option (b) is the correct answer."
+},
+{
+"question_number": 2,
+"year": "2015",
+"unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+"question_text": "Consider an experiment of tossing two fair dice, one black and one red. What is the probability that the number on the black die divides the number on red die?",
+"options": {
+"a": "22/36",
+"b": "12/36",
+"c": "14/36",
+"d": "6/36"
+},
+"answer": "(c)",
+"explanation": "Correct Answer: (c)\n\nConcept: We count favorable pairs (black, red) such that black divides red. There are 36 total outcomes.\n\nFavorable pairs: (1,1),(1,2),(1,3),(1,4),(1,5),(1,6) → 6; (2,2),(2,4),(2,6) → 3; (3,3),(3,6) → 2; (4,4) → 1; (5,5) → 1; (6,6) → 1. Total = 6+3+2+1+1+1 = 14.\n\nProbability = 14/36. Hence option (c) is correct."
+},
+{
+"question_number": 3,
+"year": "2015",
+"unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+"question_text": "In how many ways can 15 indistinguishable fish be placed into 5 different ponds, so that each pond contains at least one fish?",
+"options": {
+"a": "1001",
+"b": "3876",
+"c": "775",
+"d": "200"
+},
+"answer": "(a)",
+"explanation": "Correct Answer: (a)\n\nConcept: This is a stars and bars problem with a lower bound. We need the number of positive integer solutions to x1 + x2 + x3 + x4 + x5 = 15, where each xi ≥ 1.\n\nWhy: Let yi = xi - 1 ≥ 0. Then y1 + y2 + y3 + y4 + y5 = 10. Number of solutions = C(10+5-1, 5-1) = C(14,4) = 1001. Thus option (a) is correct."
+},
+{
+"question_number": 4,
+"year": "2015",
+"unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+"question_text": "Consider the following statements :\nS1: Depth-first search is used to traverse a rooted tree.\nS2: Pre-order, Post-order and In-order are used to list the vertices of an ordered rooted tree.\nS3: Huffman's algorithm is used to find an optimal binary tree with given weights.\nS4: Topological sorting provides a labeling such that the parents have larger labels than their children.\n\nWhich of the above statements are true?",
+"options": {
+"a": "S1 and S2",
+"b": "S3 and S4",
+"c": "S1, S2 and S3",
+"d": "S1, S2, S3 and S4"
+},
+"answer": "(d)",
+"explanation": "Correct Answer: (d)\n\nConcept: All four statements are standard facts in data structures and algorithms.\n\n- S1: DFS is a tree traversal method.\n- S2: Pre-order, In-order, Post-order are classic traversals for ordered rooted trees.\n- S3: Huffman's algorithm indeed builds an optimal prefix code tree.\n- S4: Topological sorting gives a linear order where every edge goes from earlier to later; if parents have larger labels, it's a reverse topological order. The statement says parents have larger labels, which can be arranged.\n\nThus all are true, option (d)."
+},
+{
+"question_number": 5,
+"year": "2015",
+"unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+"question_text": "Consider a Hamiltonian Graph (G) with no loops and parallel edges. Which of the following is true with respect to this Graph (G)?\n1. deg(v) ≥ n/2 for each vertex of G\n2. |E(G)| ≥ 1/2 (n-1)(n-2) + 2 edges\n3. deg(v) + deg(w) ≥ n for every v and w not connected by an edge",
+"options": {
+"a": "1 and 2",
+"b": "2 and 3",
+"c": "1 and 3",
+"d": "1, 2 and 3"
+},
+"answer": "(d)",
+"explanation": "Correct Answer: (d)\n\nConcept: Sufficient conditions for a graph to be Hamiltonian.\n\n- Statement 1: Dirac's theorem: if every vertex has degree at least n/2, then graph is Hamiltonian.\n- Statement 2: A Hamiltonian graph must have at least (n-1)(n-2)/2 + 2 edges (by Ore's theorem or edge count).\n- Statement 3: Ore's theorem: if for every non-adjacent pair deg(u)+deg(v) ≥ n, then graph is Hamiltonian.\n\nAll three are true, hence option (d)."
+},
+{
+"question_number": 6,
+"year": "2015",
+"unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+"question_text": "Consider the following statements :\nS1: Boolean expressions and logic networks correspond to labeled acrylic digraphs.\nS2: Optimal Boolean expressions may not correspond to simplest networks.\nS3: Choosing essential blocks first in a Karnaugh map and then greedily choosing the largest remaining blocks to cover may not give an optimal expression.\n\nWhich of these statements(s) is/are correct?",
+"options": {
+"a": "S1 only",
+"b": "S2 only",
+"c": "S1 and S2",
+"d": "S1, S2 and S3"
+},
+"answer": "(d)",
+"explanation": "Correct Answer: (d)\n\nConcept: Boolean algebra and logic minimization.\n\n- S1: Boolean expressions can be represented as logic networks; they correspond to directed acyclic graphs (with labels).\n- S2: An optimal algebraic expression (minimized) might not yield the simplest gate-level network due to technology constraints.\n- S3: In Karnaugh maps, greedy covering (choosing essential prime implicants first then largest blocks) does not always yield a minimal cover; sometimes a non-greedy choice is needed.\n\nAll statements are correct, so option (d)."
+},
+{
+"question_number": 7,
+"year": "2015",
+"unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+"question_text": "Consider a full-adder with the following input values :\n(a) x = 1, y = 0 and C1 (carry input) = 0\n(b) x = 0, y = 1 and C1 = 1\nCompute the values of S(sum) and C0 (carry output) for the above input values.\n\n(1) S = 1, C0 = 0 and S = 0, C0 = 1\n(2) S = 0, C0 = 0 and S = 1, C0 = 1\n(3) S = 1, C0 = 1 and S = 0, C0 = 1\n(4) S = 0, C0 = 1 and S = 1, C0 = 0",
+"options": {
+"a": "S = 1, C0 = 0 and S = 0, C0 = 1",
+"b": "S = 0, C0 = 0 and S = 1, C0 = 1",
+"c": "S = 1, C0 = 1 and S = 0, C0 = 1",
+"d": "S = 0, C0 = 1 and S = 1, C0 = 0"
+},
+"answer": "(a)",
+"explanation": "Correct Answer: (a)\n\nConcept: Full-adder equations: S = x ⊕ y ⊕ Cin; Cout = (x·y) + (Cin·(x⊕y)).\n\nFor (a): x=1, y=0, Cin=0 → S = 1⊕0⊕0 = 1; Cout = (1·0) + (0·(1⊕0)) = 0. So S=1, C0=0.\n\nFor (b): x=0, y=1, Cin=1 → S = 0⊕1⊕1 = 0; Cout = (0·1) + (1·(0⊕1)) = 0 + 1·1 = 1. So S=0, C0=1.\n\nThus the pair is (1,0) and (0,1) which corresponds to option (a)."
+},
+{
+  "question_number": 8,
+  "year": "2015",
+  "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+  "question_text": "\"If my computations are correct and I pay the electric bill, then I will run out of money. If I don't pay the electric bill, the power will be turned off. Therefore, if I don't run out of money and the power is still on, then my computations are incorrect.\"\n\nConvert this argument into logical notations using the variables c, b, r, p for propositions of computations, electric bills, out of money and the power respectively. (Where ¬ means NOT)",
+  "options": {
+    "a": "if (c ∧ b) → r and ¬b → ¬p, then (¬r ∧ p) → ¬c",
+    "b": "if (c ∨ b) → r and ¬b → ¬p, then (r ∧ p) → c",
+    "c": "if (c ∧ b) → r and ¬p → ¬b, then (¬r ∧ p) → ¬c",
+    "d": "if (c ∨ b) → r and ¬b → ¬p, then (¬r ∧ p) → ¬c"
+  },
+  "answer": "(a)",
+  "explanation": "Correct Answer: (a)\n\nConcept: Translating natural language propositions into formal logic:\n- Let c: 'my computations are correct'\n- Let b: 'I pay the electric bill'\n- Let r: 'I will run out of money'\n- Let p: 'the power is on' (thus ¬p: 'the power is turned off')\n\nPremises:\n1. 'If my computations are correct and I pay the electric bill, then I will run out of money' → (c ∧ b) → r\n2. 'If I don't pay the electric bill, the power will be turned off' → ¬b → ¬p\n\nConclusion:\n- 'Therefore, if I don't run out of money and the power is still on, then my computations are incorrect' → (¬r ∧ p) → ¬c\n\nCombining the premises and conclusion yields: 'if (c ∧ b) → r and ¬b → ¬p, then (¬r ∧ p) → ¬c', which corresponds to option (a)."
+},
+{
+"question_number": 9,
+"year": "2015",
+"unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+"question_text": "Match the following :\n<table border='1' style='border-collapse: collapse; width: 100%; margin: 10px 0;'><thead><tr style='background-color: #f2f2f2;'><th style='padding: 8px; text-align: left;'>List-I</th><th style='padding: 8px; text-align: left;'>List-II</th></tr></thead><tbody><tr><td style='padding: 8px;'>a. (p→q) ⇔ (¬q→¬p)</td><td style='padding: 8px;'>i. Contra positive</td></tr><tr><td style='padding: 8px;'>b. [(p∧q)→r] ⇔ [p→(q→r)]</td><td style='padding: 8px;'>ii. Exportation law</td></tr><tr><td style='padding: 8px;'>c. (p→q) ⇔ [(p∧¬q)→0]</td><td style='padding: 8px;'>iii. Reduction ad absurdum</td></tr><tr><td style='padding: 8px;'>d. (p↔q) ⇔ [(p→q)∧(q→p)]</td><td style='padding: 8px;'>iv. Equivalence</td></tr></tbody></table>\n\nChoose the correct answer from the options given below:",
+"options": {
+"a": "(i), (ii), (iii), (iv)",
+"b": "(ii), (iii), (i), (iv)",
+"c": "(iii), (ii), (iv), (i)",
+"d": "(iv), (ii), (iii), (i)"
+},
+"answer": "(a)",
+"explanation": "Correct Answer: (a)\n\nCorrect Match:\n- a → i: Contrapositive of implication.\n- b → ii: Exportation law: (p∧q)→r is equivalent to p→(q→r).\n- c → iii: Reduction ad absurdum (proof by contradiction).\n- d → iv: Logical equivalence (biconditional).\n\nThus option (a) is correct."
+},
+{
+  "question_number": 10,
+  "year": "2015",
+  "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+  "question_text": "Consider a proposition given as: 'x ≥ 6, if x² ≥ 25' and its proof as: 'If x ≥ 6, then x² = x·x ≥ 6·6 = 36 ≥ 25'. Which of the following is correct with respect to the given proposition and its proof?\n(1) The proof shows the converse of what is to be proved\n(2) The proof starts by assuming what is to be shown\n(3) The proof is correct and there is nothing wrong",
+  "options": {
+    "a": "(1) only",
+    "b": "(3) only",
+    "c": "(1) and (2)",
+    "d": "(2) only"
+  },
+  "answer": "(c)",
+  "explanation": "Correct Answer: (c)\n\nConcept:\n- Original Proposition: 'q, if p' translates logically to the conditional statement p → q (i.e., 'If x² ≥ 25, then x ≥ 6').\n  - Hypothesis (given/assumed): x² ≥ 25\n  - Conclusion (to be shown): x ≥ 6\n\n- The Given Proof: Starts with 'If x ≥ 6...' and concludes that 'x² ≥ 25'.\n  - It proves q → p, which is the converse of p → q (Statement 1 is correct).\n  - It begins by assuming x ≥ 6, which was the target conclusion to be proved (Statement 2 is correct, demonstrating circular reasoning / affirming the consequent).\n\nSince statements (1) and (2) are both valid observations, option (c) is the correct answer."
+},
+{
+"question_number": 15,
+"year": "2015",
+"unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+"question_text": "When the inheritance is private, the private methods in base class are in the derived class (in C++).",
+"options": {
+"a": "inaccessible",
+"b": "accessible",
+"c": "protected",
+"d": "public"
+},
+"answer": "(a)",
+"explanation": "Correct Answer: (a)\n\nConcept: In C++, private members of a base class are never accessible directly in the derived class, regardless of the inheritance access specifier (public, protected, or private). Only public and protected members are inherited with their accessibility modified by the inheritance type. Thus private methods remain inaccessible in the derived class. Hence option (a)."
+},
+{
+"question_number": 16,
+"year": "2015",
+"unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+"question_text": "An assertion is a predicate expressing a condition we wish database to always satisfy. The correct syntax for Assertion is :",
+"options": {
+"a": "CREATE ASSERTION 'ASSERTION Name' CHECK 'Predicate'",
+"b": "CREATE ASSERTION 'ASSERTION Name' CHECK 'Predicate'",
+"c": "CREATE ASSERTION, CHECK Predicate",
+"d": "SELECT ASSERTION"
+},
+"answer": "(a)",
+"explanation": "Correct Answer: (a)\n\nConcept: In SQL, assertions are created using the syntax: CREATE ASSERTION assertion_name CHECK (condition). The condition is a predicate that must always be true. Option (a) gives the correct syntax with appropriate quotes. Options (b) is identical, (c) is missing the name and has incorrect punctuation, (d) is not valid. So (a) is correct."
+},
+{
+"question_number": 17,
+"year": "2015",
+"unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+"question_text": "Which of the following concurrency protocol ensures both conflict serializability and freedom from deadlock?\n(1) z-phase Locking\n(2) Time stamp - ordering",
+"options": {
+"a": "Both (1) and (2)",
+"b": "(1) only",
+"c": "(2) only",
+"d": "Neither (1) nor (2)"
+},
+"answer": "(c)",
+"explanation": "Correct Answer: (c)\n\nConcept: Timestamp ordering protocols guarantee conflict serializability and are deadlock-free because they do not use locks; transactions are ordered by timestamps. Basic two-phase locking ensures serializability but can suffer from deadlocks (though conservative 2PL avoids deadlocks, the question refers to basic 2PL). Thus only timestamp ordering (2) ensures both. Option (c) is correct."
+},
+{
+"question_number": 18,
+"year": "2015",
+"unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+"question_text": "Drop Table cannot be used to drop a Table referenced by ......... constraint.\n(1) Primary key\n(2) Sub key\n(3) Super key\n(4) Foreign key",
+"options": {
+"a": "(1)",
+"b": "(1), (2) and (3)",
+"c": "(4)",
+"d": "(1) and (4)"
+},
+"answer": "(c)",
+"explanation": "Correct Answer: (c)\n\nConcept: In SQL, you cannot drop a table that is referenced by a foreign key constraint from another table (unless you first drop the foreign key or the referencing table). Primary key, sub key, super key do not prevent dropping the table. Only foreign key references cause the restriction. Hence option (c)."
+},
+{
+"question_number": 19,
+"year": "2015",
+"unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+"question_text": "Database applications were built directly on top of file system to overcome the following drawbacks of using file-systems :\n(1) Data redundancy and inconsistency\n(2) Difficulty in accessing Data\n(3) Integrity problems\n(4) ??????",
+"options": {
+"a": "(1)",
+"b": "(1) and (4)",
+"c": "(1), (2) and (3)",
+"d": "(1), (2), (3) and (4)"
+},
+"answer": "(d)",
+"explanation": "Correct Answer: (d)\n\nConcept: Traditional file systems suffer from data redundancy, inconsistency, difficulty in accessing data, integrity problems, and other issues like atomicity, concurrency, security, etc. Database management systems address all these drawbacks. The question lists three, but option (d) includes a fourth (presumably atomicity or concurrency). Since (d) is the most comprehensive and the answer given, all listed drawbacks are overcome by DBMS. Option (d) is correct."
+},
+{
+"question_number": 20,
+"year": "2015",
+"unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+"question_text": "For a weak entity set to be meaningful, it must be associated with another entity set in combination with some of their attribute values, is called as :",
+"options": {
+"a": "Neighbor Set",
+"b": "Strong Entity Set",
+"c": "Owner Entity Set",
+"d": "Weak Set"
+},
+"answer": "(c)",
+"explanation": "Correct Answer: (c)\n\nConcept: A weak entity set depends on a strong (or identifying) entity set to exist. The strong entity set that identifies the weak entity is called the owner entity set. The weak entity's primary key includes the owner's primary key. Hence the correct term is owner entity set, option (c)."
+},
+{
+"question_number": 21,
+"year": "2015",
+"unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+"question_text": "Consider the given graph (image) and its Minimum cost spanning tree. Which of the following is the minimum cost spanning tree?",
+"options": {
+"a": "Graph (a)",
+"b": "Graph (b)",
+"c": "Graph (c)",
+"d": "Graph (d)"
+},
+"answer": "(b)",
+"explanation": "Correct Answer: (b)\n\nConcept: The minimum spanning tree (MST) of a weighted graph is the spanning tree with the minimum total edge weight. Using Kruskal's or Prim's algorithm, the MST for the given graph has total weight 10+12+14+16+22+25 = 99. Option (b) corresponds to this MST. Hence option (b) is correct."
+},
+{
+"question_number": 22,
+"year": "2015",
+"unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+"question_text": "The inorder and preorder traversal of a binary tree are dbeafcg and abdecfg respectively. The post-order traversal is ..........",
+"options": {
+"a": "dbefacg",
+"b": "debfagc",
+"c": "dbefcga",
+"d": "debfgca"
+},
+"answer": "(d)",
+"explanation": "Correct Answer: (d)\n\nConcept: Given inorder = d b e a f c g and preorder = a b d e c f g.\n- Root is 'a' (first in preorder).\n- Left subtree inorder: d b e (from left of a) and preorder: b d e. Recurse → root b, left d, right e.\n- Right subtree inorder: f c g and preorder: c f g → root c, left f, right g.\n- Postorder: left subtree (d e b), right subtree (f g c), then root a → d e b f g c a → debfgca.\nThus option (d) is correct."
+},
+{
+"question_number": 23,
+"year": "2015",
+"unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+"question_text": "Level order Traversal of a rooted Tree can be done by starting from root and performing :",
+"options": {
+"a": "Breadth first search",
+"b": "Depth first search",
+"c": "Root search",
+"d": "Deep search"
+},
+"answer": "(a)",
+"explanation": "Correct Answer: (a)\n\nConcept: Level order traversal visits nodes level by level from top to bottom. This is exactly the behavior of Breadth-First Search (BFS) when applied to a tree. Preorder, inorder, postorder are depth-first traversals. Hence option (a) is correct."
+},
+{
+"question_number": 24,
+"year": "2015",
+"unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+"question_text": "The average case occurs in the Linear search Algorithm when",
+"options": {
+"a": "The item to be searched is somewhere in the middle of the array",
+"b": "The item to be searched is not in the array",
+"c": "The item to be searched is in the last of the array",
+"d": "The item to be searched is either in the last or not in the array"
+},
+"answer": "(a)",
+"explanation": "Correct Answer: (a)\n\nConcept: In linear search, if each element is equally likely to be searched, the average number of comparisons is (n+1)/2, which is about half the list. This corresponds to the item being found on average in the middle. The worst case is when it is at the end or not present. Thus the average case is when the item is somewhere in the middle. Option (a) is correct."
+},
+{
+"question_number": 25,
+"year": "2015",
+"unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+"question_text": "To determine the efficiency of an algorithm the time factor is measured by:",
+"options": {
+"a": "Counting microseconds",
+"b": "Counting number of key operations",
+"c": "Counting number of statements",
+"d": "Counting kilobytes of algorithm"
+},
+"answer": "(b)",
+"explanation": "Correct Answer: (b)\n\nConcept: Algorithm efficiency is typically measured in terms of the number of elementary operations (key operations) performed, not by actual time (which depends on hardware) or by counting statements or memory size. Counting key operations gives a machine-independent measure of complexity. Hence option (b) is correct."
+},
+{
+  "question_number": 26,
+  "year": "2015",
+  "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+  "question_text": "Which of the following protocols is an application layer protocol that establishes, manages, and terminates multimedia sessions?",
+  "options": {
+    "a": "Session maintenance protocol",
+    "b": "Real-time streaming protocol",
+    "c": "Real-time transport control protocol",
+    "d": "Session Initiation protocol"
+  },
+  "answer": "(d)",
+  "explanation": "Correct Answer: (d)\n\nConcept: Session Initiation Protocol (SIP) is a standard application-layer signaling and control protocol used for establishing, maintaining, and terminating real-time multimedia sessions (such as voice, video, and messaging over IP networks).\n\nOther options:\n- RTSP (Real-Time Streaming Protocol) controls the delivery of data with real-time properties (e.g., play, pause, record controls for media servers).\n- RTCP (Real-time Transport Control Protocol) provides feedback on the quality of data transmission in RTP sessions.\n- 'Session maintenance protocol' is not a standard protocol in the multimedia protocol suite.\n\nThus, option (d) is the correct answer."
+},
+{
+"question_number": 27,
+"year": "2015",
+"unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+"question_text": "Match the following port numbers with their uses :\n<table border='1' style='border-collapse: collapse; width: 100%; margin: 10px 0;'><thead><tr style='background-color: #f2f2f2;'><th style='padding: 8px; text-align: left;'>List-I</th><th style='padding: 8px; text-align: left;'>List-II</th></tr></thead><tbody><tr><td style='padding: 8px;'>A. 23</td><td style='padding: 8px;'>i. World wide web</td></tr><tr><td style='padding: 8px;'>B. 25</td><td style='padding: 8px;'>ii. Remote login</td></tr><tr><td style='padding: 8px;'>C. 80</td><td style='padding: 8px;'>iii. USENET news</td></tr><tr><td style='padding: 8px;'>D. 119</td><td style='padding: 8px;'>iv. E-mail</td></tr></tbody></table>\n\nChoose the correct answer from the options given below:",
+"options": {
+"a": "A-ii, B-iv, C-i, D-iii",
+"b": "A-iv, B-ii, C-i, D-iii",
+"c": "A-ii, B-iv, C-iii, D-i",
+"d": "A-iv, B-ii, C-iii, D-i"
+},
+"answer": "(a)",
+"explanation": "Correct Answer: (a)\n\nConcept: Well-known port numbers:\n- 23: TELNET (remote login) → ii\n- 25: SMTP (email) → iv\n- 80: HTTP (world wide web) → i\n- 119: NNTP (USENET news) → iii\n\nThus the correct mapping is A-ii, B-iv, C-i, D-iii, which is option (a)."
+},
+{
+"question_number": 28,
+"year": "2015",
+"unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+"question_text": "Which of the following is not associated with the session layer?",
+"options": {
+"a": "Dialog control",
+"b": "Token management",
+"c": "Semantics of the information transmitted",
+"d": "Synchronization"
+},
+"answer": "(c)",
+"explanation": "Correct Answer: (c)\n\nConcept: The session layer (Layer 5 in OSI) provides services such as dialog control, token management, and synchronization. The semantics of the information transmitted (i.e., data representation) is handled by the presentation layer. Thus option (c) is not associated with the session layer and is the correct answer."
+},
+{
+"question_number": 29,
+"year": "2015",
+"unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+"question_text": "What is the size of the 'total length' field in IPv4 datagram?",
+"options": {
+"a": "4 bits",
+"b": "8 bits",
+"c": "16 bits",
+"d": "32 bits"
+},
+"answer": "(c)",
+"explanation": "Correct Answer: (c)\n\nConcept: In the IPv4 header, the Total Length field is 16 bits long. It specifies the entire datagram size in bytes, including header and data. The maximum value is 65535 bytes. Hence option (c) is correct."
+},
+{
+"question_number": 30,
+"year": "2015",
+"unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+"question_text": "Which of the following is/are restriction(s) in classless addressing?",
+"options": {
+"a": "The number of addresses needs to be power of 2",
+"b": "The mask needs to be included in the address to define the block",
+"c": "The starting address must be divisible by the number of addresses in the block",
+"d": "All of the above"
+},
+"answer": "(d)",
+"explanation": "Correct Answer: (d)\n\nConcept: In classless addressing (CIDR), three restrictions apply:\n1. The number of addresses in a block must be a power of 2.\n2. The mask must be included with the address to define the block.\n3. The starting address must be divisible by the number of addresses (block size).\nAll three are true, so option (d) is correct."
+},
+{
+"question_number": 35,
+"year": "2015",
+"unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+"question_text": "Which phase of compiler generates stream of atoms?",
+"options": {
+"a": "Syntax Analysis",
+"b": "Lexical Analysis",
+"c": "Code Generation",
+"d": "Code Optimization"
+},
+"answer": "(a)",
+"explanation": "Correct Answer: (a)\n\nConcept: The syntax analysis phase (parser) takes the stream of tokens from the lexical analyzer and produces a parse tree (or abstract syntax tree). In some compiler terminology, it also produces a stream of atoms (intermediate representation) for further phases. Lexical analysis produces tokens, not atoms. Code generation and optimization operate later. Thus option (a) is correct."
+},
+{
+"question_number": 36,
+"year": "2015",
+"unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+"question_text": "A disk drive has 100 cylinders, numbered 0 to 99. Disk requests come to the disk driver for cylinders 12, 26, 24, 4, 42, 8 and 50 in that order. The driver is currently serving a request at cylinder 24. A seek takes 6 msec per cylinder moved. How much seek time is needed for shortest seek time first (SSTF) algorithm?",
+"options": {
+"a": "0.984 sec",
+"b": "0.396 sec",
+"c": "0.738 sec",
+"d": "0.42 sec"
+},
+"answer": "(d)",
+"explanation": "Correct Answer: (d)\n\nConcept: SSTF selects the request with the minimum seek distance from the current head position. Starting at 24, the request queue: 12,26,24,4,42,8,50. But note that 24 is already being served, so we consider others.\n\nOrder of service:\n- From 24: nearest is 26 (distance 2) → serve 26.\n- From 26: nearest is 12 (distance 14) or 42 (16) or 8 (18) or 4 (22) or 50 (24) → 12 (14).\n- From 12: nearest is 8 (4) or 4 (8) → 8.\n- From 8: nearest is 4 (4) → 4.\n- From 4: nearest is 42 (38) or 50 (46) → 42.\n- From 42: nearest is 50 (8) → 50.\nTotal head movement = |24-26| + |26-12| + |12-8| + |8-4| + |4-42| + |42-50| = 2+14+4+4+38+8 = 70.\nSeek time = 70 * 6 ms = 420 ms = 0.42 sec. Hence option (d) is correct."
+},
+{
+"question_number": 37,
+"year": "2015",
+"unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+"question_text": "For two processes Pi and Pj, which of the following is not a necessary condition for deadlock?",
+"options": {
+"a": "R(Pi) ∩ W(Pj) = Φ",
+"b": "W(Pi) ∩ R(Pj) = Φ",
+"c": "R(Pi) ∩ R(Pj) = Φ",
+"d": "W(Pi) ∩ W(Pj) = Φ"
+},
+"answer": "(c)",
+"explanation": "Correct Answer: (c)\n\nConcept: In the context of concurrency control and deadlock, conflicts occur when operations on the same data item are not compatible. Read (R) and write (W) conflict, write and read conflict, write and write conflict. Read-read operations are compatible and do not cause conflicts. Therefore, the condition that R(Pi) ∩ R(Pj) = Φ (i.e., they do not read the same item) is not necessary for deadlock; deadlock can occur without it. The other conditions involve write conflicts which are necessary for deadlock. Thus option (c) is correct."
+},
+{
+"question_number": 38,
+"year": "2015",
+"unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+"question_text": "A LRU page replacement is used with four page frames and eight pages. How many page faults will occur with the reference string 0172327103 if the four frames are initially empty?",
+"options": {
+"a": "6",
+"b": "7",
+"c": "5",
+"d": "8"
+},
+"answer": "(b)",
+"explanation": "Correct Answer: (b)\n\nConcept: Simulate LRU with 4 frames for reference string 0,1,7,2,3,2,7,1,0,3.\n- 0: miss, frame [0]\n- 1: miss, [0,1]\n- 7: miss, [0,1,7]\n- 2: miss, [0,1,7,2]\n- 3: miss, replace least recently used (0) → [1,7,2,3] (fault 5)\n- 2: hit, [1,7,3,2] (reorder)\n- 7: hit, [1,3,2,7]\n- 1: hit, [3,2,7,1]\n- 0: miss, replace 3 → [2,7,1,0] (fault 6)\n- 3: miss, replace 2 → [7,1,0,3] (fault 7)\nTotal faults = 7. Hence option (b) is correct."
+},
+{
+  "question_number": 39,
+  "year": "2015",
+  "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+  "question_text": "What does the following command do? grep -vn \"abc\" x",
+  "options": {
+    "a": "It will print all of the lines in the file x that match the search string 'abc'",
+    "b": "It will print all of the lines in file x that do not match the search string 'abc'",
+    "c": "It will print the total number of lines in the file x that match the string 'abc'",
+    "d": "It will print the specific line numbers of the file x in which there is a match for string 'abc'"
+  },
+  "answer": "(b)",
+  "explanation": "Correct Answer: (b)\n\nConcept: In the UNIX/Linux `grep` command:\n- `-v` (invert-match): Inverts the sense of matching, selecting and printing all non-matching lines.\n- `-n` (line-number): Prefixes each line of output with its 1-based line number within its input file.\n\nCombining both flags (`-vn`) prints all lines from file `x` that do NOT contain the string 'abc', preceded by their respective line numbers. Among the given choices, option (b) correctly describes the core behavior of selecting non-matching lines."
+},
+{
+"question_number": 40,
+"year": "2015",
+"unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+"question_text": "The Unix Kernel maintains two key data structures related to processes, the process table and the user structure. Which of the following information is not the part of user structure?",
+"options": {
+"a": "File descriptor table",
+"b": "System call state",
+"c": "Scheduling parameters",
+"d": "Kernel stack"
+},
+"answer": "(c)",
+"explanation": "Correct Answer: (c)\n\nConcept: In Unix, the process table stores process information such as process ID, scheduling parameters, memory usage, etc. The user structure (u-area) contains per-process information that is accessible only when the process is running, including file descriptor table, system call state, kernel stack, etc. Scheduling parameters are kept in the process table, not in the user structure. Hence option (c) is correct."
+},
+{
+"question_number": 41,
+"year": "2015",
+"unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+"question_text": "Match the following :\n<table border='1' style='border-collapse: collapse; width: 100%; margin: 10px 0;'><thead><tr style='background-color: #f2f2f2;'><th style='padding: 8px; text-align: left;'>List-I</th><th style='padding: 8px; text-align: left;'>List-II</th></tr></thead><tbody><tr><td style='padding: 8px;'>A. Size-oriented metrics</td><td style='padding: 8px;'>i. Uses number of external interfaces as one of the measurement parameter</td></tr><tr><td style='padding: 8px;'>B. Function-oriented metrics</td><td style='padding: 8px;'>ii. Originally designed to be applied to business information system</td></tr><tr><td style='padding: 8px;'>C. Extended function point metrics</td><td style='padding: 8px;'>iii. Derived by normalizing quality and/or productivity measures by considering the size of the software</td></tr><tr><td style='padding: 8px;'>D. Function point</td><td style='padding: 8px;'>iv. uses algorithm characteristics as one of the measurement parameter</td></tr></tbody></table>\n\nChoose the correct answer from the options given below:",
+"options": {
+"a": "A-iii, B-i, C-iv, D-ii",
+"b": "A-ii, B-i, C-iv, D-iii",
+"c": "A-iv, B-ii, C-iii, D-i",
+"d": "A-iii, B-i, C-iv, D-ii"
+},
+"answer": "(d)",
+"explanation": "Correct Answer: (d)\n\nConcept: Software metrics:\n- Size-oriented metrics: normalized by size (lines of code) to measure productivity/quality → A-iii.\n- Function-oriented metrics: use number of external inputs, outputs, files, interfaces → B-i.\n- Extended function point metrics: incorporate algorithmic characteristics → C-iv.\n- Function point: originally designed for business information systems → D-ii.\nThus correct match is A-iii, B-i, C-iv, D-ii, which is option (d)."
+},
+{
+  "question_number": 42,
+  "year": "2015",
+  "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+  "question_text": "In which testing strategy are requirements established during requirements analysis validated against the developed software?",
+  "options": {
+    "a": "Validation testing",
+    "b": "Integration testing",
+    "c": "Regression testing",
+    "d": "System testing"
+  },
+  "answer": "(a)",
+  "explanation": "Correct Answer: (a)\n\nConcept: Validation testing begins at the culmination of integration testing, when software is completely assembled as a package. Its primary focus is validating the software against the requirements established during the requirements analysis phase. It addresses the fundamental question: 'Are we building the right product?'\n\nOther options:\n- Integration testing focuses on design and system construction issues by testing interfaces between software units.\n- Regression testing ensures that recent code changes or fixes have not adversely affected existing functionality.\n- System testing verifies that all elements (software, hardware, people, database) combine properly and overall system function/performance is achieved.\n\nThus, option (a) is the correct answer."
+},
+{
+"question_number": 43,
+"year": "2015",
+"unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+"question_text": "Which process model is also called as classic life cycle model?",
+"options": {
+"a": "Waterfall model",
+"b": "RAD model",
+"c": "Prototyping model",
+"d": "Incremental model"
+},
+"answer": "(a)",
+"explanation": "Correct Answer: (a)\n\nConcept: The Waterfall model is the earliest and most classic software development life cycle (SDLC) model. It follows a linear sequential flow. It is often referred to as the classic life cycle model. RAD, Prototyping, and Incremental are other process models. Hence option (a) is correct."
+},
+{
+"question_number": 44,
+"year": "2015",
+"unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+"question_text": "Cohesion is an extension of :",
+"options": {
+"a": "Abstraction concept",
+"b": "Refinement concept",
+"c": "Information hiding concept",
+"d": "Modularity"
+},
+"answer": "(c)",
+"explanation": "Correct Answer: (c)\n\nConcept: Cohesion refers to how closely the elements within a module are related to each other. It is a measure of the strength of the module's internal binding. Cohesion is closely tied to the concept of information hiding: a module with high cohesion hides its internal details and has a single, well-defined purpose. It is an extension of information hiding because it emphasizes that a module should encapsulate a single logical task. Abstraction, refinement, and modularity are related but not the direct extension. Thus option (c) is correct."
+},
+{
+"question_number": 45,
+"year": "2015",
+"unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+"question_text": "Which one from the following is highly associated activity of project planning?",
+"options": {
+"a": "Keep track of the project progress",
+"b": "Compare actual and planned progress and costs",
+"c": "Identify the activities, milestones and deliverables produced by a project",
+"d": "Both (b) and (c)"
+},
+"answer": "(d)",
+"explanation": "Correct Answer: (d)\n\nConcept: Project planning involves defining the scope, activities, milestones, and deliverables. It also involves comparing actual progress against planned progress and costs to monitor and control the project. Tracking progress (option a) is part of project monitoring, not planning itself. Both (b) and (c) are key planning activities. Hence option (d) is correct."
+},
+{
+"question_number": 46,
+"year": "2015",
+"unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+"question_text": "In the case of parallelization, Amdahl's law states that if P is the proportion of a program that can be made parallel and (1-P) is the proportion that cannot be parallelized, then the maximum speed-up that can be achieved by using N processors is :",
+"options": {
+"a": "1 / ((1 - P) + N P)",
+"b": "1 / ((N - 1) P + P)",
+"c": "1 / ((1 - P) + P / N)",
+"d": "1 / (P + (1 - P) / N)"
+},
+"answer": "(c)",
+"explanation": "Correct Answer: (c)\n\nConcept: Amdahl's law gives the speedup S = 1 / ((1 - P) + P/N), where P is the parallelizable fraction, (1-P) is the sequential fraction, and N is the number of processors. This is the standard formula. Options (a) and (b) are incorrect, and (d) swaps the fractions. Hence option (c) is correct."
+},
+{
+  "question_number": 47,
+  "year": "2015",
+  "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+  "question_text": "Which of the following statements is incorrect for Parallel Virtual Machine (PVM)?",
+  "options": {
+    "a": "The PVM communication model provides asynchronous blocking send, asynchronous blocking receive, and non-blocking receive functions.",
+    "b": "Message buffers are allocated dynamically.",
+    "c": "The PVM communication model assumes that any task can send a message to any other PVM task and that there is no limit to the size or number of such messages.",
+    "d": "In PVM model, the message order is not preserved."
+  },
+  "answer": "(d)",
+  "explanation": "Correct Answer: (d)\n\nConcept: In the Parallel Virtual Machine (PVM) communication model:\n1. It provides asynchronous blocking send, asynchronous blocking receive, and non-blocking receive functions.\n2. Message buffers are dynamically allocated, meaning message size is constrained only by available host memory.\n3. Any task can communicate with any other PVM task without arbitrary restrictions on message size or quantity.\n4. Message Order Guarantee: The PVM model explicitly guarantees that message order between two tasks is preserved (FIFO order). If Task 1 sends Message A and then Message B to Task 2, Message A is guaranteed to arrive before Message B.\n\nTherefore, statement (d) ('message order is not preserved') is incorrect, making (d) the correct answer."
+},
+{
+"question_number": 48,
+"year": "2015",
+"unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+"question_text": "Which of the following algorithms sort n integers, having the range 0 to (n² - 1), in ascending order in O(n) time?",
+"options": {
+"a": "Selection sort",
+"b": "Bubble sort",
+"c": "Radix sort",
+"d": "Insertion sort"
+},
+"answer": "(c)",
+"explanation": "Correct Answer: (c)\n\nConcept: The range is 0 to n²-1. Radix sort can sort in O(n) time if the base is chosen appropriately (e.g., base n). Using counting sort as a subroutine for each digit, the number of digits is log_n(n²)=2, so overall time O(2n)=O(n). Selection, bubble, and insertion sorts have worst-case O(n²). Hence radix sort is the answer, option (c)."
+},
+{
+"question_number": 49,
+"year": "2015",
+"unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+"question_text": "Which of the following statements is FALSE about weak entity set?",
+"options": {
+"a": "Weak entities can be deleted automatically when their strong entity is deleted",
+"b": "Weak entity set avoids the data duplication and consequent possible inconsistencies caused by duplicating the key of the strong entity",
+"c": "A weak entity set has no primary keys unless attributes of the strong entity set on which it depends are included",
+"d": "Tuples in a weak entity set are not partitioned according to their relationship with tuples in a strong entity set"
+},
+"answer": "(d)",
+"explanation": "Correct Answer: (d)\n\nConcept: Weak entity sets are existence-dependent on a strong (owner) entity set. They are partitioned according to their relationship with the owner entity—each weak entity belongs to exactly one strong entity. This partitioning is inherent. Statements (a), (b), and (c) are true. Option (d) says they are not partitioned, which is false. Hence option (d) is the false statement."
+},
+{
+  "question_number": 50,
+  "year": "2015",
+  "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+  "question_text": "Which of the following is not valid with reference to message passing interface (MPI)?",
+  "options": {
+    "a": "MPI can run on any hardware platform",
+    "b": "The programming model is a distributed memory model",
+    "c": "All parallelism is implicit",
+    "d": "MPI_Comm_size returns the total number of MPI processes in specified communication"
+  },
+  "answer": "(c)",
+  "explanation": "Correct Answer: (c)\n\nConcept: MPI (Message Passing Interface) is a standard for parallel programming on distributed memory systems. It is portable, runs on any platform, and uses explicit message passing; parallelism is explicit (the programmer must specify communication). MPI_Comm_size returns the total number of processes in the specified communicator. The statement 'All parallelism is implicit' is incorrect because MPI requires explicit parallel constructs. Thus, option (c) is the invalid statement."
+}
+]

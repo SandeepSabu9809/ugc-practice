@@ -1,5 +1,3 @@
-Here is a **cleaner, stricter version** of your prompt. I’ve added rules to prevent common problems such as invalid JSON, incorrect unit classification, missing options, fabricated information, and malformed HTML.
-
 # Master UGC NET Computer Science JSON Generation Prompt
 
 ## ROLE

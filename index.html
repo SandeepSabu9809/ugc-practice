@@ -857,62 +857,118 @@ function speakQuestion(q, btn, targetContainer) {
     return html;
   }
 
-  async function generateAIDeepDive(q, containerEl) {
-    const apiKey = window.GROQ_API_KEY;
+ async function generateAIDeepDive(q, containerEl) {
+  const groqKey = window.GROQ_API_KEY;
+  const openRouterKey = window.OPENROUTER_API_KEY; // Optional backup
 
-    containerEl.innerHTML = `<em>✨ Connecting to Groq... Generating AI Deep Dive Explanation...</em>`;
+  if (!groqKey && !openRouterKey) {
+    containerEl.innerHTML = `<span style="color:red;">Error: No API key found. Set window.GROQ_API_KEY.</span>`;
+    return;
+  }
+
+  containerEl.innerHTML = `<em>✨ Generating AI Deep Dive Explanation...</em>`;
+
+  const prompt = `You are an expert UGC NET Computer Science mentor. Provide a detailed breakdown for this exam question:\n\n` +
+    `Unit: ${q.unit}\n` +
+    `Question: ${q.question_text}\n` +
+    `Options:\n${JSON.stringify(q.options, null, 2)}\n` +
+    `Correct Answer: ${q.answer}\n\n` +
+    `Please structure your explanation as follows:\n` +
+    `1. Core Concept Explanation\n` +
+    `2. Step-by-Step Derivation/Reasoning\n` +
+    `3. Analysis of Why Other Options Are Incorrect\n` +
+    `4. Quick UGC NET Exam Tip / Related Formula`;
+
+  // Fallback chain: Primary Groq models -> Light Groq models -> OpenRouter Free
+  const providerEndpoints = [
+    // Tier 1: High-reasoning Groq Models
+    {
+      url: 'https://api.groq.com/openai/v1/chat/completions',
+      key: groqKey,
+      model: 'llama-3.3-70b-versatile'
+    },
+    {
+      url: 'https://api.groq.com/openai/v1/chat/completions',
+      key: groqKey,
+      model: 'qwen/qwen3.6-27b'
+    },
+    {
+      url: 'https://api.groq.com/openai/v1/chat/completions',
+      key: groqKey,
+      model: 'openai/gpt-oss-120b'
+    },
+    // Tier 2: Ultra-fast / High-capacity Groq Fallbacks
+    {
+      url: 'https://api.groq.com/openai/v1/chat/completions',
+      key: groqKey,
+      model: 'llama-3.1-8b-instant'
+    }
+  ];
+
+  let aiText = null;
+  let lastError = null;
+
+  for (const config of providerEndpoints) {
+    if (!config.key) continue; // Skip if no key provided
 
     try {
-      const prompt = `You are an expert UGC NET Computer Science mentor. Provide a detailed, easy-to-understand breakdown for this exam question:\n\n` +
-        `Unit: ${q.unit}\n` +
-        `Question: ${q.question_text}\n` +
-        `Options:\n${JSON.stringify(q.options, null, 2)}\n` +
-        `Correct Answer: ${q.answer}\n\n` +
-        `Please structure your explanation as follows:\n` +
-        `1. Core Concept Explanation\n` +
-        `2. Step-by-Step Derivation/Reasoning\n` +
-        `3. Analysis of Why Other Options Are Incorrect\n` +
-        `4. Quick UGC NET Exam Tip / Related Formula`;
-
-      const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+      const response = await fetch(config.url, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer ${apiKey}`
+          'Authorization': `Bearer ${config.key}`
         },
         body: JSON.stringify({
-          model: 'llama-3.3-70b-versatile',
-          messages: [
-            { role: 'user', content: prompt }
-          ],
-          temperature: 0.5
+          model: config.model,
+          messages: [{ role: 'user', content: prompt }],
+          temperature: 0.4
         })
       });
 
       if (!response.ok) {
         const errData = await response.json().catch(() => ({}));
-        throw new Error(errData.error?.message || `HTTP ${response.status}`);
+        throw new Error(errData.error?.message || `HTTP ${response.status} on ${config.model}`);
       }
 
       const data = await response.json();
-      const aiText = data.choices?.[0]?.message?.content || 'No response generated.';
-
-      containerEl.innerHTML = `<strong>🤖 AI Deep Dive Explanation:</strong>\n\n<div class="ai-content-body">${formatMarkdown(aiText)}</div>` +
-        `<div style="margin-top: 10px;">` +
-        `<button class="speak-btn" id="speak-ai-btn-${q.question_number}">🔊 Read AI Analysis</button>` +
-        `</div>`;
-
-      const speakAiBtn = containerEl.querySelector(`#speak-ai-btn-${q.question_number}`);
-      const aiContentBody = containerEl.querySelector(`.ai-content-body`);
-      if (speakAiBtn) {
-        speakAiBtn.addEventListener('click', () => speakAiText(q, aiText, speakAiBtn, aiContentBody));
-      }
-
+      aiText = data.choices?.[0]?.message?.content;
+      if (aiText) break; // Exit loop on first successful generation
     } catch (err) {
-      console.error(err);
-      containerEl.innerHTML = `<span style="color:red;">Error generating AI explanation: ${err.message || err}. Please verify your API key.</span>`;
+      lastError = err;
+      console.warn(`[Fallback] ${config.model} failed, trying next:`, err.message);
     }
   }
+
+  if (!aiText) {
+    containerEl.innerHTML = `<span style="color:red;">Error generating AI explanation: ${lastError?.message || 'All models failed'}.</span>`;
+    return;
+  }
+
+  // Handle Markdown rendering safely
+  let formattedHtml = aiText;
+  if (typeof marked !== 'undefined' && typeof marked.parse === 'function') {
+    formattedHtml = marked.parse(aiText);
+  } else if (typeof formatMarkdown === 'function') {
+    formattedHtml = formatMarkdown(aiText);
+  } else {
+    // Basic fallback if no markdown parser library is loaded
+    formattedHtml = `<pre style="white-space: pre-wrap; font-family: inherit;">${aiText}</pre>`;
+  }
+
+  containerEl.innerHTML = `
+    <strong>🤖 AI Deep Dive Explanation:</strong>
+    <div class="ai-content-body">${formattedHtml}</div>
+    <div style="margin-top: 10px;">
+      <button class="speak-btn" id="speak-ai-btn-${q.question_number}">🔊 Read AI Analysis</button>
+    </div>
+  `;
+
+  const speakAiBtn = containerEl.querySelector(`#speak-ai-btn-${q.question_number}`);
+  const aiContentBody = containerEl.querySelector('.ai-content-body');
+  if (speakAiBtn && typeof speakAiText === 'function') {
+    speakAiBtn.addEventListener('click', () => speakAiText(q, aiText, speakAiBtn, aiContentBody));
+  }
+}
 
   if ('speechSynthesis' in window) {
     window.speechSynthesis.onvoiceschanged = () => window.speechSynthesis.getVoices();

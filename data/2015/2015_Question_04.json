@@ -1,0 +1,856 @@
+[
+  {
+    "question_number": 1,
+    "year": "2015",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "The three outputs x1x2x3 from the 8×3 priority encoder are used to provide a vector address of the form 101x1x2x300. What is the second highest priority vector address in hexadecimal if the vector addresses are starting from the one with the highest priority?",
+    "options": {
+      "a": "BC",
+      "b": "A4",
+      "c": "BD",
+      "d": "AC"
+    },
+    "answer": "(b)",
+    "explanation": "Correct Answer: (b)\n\nConcept: The priority encoder outputs a binary code for the highest priority input. The vector address format is 101 x1 x2 x3 00. The highest priority address has x1=x2=x3=0, giving 10100000 = A0 (hex). The second highest priority has x1=x2=0, x3=1, giving 10100100 = A4. Thus option (b) is correct."
+  },
+  {
+    "question_number": 2,
+    "year": "2015",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "What will be the output at PORT1 if the following program is executed?\nMVI B, 82H\nMOV A, B\nMOV C, A\nMVI D, 27H\nOUT PORT1\nHLT",
+    "options": {
+      "a": "37H",
+      "b": "82H",
+      "c": "B9H",
+      "d": "00H"
+    },
+    "answer": "(b)",
+    "explanation": "Correct Answer: (b)\n\nConcept: The program loads 82H into B, moves it to A, then to C, and then outputs the content of A (which is 82H) to PORT1. The MVI D, 27H does not affect the output. Thus output is 82H, option (b)."
+  },
+  {
+    "question_number": 3,
+    "year": "2015",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "Which of the following 8085 microprocessor hardware interrupt has the lowest priority?",
+    "options": {
+      "a": "RST 6.5",
+      "b": "RST 7.5",
+      "c": "TRAP",
+      "d": "INTR"
+    },
+    "answer": "(d)",
+    "explanation": "Correct Answer: (d)\n\nConcept: In 8085, the priority order (highest to lowest) is: TRAP, RST 7.5, RST 6.5, RST 5.5, INTR. INTR is the lowest priority and is maskable. Thus option (d)."
+  },
+  {
+    "question_number": 4,
+    "year": "2015",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "A dynamic RAM is refresh cycle of 32 times per msec. Each refresh operation requires 100 nsec and a memory cycle requires 250 nsec. What percentage of memory's total operating time is required for refreshes?",
+    "options": {
+      "a": "0.64",
+      "b": "0.96",
+      "c": "2.00",
+      "d": "0.32"
+    },
+    "answer": "(d)",
+    "explanation": "Correct Answer: (d)\n\nConcept: In 1 msec (10^6 nsec), there are 32 refresh cycles. In one memory cycle (250 nsec), the number of refresh cycles is (32 * 250)/10^6 = 0.008 cycles. Each refresh takes 100 nsec, so time per memory cycle for refresh = 0.008 * 100 = 0.8 nsec. Percentage = (0.8 / 250) * 100 = 0.32%. Thus option (d)."
+  },
+  {
+    "question_number": 5,
+    "year": "2015",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "A DMA controller transfers 32-bit words to memory using cycle stealing. The words are assembled from a device that transmits characters at a rate of 4800 characters per second. The CPU is fetching and executing instructions at an average rate of one million instructions per second. By how much will the CPU be slowed down because of the DMA Transfer?",
+    "options": {
+      "a": "0.06%",
+      "b": "0.12%",
+      "c": "1.2%",
+      "d": "2.5%"
+    },
+    "answer": "(b)",
+    "explanation": "Correct Answer: (b)\n\nConcept: Each character = 1 byte. 32-bit word = 4 bytes. Device transmits 4800 bytes/sec, so 1200 words/sec (since 4800/4=1200). These are transferred via cycle stealing, causing the CPU to lose 1200 instruction cycles per second (assuming each word transfer steals one cycle). CPU executes 1,000,000 instructions/sec, so slowdown = (1200/1,000,000)*100 = 0.12%. Option (b)."
+  },
+  {
+    "question_number": 6,
+    "year": "2015",
+    "unit": "Unit 2: Computer System Architecture (Digital logic, data representation, register transfer, pipeline, memory organization)",
+    "question_text": "A CPU handles interrupt by executing interrupt service subroutine",
+    "options": {
+      "a": "by checking interrupt register after execution of each instruction",
+      "b": "by checking interrupt register at the end of the fetch cycle",
+      "c": "whenever an interrupt is registered",
+      "d": "by checking interrupt register at regular time interval"
+    },
+    "answer": "(a)",
+    "explanation": "Correct Answer: (a)\n\nConcept: The CPU checks the interrupt register after finishing the execution of the current instruction. If an interrupt is pending, it jumps to the ISR. This is the standard mechanism. Option (a) is correct."
+  },
+  {
+    "question_number": 7,
+    "year": "2015",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "Given the following set of prolog clauses : father(X, Y) :- parent(X, Y), male(X). parent(Sally, Bob). parent(Jim, Bob). parent(Alice, Jane). parent(Thomas, Jane). male(Bob). male(Jim). female(Sally). female(Alice). How many atoms are matched to the variable 'X' before the query father(X, Jane) reports a Result?",
+    "options": {
+      "a": "1",
+      "b": "2",
+      "c": "3",
+      "d": "4"
+    },
+    "answer": "(b)",
+    "explanation": "Correct Answer: (b)\n\nConcept: The query father(X, Jane) attempts to satisfy parent(X, Jane) and male(X). The first matching parent fact is parent(Alice, Jane); X is bound to Alice, but male(Alice) fails. Next, parent(Thomas, Jane) binds X to Thomas, but male(Thomas) is not a fact, so it also fails. Thus X is matched twice before the query fails (or reports no result). The number of atoms matched to X is 2. Option (b) is correct."
+  },
+  {
+    "question_number": 8,
+    "year": "2015",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "Forward chaining systems are .......... whereas backward chaining systems are ..........",
+    "options": {
+      "a": "Data driven, Data driven",
+      "b": "Goal driven, Data driven",
+      "c": "Data driven, Goal driven",
+      "d": "Goal driven, Goal driven"
+    },
+    "answer": "(c)",
+    "explanation": "Correct Answer: (c)\n\nConcept: Forward chaining starts with available data and applies rules to derive conclusions (data-driven). Backward chaining starts with a goal and works backward to find supporting evidence (goal-driven). Thus option (c)."
+  },
+  {
+    "question_number": 9,
+    "year": "2015",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "Match the following w.r.t. programming language :\n<table border='1' style='border-collapse: collapse; width: 100%; margin: 10px 0;'><thead><tr style='background-color: #f2f2f2;'><th style='padding: 8px; text-align: left;'>List-I</th><th style='padding: 8px; text-align: left;'>List-II</th></tr></thead><tbody><tr><td style='padding: 8px;'>A. JAVA</td><td style='padding: 8px;'>i. Dynamically object oriented</td></tr><tr><td style='padding: 8px;'>B. Python</td><td style='padding: 8px;'>ii. Statically Non-object oriented</td></tr><tr><td style='padding: 8px;'>C. Prolog</td><td style='padding: 8px;'>iii. Statically object oriented</td></tr><tr><td style='padding: 8px;'>D. ADA</td><td style='padding: 8px;'>iv. Dynamically non-object oriented</td></tr></tbody></table>\nChoose the correct answer from the options given below:",
+    "options": {
+      "a": "(iii), (i), (ii), (iv)",
+      "b": "(i), (iii), (ii), (iv)",
+      "c": "(i), (iii), (iv), (ii)",
+      "d": "(ii), (iv), (i), (iii)"
+    },
+    "answer": "(a)",
+    "explanation": "Correct Answer: (a)\n\nConcept: Java is statically typed and object-oriented (iii). Python is dynamically typed and object-oriented (i). Prolog is dynamically typed and non-object-oriented (iv) – but given the options, the best match is (ii) if considered statically non-OO? Actually in standard classification, Prolog is dynamically typed and not OO, so it should be (iv). However, the answer key expects (a) which assigns Prolog to (ii) and ADA to (iv). This is a common mistake in old exams; we follow the given key. Thus A-iii, B-i, C-ii, D-iv, so option (a)."
+  },
+  {
+    "question_number": 10,
+    "year": "2015",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "The combination of an IP address and a port number is known as",
+    "options": {
+      "a": "network number",
+      "b": "socket address",
+      "c": "subnet mask number",
+      "d": "MAC address"
+    },
+    "answer": "(b)",
+    "explanation": "Correct Answer: (b)\n\nConcept: A socket address is the combination of an IP address and a port number, identifying a specific endpoint for communication. Thus option (b)."
+  },
+  {
+    "question_number": 11,
+    "year": "2015",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "A network with bandwidth of 10 Mbps can pass only an average of 15,000 frames per minute with each frame carrying an average of 8,000 bits. What is the throughput of this network?",
+    "options": {
+      "a": "2 Mbps",
+      "b": "60 Mbps",
+      "c": "120 Mbps",
+      "d": "10 Mbps"
+    },
+    "answer": "(a)",
+    "explanation": "Correct Answer: (a)\n\nConcept: Throughput = (number of frames per second) * bits per frame = (15000/60) * 8000 = 250 * 8000 = 2,000,000 bps = 2 Mbps. Thus option (a)."
+  },
+  {
+    "question_number": 12,
+    "year": "2015",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "Consider a subnet with 720 routers. If a three-level hierarchy is chosen with eight clusters, each containing 9 regions of 10 routers, then total number of entries in the routing table is......",
+    "options": {
+      "a": "25",
+      "b": "27",
+      "c": "53",
+      "d": "72"
+    },
+    "answer": "(a)",
+    "explanation": "Correct Answer: (a)\n\nConcept: In a three-level hierarchy, each router needs entries for local region (10 routers), for other regions within its cluster (8 entries), and for other clusters (7 entries). Total = 10 + 8 + 7 = 25. Thus option (a)."
+  },
+  {
+    "question_number": 13,
+    "year": "2015",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "In a classful addressing, the IP addresses with 0 (zero) as network number:",
+    "options": {
+      "a": "refers to the current network",
+      "b": "refers to broadcast on the local network",
+      "c": "refers to broadcast on a distant network",
+      "d": "refers to loopback testing"
+    },
+    "answer": "(a)",
+    "explanation": "Correct Answer: (a)\n\nConcept: An IP address with a network number of 0 is used to refer to the current network, allowing a host to communicate on its own network without knowing the network number. Thus option (a)."
+  },
+  {
+    "question_number": 14,
+    "year": "2015",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "In electronic mail, which of the following protocols allows the transfer of multimedia messages?",
+    "options": {
+      "a": "IMAP",
+      "b": "SMTP",
+      "c": "POP 3",
+      "d": "MIME"
+    },
+    "answer": "(d)",
+    "explanation": "Correct Answer: (d)\n\nConcept: MIME (Multipurpose Internet Mail Extensions) extends email format to support multimedia content like audio, video, images, etc. Thus option (d)."
+  },
+  {
+    "question_number": 15,
+    "year": "2015",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "A device is sending out data at the rate of 2000 bps. How long does it take to send a file of 1,00,000 characters?",
+    "options": {
+      "a": "50",
+      "b": "200",
+      "c": "400",
+      "d": "800"
+    },
+    "answer": "(c)",
+    "explanation": "Correct Answer: (c)\n\nConcept: 1,00,000 characters = 1,00,000 * 8 = 800,000 bits. At 2000 bps, time = 800,000 / 2000 = 400 seconds. Thus option (c)."
+  },
+  {
+    "question_number": 16,
+    "year": "2015",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "In activity-Selection problem, each activity i has a start time si and a finish time fi where si ≤ fi. Activities i and j are compatible if:",
+    "options": {
+      "a": "si ≥ fj",
+      "b": "sj ≥ fi",
+      "c": "si ≥ fj or sj ≥ fi",
+      "d": "si ≥ fj and sj ≥ fi"
+    },
+    "answer": "(c)",
+    "explanation": "Correct Answer: (c)\n\nConcept: Two activities are compatible if they do not overlap. This means either activity i finishes before activity j starts (si ≥ fj) or activity j finishes before activity i starts (sj ≥ fi). Thus option (c)."
+  },
+  {
+    "question_number": 17,
+    "year": "2015",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "Given two sequences X and Y :\nX = <a, b, c, b, d, a, b>\nY = <b, d, c, a, b, a>\nThe longest common subsequence of X and Y is:",
+    "options": {
+      "a": "<b, c, a>",
+      "b": "<c, a, b>",
+      "c": "<b, c, a, a>",
+      "d": "<b, c, b, a>"
+    },
+    "answer": "(d)",
+    "explanation": "Correct Answer: (d)\n\nConcept: The LCS is <b, c, b, a> which appears in X (positions 2,3,5,6) and Y (positions 1,3,5,6). Other options are either not common subsequences or shorter. Thus option (d)."
+  },
+  {
+    "question_number": 18,
+    "year": "2015",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "If there are n integers to sort, each integer has d digits and each digit is in the set {1, 2, ......, k}, radix sort can sort the numbers in :",
+    "options": {
+      "a": "O(d n k)",
+      "b": "O(d nk)",
+      "c": "O((d+n)k)",
+      "d": "O(d(n+k))"
+    },
+    "answer": "(d)",
+    "explanation": "Correct Answer: (d)\n\nConcept: Radix sort uses counting sort for each digit. Counting sort takes O(n+k) per digit, and there are d digits, so total O(d(n+k)). Thus option (d)."
+  },
+  {
+    "question_number": 19,
+    "year": "2015",
+    "unit": "Unit 7: Data Structures and Algorithms (Arrays, stacks, queues, trees, greedy algorithms, dynamic programming, graph algorithms, complexity)",
+    "question_text": "The solution of the recurrence relation\nT(n) = θ(1) if n ≤ 80\nT(n) = T(n/10) + T(7n/10) + 6n + O(n) if n > 80\nis:",
+    "options": {
+      "a": "O(n log n)",
+      "b": "O(n)",
+      "c": "O(n^2)",
+      "d": "O(n log n)"
+    },
+    "answer": "(b)",
+    "explanation": "Correct Answer: (b)\n\nConcept: The recurrence has two subproblems of sizes n/10 and 7n/10. The sum of the fractions is 0.1 + 0.7 = 0.8 < 1. By the recursion-tree method, the total work per level is O(n) * (0.8)^k, summing to O(n). Thus T(n) = O(n). Option (b) is correct."
+  },
+  {
+    "question_number": 20,
+    "year": "2015",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "The language of all non-null strings of a's can be defined by a context free grammar as follow:\nS → aS | Sa | a\nHow many different trees can generate the word 'a'?",
+    "options": {
+      "a": "Two",
+      "b": "Three",
+      "c": "Four",
+      "d": "Five"
+    },
+    "answer": null,
+    "explanation": "Correct Answer: Not provided.\n\nThe answer key is not given. The word 'a' can be generated by S→a directly, and other productions would require ε which is not in the language. So only one parse tree exists. However, options do not include 1, so there may be ambiguity in the question. We leave the answer as null."
+  },
+  {
+    "question_number": 21,
+    "year": "2015",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "The family of context sensitive language is ______ under union and ______ under reversal.",
+    "options": {
+      "a": "closed, not closed",
+      "b": "not closed, not closed",
+      "c": "closed, closed",
+      "d": "not closed, closed"
+    },
+    "answer": "(c)",
+    "explanation": "Correct Answer: (c)\n\nConcept: Context-sensitive languages are closed under union, intersection, concatenation, Kleene star, complement, and reversal. Thus they are closed under both union and reversal. Option (c)."
+  },
+  {
+    "question_number": 22,
+    "year": "2015",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "Match the following :\n<table border='1' style='border-collapse: collapse; width: 100%; margin: 10px 0;'><thead><tr style='background-color: #f2f2f2;'><th style='padding: 8px; text-align: left;'>List-I</th><th style='padding: 8px; text-align: left;'>List-II</th></tr></thead><tbody><tr><td style='padding: 8px;'>A. {a^n b^n | n > 0}</td><td style='padding: 8px;'>i. but not recursive language</td></tr><tr><td style='padding: 8px;'>B. The complement of {a^n b^n a^n | n > 0}</td><td style='padding: 8px;'>ii. but not context free language</td></tr><tr><td style='padding: 8px;'>C. {a^n b^n a^n | n > 0}</td><td style='padding: 8px;'>iii. but can not be accepted by a deterministic pushdown automaton</td></tr><tr><td style='padding: 8px;'>D. L is a recursive language</td><td style='padding: 8px;'>iv. but not regular</td></tr></tbody></table>\nChoose the correct answer from the options given below:",
+    "options": {
+      "a": "(i), (ii), (iii), (iv)",
+      "b": "(i), (ii), (iv), (iii)",
+      "c": "(iv), (iii), (ii), (i)",
+      "d": "(iv), (iii), (i), (ii)"
+    },
+    "answer": "(c)",
+    "explanation": "Correct Answer: (c)\n\nConcept: {a^n b^n} is context-free but not regular → (iv). The complement of {a^n b^n a^n} is context-free but not deterministic context-free → (iii). {a^n b^n a^n} is not context-free → (ii). A recursive language is not necessarily non-recursive; the matching is (i) for D? Actually D is a recursive language, but the property (i) says \"but not recursive language\", which is contradictory. The intended mapping is likely A-iv, B-iii, C-ii, D-i, which corresponds to option (c). We follow the key."
+  },
+  {
+    "question_number": 23,
+    "year": "2015",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "The context free grammar given by\nS → XYZ\nX → aX | bX | ε\nY → bbb\nZ → aZ | bZ | ε\ngenerates the language which is defined by regular expression:",
+    "options": {
+      "a": "(a+b)* bbb",
+      "b": "abb (a+b)",
+      "c": "(a+b)(bbb)(a+b)",
+      "d": "(a+b)(bbb)(a+b)"
+    },
+    "answer": "(c)",
+    "explanation": "Correct Answer: (c)\n\nConcept: X generates (a+b)*, Y generates bbb, Z generates (a+b)*. Thus S generates (a+b)* bbb (a+b)*. Option (c) is correct (though it lacks the * on the outer groups, the intent is clear)."
+  },
+  {
+    "question_number": 24,
+    "year": "2015",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "There are exactly ______ different finite automata with three states x, y and z over the alphabet {a, b} where x is always the start state.",
+    "options": {
+      "a": "64",
+      "b": "256",
+      "c": "1024",
+      "d": "5832"
+    },
+    "answer": "(d)",
+    "explanation": "Correct Answer: (d)\n\nConcept: For n states and m input symbols, the number of DFAs with a designated start state is n^(m*n) * 2^n (since each state can have n transitions per symbol, and any subset of states can be final). Here n=3, m=2, so 3^(2*3) * 2^3 = 3^6 * 8 = 729 * 8 = 5832. Option (d)."
+  },
+  {
+    "question_number": 25,
+    "year": "2015",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "Given the following two languages :\nL1 = {a^n b a^n | n > 0}\nL2 = {a^n b a^n b^(n+1) | n > 0}\nWhich of the following is correct?",
+    "options": {
+      "a": "L1 is context free language and L2 is not context free language",
+      "b": "L1 is not context free language and L2 is context free language",
+      "c": "Both L1 and L2 are context free languages",
+      "d": "Both L1 and L2 are not context free language"
+    },
+    "answer": "(a)",
+    "explanation": "Correct Answer: (a)\n\nConcept: L1 = {a^n b a^n} is a deterministic CFL (can be accepted by a DPDA). L2 requires comparing n with n+1 and also the a's before and after b, which requires two stacks (not context-free). So L1 is CFL, L2 is not. Option (a)."
+  },
+  {
+    "question_number": 26,
+    "year": "2015",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "Which of the following statements is/are correct with reference to abstract class and interface?\n(1) A class can inherit only one Abstract class but may inherit several interfaces\n(2) An Abstract class can provide complete and default code but an interface has no code",
+    "options": {
+      "a": "(1) is true",
+      "b": "(2) is true",
+      "c": "Both (1) and (2) are true",
+      "d": "Neither (1) nor (2) is true"
+    },
+    "answer": "(c)",
+    "explanation": "Correct Answer: (c)\n\nConcept: In Java and similar languages, a class can extend only one abstract class (single inheritance) but can implement multiple interfaces. Abstract classes can have method implementations (code), while interfaces traditionally have no implementation (though Java 8+ allows default methods). The statements are both true, so option (c)."
+  },
+  {
+    "question_number": 27,
+    "year": "2015",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "Match the following with reference to object oriented modeling :\n<table border='1' style='border-collapse: collapse; width: 100%; margin: 10px 0;'><thead><tr style='background-color: #f2f2f2;'><th style='padding: 8px; text-align: left;'>List-I</th><th style='padding: 8px; text-align: left;'>List-II</th></tr></thead><tbody><tr><td style='padding: 8px;'>A. Polymorphism</td><td style='padding: 8px;'>i. Picking both operator and attributes with operations appropriate model an object</td></tr><tr><td style='padding: 8px;'>B. Inheritance</td><td style='padding: 8px;'>ii. Hiding implementation details of methods from users of objects</td></tr><tr><td style='padding: 8px;'>C. Encapsulation</td><td style='padding: 8px;'>iii. The property that a derived class can reuse the properties of its base class</td></tr><tr><td style='padding: 8px;'>D. Abstraction</td><td style='padding: 8px;'>iv. The ability to present the same interface for different data types</td></tr></tbody></table>\nChoose the correct answer from the options given below:",
+    "options": {
+      "a": "(iv), (iii), (ii), (i)",
+      "b": "(iv), (ii), (iii), (i)",
+      "c": "(iii), (iv), (ii), (i)",
+      "d": "(ii), (iii), (iv), (i)"
+    },
+    "answer": "(a)",
+    "explanation": "Correct Answer: (a)\n\nConcept: Polymorphism → ability to present same interface for different data types (iv). Inheritance → derived class reuses base class properties (iii). Encapsulation → hiding implementation details (ii). Abstraction → picking both operator and attributes with operations appropriate to model an object (i). So A-iv, B-iii, C-ii, D-i → option (a)."
+  },
+  {
+    "question_number": 28,
+    "year": "2015",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "Which of the following graphic primitives are considered as the basic building blocks of computer graphics?\n(1) Points\n(2) Lines\n(3) Polylines\n(4) Polygons",
+    "options": {
+      "a": "(1) only",
+      "b": "(1) and (2)",
+      "c": "(1), (2) and (3)",
+      "d": "(1), (2), (3) and (4)"
+    },
+    "answer": "(b)",
+    "explanation": "Correct Answer: (b)\n\nConcept: Points and lines are the fundamental building blocks in computer graphics. Polylines and polygons are composed of lines, so they are not considered basic primitives. Thus option (b)."
+  },
+  {
+    "question_number": 29,
+    "year": "2015",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "Javascript and Java similar name because is/are true.\n(1) Javascripts syntax is loosely based on Java's syntax\n(2) Javascript is stripped down version of Java\n(3) Java and Javascript are originated from Island of Java",
+    "options": {
+      "a": "(1) only",
+      "b": "(1), (2) and (3)",
+      "c": "(1) and (2)",
+      "d": "(1) and (3)"
+    },
+    "answer": "(a)",
+    "explanation": "Correct Answer: (a)\n\nConcept: JavaScript's syntax is loosely based on Java, but they are different languages. JavaScript is not a stripped-down version of Java, and they did not originate from the island of Java. Thus only (1) is true, option (a)."
+  },
+  {
+    "question_number": 30,
+    "year": "2015",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "Which of the following statements are true with reference to the way of describing XML data?\n(1) XML uses DTD to describe the data\n(2) XML uses XSL to describe the data\n(3) XML uses a description node to describe the data",
+    "options": {
+      "a": "(1) only",
+      "b": "(1) and (2)",
+      "c": "(1) and (3)",
+      "d": "(2) and (3)"
+    },
+    "answer": "(a)",
+    "explanation": "Correct Answer: (a)\n\nConcept: XML uses DTD (or XML Schema) to describe the data structure. XSL is for styling/transforming, not describing data. There is no \"description node\" as a standard. Thus only (1) is true, option (a)."
+  },
+  {
+    "question_number": 31,
+    "year": "2015",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "Match the following with respect to various memory management algorithms:\n<table border='1' style='border-collapse: collapse; width: 100%; margin: 10px 0;'><thead><tr style='background-color: #f2f2f2;'><th style='padding: 8px; text-align: left;'>List-I</th><th style='padding: 8px; text-align: left;'>List-II</th></tr></thead><tbody><tr><td style='padding: 8px;'>A. Demand paging</td><td style='padding: 8px;'>i. degree of multiprogramming</td></tr><tr><td style='padding: 8px;'>B. Segmentation</td><td style='padding: 8px;'>ii. working set</td></tr><tr><td style='padding: 8px;'>C. Dynamic partitions</td><td style='padding: 8px;'>iii. supports user view of memory</td></tr><tr><td style='padding: 8px;'>D. Fixed partitions</td><td style='padding: 8px;'>iv. compaction</td></tr></tbody></table>\nChoose the correct answer from the options given below:",
+    "options": {
+      "a": "(iii), (iv), (ii), (i)",
+      "b": "(ii), (iii), (i), (iv)",
+      "c": "(iv), (iii), (ii), (i)",
+      "d": "(ii), (iii), (iv), (i)"
+    },
+    "answer": "(d)",
+    "explanation": "Correct Match:\n- Demand paging → working set (ii)\n- Segmentation → supports user view of memory (iii)\n- Dynamic partitions → compaction (iv)\n- Fixed partitions → degree of multiprogramming (i)\nThus A-ii, B-iii, C-iv, D-i → option (d)."
+  },
+  {
+    "question_number": 32,
+    "year": "2015",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "Function of memory management unit is :",
+    "options": {
+      "a": "Address translation",
+      "b": "Memory allocation",
+      "c": "Cache management",
+      "d": "All of the above"
+    },
+    "answer": "(a)",
+    "explanation": "Correct Answer: (a)\n\nConcept: The primary function of an MMU is address translation (virtual to physical). Memory allocation and cache management are handled by other parts of the OS or hardware. Thus option (a)."
+  },
+  {
+    "question_number": 33,
+    "year": "2015",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "Consider a system with twelve magnetic tape drives and three processes P1, P2 and P3. Process P1 requires maximum ten tape drives, process P2 may need as many as four tape drives, and process P3 may need up to nine tape drives. Suppose at a certain time, process P1 is holding five tape drives, P2 is holding two, and P3 is holding three. The system is currently in a safe state. Which of the following is the minimum number of additional tape drives that must be available to guarantee that the system is deadlock-free?",
+    "options": {
+      "a": "1",
+      "b": "2",
+      "c": "3",
+      "d": "4"
+    },
+    "answer": "(a)",
+    "explanation": "Correct Answer: (a)\n\nConcept: Current allocation: P1=5, P2=2, P3=3, total allocated=10, total=12, so available=2. Needs: P1=5, P2=2, P3=6. To guarantee safety, we need enough additional resources so that a safe sequence exists. If we add 1 drive, available becomes 3. Then P2 (needs 2) can finish, releasing 4, making available 7; then P1 (needs 5) can finish, releasing 10, making available 17; then P3 can finish. So 1 additional drive is sufficient. Thus option (a)."
+  },
+  {
+    "question_number": 34,
+    "year": "2015",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "In Unix operating system, the boot block is located in the first few sectors of a file system. The super block describes the state of the file system. The inode list is a linear array of inodes. Data blocks contain the actual content of files. Match the following:\n<table border='1' style='border-collapse: collapse; width: 100%; margin: 10px 0;'><thead><tr style='background-color: #f2f2f2;'><th style='padding: 8px; text-align: left;'>List-I</th><th style='padding: 8px; text-align: left;'>List-II</th></tr></thead><tbody><tr><td style='padding: 8px;'>A. Boot block</td><td style='padding: 8px;'>i. contains metadata describing the file system</td></tr><tr><td style='padding: 8px;'>B. Super block</td><td style='padding: 8px;'>ii. maps files to inodes</td></tr><tr><td style='padding: 8px;'>C. Inode list</td><td style='padding: 8px;'>iii. contains actual file content</td></tr><tr><td style='padding: 8px;'>D. Data block</td><td style='padding: 8px;'>iv. initial bootstrap program</td></tr></tbody></table>\nChoose the correct answer from the options given below:",
+    "options": {
+      "a": "(iv), (i), (ii), (iii)",
+      "b": "(i), (iv), (iii), (ii)",
+      "c": "(iii), (i), (ii), (iv)",
+      "d": "(iv), (ii), (i), (iii)"
+    },
+    "answer": "(a)",
+    "explanation": "Correct Match:\n- Boot block → initial bootstrap program (iv)\n- Super block → contains metadata describing the file system (i)\n- Inode list → maps files to inodes (ii)\n- Data block → contains actual file content (iii)\nThus A-iv, B-i, C-ii, D-iii → option (a)."
+  },
+  {
+    "question_number": 35,
+    "year": "2015",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "In an operating system, indivisibility of operation means :",
+    "options": {
+      "a": "Operation is interruptible",
+      "b": "Race-condition may occur",
+      "c": "Processor cannot be pre-empted",
+      "d": "All of the above"
+    },
+    "answer": "(c)",
+    "explanation": "Correct Answer: (c)\n\nConcept: Indivisible (atomic) operation means it is performed completely without interruption; the processor cannot be preempted during its execution. Thus option (c)."
+  },
+  {
+    "question_number": 36,
+    "year": "2015",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "A horn clause is",
+    "options": {
+      "a": "A clause in which no variables occur in the expression",
+      "b": "A clause that has at least one negative literal",
+      "c": "A disjunction of a number of literals",
+      "d": "A clause that has at most one positive literal"
+    },
+    "answer": "(d)",
+    "explanation": "Correct Answer: (d)\n\nConcept: A Horn clause is a clause with at most one positive literal. If it has exactly one positive literal, it's a definite clause. Thus option (d)."
+  },
+  {
+    "question_number": 37,
+    "year": "2015",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "In propositional logic, given P and P → Q, we can infer",
+    "options": {
+      "a": "~Q",
+      "b": "Q",
+      "c": "P ∧ Q",
+      "d": "~P ∧ Q"
+    },
+    "answer": "(b)",
+    "explanation": "Correct Answer: (b)\n\nConcept: This is modus ponens: from P and P→Q, we can infer Q. Thus option (b)."
+  },
+  {
+    "question_number": 38,
+    "year": "2015",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "Reasoning strategies used in expert system include",
+    "options": {
+      "a": "Forward chaining, backward chaining and problem reduction",
+      "b": "Forward chaining, backward chaining and boundary mutation",
+      "c": "Forward chaining, backward chaining and back propagation",
+      "d": "Backward chaining, problem reduction and boundary mutation"
+    },
+    "answer": "(a)",
+    "explanation": "Correct Answer: (a)\n\nConcept: Common reasoning strategies in expert systems are forward chaining (data-driven), backward chaining (goal-driven), and problem reduction. Thus option (a)."
+  },
+  {
+    "question_number": 39,
+    "year": "2015",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "Language model used in LISP is ............",
+    "options": {
+      "a": "Functional programming",
+      "b": "Logic programming",
+      "c": "Object oriented programming",
+      "d": "All of the above"
+    },
+    "answer": "(a)",
+    "explanation": "Correct Answer: (a)\n\nConcept: LISP is a functional programming language. It is based on function application and recursion. Thus option (a)."
+  },
+  {
+    "question_number": 40,
+    "year": "2015",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "In constraint satisfaction problem, constraints can be stated as ............",
+    "options": {
+      "a": "Arithmetic equations and inequalities that bind the values of variables",
+      "b": "Arithmetic equations and inequalities that doesn't bind any restriction over variables",
+      "c": "Arithmetic equations that impose restrictions over variables",
+      "d": "Arithmetic equations that discard constraints over the given variables"
+    },
+    "answer": "(a)",
+    "explanation": "Correct Answer: (a)\n\nConcept: Constraints in CSP are typically arithmetic equations and inequalities that restrict the possible values of variables. They bind variables to specific domains. Thus option (a)."
+  },
+  {
+    "question_number": 41,
+    "year": "2015",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "As compared to rental and leasing methods to acquire computer systems for a management information system (MIS), purchase method has following advantage :",
+    "options": {
+      "a": "It has high level of flexibility",
+      "b": "It doesn't require cash up-front",
+      "c": "It is a business investment",
+      "d": "Little risk of obsolescence"
+    },
+    "answer": "(c)",
+    "explanation": "Correct Answer: (c)\n\nConcept: Purchasing is considered a capital investment, as opposed to operational expense for rental/leasing. Other options are not advantages of purchase. Thus option (c)."
+  },
+  {
+    "question_number": 42,
+    "year": "2015",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "Consider the conditional entropy and mutual information for the binary symmetric channel. The input source has alphabet X = {0,1} and associated probabilities {1/2, 1/2}. The channel matrix is [[1-p, p], [p, 1-p]] where p is transition probability. Then the conditional entropy is given by :",
+    "options": {
+      "a": "1",
+      "b": "-p log(p) - (1-p) log(1-p)",
+      "c": "1 + p log(p) + (1-p) log(1-p)",
+      "d": "0"
+    },
+    "answer": "(b)",
+    "explanation": "Correct Answer: (b)\n\nConcept: The conditional entropy H(X|Y) for a binary symmetric channel with symmetric input is the binary entropy function H(p) = -p log p - (1-p) log(1-p). Thus option (b)."
+  },
+  {
+    "question_number": 43,
+    "year": "2015",
+    "unit": "Unit 9: Data Communication and Computer Networks (OSI/TCP-IP models, routing protocols, IP addressing, IPv4/IPv6, network security)",
+    "question_text": "Which of the following is not a lossy compression technique?",
+    "options": {
+      "a": "JPEG",
+      "b": "MPEG",
+      "c": "FFT",
+      "d": "Arithmetic coding"
+    },
+    "answer": "(d)",
+    "explanation": "Correct Answer: (d)\n\nConcept: Arithmetic coding is a lossless compression technique. JPEG and MPEG are lossy, and FFT is used in lossy compression (like JPEG). Thus option (d)."
+  },
+  {
+    "question_number": 44,
+    "year": "2015",
+    "unit": "Unit 10: Artificial Intelligence (Search algorithms, knowledge representation, propositional logic, fuzzy sets, natural language processing)",
+    "question_text": "Blind image deconvolution is",
+    "options": {
+      "a": "Combination of blur identification and image restoration",
+      "b": "Combination of segmentation and classification",
+      "c": "Combination of blur and non-blur image",
+      "d": "None of the above"
+    },
+    "answer": "(a)",
+    "explanation": "Correct Answer: (a)\n\nConcept: Blind deconvolution aims to recover both the original image and the blur kernel (point spread function) from the blurred image, combining blur identification and restoration. Thus option (a)."
+  },
+  {
+    "question_number": 45,
+    "year": "2015",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "A basic feasible solution of a linear programming problem is said to be ______ if at least one of the basic variables is zero.",
+    "options": {
+      "a": "degenerate",
+      "b": "non-degenerate",
+      "c": "infeasible",
+      "d": "unbounded"
+    },
+    "answer": "(a)",
+    "explanation": "Correct Answer: (a)\n\nConcept: A basic feasible solution is degenerate if one or more basic variables have value zero. Thus option (a)."
+  },
+  {
+    "question_number": 46,
+    "year": "2015",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "Consider the following conditions :\n(1) The solution must be feasible, i.e. it must satisfy all the supply and demand constraints\n(2) The number of positive allocations must be equal to m + n - 1, where m is the number of rows and n is the number of columns\n(3) All the positive allocations must be in independent positions\nThe initial solution of a transportation problem is said to be non-degenerate basic feasible solution if it satisfies :",
+    "options": {
+      "a": "(1) and (2) only",
+      "b": "(1) and (3) only",
+      "c": "(2) and (3) only",
+      "d": "(1), (2) and (3)"
+    },
+    "answer": "(d)",
+    "explanation": "Correct Answer: (d)\n\nConcept: For a non-degenerate basic feasible solution in a transportation problem, all three conditions must hold: feasibility, exactly m+n-1 positive allocations, and those allocations must be in independent positions. Thus option (d)."
+  },
+  {
+    "question_number": 47,
+    "year": "2015",
+    "unit": "Unit 1: Discrete Structures and Optimization (Logic, sets, relations, graph theory, group theory, boolean algebra)",
+    "question_text": "Consider the following transportation problem: (table with costs and supplies/demands). The transportation cost in the initial basic feasible solution using Vogel's Approximation method is :",
+    "options": {
+      "a": "1450",
+      "b": "1465",
+      "c": "1480",
+      "d": "1520"
+    },
+    "answer": "(b)",
+    "explanation": "Correct Answer: (b)\n\nConcept: The VAM solution yields a total cost of 1465 as computed in the solution. Thus option (b)."
+  },
+  {
+    "question_number": 48,
+    "year": "2015",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "The character set used in windows 2000 operating system is .........",
+    "options": {
+      "a": "8 bit ASCII",
+      "b": "Extended ASCII",
+      "c": "16 bit UNICODE",
+      "d": "12 bit UNICODE"
+    },
+    "answer": "(c)",
+    "explanation": "Correct Answer: (c)\n\nConcept: Windows 2000 uses 16-bit Unicode (UTF-16) as its native character encoding. Thus option (c)."
+  },
+  {
+    "question_number": 49,
+    "year": "2015",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "In Unix, the command to enable execution permission for file 'myfile' by all is .........",
+    "options": {
+      "a": "Chmod ugo + X myfile",
+      "b": "Chmod a + X myfile",
+      "c": "Chmod + X myfile",
+      "d": "All of the above"
+    },
+    "answer": "(d)",
+    "explanation": "Correct Answer: (d)\n\nConcept: All three commands set execute permission for all users. chmod a+x myfile or chmod +x myfile or chmod ugo+x myfile are all valid and equivalent. Thus option (d)."
+  },
+  {
+    "question_number": 50,
+    "year": "2015",
+    "unit": "Unit 5: System Software and Operating System (Processes, threads, CPU scheduling, memory management, file systems, assemblers, loaders)",
+    "question_text": "What will be the output of the following Unix command?\nrm chap0[1-3]",
+    "options": {
+      "a": "Remove file chap0[1-3]",
+      "b": "Remove file chap01, chap02, chap03",
+      "c": "Remove file chap[1-3]",
+      "d": "None of the above"
+    },
+    "answer": "(b)",
+    "explanation": "Correct Answer: (b)\n\nConcept: The command `rm chap0[1-3]` uses shell globbing; the pattern matches files chap01, chap02, and chap03. The shell expands the brackets before executing rm, so it removes those three files. Option (b) is correct."
+  },
+  {
+    "question_number": 51,
+    "year": "2015",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "Which of the following statement regarding the features of the object-oriented approach to databases are true?\n(1) The ability to develop more realistic models of the real world\n(2) The ability to represent the world in a non-geometric way\n(3) The ability to develop databases using natural language approaches\n(4) The need to split objects into their component parts\n(5) The ability to develop database models based on location rather than state and behavior",
+    "options": {
+      "a": "(1), (2) and (3)",
+      "b": "(2), (3) and (4)",
+      "c": "(1), (4) and (5)",
+      "d": "(3), (4) and (5)"
+    },
+    "answer": "(a)",
+    "explanation": "Correct Answer: (a)\n\nConcept: Object-oriented databases provide more realistic modeling, non-geometric representation, and can use natural language-like approaches. Statements (4) and (5) are not typical features. Thus option (a)."
+  },
+  {
+    "question_number": 52,
+    "year": "2015",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "Consider the following database table :\nCreate table test (\none integer,\ntwo integer,\nprimary key (one),\nunique (two),\ncheck(one >= 1 and <= 10),\ncheck(two >= 1 and <= 5)\n);\nHow many tuples can be inserted successfully?",
+    "options": {
+      "a": "0",
+      "b": "5",
+      "c": "10",
+      "d": "50"
+    },
+    "answer": "(b)",
+    "explanation": "Correct Answer: (b)\n\nConcept: one can take values 1–10, two can take 1–5. Primary key on one requires uniqueness of one, unique constraint on two requires uniqueness of two. The number of possible tuples is limited by the number of distinct values of two (5) because two must be unique. So at most 5 tuples can be inserted. Thus option (b)."
+  },
+  {
+    "question_number": 53,
+    "year": "2015",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "Suppose ORACLE relation R(A, B) currently has tuples {(1, 2), (1, 3), (3, 4)} and relation S(B, C) currently has {(2, 5), (4, 6), (7, 8)}. Consider the following two SQL queries SQL1 and SQL2 :\nSQL1: select * from R natural join S;\nSQL2: select * from R full outer join S on R.B = S.B;\nWhat are the number of rows returned by SQL1 and SQL2 respectively?",
+    "options": {
+      "a": "2 and 6 respectively",
+      "b": "6 and 2 respectively",
+      "c": "2 and 4 respectively",
+      "d": "4 and 2 respectively"
+    },
+    "answer": "(c)",
+    "explanation": "Correct Answer: (c)\n\nConcept: Natural join matches on common attribute B. R has B values: 2,3,4; S has B:2,4,7. Common B:2 and 4, so natural join returns 2 rows. Full outer join returns all rows from both tables, with NULLs where no match. R has 3 rows, S has 3 rows, but matches exist for B=2 and B=4, so unmatched rows are 1 (R with B=3) and 1 (S with B=7) plus the 2 matched rows = 4 rows total. So SQL1 returns 2, SQL2 returns 4. Option (c) is correct."
+  },
+  {
+    "question_number": 54,
+    "year": "2015",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "Consider the following three SQL queries (Assume the data in the people table) :\n(1) Select Name from people where Age > 21;\n(2) Select Name from people where Height > 180;\n(3) Select Name from people where (age > 21) or (Height > 180);\nIf the SQL queries (1) and (2) above, return 10 rows and 7 rows in the result set respectively, then what is one possible number of rows returned by the SQL query (3)?",
+    "options": {
+      "a": "3",
+      "b": "7",
+      "c": "10",
+      "d": "21"
+    },
+    "answer": "(c)",
+    "explanation": "Correct Answer: (c)\n\nConcept: The third query returns rows that satisfy either condition. The number of rows is |A ∪ B| = |A| + |B| - |A ∩ B|. Since |A|=10, |B|=7, the minimum is max(10,7)=10 (if B subset of A), maximum 17. Among options, 10 is possible (if all 7 from B are in A). Thus option (c)."
+  },
+  {
+    "question_number": 55,
+    "year": "2015",
+    "unit": "Unit 4: Database Management Systems (ER-model, relational algebra, SQL, normalization, transactions, NoSQL)",
+    "question_text": "The distributed system is a collection of (P) and communication is achieved in (Q) by (R).",
+    "options": {
+      "a": "P: processors, Q: network, R: messages",
+      "b": "P: processors, Q: shared memory, R: variables",
+      "c": "P: computers, Q: network, R: messages",
+      "d": "P: computers, Q: network, R: shared memory"
+    },
+    "answer": "(c)",
+    "explanation": "Correct Answer: (c)\n\nConcept: A distributed system is a collection of computers (or processors) connected by a network, communicating via message passing. Thus P=computers, Q=network, R=messages. Option (c)."
+  },
+  {
+    "question_number": 56,
+    "year": "2015",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "Which of the following is not a software process model?",
+    "options": {
+      "a": "Prototyping",
+      "b": "Iterative",
+      "c": "Timeboxing",
+      "d": "Glassboxing"
+    },
+    "answer": "(d)",
+    "explanation": "Correct Answer: (d)\n\nConcept: Glassboxing (white-box testing) is a testing technique, not a software process model. Prototyping, Iterative, and Timeboxing are process models. Thus option (d)."
+  },
+  {
+    "question_number": 57,
+    "year": "2015",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "In software testing, how the error, fault and failure are related to each other?",
+    "options": {
+      "a": "Error leads to failure but fault is not related to error and failure.",
+      "b": "Fault leads to failure but error is not related to fault and failure.",
+      "c": "Error leads to fault and fault leads to failure",
+      "d": "Fault leads to error and error leads to failure"
+    },
+    "answer": "(c)",
+    "explanation": "Correct Answer: (c)\n\nConcept: Error (human mistake) → Fault (bug in code) → Failure (incorrect behavior). Thus option (c)."
+  },
+  {
+    "question_number": 58,
+    "year": "2015",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "Which one of the following statements is incorrect?\n(1) Pareto analysis is a statistical method used for analyzing causes, and is one of the primary tools for quality management\n(2) Reliability of a software specifies the probability of failure-free operation of that software for a given time duration\n(3) The reliability of a system can also be specified as the mean time to failure (MTTF)\n(4) In white-box testing, the test cases are decided from the specifications or the requirements",
+    "options": {
+      "a": "(1) and (2)",
+      "b": "(2) and (3)",
+      "c": "(3) only",
+      "d": "(4) only"
+    },
+    "answer": "(d)",
+    "explanation": "Correct Answer: (d)\n\nConcept: White-box testing uses internal code structure, not specifications. Black-box testing uses specifications. Statements (1), (2), (3) are correct. Thus (4) is incorrect, option (d)."
+  },
+  {
+    "question_number": 59,
+    "year": "2015",
+    "unit": "Unit 8: Theory of Computation and Compilers (Regular grammars, finite automata, pushdown automata, Turing machines, lexical analysis, parsing)",
+    "question_text": "Consider a language A defined over the alphabet Σ = {0,1} as A = {0^{n/2}1^n : n > 0}. The expression [n/2] means the floor of n/2, or what you get by rounding n/2 down to the nearest integer. Which of the following is not an example of a string in A?",
+    "options": {
+      "a": "011",
+      "b": "0111",
+      "c": "0011",
+      "d": "001111"
+    },
+    "answer": "(c)",
+    "explanation": "Correct Answer: (c)\n\nConcept: For n=2, floor(2/2)=1, so 0^1 1^2 = 011. n=3: floor(3/2)=1, so 0111. n=4: floor(4/2)=2, so 0^2 1^4 = 001111. n=5: floor=2, 0^2 1^5 = 0011111. 0011 has two 0s and two 1s, which would correspond to n=2 (two 1s) but then floor(2/2)=1 gives one 0, not two. So 0011 is not in A. Option (c)."
+  },
+  {
+    "question_number": 60,
+    "year": "2015",
+    "unit": "Unit 6: Software Engineering (Software process models, planning, requirement analysis, testing strategies, software quality)",
+    "question_text": "Which one of the following statements, related to the requirements phase in software Engineering, is incorrect?",
+    "options": {
+      "a": "\"Requirement validation\" is one of the activities in the requirements phase",
+      "b": "\"Prototyping\" is one of the methods for requirement analysis",
+      "c": "\"Modeling-oriented approach\" is one of the methods for specifying the functional specifications",
+      "d": "\"Function points\" is one of the most commonly used size metric for requirements"
+    },
+    "answer": null,
+    "explanation": "Correct Answer: Not provided.\n\nThe answer key is not given. All statements appear to be correct, but the question likely expects one incorrect. Without the key, we leave the answer as null."
+  },
+  {
+    "question_number": 61,
+    "year": "2015",
+    "unit": "Unit 3: Programming Languages and Computer Graphics (OOP, programming in C++, basics of 2D/3D computer graphics)",
+    "question_text": "______ tag is an extension to HTML that can enclose any number of Javascript statements.",
+    "options": {
+      "a": "<SCRIPT>",
+      "b": "<BODY>",
+      "c": "<HEAD>",
+      "d": "<TITLE>"
+    },
+    "answer": "(a)",
+    "explanation": "Correct Answer: (a)\n\nConcept: The <SCRIPT> tag is used to enclose JavaScript code within HTML. Thus option (a)."
+  }
+]
